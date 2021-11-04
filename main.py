@@ -5,10 +5,8 @@ import os
 import json
 
 inHeroku = False
-is_prod = os.environ.get('IS_HEROKU', None)
-if is_prod:
-    print('Heroku App is Active')
-    inHeroku = True
+if 'YOUR_ENV_VAR' in os.environ:
+  inHeroku = True
 
 if inHeroku:
     TOKEN = os.environ['TOKEN']
@@ -25,9 +23,6 @@ async def on_ready():
     print(client.user.name)
     ##print(client.user.id)
     print('------')
-    c = await client.fetch_user(337252465072275456)
-    print(c)
-    await c.send("Test")
 
 @client.command()
 async def ping(ctx):
