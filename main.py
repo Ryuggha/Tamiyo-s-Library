@@ -5,8 +5,9 @@ import os
 import json
 
 inHeroku = False
-if 'YOUR_ENV_VAR' in os.environ:
+if 'TOKEN' in os.environ:
   inHeroku = True
+  print(inHeroku)
 
 if inHeroku:
     TOKEN = os.environ['TOKEN']
