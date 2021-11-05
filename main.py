@@ -54,12 +54,13 @@ async def help(ctx):
 async def billy(ctx, *arg):
     if len(arg) < 1:
         await ctx.send("You must input the mana value of X after the command")
-    cmc = arg[0]
-    try:
-        url = ScryfallImplementation.billy(cmc)
-        await ctx.send(url)
-    except:
-        await ctx.send(cmc + " is an invalid mana value. \nYou must input the mana value of X after the command.")
+    else:
+        cmc = arg[0]
+        try:
+            url = ScryfallImplementation.billy(cmc)
+            await ctx.send(url)
+        except:
+            await ctx.send(cmc + " is an invalid mana value. \nYou must input the mana value of X after the command.")
 
 
 
