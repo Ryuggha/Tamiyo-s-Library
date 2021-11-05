@@ -25,5 +25,4 @@ def billy(cmc):
             card = cards[rnd]
             if card['layout'] == 'normal':
                 url = card['image_uris']['png']
-        print(str(rnd) + "/" + str(len(cards) + len(wefSorceries) - 1))
     return url
