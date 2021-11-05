@@ -24,9 +24,8 @@ client = commands.Bot(command_prefix='|', description="This is my personal bot",
 async def on_ready():
     print('Logged in as:')
     print(client.user.name)
-    ##print(client.user.id)
+    print(client.user.id)
     print('------')
-    print('Pa que veas')
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="|help"))
 
 
@@ -68,10 +67,6 @@ async def billy(ctx, *arg):
                 await ctx.send("Billy tried it's best, but can't find any spell...\nYou cast nothing.")
         except:
             await ctx.send(str(cmc) + " is an invalid mana value. \nYou must input the mana value of X after the command.")
-
-
-
-
 
 
 client.run(TOKEN)

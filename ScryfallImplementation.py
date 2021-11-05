@@ -4,10 +4,21 @@ import json
 import os
 
 
+def getScryfallApiCallData(call):
+    ret = []
+
+    aux = requests.get(call).json()
+    ret.extend(aux['data'])
+    if aux['has_more']:
+        ret.extend(getScryfallApiCallData(aux['next_page']))
+
+    return ret
+
+
 def billy(cmc):
-    cards = requests.get("https://api.scryfall.com/cards/search?q=t:sorcery+-mana:{X}+cmc:" + str(cmc)).json()['data']
+    cards = getScryfallApiCallData("https://api.scryfall.com/cards/search?q=t:sorcery+-(f:historic+-f:legacy+-f:modern+-f:commander)+-mana:{X}+cmc:" + str(cmc))
     url = ""
-    pathToJson = 'CustomSets/WEF/'  ##only WEF
+    pathToJson = 'CustomSets/WEF/'  # only WEF
     cardJsons = [posJson for posJson in os.listdir(pathToJson) if posJson.endswith('.json')]
     wefSorceries = []
     for wefCard in cardJsons:
