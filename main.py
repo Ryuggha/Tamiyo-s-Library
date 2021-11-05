@@ -26,6 +26,7 @@ async def on_ready():
     print(client.user.name)
     ##print(client.user.id)
     print('------')
+    print('Pa que veas')
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="|help"))
 
 
