@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Decided Initiate",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Knight",
+    "png": "https://mtg.design/i/wbaa84.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "1",
+    "text": "Whenever you cast an enchantment spell, target creature gains first strike until the end of turn.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})"
+}

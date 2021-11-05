@@ -1,0 +1,17 @@
+{
+    "set": "wef",
+    "name": "Alfonso, Errant Noble",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Planeswalker — Alfonso",
+    "png": "https://mtg.design/i/bzpz12.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U"
+    ],
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": ": At the beginning of each end step, if there is a tapped creature on the battlefield, put a loyalty counter on Alfonso, Errant Noble."
+}

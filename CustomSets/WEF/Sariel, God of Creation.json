@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Sariel, God of Creation",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Avatar",
+    "png": "https://mtg.design/i/vnqd40.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "5",
+    "pow": "2",
+    "tou": "5",
+    "text": "Reach, ward {3}\n<i>False Faith</i> - When Sariel, God of Creation enters the battlefield, if you control a green enchantment, you may return up to two permanent cards from your graveyard to your hand.\nAt the beginning of your upkeep, create a 1/1 green Saproling creature token."
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Dark Waters",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Instant",
+    "png": "https://mtg.design/i/gbmk31.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "Prevent all damage that would be dealt to and dealt by target creature an opponent controls. If {u} was spent to cast this spell, that creature doesn’t untap during its controller’s next untap step."
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Crypt of The Abyss",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Land",
+    "png": "https://mtg.design/i/mgnr55.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "0",
+    "tou": "0",
+    "text": "Crypt of The Abyss enters the battlefield tapped unless there is a flooded land on the battlefield.\n\n{T}: Add {G}, {U}, or {B}."
+}

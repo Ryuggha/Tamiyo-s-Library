@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Woodsoul Elk",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Elk",
+    "png": "https://mtg.design/i/cmvz91.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "4",
+    "pow": "4",
+    "tou": "4",
+    "text": "Whenever Woodsoul Elk is put into a graveyard from anywhere, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)"
+}

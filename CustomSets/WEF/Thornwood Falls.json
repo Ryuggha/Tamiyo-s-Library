@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Thornwood Falls",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Land",
+    "png": "https://mtg.design/i/dzcu86.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "0",
+    "tou": "0",
+    "text": "Thornwood Falls enters the battlefield tapped.\nWhen Thornwood Falls enters the battlefield, you gain 1 life.\n{t}: Add {g} or {u}."
+}

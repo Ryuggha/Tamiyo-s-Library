@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Brightmoss Rhino",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Rhino",
+    "png": "https://mtg.design/i/gchc69.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "Vigilance, trample\nWhenever a land enters the battlefield under your control, gain 1 life."
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Little Swampdrake",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Drake",
+    "png": "https://mtg.design/i/oray38.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "2",
+    "text": "When Little Swampdrake enters the battlefield, if you control four or more lands, draw a card. \nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)"
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Araatan, the Headhuntaur",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Minotaur Knight",
+    "png": "https://mtg.design/i/jsto19.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "3",
+    "tou": "2",
+    "text": "Attacking creatures you control get +1/+0.\n\nAt the beginning of combat on your turn, create a 1/1 black and red Dog creature token. That token gains haste until end of turn and attacks this combat if able."
+}

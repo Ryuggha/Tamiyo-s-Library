@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Gravitational Efield",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/nyzl80.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Land creatures you control have flying.\nWhenever you cast an instant or sorcery spell, earthshake 1. (Put a +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+}

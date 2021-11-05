@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Tsus, Dragonblood's Heir",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Legendary Creature — Human Knight",
+    "png": "https://mtg.design/i/pllm91.jpg",
+    "back": "https://mtg.design/i/xvgl26.jpg",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "4",
+    "pow": "3",
+    "tou": "3",
+    "text": "Vigilance\nWhenever a creature you control attacks, Tsus, Dragonblood's Heir deals 1 damage to the player or planeswalker it’s attacking.\n{2}{r}{b}{w}: Transform Tsus, Dragonblood's Heir. Activate this ability only if defending player's life total is less than half its starting life total."
+}

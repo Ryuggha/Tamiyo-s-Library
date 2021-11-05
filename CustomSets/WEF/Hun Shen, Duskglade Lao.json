@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Hun Shen, Duskglade Lao",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Fox Wizard",
+    "png": "https://mtg.design/i/fscf13.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U",
+        "R"
+    ],
+    "cmc": "4",
+    "pow": "3",
+    "tou": "5",
+    "text": "Instant and sorcery spells you control can’t be countered.\n\nWhenever you cast an instant or sorcery spell, meditate (Put an orb counter on a Chi you control. If you don’t control one, first create a Chi enchantment token with \"{1}, Sacrifice this: Copy target spell you control with mana value equal or less to the number of Orb counters on this. You may choose new targets for the copy.\")"
+}

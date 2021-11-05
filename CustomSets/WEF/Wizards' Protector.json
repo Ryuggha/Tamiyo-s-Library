@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Wizards' Protector",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Monk",
+    "png": "https://mtg.design/i/cdkw84.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "As long as you control a Wizard, Wizards' Protector gets +0/+1 and has ward {1}."
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Brewmaster Monk",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Fox Monk",
+    "png": "https://mtg.design/i/mlqi60.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "4",
+    "text": "When Brewmaster Monk enters the battlefield, put a drunk counter on target creature.\n\nCreatures with drunk counters on them can’t attack or block. \n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)"
+}

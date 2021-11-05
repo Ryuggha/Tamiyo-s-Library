@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Silenced Cry Ritual",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Instant",
+    "png": "https://mtg.design/i/hxrq62.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "0",
+    "text": "As an additional cost to cast Silenced Cry Ritual, sacrifice a creature.\n\nDraw a card.\nThen, draw cards equal to the number of enchantments you control."
+}

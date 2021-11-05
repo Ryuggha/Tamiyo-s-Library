@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Hunter's Blessing",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Instant",
+    "png": "https://mtg.design/i/ufbk23.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Choose one —\n• Target creature you control fights target creature you don't control.\n• Destroy target creature with flying."
+}

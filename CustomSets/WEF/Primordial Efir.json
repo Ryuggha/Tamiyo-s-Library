@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Primordial Efir",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Artifact",
+    "png": "https://mtg.design/i/hbug21.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "6",
+    "pow": "0",
+    "tou": "0",
+    "text": "{t}: Add one mana of any color.\nLand Creatures you control get +1/+1.\nLands you control are 0/0 Elemental creatures that are still lands.\nSacrifice Primordial Efir: untap all lands you control."
+}

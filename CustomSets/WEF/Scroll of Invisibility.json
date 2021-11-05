@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Scroll of Invisibility",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Instant",
+    "png": "https://mtg.design/i/bnux16.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "0",
+    "text": "Target creature can’t be blocked this turn. \n\nIf this spell was copied, instead target creature you control gains \"Whenever this creature deals combat damage to a player or planeswalker this turn, draw a card\" until end of turn."
+}

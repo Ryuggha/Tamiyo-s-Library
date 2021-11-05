@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Sacred Land's Animator",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Human Wizard",
+    "png": "https://mtg.design/i/vvib43.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "G"
+    ],
+    "cmc": "4",
+    "pow": "2",
+    "tou": "4",
+    "text": "When Sacred Land's Animator enters the battlefield, put five +1/+1 counters on target enchantment you control and it becomes an enchantment creature for as long as Sacred Land's Animator remains on the battlefield.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)"
+}

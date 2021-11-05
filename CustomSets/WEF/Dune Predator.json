@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Dune Predator",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Beast",
+    "png": "https://mtg.design/i/zclr80.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "2",
+    "pow": "3",
+    "tou": "2",
+    "text": "When Dune Predator enters the battlefield, return target creature you control to its owner hand."
+}

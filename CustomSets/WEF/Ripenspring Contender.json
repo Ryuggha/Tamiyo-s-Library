@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Ripenspring Contender",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Wizard Monk",
+    "png": "https://mtg.design/i/rkfh54.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "{1}, {t}: Meditate. (Put an orb counter on a Chi you control. If you don’t control one, first create a Chi enchantment token with \"{1}, Sacrifice this: Copy target instant or sorcery spell you control with mana value less than or equal to the number of orb counters on this. You may choose new targets for the copy.\") \nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)"
+}

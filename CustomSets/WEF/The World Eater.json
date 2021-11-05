@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "The World Eater",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Legendary Creature — Elder Hydra",
+    "png": "https://mtg.design/i/nejg23.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "R",
+        "G"
+    ],
+    "cmc": "9",
+    "pow": "9",
+    "tou": "9",
+    "text": "Trample, Reach, ward {3}\nWhenever another permanent leaves the battlefield, put a +1/+1 counter on The World Eater.\n{2}{u}: Return target creature to its owner hand.\n{2}{r}: The World Eater deals 3 damage to target creature.\n{2}{g}: Destroy target artifact or enchantment."
+}

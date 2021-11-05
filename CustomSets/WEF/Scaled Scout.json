@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Scaled Scout",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Beast",
+    "png": "https://mtg.design/i/akgc11.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "3",
+    "text": "When Scaled Scout enters the battlefield, earthshake 1. (Put a +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+}

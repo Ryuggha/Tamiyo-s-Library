@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Light Reaper",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Nightmare",
+    "png": "https://mtg.design/i/xeyl36.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "4",
+    "pow": "3",
+    "tou": "4",
+    "text": "Menace\n<i>False Faith</i> - When Light Reaper enters the battlefield, if you control a black enchantment, target player discards two cards."
+}

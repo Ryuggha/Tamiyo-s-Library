@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Cornered Spellcaster",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Fox Wizard",
+    "png": "https://mtg.design/i/epqc67.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "If {w}{u} was spent to cast this spell, put a blessing counter on Cornered Spellcaster.\n\n{t}, Sacrifice Cornered Spellcaster: Add {r}{r}{r}. If it has a blessing counter, add three mana in any combination of colors instead. Spend this mana only to cast an instant or sorcery spell.\n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)"
+}

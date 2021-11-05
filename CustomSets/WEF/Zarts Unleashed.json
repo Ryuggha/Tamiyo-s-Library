@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Zarts Unleashed",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Demon",
+    "png": "https://mtg.design/i/jpqj29.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "6",
+    "pow": "5",
+    "tou": "4",
+    "text": "This spell costs {1} less to cast if an opponent's life total is less than half its starting life total.\n\nDragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)"
+}

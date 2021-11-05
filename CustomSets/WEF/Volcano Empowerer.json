@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Volcano Empowerer",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Elemental Beast",
+    "png": "https://mtg.design/i/pxng30.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "4",
+    "pow": "3",
+    "tou": "3",
+    "text": "Haste\nWhenever Volcano Empowerer attacks, attacking lands get +1/+0 until end of turn."
+}

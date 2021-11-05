@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Song of the Ancients",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Instant",
+    "png": "https://mtg.design/i/zwxd86.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "As long as it's not your turn, this spell costs {w} less to cast.\nChoose one —\n• Tap up to two target creatures.\n• Target creature gets +2/+2 and lifelink until end of turn.\n• Put a +1/+1 counter on up to two target creatures you control."
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Khulchgar Dragonling",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Dragonling",
+    "png": "https://mtg.design/i/dpfd21.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "1",
+    "pow": "2",
+    "tou": "2",
+    "text": "Flying\nWhenever a non-Dragonling creature enters the battlefield under your control, return Khulchgar Dragonling to its owner’s hand."
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Deepsea Dragger",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Wolf Fish",
+    "png": "https://mtg.design/i/kppb70.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "When Deepsea Dragger leaves the battlefield, you may destroy target creature with mana value 3 or less. \n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)"
+}

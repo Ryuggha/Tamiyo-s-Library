@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Slag Tiger",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Cat",
+    "png": "https://mtg.design/i/jact77.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "4",
+    "tou": "4",
+    "text": "When Slag Tiger enters the battlefield, it deals X damage to any target, where X is the number of +1/+1 counters on permanents you control.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or  {g}.)"
+}

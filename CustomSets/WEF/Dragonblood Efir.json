@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Dragonblood Efir",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Artifact",
+    "png": "https://mtg.design/i/dwgp27.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "Dragonblood Efir doesn’t untap during your untap step.\n{t}: Add {r}, {b} or {w}.  \n{1}: Untap Dragonblood Efir. Activate this ability only once each turn."
+}

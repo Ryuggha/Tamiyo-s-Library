@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Champion of Khurel",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Knight",
+    "png": "https://mtg.design/i/yqdx66.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "5",
+    "pow": "3",
+    "tou": "5",
+    "text": "Vigilance, reach\n<i>False Faith</i> - When Champion of Khurel enters the battlefield, if you control a green enchantment, Champion of Khurel deals damage equal to its power to target creature or planeswalker you don’t control."
+}

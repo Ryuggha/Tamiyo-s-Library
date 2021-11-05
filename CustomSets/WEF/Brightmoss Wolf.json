@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Brightmoss Wolf",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Wolf",
+    "png": "https://mtg.design/i/abah55.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "At the beginning of your upkeep, earthshake 1. (Put two +1/+1 counters on target land you control. It becomes a 0/0 Elemental creature until the end of turn. It's still a land.)"
+}

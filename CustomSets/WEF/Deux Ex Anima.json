@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Deux Ex Anima",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Spirit",
+    "png": "https://mtg.design/i/svaf23.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "G"
+    ],
+    "cmc": "5",
+    "pow": "3",
+    "tou": "4",
+    "text": "<i>False Faith</i> - When Deux Ex Anima enters the battlefield, if you control a black enchantment, return target creature card from your graveyard to the battlefield.\nWhenever a creature you control dies, gain life equal to its toughness."
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Inner Power",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/vqtn61.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "As an additional cost to cast this spell, discard a card.\n\nDraw two cards. If {w}{u} was spent to cast this spell, draw three cards instead."
+}

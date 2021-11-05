@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Blackstar Instructor",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Warlock",
+    "png": "https://mtg.design/i/vtgu22.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "3",
+    "pow": "1",
+    "tou": "3",
+    "text": "Whenever an enchantment enters the battlefield under your control, target opponent may discard a card. If that player doesn't, deal 3 damage to that player.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)"
+}

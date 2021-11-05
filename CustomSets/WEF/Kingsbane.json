@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Kingsbane",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Artifact — Equipment",
+    "png": "https://mtg.design/i/ndtw75.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Whenever a creature dies, put a soul counter on Kingsbane.\n\nEquipped creature gets +1/+0 for each soul counter on Kingsbane and has lifelink.\n\nEquip—Pay 4 life."
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Spellcaster Overwhelmer",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Giant Warrior",
+    "png": "https://mtg.design/i/bafl45.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "4",
+    "pow": "4",
+    "tou": "4",
+    "text": "Trample\nWhenever a player casts a noncreature spell, that player loses 2 life."
+}

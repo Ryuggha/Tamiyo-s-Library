@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Merciless Bloodtaur",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Minotaur Executioner",
+    "png": "https://mtg.design/i/fsrh88.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "4",
+    "pow": "3",
+    "tou": "3",
+    "text": "When Merciless Bloodtaur enters the battlefield, it deals 1 damage to each creature target opponent controls. If {b}{b} was spent to cast this spell, it also deals 2 damage to target opponent.\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)"
+}

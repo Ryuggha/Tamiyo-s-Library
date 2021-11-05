@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Shengli Student",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Fox Wizard",
+    "png": "https://mtg.design/i/elvg07.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "1",
+    "text": "When Shengli Student enters the battlefield, meditate (Put an orb counter on a Chi you control. If you don’t control one, first create a Chi enchantment token with \"{1}, Sacrifice this: Copy target instant or sorcery spell you control with mana value less than or equal to the number of orb counters on this. You may choose new targets for the copy.\")"
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Aurora, Azrael's First Sword",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Human Knight",
+    "png": "https://mtg.design/i/twoa66.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "5",
+    "pow": "4",
+    "tou": "3",
+    "text": "First Strike\nNonenchantment spells cost {1} more to cast.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)"
+}

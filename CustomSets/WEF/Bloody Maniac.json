@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Bloody Maniac",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Demon Knight",
+    "png": "https://mtg.design/i/jrig65.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "2",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)\nWhenever Bloody Maniac attacks, you may sacrifice a creature. If you do, Bloody Maniac gets +3/+0 until end of turn. If the sacrificed creature was red, it also gains trample until end of turn."
+}

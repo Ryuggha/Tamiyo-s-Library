@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Soul of The Seas",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Bird",
+    "png": "https://mtg.design/i/bysa70.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "5",
+    "pow": "5",
+    "tou": "5",
+    "text": "Flash\nFlying\nWhen Soul of The Seas enters the battlefield, return target spell or permanent to its owner’s hand."
+}

@@ -1,0 +1,17 @@
+{
+    "set": "wef",
+    "name": "Billy, The Unstable Gambler",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Planeswalker — Billy",
+    "png": "https://mtg.design/i/pqmv51.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": ": At the beginning of your upkeep, flip two coins. If you win a flip this way, put a loyalty counter on Billy, The Unstable Gambler."
+}

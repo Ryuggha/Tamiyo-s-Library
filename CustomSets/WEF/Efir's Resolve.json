@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Efir's Resolve",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Instant",
+    "png": "https://mtg.design/i/otli72.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Search your library for up to X land cards, reveal them, put them onto the battlefield tapped, then shuffle.\nEarthshake X. (Put X +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end o turn. It's still a land.)"
+}

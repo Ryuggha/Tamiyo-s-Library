@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Proud Leonin",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Cat Knight",
+    "png": "https://mtg.design/i/hocv97.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "2",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)"
+}

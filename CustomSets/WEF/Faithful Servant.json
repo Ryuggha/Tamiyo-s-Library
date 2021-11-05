@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Faithful Servant",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Cleric",
+    "png": "https://mtg.design/i/kqpy85.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "3",
+    "text": "When Faithful Servant enters the battlefield, reveal the top card of your library. If it's a land or an enchantment, you may put it in your hand. \nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)"
+}

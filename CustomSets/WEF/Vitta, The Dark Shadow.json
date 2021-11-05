@@ -1,0 +1,17 @@
+{
+    "set": "wef",
+    "name": "Vitta, The Dark Shadow",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Planeswalker — Vitta",
+    "png": "https://mtg.design/i/vkuj23.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "B"
+    ],
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": ": At the beginning of each end step, if you’ve drawn a card this turn except the first one you draw in each of your draw steps, put a loyalty counter on Vitta, The Dark Shadow."
+}

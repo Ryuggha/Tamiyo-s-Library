@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Deep-Sea Behemoth",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Leviathan",
+    "png": "https://mtg.design/i/dwkg03.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "5",
+    "pow": "2",
+    "tou": "6",
+    "text": "Deathtouch\nFlood {2}{b} (During your turn, you may pay {2}{b} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)"
+}

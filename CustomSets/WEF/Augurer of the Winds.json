@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Augurer of the Winds",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Wizard",
+    "png": "https://mtg.design/i/aysb93.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "1",
+    "text": "Flying\nWhenever Augurer of the Winds or another creature with flying enters the battlefield under your control, meditate. (Put an orb counter on a Chi you control. If you don’t control one, first create a Chi enchantment token with \"{1}, Sacrifice this: Copy target spell you control with mana value equal or less to the number of Orb counters on this. You may choose new targets for the copy.\")"
+}

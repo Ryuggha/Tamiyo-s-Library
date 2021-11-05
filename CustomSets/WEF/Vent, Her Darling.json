@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Vent, Her Darling",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Spirit",
+    "png": "https://mtg.design/i/bily33.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "2",
+    "text": "Partner with Petal, His Flame (When this creature enters the battlefield, target player may put Petal, His Flame into their hand from their library, then shuffle.)\n\nWhenever you cast or copy an instant or sorcery spell during your turn, you may pay {1}. If you do, untap target creature."
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Mistwoods Mistweaver",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Human Monk",
+    "png": "https://mtg.design/i/nrgd44.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "4",
+    "pow": "3",
+    "tou": "3",
+    "text": "Ward {2}\nAt the beginning of your end step, you may pay {u}{w}. If you do, exile target creature you control. Return that card to the battlefield under its owner’s control at the beginning of your next upkeep."
+}

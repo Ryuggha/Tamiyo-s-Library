@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Cassiel, God of Destruction",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Avatar",
+    "png": "https://mtg.design/i/hbta60.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "5",
+    "pow": "2",
+    "tou": "5",
+    "text": "Deathtouch, ward {3}\n<i>False Faith</i> - When Cassiel, God of Destruction enters the battlefield, if you control a black enchantment, destroy target permanent.\nOther creatures get -1/-1."
+}

@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Guardian of Myths",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Priest",
+    "png": "https://mtg.design/i/pdde37.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "G"
+    ],
+    "cmc": "5",
+    "pow": "3",
+    "tou": "5",
+    "text": "Whenever an enchantment enters the battlefield under your control, you gain 2 life and target oponent loses 2 life.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})"
+}

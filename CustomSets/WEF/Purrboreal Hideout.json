@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Purrboreal Hideout",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Land",
+    "png": "https://mtg.design/i/ygkl71.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "0",
+    "tou": "0",
+    "text": "Purrboreal Hideout enters the battlefield tapped.\n{t}: Add {g}.\n3{g}: Until end of turn, Purrboreal Hideout becomes a 0/1 green Cat creature with reach and \"Whenever this creature is dealt damage, add {g}. Until end of turn, you don’t lose this mana as steps and phases end.\" It's still a land."
+}

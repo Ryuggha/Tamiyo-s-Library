@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Efir Traces",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Instant",
+    "png": "https://mtg.design/i/elhv65.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Choose two. If this spell was copied, you may choose three instead —\n\n• Draw two cards, then discard a card.\n\n•  You gain 3 life.\n\n•  Meditate (Put an orb counter on a Chi you control. If you don’t control one, first create a Chi enchantment token with \"{1}, Sacrifice this: Copy target spell you control with mana value equal or less to the number of Orb counters on this. You may choose new targets for the copy.\")"
+}

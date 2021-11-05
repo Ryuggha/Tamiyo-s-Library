@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Soul of The Fires",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Ox",
+    "png": "https://mtg.design/i/avlf10.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "5",
+    "tou": "5",
+    "text": "Haste\nWhen Soul of The Fires enters the battlefield, it deals 3 damage to each nonland creature."
+}

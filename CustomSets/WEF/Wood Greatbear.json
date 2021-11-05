@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Wood Greatbear",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Bear",
+    "png": "https://mtg.design/i/jsjh33.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "When Wood Greatbear enters the battlefield, earthshake 1. (Put a +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+}

@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Soul of The World",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Wolf",
+    "png": "https://mtg.design/i/wuwz57.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "R",
+        "G"
+    ],
+    "cmc": "5",
+    "pow": "3",
+    "tou": "4",
+    "text": "Flying\n{3}: Earthshake 1. (Put a +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+}

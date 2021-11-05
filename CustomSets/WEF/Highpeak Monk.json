@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Highpeak Monk",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Monk",
+    "png": "https://mtg.design/i/yoos62.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "2",
+    "text": "At the beginning of your upkeep, Highpeak Monk gets +X/+X until end of turn, where X is the number of orb counters on each Chi you control.\n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)"
+}

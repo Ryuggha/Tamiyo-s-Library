@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Woodsoul Monster",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Beast",
+    "png": "https://mtg.design/i/yrwh96.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "8",
+    "pow": "6",
+    "tou": "8",
+    "text": "When Woodsoul Monster enters the battlefield or dies, Earthshake 4. (Put four +1/+1 counters on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+}

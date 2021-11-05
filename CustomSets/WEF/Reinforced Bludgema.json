@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Reinforced Bludgema",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Frog",
+    "png": "https://mtg.design/i/dmam27.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "3",
+    "text": "When Reinforced Bludgema enters the battlefield, earthshake 1. (Put a +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+}

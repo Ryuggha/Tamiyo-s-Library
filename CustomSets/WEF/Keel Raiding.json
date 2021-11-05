@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Keel Raiding",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Instant",
+    "png": "https://mtg.design/i/rtjb06.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": "Choose one. You may choose two if there are two or more flooded lands on the battlefield.—\n\n• Return target nonland permanent to its owner’s hand. \n\n• Draw a card. \n\n• Counter target spell unless its controller pays {1}.\n\n• Each player mills four cards."
+}

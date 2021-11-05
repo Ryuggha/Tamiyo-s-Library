@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "War Exterminator",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Giant Knight",
+    "png": "https://mtg.design/i/zeaw89.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)"
+}

@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Rise of The World",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Instant",
+    "png": "https://mtg.design/i/ywjg81.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "R",
+        "G"
+    ],
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": "Put two +1/+1 counters on each land you control. Until end of turn, all lands you control become 0/0 Elemental creatures with hexproof, haste, and reach. They’re still lands."
+}

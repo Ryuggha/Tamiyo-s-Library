@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Crazy Torturer",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Giant Executioner",
+    "png": "https://mtg.design/i/uklw55.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "4",
+    "pow": "6",
+    "tou": "6",
+    "text": "At the beginning of your upkeep, you may sacrifice another creature. If you don't, put two -1/-1 counters on Crazy Torturer.\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)"
+}

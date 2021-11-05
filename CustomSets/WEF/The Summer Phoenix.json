@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "The Summer Phoenix",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Spirit Phoenix",
+    "png": "https://mtg.design/i/lzsp49.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "*",
+    "tou": "*",
+    "text": "Flying\n\n{x}{r}, Exile target instant or sorcery with mana value X or less from a graveyard: Return The Summer Phoenix from your graveyard to the battlefield. X can't be 0. \n\nThe Summer Phoenix’s power and toughness are each equal to the exiled card's mana value.\n\nWhen The Summer Phoenix leaves the battlefield, return the exiled card to its owners’ hand.\nWhen The Summer Phoenix dies, return it to its owner’s hand."
+}

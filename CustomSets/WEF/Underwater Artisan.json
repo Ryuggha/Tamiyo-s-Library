@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Underwater Artisan",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Horror",
+    "png": "https://mtg.design/i/fjbk20.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "2",
+    "text": "{4}{G}, {T}, Sacrifice Underwater Artisan: Draw two cards. This ability costs {1} less to activate for each flooded land on the battlefield.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)"
+}

@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Maelstrom's Gravebringer",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Kraken",
+    "png": "https://mtg.design/i/puty06.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "B",
+        "G"
+    ],
+    "cmc": "6",
+    "pow": "6",
+    "tou": "6",
+    "text": "When Maelstrom's Gravebringer enters the battlefield, each player mills four cards.\n\nIf you would draw a card, you may shuffle a card from your graveyard into your library instead as long as there is a card in your graveyard."
+}

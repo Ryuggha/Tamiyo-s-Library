@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Nokhoi, Guardian of Kings",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Dog",
+    "png": "https://mtg.design/i/fzzs66.jpg",
+    "back": "https://mtg.design/i/rejb69.jpg",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "Vigilance\nWhen Nokhoi, Guardian of Kings dies, return it to the battlefield transformed under your control."
+}

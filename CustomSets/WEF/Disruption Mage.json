@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Disruption Mage",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Human Warlock",
+    "png": "https://mtg.design/i/abwv10.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "When Disruption Mage enters the battlefield, each player sacrifices a creature or an enchantment.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, or {w}.)"
+}

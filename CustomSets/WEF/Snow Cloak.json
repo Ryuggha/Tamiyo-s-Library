@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Snow Cloak",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Instant",
+    "png": "https://mtg.design/i/zijk14.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": "Counter target spell, activated ability or triggered ability.\nIf {r} was spent to cast this spell, earthshake 1. \nIf {g} was spent to cast this spell, earthshake 1.\n(Put a +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+}

@@ -1,0 +1,17 @@
+{
+    "set": "wef",
+    "name": "Shrolen the Mentalist",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Planeswalker — Shrolen",
+    "png": "https://mtg.design/i/rcnm28.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "G"
+    ],
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": ": At the beginning of each end step, if one or more counters were put on permanents you control, put a loyalty counter on Shrolen the Mentalist."
+}

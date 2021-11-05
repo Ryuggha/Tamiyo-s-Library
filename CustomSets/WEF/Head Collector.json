@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Head Collector",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Human Knight",
+    "png": "https://mtg.design/i/qprz29.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "Head Collector can’t block.\nWhenever a creature dealt damage by Head Collector this turn dies, create a Head token. (It’s an artifact with “{1}{w}, {T}, Sacrifice this artifact: Gain 3 life.”)"
+}

@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Enlightened Priest",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Priest",
+    "png": "https://mtg.design/i/ehmf88.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "3",
+    "text": "When Enlightened Priest enters the battlefield return target enchantment card from your graveyard to your hand. \nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})"
+}

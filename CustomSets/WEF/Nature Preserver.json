@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Nature Preserver",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Druid",
+    "png": "https://mtg.design/i/xudz45.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "2",
+    "text": "Nature Preserver enters the battlefield with an essence counter on it.\nWhenever an enchantment enters the battlefield under your control, put an essence counter on Nature Preserver.\n{t}, Remove an essence counter from Nature Preserver: Add one mana of any color.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})"
+}

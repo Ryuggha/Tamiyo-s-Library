@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Colossal Nightmare",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Kraken",
+    "png": "https://mtg.design/i/bkbi52.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "6",
+    "pow": "5",
+    "tou": "6",
+    "text": "Trample\nFlood {2}{g} (During your turn, you may pay {2}{g} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)"
+}

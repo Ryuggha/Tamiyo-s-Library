@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Devourer of Tephras",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Beast",
+    "png": "https://mtg.design/i/uwaz03.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "1",
+    "text": "Haste\nWhenever one or more +1/+1 counters are put on a land creature you control, put a +1/+1 counter on Devourer of Tephras."
+}

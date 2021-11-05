@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Deus Ex Corpus",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Spirit",
+    "png": "https://mtg.design/i/lsme40.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "G"
+    ],
+    "cmc": "6",
+    "pow": "4",
+    "tou": "4",
+    "text": "<i>False Faith</i> - When Deus Ex Corpus enters the battlefield, if you control a white enchantment, put a +1/+1 counter on each creature you control.\nOther creatures you control get +1/+1 for each enchantment you control."
+}

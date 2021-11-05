@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Temple of the First God",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/sydy94.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "When Temple of the First God enters the battlefield, gain life equal to your devotion to white, each oponent loses life equal to your devotion to black and create an X/X green beast creature token where X is equal to your devotion to green."
+}

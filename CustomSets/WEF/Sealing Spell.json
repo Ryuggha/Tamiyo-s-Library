@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Sealing Spell",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Instant",
+    "png": "https://mtg.design/i/ownu50.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "Choose target enchantment you control.\nExile target creature until chosen enchantment leaves the battlefield."
+}

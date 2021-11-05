@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Mistwoods Spy",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Fox Wizard",
+    "png": "https://mtg.design/i/uync49.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "Mistwoods Spy can't be blocked as long as you control a Mountain and a Plains.\n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)"
+}

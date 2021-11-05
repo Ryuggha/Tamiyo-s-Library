@@ -1,0 +1,14 @@
+{
+    "set": "wef",
+    "name": "Lake Healer",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Wolf",
+    "png": "https://mtg.design/i/dlem10.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "3",
+    "text": "When Lake Healer enters the battlefield, you may exile target land. If you do, return that card to the battlefield under its owner’s control at the beginning of the next end step."
+}

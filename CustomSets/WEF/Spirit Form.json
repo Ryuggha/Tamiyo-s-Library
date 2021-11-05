@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Spirit Form",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/ggsl77.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U",
+        "R"
+    ],
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": "Create a token that’s a copy of target permanent, except it isn’t legendary if the permanent is legendary. Put on it a copy of each counter that had the copied card."
+}
