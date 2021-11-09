@@ -1,9 +1,9 @@
+import datetime
+import json
+import os
 import discord
 from discord.ext import commands
-import datetime
-from boto.s3.connection import S3Connection
-import os
-import json
+from discord.ext.commands.context import Context
 
 import ScryfallImplementation
 
@@ -70,7 +70,12 @@ async def billy(ctx, *arg):
 
 
 @client.command()
-async def json(ctx):
-    await ctx.send(file=discord.File('a.json'))
+async def json(ctx: Context):
+    x = ScryfallImplementation.giveJson()
+    await ctx.send(file=discord.File(x, "test.json"))
+
+
+
+
 
 client.run(TOKEN)

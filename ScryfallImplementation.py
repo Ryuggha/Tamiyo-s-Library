@@ -2,6 +2,7 @@ import random
 import requests
 import json
 import os
+import io
 
 
 def getScryfallApiCallData(call):
@@ -16,7 +17,9 @@ def getScryfallApiCallData(call):
 
 
 def billy(cmc):
-    cards = getScryfallApiCallData("https://api.scryfall.com/cards/search?q=t:sorcery+-(f:historic+-f:legacy+-f:modern+-f:commander)+-mana:{X}+cmc:" + str(cmc))
+    cards = getScryfallApiCallData(
+        "https://api.scryfall.com/cards/search?q=t:sorcery+-(f:historic+-f:legacy+-f:modern+-f:commander)+-mana:{X}+cmc:" + str(
+            cmc))
     url = ""
     pathToJson = 'CustomSets/WEF/'  # only WEF
     cardJsons = [posJson for posJson in os.listdir(pathToJson) if posJson.endswith('.json')]
@@ -37,3 +40,12 @@ def billy(cmc):
             if card['layout'] == 'normal':
                 url = card['image_uris']['png']
     return url
+
+
+def giveJson():
+    a = json.load(open('bag.json'))
+    toExport = io.StringIO(json.dumps(a))
+    return toExport
+
+
+giveJson()
