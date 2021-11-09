@@ -69,4 +69,8 @@ async def billy(ctx, *arg):
             await ctx.send(str(cmc) + " is an invalid mana value. \nYou must input the mana value of X after the command.")
 
 
+@client.command()
+async def json(ctx):
+    await ctx.send(file=discord.File('a.json'))
+
 client.run(TOKEN)
