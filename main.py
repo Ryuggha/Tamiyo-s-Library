@@ -75,7 +75,4 @@ async def json(ctx: Context):
     await ctx.send(file=discord.File(x, "test.json"))
 
 
-
-
-
 client.run(TOKEN)

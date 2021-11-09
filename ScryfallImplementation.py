@@ -5,6 +5,10 @@ import os
 import io
 
 
+officialBack = "https://imgur.com/hsYf4R9"
+customBack = ""
+
+
 def getScryfallApiCallData(call):
     ret = []
 
@@ -44,8 +48,45 @@ def billy(cmc):
 
 def giveJson():
     a = json.load(open('bag.json'))
-    toExport = io.StringIO(json.dumps(a))
-    return toExport
+    return io.StringIO(json.dumps(a))
+
+
+def createTTSBag(bagName="bagTest", containedObjects=[]):
+    bag = json.load(open('bag.json'))
+    bag["ObjectStates"][0]["Nickname"] = bagName
+    bag["ObjectStates"][0]["ContainedObjects"] = containedObjects
+    return bag
+
+
+def createTTSDeck(deckName="deckTest", cardAtt={"name": [], "desc": [], "image": [], "back": []}):
+    if len(cardAtt.get("name")) == 0:
+        return None
+
+    elif len(cardAtt.get("name")) == 1:
+        ttsObject = createTTSCardObject(cardAtt, 0, str(random.randint(0, 99999)))
+
+    else:
+        deck = json.load(open('ttsDeck.json'))
+        deck["Nickname"] = deckName
+        deckId = str(random.randint(0, 99999))
+        for x in range(len(cardAtt.get("name"))):
+            deck["ContainedObjects"].append(createTTSCardObject(cardAtt, x, deckId))
+
+
+def createTTSCardObject(cardAtt, cardNum, deckId="12345"):
+    card = json.load(open('ttsCard.json'))
+    card["FaceURL"] = cardAtt.get("image")[cardNum]
+    card["BackURL"] = cardAtt.get("back")[cardNum]
+
+    cardId = deckId + str(cardNum)
+
+    ttsObject = json.load(open('ttsObject.json'))
+    ttsObject["Nickname"] = cardAtt.get("name")[cardNum]
+    ttsObject["CardID"] = cardId * 100
+    ttsObject["Description"] = cardAtt.get("desc")[cardNum] + "$"
+    ttsObject["CustomDeck"].update({cardId: card})
+
+    return ttsObject
 
 
 giveJson()
