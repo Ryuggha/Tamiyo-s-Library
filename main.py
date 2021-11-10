@@ -14,13 +14,13 @@ if 'TOKEN' in os.environ:
 
 if inHeroku:
     TOKEN = os.environ['TOKEN']
-    wefDesigner = os.environ['wefDesigner']
-    ownerId = os.environ['ownerId']
+    wefDesigner = int(os.environ['wefDesigner'])
+    ownerId = int(os.environ['ownerId'])
 else:
     localVars = json.load(open('localVars.json', encoding="utf8"))
     TOKEN = localVars['TOKEN']  ##Testing Token
-    wefDesigner = localVars['wefDesigner']
-    ownerId = localVars['ownerId']
+    wefDesigner = int(localVars['wefDesigner'])
+    ownerId = int(localVars['ownerId'])
 
 client = commands.Bot(command_prefix='|', description="This is my personal bot", help_command=None)
 
