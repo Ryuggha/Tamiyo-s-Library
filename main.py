@@ -4,6 +4,7 @@ import os
 import discord
 from discord.ext import commands
 from discord.ext.commands.context import Context
+import requests
 
 import ScryfallImplementation
 
@@ -73,6 +74,30 @@ async def billy(ctx, *arg):
 async def json(ctx: Context):
     x = ScryfallImplementation.giveJson()
     await ctx.send(file=discord.File(x, "test.json"))
+
+
+@client.command()
+async def makeDeckFromFile(ctx):
+    deckName = "testCommander1"
+    attachments = ctx.message.attachments
+    deckLists = []
+    for x in range(len(attachments)):
+        deckLists.append(requests.get(attachments[x].url).text)
+
+    if len(deckLists) == 0:
+        await ctx.send("There is no deck to create. Try attaching a .txt file with the deckList on it with the command")
+    elif len(deckLists) == 1:
+        await ctx.send("Crating deck, this may take a while. Please wait...")
+        try:
+            cardDictList = ScryfallImplementation.readDeckList(deckLists[0])
+            deck = ScryfallImplementation.makeDeck(deckName, cardDictList)
+            await ctx.send(file=discord.File(deck[0], deckName + ".json"))
+            if deck[1] != "":
+                await ctx.send(deck[1] + "Your deck has been created without the problematic lines.")
+        except:
+            await ctx.send("There has been an unknown error...")
+    else:
+        await ctx.send("WIP")
 
 
 client.run(TOKEN)
