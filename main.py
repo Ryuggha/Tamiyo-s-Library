@@ -14,9 +14,13 @@ if 'TOKEN' in os.environ:
 
 if inHeroku:
     TOKEN = os.environ['TOKEN']
+    wefDesigner = os.environ['wefDesigner']
+    ownerId = os.environ['ownerId']
 else:
     localVars = json.load(open('localVars.json', encoding="utf8"))
     TOKEN = localVars['TOKEN']  ##Testing Token
+    wefDesigner = localVars['wefDesigner']
+    ownerId = localVars['ownerId']
 
 client = commands.Bot(command_prefix='|', description="This is my personal bot", help_command=None)
 
@@ -54,21 +58,22 @@ async def help(ctx):
 
 @client.command()
 async def billy(ctx, *arg):
-    if len(arg) < 1:
-        await ctx.send("You must input the mana value of X after the command")
-    else:
-        cmc = arg[0]
-        try:
-            cmc = int(cmc)
-            if cmc <= 0:
-                await ctx.send("X can't be 0. Read the card.")
-            elif cmc < 13:
-                url = ScryfallImplementation.billy(cmc)
-                await ctx.send(url)
-            else:
-                await ctx.send("Billy tried it's best, but can't find any spell...\nYou cast nothing.")
-        except:
-            await ctx.send(str(cmc) + " is an invalid mana value. \nYou must input the mana value of X after the command.")
+    if ctx.author.id == ownerId or ctx.author.id == wefDesigner:
+        if len(arg) < 1:
+            await ctx.send("You must input the mana value of X after the command")
+        else:
+            cmc = arg[0]
+            try:
+                cmc = int(cmc)
+                if cmc <= 0:
+                    await ctx.send("X can't be 0. Read the card.")
+                elif cmc < 13:
+                    url = ScryfallImplementation.billy(cmc)
+                    await ctx.send(url)
+                else:
+                    await ctx.send("Billy tried it's best, but can't find any spell...\nYou cast nothing.")
+            except:
+                await ctx.send(str(cmc) + " is an invalid mana value. \nYou must input the mana value of X after the command.")
 
 
 @client.command()
