@@ -39,8 +39,9 @@ async def ping(ctx):
 async def help(ctx):
     help = """
     > ping -> pong\n
-    > billy X -> activate the -X of Billy, The Unstable Gambler\n
+    
     """
+    # > billy X -> activate the -X of Billy, The Unstable Gambler\n
     url = "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/b/4/b474378c-5fa8-418f-8d76-23e78003ed18.jpg?1576385483"
     embed = discord.Embed(title="List of Spells of the Tamiyo's Library", url=url, description=help,
                           timestamp=datetime.datetime.utcnow(),
