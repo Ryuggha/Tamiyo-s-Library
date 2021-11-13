@@ -86,7 +86,10 @@ def createTTSCardObject(cardAtt, cardNum, cardId="12345"):
     ttsObject = json.load(open('ttsObject.json'))
     ttsObject["Nickname"] = cardAtt.get("name")[cardNum]
     ttsObject["CardID"] = cardId * 100
-    ttsObject["Description"] = cardAtt.get("desc")[cardNum] + "€"
+    try:
+        ttsObject["Description"] = cardAtt.get("desc")[cardNum] + "€"
+    except:
+        ttsObject["Description"] = "0€"
     ttsObject["CustomDeck"].update({cardId: card})
 
     return [ttsObject, card]

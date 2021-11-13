@@ -100,8 +100,9 @@ async def makeDeckFromFile(ctx):
             await ctx.send(file=discord.File(deck[0], deckName + ".json"))
             if deck[1] != "":
                 await ctx.send(deck[1] + "Your deck has been created without the problematic lines.")
-        except:
+        except Exception as err:
             await ctx.send("There has been an unknown error...")
+            print(err)
     else:
         await ctx.send("WIP")
 
