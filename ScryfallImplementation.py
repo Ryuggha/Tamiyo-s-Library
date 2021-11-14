@@ -1,4 +1,6 @@
 import random
+import traceback
+
 import requests
 import json
 import os
@@ -108,7 +110,7 @@ def makeDeck(deckName="exampleName", cardDictList=[]):
         else:
             try:
                 cardJson = searchForSpecificCardInScryfall(cardDict)
-                print("tokens I guess")
+                # print("tokens I guess")
                 for x in range(int(cardDict["num"])):
                     if str(deckNum) not in cardImagesLists:
                         cardImagesLists[str(deckNum)] = {"name": [], "desc": [], "image": [], "back": []}
@@ -126,8 +128,9 @@ def makeDeck(deckName="exampleName", cardDictList=[]):
                         cardImagesLists["double"]["desc"].append(cardJson['prices']['eur'])
                         cardImagesLists["double"]["image"].append(cardJson["card_faces"][0]['image_uris']['png'])
                         cardImagesLists["double"]["back"].append(cardJson["card_faces"][1]['image_uris']['png'])
-            except:
+            except Exception as e:
                 errors += "Somethign went wrong with: " + str(cardDict) + "\n"
+                print(traceback.format_exc())
 
     containedObjects = []
     for x in cardImagesLists:
@@ -206,10 +209,12 @@ def splitLineCardNames(str):
             charList = list(splitted[x])
             try:
                 auxHash = charList.index('#')
+                cardDict["set"] = ""
                 for y in range(auxHash - 1):
-                    cardDict["set"] = charList[y]
+                    cardDict["set"] += charList[y + 1]
+                cardDict["setNum"] = ""
                 for y in range(len(charList) - (auxHash + 2)):
-                    cardDict["setNum"] = charList[y + auxHash]
+                    cardDict["setNum"] += charList[y + auxHash + 1]
             except:
                 cardDict["set"] = ""
                 for y in range(len(charList) - 2):

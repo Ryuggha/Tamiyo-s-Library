@@ -1,6 +1,8 @@
 import datetime
 import json
 import os
+import traceback
+
 import discord
 from discord.ext import commands
 from discord.ext.commands.context import Context
@@ -83,7 +85,7 @@ async def json(ctx: Context):
 
 
 @client.command()
-async def makeDeckFromFile(ctx):
+async def build(ctx):
     deckName = "testCommander1"
     attachments = ctx.message.attachments
     deckLists = []
@@ -102,7 +104,7 @@ async def makeDeckFromFile(ctx):
                 await ctx.send(deck[1] + "Your deck has been created without the problematic lines.")
         except Exception as err:
             await ctx.send("There has been an unknown error...")
-            print(err)
+            print(traceback.format_exc())
     else:
         await ctx.send("WIP")
 
