@@ -38,9 +38,6 @@ def billy(cmc):
 
     while url == "":
         rnd = random.randint(0, len(cards) + len(wefSorceries) - 1)
-        print(len(cards) + len(wefSorceries) - 1)
-        print(rnd)
-        print("---")
         wefRnd = rnd - len(cards)
         if wefRnd >= 0:
             url = wefSorceries[wefRnd]['png']
