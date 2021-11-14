@@ -24,7 +24,8 @@ else:
     wefDesigner = int(localVars['wefDesigner'])
     ownerId = int(localVars['ownerId'])
 
-client = commands.Bot(command_prefix='|', description="This is my personal bot", help_command=None)
+client = commands.Bot(command_prefix='|', description="This is my personal bot", help_command=None,
+                      case_insensitive=True)
 
 
 @client.event
@@ -85,12 +86,12 @@ async def json(ctx: Context):
 
 
 @client.command()
-async def Build(ctx, *arg):
+async def bd(ctx, *arg):
     await build(ctx, *arg)
 
 
 @client.command()
-async def BUILD(ctx, *arg):
+async def buildDeck(ctx, *arg):
     await build(ctx, *arg)
 
 
