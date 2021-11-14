@@ -46,7 +46,9 @@ async def ping(ctx):
 async def help(ctx):
     help = """
     > ping -> pong\n
-    
+    \n
+    > build <name> <sleeve> ```Embed File: A decklist on a .txt (Can be copy pasted from Deckstats)```-> 
+    Returns a .json with the deck you sent to the library in a format that Tabletop Simulator can read.\n 
     """
     # > billy X -> activate the -X of Billy, The Unstable Gambler\n
     url = "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/b/4/b474378c-5fa8-418f-8d76-23e78003ed18.jpg?1576385483"
