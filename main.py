@@ -85,8 +85,25 @@ async def json(ctx: Context):
 
 
 @client.command()
-async def build(ctx):
-    deckName = "testCommander1"
+async def Build(ctx, *arg):
+    await build(ctx, *arg)
+
+
+@client.command()
+async def BUILD(ctx, *arg):
+    await build(ctx, *arg)
+
+
+@client.command()
+async def build(ctx, *arg):
+    try:
+        deckName = arg[0]
+    except:
+        deckName = "Unnamed Deck"
+    try:
+        back = arg[1]
+    except:
+        back = ""
     attachments = ctx.message.attachments
     deckLists = []
     for x in range(len(attachments)):
@@ -98,7 +115,7 @@ async def build(ctx):
         await ctx.send("Crating deck, this may take a while. Please wait...")
         try:
             cardDictList = ScryfallImplementation.readDeckList(deckLists[0])
-            deck = ScryfallImplementation.makeDeck(deckName, cardDictList)
+            deck = ScryfallImplementation.makeDeck(deckName, cardDictList, back)
             await ctx.send(file=discord.File(deck[0], deckName + ".json"))
             if deck[1] != "":
                 await ctx.send(deck[1] + "Your deck has been created without the problematic lines.")

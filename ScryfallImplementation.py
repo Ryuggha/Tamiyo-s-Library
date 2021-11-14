@@ -97,16 +97,19 @@ def createTTSCardObject(cardAtt, cardNum, cardId="12345"):
     return [ttsObject, card]
 
 
-def makeDeck(deckName="exampleName", cardDictList=[]):
+def makeDeck(deckName="exampleName", cardDictList=[], customBack=""):
     errors = ""
     cardImagesLists = {}
     sectionNames = {"double": "Double Faced Cards", "tokens": "Tokens"}
     deckNum = 0
-    global officialBack
-    back = officialBack
+    back = customBack
+    if back == "":
+        global officialBack
+        back = officialBack
     for cardDict in cardDictList:
         if "separator" in cardDict:
-            print("WIP Multiple Decks and Sideboards")
+            sectionNames[str(deckNum)] = cardDict["separator"][2:]
+            deckNum += 1
         else:
             try:
                 cardJson = searchForSpecificCardInScryfall(cardDict)
@@ -135,7 +138,7 @@ def makeDeck(deckName="exampleName", cardDictList=[]):
     containedObjects = []
     for x in cardImagesLists:
         sectionName = "deck"
-        if x in sectionNames:
+        if str(x) in sectionNames:
             sectionName = sectionNames[x]
         containedObjects.append(createTTSDeck(sectionName, cardImagesLists[x]))
     bag = createTTSBag(deckName, containedObjects)
