@@ -48,7 +48,7 @@ def billy(cmc):
 
 def giveJson():
     a = json.load(open('bag.json'))
-    return io.StringIO(json.dumps(a))
+    return io.StringIO(json.dumps(a, indent=4, sort_keys=True))
 
 
 def createTTSBag(bagName="bagTest", containedObjects=[]):
@@ -136,7 +136,7 @@ def makeDeck(deckName="exampleName", cardDictList=[]):
             sectionName = sectionNames[x]
         containedObjects.append(createTTSDeck(sectionName, cardImagesLists[x]))
     bag = createTTSBag(deckName, containedObjects)
-    return [io.StringIO(json.dumps(bag)), errors]
+    return [io.StringIO(json.dumps(bag, indent=4, sort_keys=True)), errors]
 
 
 def checkLegality(cardList=[], legalIn="", whiteList=[], banList=[]):
