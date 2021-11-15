@@ -65,7 +65,7 @@ def createTTSDeck(deckName="deckTest", cardAtt={"name": [], "desc": [], "image":
         return None
 
     elif len(cardAtt.get("name")) == 1:
-        return createTTSCardObject(cardAtt, 0, str(random.randint(0, 99999)))
+        return createTTSCardObject(cardAtt, 0, random.randint(0, 99999))[0]
 
     else:
         deck = json.load(open('ttsDeck.json'))
@@ -192,7 +192,11 @@ def searchForSpecificCardInScryfall(cardDict):
 
 
 def searchForCardInScryfall(cardName):
-    return requests.get("https://api.scryfall.com/cards/search?q=!\"" + cardName + "\"").json()['data'][0]
+    try:
+        return requests.get("https://api.scryfall.com/cards/search?q=!\"" + cardName + "\"").json()['data'][0]
+    except:
+        print(traceback.format_exc())
+        print(cardName)
 
 
 def whiteListFromSets(sets=[]):

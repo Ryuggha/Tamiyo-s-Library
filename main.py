@@ -45,10 +45,16 @@ async def ping(ctx):
 @client.command()
 async def help(ctx):
     help = """
-        > ping -> pong\n
+        > ping -> pong
         \n
-        > build <name> <sleeve> <EMBED FILE> -> Returns a .json with the deck you sent to the library in a format that Tabletop Simulator can read.
-        ```The embed file must be a decklist on a .txt (Can be copy pasted from Deckstats)```\n 
+        \n> build -> Returns a .json in a format that Tabletop Simulator can read, with all the cards in the decklist provided.
+        \nThe format for this command is:
+        ```|build <nameOfTheDeck> <url of the sleeve> (Neither the Name or the Sleeves are compulsory arguments)
+        \n<deckList Here> (Note that the deckList must start in a line below the command)
+        ```If the deckList doesn't fit in the 2000 character maximum, you can send the deckList in a .txt, where the message will be the command and the arguments.
+        \nAs an example: 
+        ```|build <nameOfTheDeck> <url of the sleeve>
+        \n <decklist.txt>```
         """
     # > billy X -> activate the -X of Billy, The Unstable Gambler\n
     url = "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/b/4/b474378c-5fa8-418f-8d76-23e78003ed18.jpg?1576385483"
@@ -88,45 +94,58 @@ async def json(ctx: Context):
 
 
 @client.command()
-async def bd(ctx, *arg):
-    await build(ctx, *arg)
+async def bd(ctx):
+    await build(ctx)
 
 
 @client.command()
-async def buildDeck(ctx, *arg):
-    await build(ctx, *arg)
+async def buildDeck(ctx):
+    await build(ctx)
 
 
 @client.command()
-async def build(ctx, *arg):
+async def build(ctx):
+    msg = ctx.message.content
+    firstLine = msg.split('\n', 1)[0]
+    args = firstLine.split(" ")
     try:
-        deckName = arg[0]
+        if args[1] != "":
+            deckName = args[1]
+        else:
+            deckName = "Unnamed Deck"
     except:
         deckName = "Unnamed Deck"
     try:
-        back = arg[1]
+        back = args[2]
     except:
         back = ""
     attachments = ctx.message.attachments
     deckLists = []
+    inMessageDeck = "\n".join(msg.split("\n")[1:])
+    if inMessageDeck != "":
+        deckLists.append(inMessageDeck)
     for x in range(len(attachments)):
         deckLists.append(requests.get(attachments[x].url).text)
-
     if len(deckLists) == 0:
         await ctx.send("There is no deck to create. Try attaching a .txt file with the deckList on it with the command")
-    elif len(deckLists) == 1:
-        await ctx.send("Crating deck, this may take a while. Please wait...")
-        try:
-            cardDictList = ScryfallImplementation.readDeckList(deckLists[0])
-            deck = ScryfallImplementation.makeDeck(deckName, cardDictList, back)
-            await ctx.send(file=discord.File(deck[0], deckName + ".json"))
-            if deck[1] != "":
-                await ctx.send(deck[1] + "Your deck has been created without the problematic lines.")
-        except Exception as err:
-            await ctx.send("There has been an unknown error...")
-            print(traceback.format_exc())
     else:
-        await ctx.send("WIP")
+        for x in range(len(deckLists)):
+            sendA = "Creating deck"
+            numeral = ""
+            if len(deckLists) > 1:
+                sendA += " number " + str(x)
+                numeral = "_" + str(x)
+            sendB = ", this may take a while. \nPlease wait..."
+            await ctx.send(sendA + sendB)
+            try:
+                cardDictList = ScryfallImplementation.readDeckList(deckLists[x])
+                deck = ScryfallImplementation.makeDeck(deckName + numeral, cardDictList, back)
+                await ctx.send(file=discord.File(deck[0], deckName + numeral + ".json"))
+                if deck[1] != "":
+                    await ctx.send(deck[1] + "Your deck has been created without the problematic lines.\n")
+            except Exception as err:
+                await ctx.send("There has been an unknown error to create this deck...\n")
+                print(traceback.format_exc())
 
 
 client.run(TOKEN)
