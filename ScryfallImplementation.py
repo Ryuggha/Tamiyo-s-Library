@@ -255,7 +255,7 @@ def searchForCardInScryfall(cardName):
         return requests.get("https://api.scryfall.com/cards/search?q=!\"" + cardName + "\"").json()['data'][0]
     except:
         # print(traceback.format_exc())
-        print("Error with card: " + cardName)
+        print("Error with Scryfall request with card: " + cardName)
 
 
 def whiteListFromSets(sets=[]):
