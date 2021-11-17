@@ -9,6 +9,14 @@ import io
 
 officialBack = "https://i.imgur.com/hsYf4R9.jpg"
 customBack = ""
+customSets = {}
+customSetsCardNames = {}
+
+
+def loadCustomSets():
+    info = loadCustomSet("WEF")
+    customSets["WEF"] = info[0]
+    customSetsCardNames["WEF"] = info[1]
 
 
 def getScryfallApiCallData(call):
@@ -27,14 +35,11 @@ def billy(cmc):
         "https://api.scryfall.com/cards/search?q=t:sorcery+-(f:historic+-f:legacy+-f:modern+-f:commander)+-mana:{X}+cmc:" + str(
             cmc))
     url = ""
-    pathToJson = 'CustomSets/WEF/'  # only WEF
-    cardJsons = [posJson for posJson in os.listdir(pathToJson) if posJson.endswith('.json')]
     wefSorceries = []
-    for wefCard in cardJsons:
-        aux = json.load(open(pathToJson + wefCard, encoding="utf8"))
-        if aux['type'] == "Sorcery":
-            if aux['cmc'] == str(cmc):
-                wefSorceries.append(aux)
+    for wefCard in customSets["WEF"]:
+        if wefCard['type'] == "Sorcery":
+            if wefCard['cmc'] == str(cmc):
+                wefSorceries.append(wefCard)
 
     while url == "":
         rnd = random.randint(0, len(cards) + len(wefSorceries) - 1)
@@ -46,6 +51,17 @@ def billy(cmc):
             if card['layout'] == 'normal':
                 url = card['image_uris']['png']
     return url
+
+
+def loadCustomSet(set):
+    path = 'CustomSets/' + set + '/'
+    files = [posJson for posJson in os.listdir(path) if posJson.endswith('.json')]
+    cards = [[], []]
+    for file in files:
+        cardJsonFile = json.load(open(path + file, encoding="utf8"))
+        cards[0].append(cardJsonFile)
+        cards[1].append(cardJsonFile["name"].upper())
+    return cards
 
 
 def giveJson():
@@ -97,7 +113,7 @@ def createTTSCardObject(cardAtt, cardNum, cardId="12345"):
     return [ttsObject, card]
 
 
-def makeDeck(deckName="exampleName", cardDictList=[], customBack=""):
+def makeDeck(deckName="exampleName", cardDictList=[], customBack="", activeCustomSets=False):
     errors = ""
     cardImagesLists = {}
     sectionNames = {"double": "Double Faced Cards", "tokens": "Tokens"}
@@ -112,37 +128,80 @@ def makeDeck(deckName="exampleName", cardDictList=[], customBack=""):
             deckNum += 1
         else:
             try:
-                cardJson = searchForSpecificCardInScryfall(cardDict)
-                # print("tokens I guess")
+                customSetFlag = ""
+                if activeCustomSets:
+                    if "set" in cardDict:
+                        for cusSet in customSets:
+                            if cardDict["set"].upper() == cusSet:
+                                customSetFlag = cusSet
+                    else:
+                        for cusSet in customSets:
+                            if cardDict["name"].upper() in customSetsCardNames[cusSet]:
+                                if cardDict["name"].upper() not in ["PLAINS", "ISLAND", "SWAMP", "FOREST", "MOUNTAIN"]:
+                                    customSetFlag = cusSet
+                if customSetFlag != "":
+                    cardList = getCustomCardProperties(cardDict, customSetFlag)
+                else:
+                    cardList = getCardProperties(cardDict)
                 for x in range(int(cardDict["num"])):
-                    if str(deckNum) not in cardImagesLists:
-                        cardImagesLists[str(deckNum)] = {"name": [], "desc": [], "image": [], "back": []}
-                    cardImagesLists[str(deckNum)]["name"].append(cardJson["name"])
-                    cardImagesLists[str(deckNum)]["desc"].append(cardJson["prices"]["eur"])
-                    try:
-                        cardImagesLists[str(deckNum)]["image"].append(cardJson['image_uris']['png'])
-                        cardImagesLists[str(deckNum)]["back"].append(back)
-                    except:
-                        cardImagesLists[str(deckNum)]["image"].append(cardJson["card_faces"][0]['image_uris']['png'])
-                        cardImagesLists[str(deckNum)]["back"].append(back)
-                        if "double" not in cardImagesLists:
-                            cardImagesLists["double"] = {"name": [], "desc": [], "image": [], "back": []}
-                        cardImagesLists["double"]["name"].append(cardJson['name'])
-                        cardImagesLists["double"]["desc"].append(cardJson['prices']['eur'])
-                        cardImagesLists["double"]["image"].append(cardJson["card_faces"][0]['image_uris']['png'])
-                        cardImagesLists["double"]["back"].append(cardJson["card_faces"][1]['image_uris']['png'])
+                    for card in cardList:
+                        i = str(deckNum)
+                        if card["flag"] == 1:
+                            i = "double"
+                        elif card["flag"] == 2:
+                            i = "tokens"
+                        if i not in cardImagesLists:
+                            cardImagesLists[i] = {"name": [], "desc": [], "image": [], "back": []}
+                        cardImagesLists[i]["name"].append(card["name"])
+                        cardImagesLists[i]["desc"].append(card["desc"])
+                        cardImagesLists[i]["image"].append(card["image"])
+                        if card["back"] == "":
+                            cardImagesLists[i]["back"].append(back)
+                        else:
+                            cardImagesLists[i]["back"].append(card["back"])
             except Exception as e:
                 errors += "Somethign went wrong with: " + str(cardDict) + "\n"
-                print(traceback.format_exc())
-
+                # print(traceback.format_exc())
+    cardImagesListsFinal = {}
+    if "tokens" in cardImagesLists:
+        cardImagesListsFinal["tokens"] = cardImagesLists.pop("tokens")
+    if "double" in cardImagesLists:
+        cardImagesListsFinal["double"] = cardImagesLists.pop("double")
+    cardImagesListsFinal.update(cardImagesLists)
     containedObjects = []
-    for x in cardImagesLists:
+    for x in cardImagesListsFinal:
         sectionName = "deck"
         if str(x) in sectionNames:
             sectionName = sectionNames[x]
-        containedObjects.append(createTTSDeck(sectionName, cardImagesLists[x]))
+        containedObjects.append(createTTSDeck(sectionName, cardImagesListsFinal[x]))
     bag = createTTSBag(deckName, containedObjects)
     return [io.StringIO(json.dumps(bag, indent=4, sort_keys=True)), errors]
+
+
+def getCardProperties(cardDict):
+    cardJson = searchForSpecificCardInScryfall(cardDict)
+    cards = [{"name": cardJson["name"], "desc": "", "image": "", "back": "", "flag": 0}]
+    try:
+        cards[0]["desc"] = cardJson["prices"]["eur"]
+    except:
+        cards[0]["desc"] = "0€"
+    try:
+        cards[0]["image"] = cardJson['image_uris']['png']
+    except:
+        cards[0]["image"] = cardJson["card_faces"][0]['image_uris']['png']
+        cards.append({"name": cardJson['name'], "desc": cards[0]["desc"], "image":
+            cardJson["card_faces"][0]['image_uris']['png'], "back": cardJson["card_faces"][1]['image_uris']['png'],
+                      "flag": 1})
+    # print("tokens I guess")
+    return cards
+
+
+def getCustomCardProperties(cardDict, set):
+    index = customSetsCardNames[set].index(cardDict["name"].upper())
+    cardJson = customSets[set][index]
+    cards = [{"name": cardJson["name"], "desc": "0€", "image": cardJson["png"], "back": cardJson["back"], "flag": 0}]
+    # print("tokens I guess")
+    return cards
 
 
 def checkLegality(cardList=[], legalIn="", whiteList=[], banList=[]):

@@ -35,6 +35,7 @@ async def on_ready():
     print(client.user.id)
     print('------')
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="|help"))
+    ScryfallImplementation.loadCustomSets()
 
 
 @client.command()
@@ -139,7 +140,10 @@ async def build(ctx):
             await ctx.send(sendA + sendB)
             try:
                 cardDictList = ScryfallImplementation.readDeckList(deckLists[x])
-                deck = ScryfallImplementation.makeDeck(deckName + numeral, cardDictList, back)
+                activeCustomSets = False
+                if ctx.author.id == ownerId or ctx.author.id == wefDesigner:
+                    activeCustomSets = True
+                deck = ScryfallImplementation.makeDeck(deckName + numeral, cardDictList, back, activeCustomSets)
                 await ctx.send(file=discord.File(deck[0], deckName + numeral + ".json"))
                 if deck[1] != "":
                     await ctx.send(deck[1] + "Your deck has been created without the problematic lines.\n")
