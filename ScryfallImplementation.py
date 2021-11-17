@@ -199,7 +199,9 @@ def getCardProperties(cardDict):
 def getCustomCardProperties(cardDict, set):
     index = customSetsCardNames[set].index(cardDict["name"].upper())
     cardJson = customSets[set][index]
-    cards = [{"name": cardJson["name"], "desc": "0€", "image": cardJson["png"], "back": cardJson["back"], "flag": 0}]
+    cards = [{"name": cardJson["name"], "desc": "0€", "image": cardJson["png"], "back": "", "flag": 0}]
+    if cardJson["back"] != "":
+        cards.append({"name": cardJson["name"], "desc": "0€", "image": cardJson["png"], "back": cardJson["back"], "flag": 1})
     # print("tokens I guess")
     return cards
 
