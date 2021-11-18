@@ -50,11 +50,11 @@ async def help(ctx):
         \n
         \n> build -> Returns a .json in a format that Tabletop Simulator can read, with all the cards in the decklist provided.
         \nThe format for this command is:
-        ```|build <nameOfTheDeck> <url of the sleeve> (Neither the Name or the Sleeves are compulsory arguments)
+        ```|build <nameOfTheDeckWithoutSpaces> <url of the sleeve> (Neither the Name or the Sleeves are compulsory arguments)
         \n<deckList Here> (Note that the deckList must start in a line below the command)
         ```If the deckList doesn't fit in the 2000 character maximum, you can send the deckList in a .txt, where the message will be the command and the arguments.
         \nAs an example: 
-        ```|build <nameOfTheDeck> <url of the sleeve>
+        ```|build <name_of_the_deck_without_spaces> <url of the sleeve>
         \n <decklist.txt>```
         """
     # > billy X -> activate the -X of Billy, The Unstable Gambler\n
