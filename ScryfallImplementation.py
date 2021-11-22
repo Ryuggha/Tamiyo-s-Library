@@ -88,7 +88,7 @@ def createTTSDeck(deckName="deckTest", cardAtt={"name": [], "desc": [], "image":
         deck["Nickname"] = deckName
         deckId = 10
         for x in range(len(cardAtt.get("name"))):
-            cardId = int(str(deckId) + str(x))
+            cardId = int(str(x + 1) + str(deckId))
             cardAndObject = createTTSCardObject(cardAtt, x, deckId)
             deck["ContainedObjects"].append(cardAndObject[0])
             deck["CustomDeck"].update({cardId: cardAndObject[1]})
@@ -201,9 +201,9 @@ def getCardProperties(cardDict):
 def getCustomCardProperties(cardDict, set):
     index = customSetsCardNames[set].index(cardDict["name"].upper())
     cardJson = customSets[set][index]
-    cards = [{"name": cardJson["name"], "desc": "0€", "image": cardJson["png"], "back": "", "flag": 0}]
+    cards = [{"name": cardJson["name"], "desc": "", "image": cardJson["png"], "back": "", "flag": 0}]
     if cardJson["back"] != "":
-        cards.append({"name": cardJson["name"], "desc": "0€", "image": cardJson["png"], "back": cardJson["back"], "flag": 1})
+        cards.append({"name": cardJson["name"], "desc": "", "image": cardJson["png"], "back": cardJson["back"], "flag": 1})
     # print("tokens I guess")
     return cards
 
