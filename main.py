@@ -147,6 +147,7 @@ async def build(ctx):
                 await ctx.send(file=discord.File(deck[0], deckName + numeral + ".json"))
                 if deck[1] != "":
                     await ctx.send(deck[1] + "Your deck has been created without the problematic lines.\n")
+                await ctx.send("A deck with " + str(deck[2]) + " total cards have been created.")
             except Exception as err:
                 await ctx.send("There has been an unknown error to create this deck...\n")
                 print(traceback.format_exc())

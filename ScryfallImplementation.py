@@ -11,7 +11,7 @@ officialBack = "https://i.imgur.com/hsYf4R9.jpg"
 customBack = ""
 customSets = {}
 customSetsCardNames = {}
-
+ids = []
 
 def loadCustomSets():
     info = loadCustomSet("WEF")
@@ -81,12 +81,12 @@ def createTTSDeck(deckName="deckTest", cardAtt={"name": [], "desc": [], "image":
         return None
 
     elif len(cardAtt.get("name")) == 1:
-        return createTTSCardObject(cardAtt, 0, random.randint(0, 99999))[0]
+        return createTTSCardObject(cardAtt, 0, random.randint(0, 999))[0]
 
     else:
         deck = json.load(open('ttsDeck.json'))
         deck["Nickname"] = deckName
-        deckId = random.randint(0, 99)
+        deckId = 10
         for x in range(len(cardAtt.get("name"))):
             cardId = int(str(deckId) + str(x))
             cardAndObject = createTTSCardObject(cardAtt, x, deckId)
@@ -115,6 +115,7 @@ def createTTSCardObject(cardAtt, cardNum, cardId="12345"):
 
 def makeDeck(deckName="exampleName", cardDictList=[], customBack="", activeCustomSets=False):
     errors = ""
+    cardNumber = 0
     cardImagesLists = {}
     sectionNames = {"double": "Double Faced Cards", "tokens": "Tokens"}
     deckNum = 0
@@ -159,6 +160,7 @@ def makeDeck(deckName="exampleName", cardDictList=[], customBack="", activeCusto
                             cardImagesLists[i]["back"].append(back)
                         else:
                             cardImagesLists[i]["back"].append(card["back"])
+                    cardNumber += 1
             except Exception as e:
                 errors += "Somethign went wrong with: " + str(cardDict) + "\n"
                 # print(traceback.format_exc())
@@ -175,7 +177,7 @@ def makeDeck(deckName="exampleName", cardDictList=[], customBack="", activeCusto
             sectionName = sectionNames[x]
         containedObjects.append(createTTSDeck(sectionName, cardImagesListsFinal[x]))
     bag = createTTSBag(deckName, containedObjects)
-    return [io.StringIO(json.dumps(bag, indent=4, sort_keys=True)), errors]
+    return [io.StringIO(json.dumps(bag, indent=4, sort_keys=True)), errors, cardNumber]
 
 
 def getCardProperties(cardDict):
