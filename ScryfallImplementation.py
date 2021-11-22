@@ -76,7 +76,7 @@ def createTTSBag(bagName="bagTest", containedObjects=[]):
     return bag
 
 
-def createTTSDeck(deckName="deckTest", cardAtt={"name": [], "desc": [], "image": [], "back": []}):
+def createTTSDeck(deckName="deckTest", cardAtt={"name": [], "desc": [], "image": [], "back": []}, deckNum=0):
     if len(cardAtt.get("name")) == 0:
         return None
 
@@ -86,10 +86,10 @@ def createTTSDeck(deckName="deckTest", cardAtt={"name": [], "desc": [], "image":
     else:
         deck = json.load(open('ttsDeck.json'))
         deck["Nickname"] = deckName
-        deckId = 10
+        deckId = 1
         for x in range(len(cardAtt.get("name"))):
-            cardId = int(str(x + 1) + str(deckId))
-            cardAndObject = createTTSCardObject(cardAtt, x, deckId)
+            cardId = int(str(deckId) + str(x))
+            cardAndObject = createTTSCardObject(cardAtt, x, cardId)
             deck["ContainedObjects"].append(cardAndObject[0])
             deck["CustomDeck"].update({cardId: cardAndObject[1]})
             deck["DeckIDs"].append(cardId * 100)
@@ -171,11 +171,13 @@ def makeDeck(deckName="exampleName", cardDictList=[], customBack="", activeCusto
         cardImagesListsFinal["double"] = cardImagesLists.pop("double")
     cardImagesListsFinal.update(cardImagesLists)
     containedObjects = []
+    deckNum = 0
     for x in cardImagesListsFinal:
+        deckNum += 1
         sectionName = "deck"
         if str(x) in sectionNames:
             sectionName = sectionNames[x]
-        containedObjects.append(createTTSDeck(sectionName, cardImagesListsFinal[x]))
+        containedObjects.append(createTTSDeck(sectionName, cardImagesListsFinal[x], deckNum))
     bag = createTTSBag(deckName, containedObjects)
     return [io.StringIO(json.dumps(bag, indent=4, sort_keys=True)), errors, cardNumber]
 
@@ -201,9 +203,9 @@ def getCardProperties(cardDict):
 def getCustomCardProperties(cardDict, set):
     index = customSetsCardNames[set].index(cardDict["name"].upper())
     cardJson = customSets[set][index]
-    cards = [{"name": cardJson["name"], "desc": "", "image": cardJson["png"], "back": "", "flag": 0}]
+    cards = [{"name": cardJson["name"], "desc": "0", "image": cardJson["png"], "back": "", "flag": 0}]
     if cardJson["back"] != "":
-        cards.append({"name": cardJson["name"], "desc": "", "image": cardJson["png"], "back": cardJson["back"], "flag": 1})
+        cards.append({"name": cardJson["name"], "desc": "0", "image": cardJson["png"], "back": cardJson["back"], "flag": 1})
     # print("tokens I guess")
     return cards
 
