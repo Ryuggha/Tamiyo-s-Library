@@ -153,4 +153,11 @@ async def build(ctx):
                 print(traceback.format_exc())
 
 
+@client.command()
+async def packs(ctx, *args):
+    await ctx.send("Creating packs, this may take a while. \nPlease wait...")
+    bag = ScryfallImplementation.generateDraft(args[1].upper(), int(args[0]))
+    await ctx.send(file=discord.File(bag, "packs.json"))
+
+
 client.run(TOKEN)

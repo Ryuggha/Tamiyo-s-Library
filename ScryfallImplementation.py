@@ -76,41 +76,44 @@ def createTTSBag(bagName="bagTest", containedObjects=[]):
     return bag
 
 
-def createTTSDeck(deckName="deckTest", cardAtt={"name": [], "desc": [], "image": [], "back": []}, deckNum=0):
+def createTTSDeck(deckName="deckTest", cardAtt={"name": [], "desc": [], "image": [], "back": []}, back=""):
     if len(cardAtt.get("name")) == 0:
         return None
 
     elif len(cardAtt.get("name")) == 1:
-        return createTTSCardObject(cardAtt, 0, random.randint(0, 999))[0]
+        return createTTSCardObject(cardAtt, 0, random.randint(0, 999), back)[0]
 
     else:
         deck = json.load(open('ttsDeck.json'))
         deck["Nickname"] = deckName
         deckId = 1
+        cardIdsUsed = 0
         for x in range(len(cardAtt.get("name"))):
-            cardId = int(str(deckId) + str(x))
-            cardAndObject = createTTSCardObject(cardAtt, x, cardId)
+            cardId = int(str(deckId) + str(cardIdsUsed))
+            cardAndObject = createTTSCardObject(cardAtt, x, cardId, back)
             deck["ContainedObjects"].append(cardAndObject[0])
             deck["CustomDeck"].update({cardId: cardAndObject[1]})
+            cardIdsUsed += cardAndObject[2]
             deck["DeckIDs"].append(cardId * 100)
         return deck
 
 
-def createTTSCardObject(cardAtt, cardNum, cardId="12345"):
+def createTTSCardObject(cardAtt, cardNum, cardId="12345", back=""):
     card = json.load(open('ttsCard.json'))
     card["FaceURL"] = cardAtt.get("image")[cardNum]
-    card["BackURL"] = cardAtt.get("back")[cardNum]
+    card["BackURL"] = back
 
     ttsObject = json.load(open('ttsObject.json'))
     ttsObject["Nickname"] = cardAtt.get("name")[cardNum]
     ttsObject["CardID"] = cardId * 100
-    try:
-        ttsObject["Description"] = cardAtt.get("desc")[cardNum] + "€"
-    except:
-        ttsObject["Description"] = "0€"
+    ttsObject["Description"] = cardAtt.get("desc")[cardNum]
     ttsObject["CustomDeck"].update({cardId: card})
-
-    return [ttsObject, card]
+    idsUsed = 1
+    if cardAtt["back"][cardNum] != "":
+        auxCardAtt = {"image": [cardAtt["back"][cardNum]], "back": [""], "name": [cardAtt["name"][cardNum]], "desc": [cardAtt["desc"][cardNum]]}
+        ttsObject["States"] = {2: createTTSCardObject(auxCardAtt, 0, cardId + 1, back)[0]}
+        idsUsed = 2
+    return [ttsObject, card, idsUsed]
 
 
 def makeDeck(deckName="exampleName", cardDictList=[], customBack="", activeCustomSets=False):
@@ -141,9 +144,10 @@ def makeDeck(deckName="exampleName", cardDictList=[], customBack="", activeCusto
                                 if cardDict["name"].upper() not in ["PLAINS", "ISLAND", "SWAMP", "FOREST", "MOUNTAIN"]:
                                     customSetFlag = cusSet
                 if customSetFlag != "":
-                    cardList = getCustomCardProperties(cardDict, customSetFlag)
+                    cardList = getCustomCardProperties(cardDict["name"], customSetFlag)
                 else:
-                    cardList = getCardProperties(cardDict)
+                    cardJson = searchForSpecificCardInScryfall(cardDict)
+                    cardList = getCardProperties(cardJson)
                 for x in range(int(cardDict["num"])):
                     for card in cardList:
                         i = str(deckNum)
@@ -156,10 +160,10 @@ def makeDeck(deckName="exampleName", cardDictList=[], customBack="", activeCusto
                         cardImagesLists[i]["name"].append(card["name"])
                         cardImagesLists[i]["desc"].append(card["desc"])
                         cardImagesLists[i]["image"].append(card["image"])
-                        if card["back"] == "":
-                            cardImagesLists[i]["back"].append(back)
-                        else:
+                        if card["back"] != "":
                             cardImagesLists[i]["back"].append(card["back"])
+                        else:
+                            cardImagesLists[i]["back"].append("")
                     cardNumber += 1
             except Exception as e:
                 errors += "Somethign went wrong with: " + str(cardDict) + "\n"
@@ -173,39 +177,33 @@ def makeDeck(deckName="exampleName", cardDictList=[], customBack="", activeCusto
     containedObjects = []
     deckNum = 0
     for x in cardImagesListsFinal:
-        deckNum += 1
         sectionName = "deck"
         if str(x) in sectionNames:
             sectionName = sectionNames[x]
-        containedObjects.append(createTTSDeck(sectionName, cardImagesListsFinal[x], deckNum))
+        containedObjects.append(createTTSDeck(sectionName, cardImagesListsFinal[x], back))
     bag = createTTSBag(deckName, containedObjects)
     return [io.StringIO(json.dumps(bag, indent=4, sort_keys=True)), errors, cardNumber]
 
 
-def getCardProperties(cardDict):
-    cardJson = searchForSpecificCardInScryfall(cardDict)
+def getCardProperties(cardJson):
     cards = [{"name": cardJson["name"], "desc": "", "image": "", "back": "", "flag": 0}]
     try:
-        cards[0]["desc"] = cardJson["prices"]["eur"]
+        cards[0]["desc"] = str(cardJson["prices"]["eur"]) + "€"
     except:
         cards[0]["desc"] = "0€"
     try:
         cards[0]["image"] = cardJson['image_uris']['png']
     except:
         cards[0]["image"] = cardJson["card_faces"][0]['image_uris']['png']
-        cards.append({"name": cardJson['name'], "desc": cards[0]["desc"], "image":
-            cardJson["card_faces"][0]['image_uris']['png'], "back": cardJson["card_faces"][1]['image_uris']['png'],
-                      "flag": 1})
+        cards[0]["back"] = cardJson["card_faces"][1]['image_uris']['png']
     # print("tokens I guess")
     return cards
 
 
-def getCustomCardProperties(cardDict, set):
-    index = customSetsCardNames[set].index(cardDict["name"].upper())
+def getCustomCardProperties(name, set):
+    index = customSetsCardNames[set].index(name.upper())
     cardJson = customSets[set][index]
-    cards = [{"name": cardJson["name"], "desc": "0", "image": cardJson["png"], "back": "", "flag": 0}]
-    if cardJson["back"] != "":
-        cards.append({"name": cardJson["name"], "desc": "0", "image": cardJson["png"], "back": cardJson["back"], "flag": 1})
+    cards = [{"name": cardJson["name"], "desc": "0€", "image": cardJson["png"], "back": cardJson["back"], "flag": 0}]
     # print("tokens I guess")
     return cards
 
@@ -306,4 +304,117 @@ def getNamesFromJson(json):
         list.append(card['name'])
     return list
 
+
+def generateDraft(set, numberOfPacks, customBack=""):
+    back = customBack
+    if back == "":
+        global officialBack
+        back = officialBack
+    pools = {}
+    rates = {"rareSlot": {"rare": 7, "mythic": 1}, "uncommon": 3, "premiumSlot": {"common": 4, "premium": 1}, "common": 9, "basic": 1}
+    isCustom = False
+    if set in customSets:
+        isCustom = True
+        if set == "WEF":
+            pools = createWEFPools()
+            rates = {"rareSlot": {"rare": 7, "mythic": 1}, "uncommon": 3, "common": 10, "land": 1}
+    if not isCustom:
+        pools.update(createDefaultPools(set))
+    # set uniqueness
+    bag = createTTSBag("Packs", createDraftPacks(pools, rates, numberOfPacks, back, isCustom, set))
+    return io.StringIO(json.dumps(bag, indent=4, sort_keys=True))
+
+def createPool(query):
+    return getScryfallApiCallData("https://api.scryfall.com/cards/search?q=" + query)
+
+
+def createWEFPools():
+    pools = {"basic": [], "land": [], "common": [], "uncommon": [], "rare": [], "mythic": []}
+    global customSets
+    for card in customSets["WEF"]:
+        if card["rarity"] == "b":
+            pools["basic"].append(card["name"])
+        elif card["rarity"] == "c":
+            pools["common"].append(card["name"])
+            if card["type"] == "Land":
+                pools["land"].append(card["name"])
+        elif card["rarity"] == "u":
+            pools["uncommon"].append(card["name"])
+        elif card["rarity"] == "r":
+            pools["rare"].append(card["name"])
+        elif card["rarity"] == "m":
+            pools["mythic"].append(card["name"])
+    return pools
+
+
+def createDefaultPools(set):
+    pools = {}
+    try:
+        pools["basic"] = createPool("t:basic+unique:prints+set:" + set)
+    except:
+        pools["basic"] = createPool("t:basic+unique:prints")
+    try:
+        pools["common"] = createPool("-t:basic+r:c+is:booster+set:" + set)
+    except:
+        pools["common"] = createPool("r:c+set:" + set)
+    try:
+        pools["uncommon"] = createPool("r:u+is:booster+set:" + set)
+    except:
+        pools["uncommon"] = createPool("r:u+set:" + set)
+    try:
+        pools["rare"] = createPool("r:r+is:booster+set:" + set)
+    except:
+        pools["rare"] = createPool("r:r+set:" + set)
+    try:
+        pools["mythic"] = createPool("r:m+is:booster+set:" + set)
+    except:
+        try:
+            pools["mythic"] = createPool("r:m+set:" + set)
+        except:
+            pass
+    try:
+        pools["premium"] = createPool("-is:booster+-t:basic+set:" + set)
+    except:
+        pass
+    return pools
+
+
+def createDraftPacks(pools, rates, numberOfPacks, back, isCustom=False, set="WEF"):
+    containedObjects = []
+    for packX in range(numberOfPacks):
+        deckAtt = {"name": [], "desc": [], "image": [], "back": []}
+        for key in rates:
+            if isinstance(rates[key], dict):  # TODO
+                finalNumberOfCardsInPacks = 1
+                finalKey = ""
+                rndomTotal = 0
+                for secKey in rates[key]:
+                    rndomTotal += rates[key][secKey]
+                rndm = random.randint(0, rndomTotal - 1)
+                rndomTotal = 0
+                for secKey in rates[key]:
+                    rndomTotal += rates[key][secKey]
+                    if finalKey == "":
+                        if rndm < rndomTotal:
+                            finalKey = secKey
+            else:
+                finalKey = key
+                finalNumberOfCardsInPacks = rates[key]
+            for cardX in range(finalNumberOfCardsInPacks):
+                totalCards = len(pools[finalKey])
+                randomCard = random.randint(0, totalCards - 1)
+                card = pools[finalKey][randomCard]
+                if isCustom:
+                    cardProperties = getCustomCardProperties(card, set)[0]
+                else:
+                    cardProperties = getCardProperties(card)[0]
+                deckAtt["name"].append(cardProperties["name"])
+                deckAtt["desc"].append(cardProperties["desc"])
+                deckAtt["image"].append(cardProperties["image"])
+                if cardProperties["back"] != "":
+                    deckAtt["back"].append(cardProperties["back"])
+                else:
+                    deckAtt["back"].append("")
+        containedObjects.append(createTTSDeck("Pack_" + str(packX + 1), deckAtt, back))
+    return containedObjects
 
