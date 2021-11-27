@@ -70,22 +70,21 @@ async def help(ctx):
 
 @client.command()
 async def billy(ctx, *arg):
-    if ctx.author.id == ownerId or ctx.author.id == wefDesigner:
-        if len(arg) < 1:
-            await ctx.send("You must input the mana value of X after the command")
-        else:
-            cmc = arg[0]
-            try:
-                cmc = int(cmc)
-                if cmc <= 0:
-                    await ctx.send("X can't be 0. Read the card.")
-                elif cmc < 13:
-                    url = ScryfallImplementation.billy(cmc)
-                    await ctx.send(url)
-                else:
-                    await ctx.send("Billy tried it's best, but can't find any spell...\nYou cast nothing.")
-            except:
-                await ctx.send(str(cmc) + " is an invalid mana value. \nYou must input the mana value of X after the command.")
+    if len(arg) < 1:
+        await ctx.send("You must input the mana value of X after the command")
+    else:
+        cmc = arg[0]
+        try:
+            cmc = int(cmc)
+            if cmc <= 0:
+                await ctx.send("X can't be 0. Read the card.")
+            elif cmc < 13:
+                url = ScryfallImplementation.billy(cmc)
+                await ctx.send(url)
+            else:
+                await ctx.send("Billy tried it's best, but can't find any spell...\nYou cast nothing.")
+        except:
+            await ctx.send(str(cmc) + " is an invalid mana value. \nYou must input the mana value of X after the command.")
 
 
 @client.command()
