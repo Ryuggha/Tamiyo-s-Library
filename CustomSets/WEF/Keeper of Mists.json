@@ -8,7 +8,8 @@
     "back": "",
     "colors": "U",
     "cmc": "2",
-    "pow": "2",
+    "pow": "1",
     "tou": "1",
-    "text": "Flash\n{1}{u}, {T}: Target creature with mana value 1 or less can’t be blocked this turn. \nSummon ({X}, Discard this card: Add X mana of {u}, {R} or {g}.)"
+    "text": "Creature spells you cast cost {1} less to cast for each land you control with one or more +1/+1 counters on it.\nSummon ({X}, Discard this card: Add X mana of {u}, {R} or {g}.)",
+    "tokens": []
 }

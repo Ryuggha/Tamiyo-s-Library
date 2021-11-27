@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "0",
     "tou": "0",
-    "text": "As an additional cost to cast this spell, sacrifice a land.\n\nSearch your library for a land card, put that card onto the battlefield, then shuffle. If the sacrificed land had one or more +1/+1 counters on it, instead search your library for two land cards, put them onto the battlefield, then shuffle."
+    "text": "As an additional cost to cast this spell, sacrifice a land.\n\nSearch your library for a land card, put that card onto the battlefield, then shuffle. If the sacrificed land had one or more +1/+1 counters on it, instead search your library for two land cards, put them onto the battlefield, then shuffle.",
+    "tokens": []
 }

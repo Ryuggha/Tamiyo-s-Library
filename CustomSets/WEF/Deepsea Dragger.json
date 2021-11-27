@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "2",
     "tou": "2",
-    "text": "When Deepsea Dragger leaves the battlefield, you may destroy target creature with mana value 3 or less. \n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)"
+    "text": "When Deepsea Dragger leaves the battlefield, you may destroy target creature with mana value 3 or less. \n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
 }

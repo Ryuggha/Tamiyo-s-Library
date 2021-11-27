@@ -10,5 +10,6 @@
     "cmc": "4",
     "pow": "3",
     "tou": "3",
-    "text": "Whenever an enchantment enters the battlefield under your control, create a 2/2 green Centaur Shaman creature token.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})"
+    "text": "Whenever an enchantment enters the battlefield under your control, create a 2/2 green Centaur Shaman creature token.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})",
+    "tokens": []
 }

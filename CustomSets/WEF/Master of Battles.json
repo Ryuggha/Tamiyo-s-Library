@@ -10,5 +10,6 @@
     "cmc": "1",
     "pow": "1",
     "tou": "1",
-    "text": "{u}{r}: Until end of turn, whenever Master of Battles deals damage to an opponent, target player draws a card.\n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)"
+    "text": "{u}{r}: Until end of turn, whenever Master of Battles deals damage to an opponent, target player draws a card.\n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)",
+    "tokens": []
 }

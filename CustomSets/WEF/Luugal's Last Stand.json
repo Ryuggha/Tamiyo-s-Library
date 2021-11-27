@@ -10,5 +10,6 @@
     "cmc": "4",
     "pow": "0",
     "tou": "0",
-    "text": "This spell costs {2} less to cast if an opponent's life total is less than half its starting life total.\nPut a +1/+1 counter on each creature you control."
+    "text": "This spell costs {2} less to cast if an opponent's life total is less than half its starting life total.\nPut a +1/+1 counter on each creature you control.",
+    "tokens": []
 }

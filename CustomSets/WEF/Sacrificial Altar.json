@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "0",
     "tou": "0",
-    "text": "When Sacrificial Altar enters the battlefield, you lose 2 life.\nWhenever a creature you control dies, each opponent loses 1 life and you gain 1 life."
+    "text": "When Sacrificial Altar enters the battlefield, you lose 2 life.\nWhenever a creature you control dies, each opponent loses 1 life and you gain 1 life.",
+    "tokens": []
 }

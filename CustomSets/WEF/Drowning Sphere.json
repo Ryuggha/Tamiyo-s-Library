@@ -2,7 +2,7 @@
     "set": "wef",
     "name": "Drowning Sphere",
     "collector_number": -1,
-    "rarity": "u",
+    "rarity": "c",
     "type": "Instant",
     "png": "https://mtg.design/i/vrkd10.jpg",
     "back": "",
@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Target creature gets -6/-0 until end of turn. \nIf {b} was spent to cast this spell, that creature gets -6/-3 until end of turn instead. \nIf {g} was spent to cast this spell, unequip all Equipment attached to that creature and remove each Aura attached to that creature."
+    "text": "Target creature gets -6/-0 until end of turn. \nIf {b} was spent to cast this spell, that creature gets -6/-3 until end of turn instead. \nIf {g} was spent to cast this spell, unequip all Equipment attached to that creature and remove each Aura attached to that creature.",
+    "tokens": []
 }

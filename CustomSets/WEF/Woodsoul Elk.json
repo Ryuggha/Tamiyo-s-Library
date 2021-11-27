@@ -10,5 +10,6 @@
     "cmc": "4",
     "pow": "4",
     "tou": "4",
-    "text": "Whenever Woodsoul Elk is put into a graveyard from anywhere, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)"
+    "text": "Whenever Woodsoul Elk is put into a graveyard from anywhere, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)",
+    "tokens": []
 }

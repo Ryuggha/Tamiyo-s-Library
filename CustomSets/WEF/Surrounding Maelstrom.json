@@ -2,7 +2,7 @@
     "set": "wef",
     "name": "Surrounding Maelstrom",
     "collector_number": -1,
-    "rarity": "c",
+    "rarity": "u",
     "type": "Enchantment",
     "png": "https://mtg.design/i/dcdr14.jpg",
     "back": "",
@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Flash\n\nWhen Surrounding Maelstrom enters the battlefield, counter target spell. If the spell is countered this way, exile it under Surrounding Maelstrom.\n\nWhen Surrounding Maelstrom leaves the battlefield, return the exiled card to its owner’s hand.\n\nFlood {2}{u} (During your turn, you may pay {2}{u} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)"
+    "text": "Flash\n\nWhen Surrounding Maelstrom enters the battlefield, counter target spell. If the spell is countered this way, exile it under Surrounding Maelstrom.\n\nWhen Surrounding Maelstrom leaves the battlefield, return the exiled card to its owner’s hand.\n\nFlood {2}{u} (During your turn, you may pay {2}{u} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)",
+    "tokens": []
 }

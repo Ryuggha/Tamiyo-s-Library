@@ -10,5 +10,6 @@
     "cmc": "4",
     "pow": "5",
     "tou": "1",
-    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.) \nHaste\nAt the beginning of your end step, return Raging Firelord to its owner’s hand."
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.) \nHaste\nAt the beginning of your end step, return Raging Firelord to its owner’s hand.",
+    "tokens": []
 }

@@ -14,5 +14,6 @@
     "cmc": "6",
     "pow": "4",
     "tou": "4",
-    "text": "When Engulfer of Shores enters the battlefield, destroy X target artifacts and/or enchantments., where X is the number of flooded lands on the battlefield plus one.\nFlood {2}{g}{g} (During your turn, you may pay {2}{g}{g} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\nWhenever you flood Engulfer of Shores, destroy target artifact or enchantment."
+    "text": "When Engulfer of Shores enters the battlefield, destroy X target artifacts and/or enchantments., where X is the number of flooded lands on the battlefield plus one.\nFlood {2}{g}{g} (During your turn, you may pay {2}{g}{g} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\nWhenever you flood Engulfer of Shores, destroy target artifact or enchantment.",
+    "tokens": []
 }

@@ -10,5 +10,6 @@
     "cmc": "1",
     "pow": "2",
     "tou": "2",
-    "text": "Flying\nWhenever a non-Dragonling creature enters the battlefield under your control, return Khulchgar Dragonling to its owner’s hand."
+    "text": "Flying\nWhenever a non-Dragonling creature enters the battlefield under your control, return Khulchgar Dragonling to its owner’s hand.",
+    "tokens": []
 }

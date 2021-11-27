@@ -10,5 +10,6 @@
     "cmc": "5",
     "pow": "2",
     "tou": "6",
-    "text": "Deathtouch\nFlood {2}{b} (During your turn, you may pay {2}{b} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)"
+    "text": "Deathtouch\nFlood {2}{b} (During your turn, you may pay {2}{b} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)",
+    "tokens": []
 }

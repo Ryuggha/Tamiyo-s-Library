@@ -10,5 +10,6 @@
     "cmc": "4",
     "pow": "2",
     "tou": "4",
-    "text": "Whenever you flood or discard a card, you may untap Okhin, Daughter of The Abyss.\n{g}, {t}: Create a green Elemental Tide creature token. It has “This creature’s power and toughness are equal to the number of flooded lands on the battlefield plus the number of Tides you control.”"
+    "text": "Whenever you flood or discard a card, you may untap Okhin, Daughter of The Abyss.\n{2}{g}, {t}: Create a green Elemental Tide creature token. It has “This creature’s power and toughness are equal to the number of flooded lands on the battlefield plus the number of Tides you control.”",
+    "tokens": []
 }

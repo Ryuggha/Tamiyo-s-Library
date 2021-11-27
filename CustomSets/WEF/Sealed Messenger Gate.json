@@ -10,5 +10,6 @@
     "cmc": "5",
     "pow": "0",
     "tou": "0",
-    "text": "When Sealed Messenger Gate enters the battlefield, create a 0/0 colorless Avatar creature token, then put X +1/+1 counters on it, where X is your devotion to green. \nWhenever another green permanent enters the battlefield under your control, you may put a +1/+1 counter on target creature."
+    "text": "When Sealed Messenger Gate enters the battlefield, create a 0/0 colorless Avatar creature token, then put X +1/+1 counters on it, where X is your devotion to green. \nWhenever another green permanent enters the battlefield under your control, you may put a +1/+1 counter on target creature.",
+    "tokens": []
 }

@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "3",
     "tou": "2",
-    "text": "When Dune Predator enters the battlefield, return target creature you control to its owner hand."
+    "text": "When Dune Predator enters the battlefield, return target creature you control to its owner hand. \nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)",
+    "tokens": []
 }

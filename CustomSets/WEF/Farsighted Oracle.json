@@ -10,5 +10,6 @@
     "cmc": "5",
     "pow": "2",
     "tou": "4",
-    "text": "<i>False Faith</i> - When Farsighted Oracle enters the battlefield, if you control a white enchantment, put a mist counter on Farsighted Oracle. Gain 4 life.\n{1}{g}{w}, {t}: put a mist counter on Farsighted Oracle.\n{t}, Remove a mist counter from Farsighted Oracle: Prevent all combat damage that would be dealt this turn."
+    "text": "<i>False Faith</i> - When Farsighted Oracle enters the battlefield, if you control a white enchantment, put a mist counter on Farsighted Oracle. Gain 4 life.\n{1}{g}{w}, {t}: put a mist counter on Farsighted Oracle.\n{t}, Remove a mist counter from Farsighted Oracle: Prevent all combat damage that would be dealt this turn.",
+    "tokens": []
 }

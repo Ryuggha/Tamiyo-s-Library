@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "0",
     "tou": "0",
-    "text": "Choose one —\n\n• Return target creature card from your graveyard to your hand.\n\n• Return target creature card with mana value X or less from your graveyard to the battlefield, where X is the number of flooded lands on the battlefield."
+    "text": "Choose one —\n\n• Return target creature card from your graveyard to your hand.\n\n• Return target creature card with mana value X or less from your graveyard to the battlefield, where X is the number of flooded lands on the battlefield.",
+    "tokens": []
 }

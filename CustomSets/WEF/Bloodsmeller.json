@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "2",
     "tou": "2",
-    "text": "When Bloodsmeller enters the battlefield, target player loses 1 life and you gain 1 life. If {w} was spent to cast this spell, that player loses 2 life and you gain 2 life instead."
+    "text": "When Bloodsmeller enters the battlefield, target player loses 1 life and you gain 1 life. If {w} was spent to cast this spell, that player loses 2 life and you gain 2 life instead.",
+    "tokens": []
 }

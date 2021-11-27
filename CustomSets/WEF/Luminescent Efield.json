@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Lands creatures you control have vigilance.\nWhenever a land enters the battlefield under you control, earthshake 1. (Put a +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+    "text": "Lands creatures you control have vigilance.\nWhenever a land enters the battlefield under you control, earthshake 1. (Put a +1/+1 counter on target land you control. You may have it become a 0/0 Elemental creature until end of turn. It's still a land.)",
+    "tokens": []
 }

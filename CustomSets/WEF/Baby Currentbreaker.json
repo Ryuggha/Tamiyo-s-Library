@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "1",
     "tou": "1",
-    "text": "When Baby Currentbreaker enters the battlefield, if {g} was spent to cast it, mill four cards.\n\n{B}: Exile target creature or land card from a graveyard. If you do, put a +1/+1 counter on Baby Currentbreaker. Activate only during your turn and only once each turn."
+    "text": "When Baby Currentbreaker enters the battlefield, if {g} was spent to cast it, mill four cards.\n\n{B}: Exile target creature or land card from a graveyard. If you do, put a +1/+1 counter on Baby Currentbreaker. Activate only during your turn and only once each turn.",
+    "tokens": []
 }

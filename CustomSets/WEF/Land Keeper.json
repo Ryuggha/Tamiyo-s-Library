@@ -14,5 +14,6 @@
     "cmc": "3",
     "pow": "2",
     "tou": "3",
-    "text": "You may play an additional land on each of your turns.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)"
+    "text": "You may play an additional land on each of your turns.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)",
+    "tokens": []
 }

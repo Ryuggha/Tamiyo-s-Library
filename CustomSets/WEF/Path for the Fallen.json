@@ -10,5 +10,6 @@
     "cmc": "5",
     "pow": "3",
     "tou": "3",
-    "text": "<i>False Faith</i> - When Path for the Fallen enters the battlefield, if you control a white enchantment, you may destroy target creature.\nWhenever another creature dies, put a +1/+1 counter on Path for the Fallen."
+    "text": "<i>False Faith</i> - When Path for the Fallen enters the battlefield, if you control a white enchantment, you may destroy target creature.\nWhenever another creature dies, put a +1/+1 counter on Path for the Fallen.",
+    "tokens": []
 }

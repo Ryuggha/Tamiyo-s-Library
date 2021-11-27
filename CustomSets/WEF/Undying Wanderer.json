@@ -10,5 +10,6 @@
     "cmc": "4",
     "pow": "4",
     "tou": "2",
-    "text": "Whenever you flood a card, you may return Undying Wanderer from your graveyard to your hand.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)"
+    "text": "Whenever you flood a card, you may return Undying Wanderer from your graveyard to your hand.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
 }

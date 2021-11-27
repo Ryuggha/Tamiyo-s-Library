@@ -10,5 +10,6 @@
     "cmc": "5",
     "pow": "2",
     "tou": "5",
-    "text": "Vigilance, Ward {3}\n<i>False Faith</i> - When Azrael, God of Preservation enters the battlefield, if you control a white enchantment, until your next turn, creatures you control gain indestructible.\nEnchantments and other creatures you control have ward {5}."
+    "text": "Vigilance, Ward {3}\n<i>False Faith</i> - When Azrael, God of Preservation enters the battlefield, if you control a white enchantment, until your next turn, creatures you control gain indestructible.\nEnchantments and other creatures you control have ward {5}.",
+    "tokens": []
 }

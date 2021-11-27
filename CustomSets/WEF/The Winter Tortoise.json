@@ -10,5 +10,6 @@
     "cmc": "6",
     "pow": "*",
     "tou": "*",
-    "text": "Defender, ward {4}\nThe Winter Tortoise’s power and toughness are each equal to the number of cards in your hand.\n\nThe Winter Tortoise can attack as though it didn’t have defender as long as you have seven or more cards in hand.\n\nWhenever you cast or copy an instant or sorcery spell, draw a card."
+    "text": "Defender, ward {4}\nThe Winter Tortoise’s power and toughness are each equal to the number of cards in your hand.\n\nThe Winter Tortoise can attack as though it didn’t have defender as long as you have seven or more cards in hand.\n\nWhenever The Winter Tortoise enters the battlefield or you cast or copy an instant or sorcery spell, draw a card.",
+    "tokens": []
 }

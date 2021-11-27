@@ -14,5 +14,6 @@
     "cmc": "4",
     "pow": "0",
     "tou": "0",
-    "text": "Whenever you summon, you gain 2 life, then meditate (Put an orb counter on a Chi you control. If you don’t control one, first create a Chi enchantment token with \"{1}, Sacrifice this: Copy target instant or sorcery spell you control with mana value less than or equal to the number of orb counters on this. You may choose new targets for the copy.\") \n{u}{u}{u}{u}{u}: Reveal the top four cards of your library. You may cast an instant or sorcery spell among them without paying its mana cost. Put the rest back on top of your library in any order."
+    "text": "Whenever you summon, draw a card, then discard a card. You gain 2 life.\n{u}{u}{u}{u}{u}: Reveal the top four cards of your library. You may cast up to two instant and/or sorcery spells among them without paying its mana cost. Put the rest back on top of your library in any order.",
+    "tokens": []
 }

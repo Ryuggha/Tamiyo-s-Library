@@ -14,5 +14,6 @@
     "cmc": "4",
     "pow": "0",
     "tou": "0",
-    "text": "Create a token that’s a copy of target permanent, except it isn’t legendary if the permanent is legendary. Put on it a copy of each counter that had the copied card."
+    "text": "Create a token that’s a copy of target permanent, except it isn’t legendary if the permanent is legendary. Put on it a copy of each counter that had the copied permanent except loyalty counters.",
+    "tokens": []
 }

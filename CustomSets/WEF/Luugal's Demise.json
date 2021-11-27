@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Return all attacking creatures with toughness 4 or less to their owner’s hand."
+    "text": "Return all attacking creatures with toughness 4 or less to their owner’s hand.",
+    "tokens": []
 }

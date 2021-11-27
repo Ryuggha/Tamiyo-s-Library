@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "1",
     "tou": "3",
-    "text": "Triple strike (This creature deals first-strike, regular, and last-strike combat damage.)"
+    "text": "Triple strike (This creature deals first-strike, regular, and last-strike combat damage.)",
+    "tokens": []
 }

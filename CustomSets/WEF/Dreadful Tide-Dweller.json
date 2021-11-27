@@ -10,5 +10,6 @@
     "cmc": "1",
     "pow": "1",
     "tou": "2",
-    "text": "Dreadful Tide-Dweller has flash as long as there is a flooded land on the battlefield.\n\nWhen Dreadful Tide-Dweller enters the battlefield, up to one target creature gets -2/-0 until end of turn.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)"
+    "text": "Dreadful Tide-Dweller has flash as long as there is a flooded land on the battlefield.\n\nWhen Dreadful Tide-Dweller enters the battlefield, up to one target creature gets -2/-0 until end of turn.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
 }

@@ -10,5 +10,6 @@
     "cmc": "5",
     "pow": "3",
     "tou": "2",
-    "text": "Flood {3}{g}{g} (During your turn, you may pay {3}{g}{g} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\n\nWhenever you flood Territorial Sharpjaw or it dies, create X 1/1 green Fish creature tokens, where X is Territorial Sharpjaw’s power."
+    "text": "Flood {3}{g}{g} (During your turn, you may pay {3}{g}{g} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\n\nWhenever you flood Territorial Sharpjaw or it dies, create X 1/1 green Fish creature tokens, where X is Territorial Sharpjaw’s power.",
+    "tokens": []
 }

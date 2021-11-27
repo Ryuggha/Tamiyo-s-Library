@@ -14,5 +14,6 @@
     "cmc": "5",
     "pow": "3",
     "tou": "4",
-    "text": "Flying\n{3}: Earthshake 1. (Put a +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+    "text": "Flying\n{3}: Earthshake 1. (Put a +1/+1 counter on target land you control. You may have it become a 0/0 Elemental creature until end of turn. It's still a land.)",
+    "tokens": []
 }

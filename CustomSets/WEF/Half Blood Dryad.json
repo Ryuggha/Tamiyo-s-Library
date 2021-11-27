@@ -10,5 +10,6 @@
     "cmc": "1",
     "pow": "1",
     "tou": "1",
-    "text": "Whenever an enchantment enters the battlefield under your control look at the top card of your library. If it’s a land card, you may put it onto the battlefield tapped. If you don’t put the card onto the battlefield, you may put it on the bottom of your library.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})."
+    "text": "Whenever an enchantment enters the battlefield under your control look at the top card of your library. If it’s a land card, you may put it onto the battlefield tapped. If you don’t put the card onto the battlefield, you may put it on the bottom of your library.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w}).",
+    "tokens": []
 }

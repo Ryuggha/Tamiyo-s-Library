@@ -10,5 +10,6 @@
     "cmc": "6",
     "pow": "6",
     "tou": "6",
-    "text": "Flash\nFlood {2}{u}{u} (During your turn, you may pay {2}{u}{u} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\nWhenever you flood Troublemaker of Tides or it enters the battlefield, you may return target creature an opponent controls to its owner’s hand."
+    "text": "Flash\nFlood {2}{u}{u} (During your turn, you may pay {2}{u}{u} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\nWhenever you flood Troublemaker of Tides or it enters the battlefield, you may return target creature an opponent controls to its owner’s hand.",
+    "tokens": []
 }

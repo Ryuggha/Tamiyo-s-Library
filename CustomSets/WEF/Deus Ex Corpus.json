@@ -14,5 +14,6 @@
     "cmc": "6",
     "pow": "4",
     "tou": "4",
-    "text": "<i>False Faith</i> - When Deus Ex Corpus enters the battlefield, if you control a white enchantment, put a +1/+1 counter on each creature you control.\nOther creatures you control get +1/+1 for each enchantment you control."
+    "text": "<i>False Faith</i> - When Deus Ex Corpus enters the battlefield, if you control a white enchantment, put a +1/+1 counter on each creature you control.\nOther creatures you control get +1/+1 for each enchantment you control.",
+    "tokens": []
 }

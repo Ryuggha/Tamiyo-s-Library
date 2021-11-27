@@ -13,5 +13,6 @@
     "cmc": "5",
     "pow": "6",
     "tou": "6",
-    "text": "Indestructible\nAs long as your devotion to white and green is less than seven, C´iel, Creator of Shadows isn't a creature.\nWhenever another enchantment enters the battlefield under your control, gain life equal to its mana value.\nWhenever an enchantment leaves your graveyard draw a card."
+    "text": "Indestructible\nAs long as your devotion to white and green is less than seven, C'iel, Creator of Shadows isn't a creature.\nWhenever another enchantment enters the battlefield under your control, gain life equal to its mana value.\nWhenever an enchantment leaves your graveyard draw a card.",
+    "tokens": []
 }

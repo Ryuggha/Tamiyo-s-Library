@@ -10,5 +10,6 @@
     "cmc": "5",
     "pow": "3",
     "tou": "2",
-    "text": "Attacking creatures you control get +1/+0.\n\nAt the beginning of combat on your turn, create a 1/1 black and red Dog creature token. That token gains haste until end of turn and attacks this combat if able."
+    "text": "Attacking creatures you control get +1/+0.\n\nAt the beginning of combat on your turn, create a 1/1 black and red Dog creature token. That token gains haste until end of turn and attacks this combat if able.",
+    "tokens": []
 }

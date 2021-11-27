@@ -10,5 +10,6 @@
     "cmc": "0",
     "pow": "0",
     "tou": "0",
-    "text": "Thornwood Falls enters the battlefield tapped.\nWhen Thornwood Falls enters the battlefield, you gain 1 life.\n{t}: Add {g} or {u}."
+    "text": "Thornwood Falls enters the battlefield tapped.\nWhen Thornwood Falls enters the battlefield, you gain 1 life.\n{t}: Add {g} or {u}.",
+    "tokens": []
 }

@@ -157,7 +157,15 @@ async def build(ctx):
 async def packs(ctx, *args):
     if ctx.author.id == ownerId or ctx.author.id == wefDesigner:
         await ctx.send("Creating packs, this may take a while. \nPlease wait...")
-        bag = ScryfallImplementation.generateDraft(args[1].upper(), int(args[0]))
+        bag = ScryfallImplementation.generateDraft(set=args[1].upper(), numberOfPacks=int(args[0]))
+        await ctx.send(file=discord.File(bag, "packs.json"))
+
+
+@client.command() #wefLeague <numberOfPacks> <lastIdStart INT>
+async def wefLeague(ctx, *args):
+    wefSleeve = "https://imgur.com/FKHf50G.png"
+    if ctx.author.id == ownerId:
+        bag = ScryfallImplementation.generateDraft(set="WEF", numberOfPacks=int(args[0]), customBack=wefSleeve, lastId=[int(args[1]), "WEF"])
         await ctx.send(file=discord.File(bag, "packs.json"))
 
 

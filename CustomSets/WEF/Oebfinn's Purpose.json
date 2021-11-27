@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Draw X cards.\nEarthshake X. (Put X +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end o turn. It's still a land.)"
+    "text": "Draw X cards.\nEarthshake X. (Put X +1/+1 counter on target land you control. You may have it become a 0/0 Elemental creature until end o turn. It's still a land.)",
+    "tokens": []
 }

@@ -14,5 +14,6 @@
     "cmc": "6",
     "pow": "2",
     "tou": "6",
-    "text": "When Renewer of Shores enters the battlefield, draw cards equal to the number of flooded lands on the battlefield plus two, then discard two cards.\nFlood {2}{u}{u} (During your turn, you may pay {2}{u}{u} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\nWhenever you flood Renewer of Shores, draw two cards, then discard two cards."
+    "text": "When Renewer of Shores enters the battlefield, draw cards equal to the number of flooded lands on the battlefield plus two, then discard two cards.\nFlood {2}{u}{u} (During your turn, you may pay {2}{u}{u} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\nWhenever you flood Renewer of Shores, draw two cards, then discard two cards.",
+    "tokens": []
 }

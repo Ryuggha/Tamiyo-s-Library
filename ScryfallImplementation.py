@@ -305,7 +305,7 @@ def getNamesFromJson(json):
     return list
 
 
-def generateDraft(set, numberOfPacks, customBack=""):
+def generateDraft(set, numberOfPacks, customBack="", lastId=[""]):
     back = customBack
     if back == "":
         global officialBack
@@ -321,7 +321,7 @@ def generateDraft(set, numberOfPacks, customBack=""):
     if not isCustom:
         pools.update(createDefaultPools(set))
     # set uniqueness
-    bag = createTTSBag("Packs", createDraftPacks(pools, rates, numberOfPacks, back, isCustom, set))
+    bag = createTTSBag("Packs", createDraftPacks(pools, rates, numberOfPacks, back, isCustom, set, lastId))
     return io.StringIO(json.dumps(bag, indent=4, sort_keys=True))
 
 def createPool(query):
@@ -379,10 +379,14 @@ def createDefaultPools(set):
     return pools
 
 
-def createDraftPacks(pools, rates, numberOfPacks, back, isCustom=False, set="WEF"):
+def createDraftPacks(pools, rates, numberOfPacks, back, isCustom=False, set="", lastId=[""]):
     containedObjects = []
+    securityId = lastId[0]
     for packX in range(numberOfPacks):
+        securityCardNum = 0
         deckAtt = {"name": [], "desc": [], "image": [], "back": []}
+        if securityId != "":
+            securityId += 1
         for key in rates:
             if isinstance(rates[key], dict):  # TODO
                 finalNumberOfCardsInPacks = 1
@@ -401,6 +405,7 @@ def createDraftPacks(pools, rates, numberOfPacks, back, isCustom=False, set="WEF
                 finalKey = key
                 finalNumberOfCardsInPacks = rates[key]
             for cardX in range(finalNumberOfCardsInPacks):
+                securityCardNum += 1
                 totalCards = len(pools[finalKey])
                 randomCard = random.randint(0, totalCards - 1)
                 card = pools[finalKey][randomCard]
@@ -409,7 +414,10 @@ def createDraftPacks(pools, rates, numberOfPacks, back, isCustom=False, set="WEF
                 else:
                     cardProperties = getCardProperties(card)[0]
                 deckAtt["name"].append(cardProperties["name"])
-                deckAtt["desc"].append(cardProperties["desc"])
+                if securityId != "":
+                    deckAtt["desc"].append(lastId[1] + "-" + str(securityId).zfill(3) + "-" + hex(securityCardNum).lstrip("0x"))
+                else:
+                    deckAtt["desc"].append(cardProperties["desc"])
                 deckAtt["image"].append(cardProperties["image"])
                 if cardProperties["back"] != "":
                     deckAtt["back"].append(cardProperties["back"])
@@ -417,4 +425,3 @@ def createDraftPacks(pools, rates, numberOfPacks, back, isCustom=False, set="WEF
                     deckAtt["back"].append("")
         containedObjects.append(createTTSDeck("Pack_" + str(packX + 1), deckAtt, back))
     return containedObjects
-

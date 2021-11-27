@@ -10,5 +10,6 @@
     "cmc": "4",
     "pow": "2",
     "tou": "1",
-    "text": "Whenever Kindled Kirin blocks, it gains indestructible until end of turn.\n{2}{R}: Target creature attacks this turn if able."
+    "text": "Whenever Kindled Kirin blocks, it gains indestructible until end of turn.\n{2}{R}: Target creature attacks this turn if able.",
+    "tokens": []
 }

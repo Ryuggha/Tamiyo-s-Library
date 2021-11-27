@@ -14,5 +14,6 @@
     "cmc": "5",
     "pow": "0",
     "tou": "0",
-    "text": "Put each flooding card you own onto the battlefield under your control, unflooding those lands (A card is flooding if it has been exiled by activating its flood ability.)"
+    "text": "Put each flooding card you own onto the battlefield under your control, unflooding those lands (A card is flooding if it has been exiled by activating its flood ability.)",
+    "tokens": []
 }

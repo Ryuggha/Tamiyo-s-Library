@@ -10,5 +10,6 @@
     "cmc": "4",
     "pow": "2",
     "tou": "4",
-    "text": "When Northern Visionary enters the battlefield, scry 2. Then, draw a card if you control a Chi with three or more orb counters. \n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)"
+    "text": "When Northern Visionary enters the battlefield, scry 2. Then, draw a card if you control a Chi with three or more orb counters. \n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)",
+    "tokens": []
 }

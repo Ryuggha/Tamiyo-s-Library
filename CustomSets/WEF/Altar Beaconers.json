@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "3",
-    "text": "Defender\nWhen Altar Beaconers the battlefield, create a Candle token. (It’s an artifact with “{1}, {T}, Sacrifice this artifact: Draw a card, then discard a card.”) \n{1}{u}, {T}: Create a Candle token.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)"
+    "text": "Defender\nWhen Altar Beaconers the battlefield, create a Candle token. (It’s a black artifact with “{T}, Pay 1 life, Sacrifice this artifact: Draw a card, then discard a card.”) \n{1}{u}, {T}: Create a Candle token.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
 }

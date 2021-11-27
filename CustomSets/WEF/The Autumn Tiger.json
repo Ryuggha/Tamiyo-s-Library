@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "*",
     "tou": "*",
-    "text": "Lifelink\nThe Autumn Tiger’s power and toughness are each equal to the number of enchantments you control.\nWhen The Autumn Tiger enters the battlefield, put a hexproof counter on any enchantment you control."
+    "text": "Lifelink\nThe Autumn Tiger’s power and toughness are each equal to the number of enchantments you control.\nWhen The Autumn Tiger enters the battlefield, put a hexproof counter on target enchantment or land you control.",
+    "tokens": []
 }

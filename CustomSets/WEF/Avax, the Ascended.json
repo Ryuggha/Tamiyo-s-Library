@@ -14,5 +14,6 @@
     "cmc": "4",
     "pow": "2",
     "tou": "3",
-    "text": "False Faith abilities you own trigger an additional time.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)"
+    "text": "False Faith abilities you own trigger an additional time.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)",
+    "tokens": []
 }

@@ -3,15 +3,16 @@
     "name": "Joel Joan, Soul Devourer",
     "collector_number": -1,
     "rarity": "r",
-    "type": "Legendary Planeswalker — Joel Joan",
+    "type": "Legendary Planeswalker — Joan",
     "png": "https://mtg.design/i/dkvd10.jpg",
     "back": "",
     "colors": [
         "B",
         "G"
     ],
-    "cmc": "4",
+    "cmc": "5",
     "pow": "0",
     "tou": "0",
-    "text": ": At the beginning of each end step, if a creature died or a creature card entered a graveyard from a library this turn, put a loyalty counter on Joel Joan."
+    "text": ": At the beginning of each end step, if a creature died or a creature card entered a graveyard from a library this turn, put a loyalty counter on Joel Joan.",
+    "tokens": []
 }

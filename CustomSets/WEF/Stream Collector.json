@@ -10,5 +10,6 @@
     "cmc": "1",
     "pow": "1",
     "tou": "1",
-    "text": "Flying\nWhen Stream Collector dies, earthshake 1. (Put a +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+    "text": "Flying\nWhen Stream Collector dies, earthshake 1. (Put a +1/+1 counter on target land you control. You may have it become a 0/0 Elemental creature until end of turn. It's still a land.)",
+    "tokens": []
 }

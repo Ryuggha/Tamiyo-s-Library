@@ -10,5 +10,6 @@
     "cmc": "5",
     "pow": "5",
     "tou": "3",
-    "text": "Creatures your opponents control get -1/-0.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)"
+    "text": "Creatures your opponents control get -1/-0.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)",
+    "tokens": []
 }

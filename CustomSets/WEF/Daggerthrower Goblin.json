@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "2",
     "tou": "1",
-    "text": "{t}: Daggerthrower Goblin deals 1 damage to target opponent or planeswalker and 1 damage to you.\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)"
+    "text": "{t}: Daggerthrower Goblin deals 1 damage to target opponent or planeswalker and 1 damage to you.\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)",
+    "tokens": []
 }

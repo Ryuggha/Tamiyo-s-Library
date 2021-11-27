@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "1",
     "tou": "4",
-    "text": "Defender\n{t}: All combat damage that would be dealt to target creature this turn is dealt to Shieldmaster Protector instead.\n\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)"
+    "text": "Defender\n{t}: All combat damage that would be dealt to target creature this turn is dealt to Shieldmaster Protector instead.\n\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)",
+    "tokens": []
 }

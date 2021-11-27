@@ -10,5 +10,6 @@
     "cmc": "5",
     "pow": "4",
     "tou": "3",
-    "text": "First Strike\nNonenchantment spells cost {1} more to cast.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)"
+    "text": "First Strike\nNonenchantment spells cost {1} more to cast.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)",
+    "tokens": []
 }

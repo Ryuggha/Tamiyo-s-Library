@@ -10,5 +10,6 @@
     "cmc": "0",
     "pow": "0",
     "tou": "0",
-    "text": "Wind-Scarred Crag enters the battlefield tapped.\n\nWhen Wind-Scarred Crag enters the battlefield, you gain 1 life.\n\n{T}: Add {R} or {W}."
+    "text": "Wind-Scarred Crag enters the battlefield tapped.\n\nWhen Wind-Scarred Crag enters the battlefield, you gain 1 life.\n\n{T}: Add {R} or {W}.",
+    "tokens": []
 }

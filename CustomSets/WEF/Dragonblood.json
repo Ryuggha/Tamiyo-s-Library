@@ -14,5 +14,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Enchant creature\n\nWhen Dragonblood enters the battlefield, it deals 3 damage to target opponent or planeswalker and you gain 3 life.\n\nEnchanted creature has dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)"
+    "text": "Enchant creature\n\nWhen Dragonblood enters the battlefield, it deals 3 damage to target opponent or planeswalker and you gain 3 life.\n\nEnchanted creature has dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)",
+    "tokens": []
 }

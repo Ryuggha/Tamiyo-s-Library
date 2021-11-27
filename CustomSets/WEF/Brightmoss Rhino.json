@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "3",
     "tou": "3",
-    "text": "Vigilance, trample\nWhenever a land enters the battlefield under your control, gain 1 life."
+    "text": "Trample\nWhenever a land enters the battlefield under your control, gain 1 life.",
+    "tokens": []
 }

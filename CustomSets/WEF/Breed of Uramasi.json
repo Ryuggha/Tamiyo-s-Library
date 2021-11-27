@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "2",
     "tou": "2",
-    "text": "You may pay {r} rather than pay this spell’s mana cost. Spend only mana produced by summon to cast it this way.\nHaste"
+    "text": "You may pay {r} rather than pay this spell’s mana cost. Spend only mana produced by summon to cast it this way.\nHaste",
+    "tokens": []
 }

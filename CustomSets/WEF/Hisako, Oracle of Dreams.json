@@ -13,5 +13,6 @@
     "cmc": "5",
     "pow": "0",
     "tou": "0",
-    "text": ": Whenever an opponent draws a card, that opponent must reveal that card. If it is a nonland card, put a Loyalty counter on Hisako, Oracle of Dreams."
+    "text": ": Whenever an opponent draws a card, that opponent must reveal that card. If it is a nonland card, put a Loyalty counter on Hisako, Oracle of Dreams.",
+    "tokens": []
 }

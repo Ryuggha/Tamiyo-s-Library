@@ -3,7 +3,7 @@
     "name": "Loek Kasiib, The Whisper of The Abyss",
     "collector_number": -1,
     "rarity": "m",
-    "type": "Legendary Creature — Ancient Kraken",
+    "type": "Legendary Creature — Ancient Kraken Eldrazi",
     "png": "https://mtg.design/i/ojvl53.jpg",
     "back": "",
     "colors": [
@@ -14,5 +14,6 @@
     "cmc": "16",
     "pow": "13",
     "tou": "13",
-    "text": "This spell costs {1} less to cast for each flooded land on the battlefield.\n\nFlash, trample, menace, indestructible, reach"
+    "text": "This spell costs {1} less to cast for each flooded land on the battlefield.\n\nFlash, trample,  indestructible, reach, annihilator 3",
+    "tokens": []
 }

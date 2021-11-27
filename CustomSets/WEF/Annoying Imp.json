@@ -10,5 +10,6 @@
     "cmc": "1",
     "pow": "1",
     "tou": "1",
-    "text": "Flying, lifelink\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)"
+    "text": "Flying, lifelink\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)",
+    "tokens": []
 }

@@ -10,5 +10,6 @@
     "cmc": "1",
     "pow": "1",
     "tou": "1",
-    "text": "Whenever Warfront Fighter attacks, another target attacking creature gets +1/+1 until end of turn."
+    "text": "Whenever Warfront Fighter attacks, another target attacking creature gets +1/+1 until end of turn.",
+    "tokens": []
 }

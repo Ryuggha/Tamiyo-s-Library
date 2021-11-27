@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "2",
     "tou": "2",
-    "text": "{4}{G}, {T}, Sacrifice Underwater Artisan: Draw two cards. This ability costs {1} less to activate for each flooded land on the battlefield.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)"
+    "text": "{4}{G}, {T}, Sacrifice Underwater Artisan: Draw two cards. This ability costs {1} less to activate for each flooded land on the battlefield.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
 }

@@ -10,5 +10,6 @@
     "cmc": "4",
     "pow": "0",
     "tou": "0",
-    "text": "You may pay {b}{b} rather than pay this spell’s mana cost as long as there are two or more flooded lands on the battlefield.\n\nTarget creature gets -4/-3 until end of turn."
+    "text": "You may pay {1}{b} rather than pay this spell’s mana cost as long as there are two or more flooded lands on the battlefield.\n\nTarget creature gets -5/-5 until end of turn.",
+    "tokens": []
 }

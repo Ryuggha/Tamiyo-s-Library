@@ -10,5 +10,6 @@
     "cmc": "7",
     "pow": "7",
     "tou": "5",
-    "text": "Whenever Energized Goliath deals damage to an enemy creature, earthshake 3. (Put three +1/+1 counters on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+    "text": "Whenever Energized Goliath deals damage to an enemy creature, earthshake 3. (Put three +1/+1 counters on target land you control. You may have it becomea 0/0 Elemental creature until end of turn. It's still a land.)",
+    "tokens": []
 }

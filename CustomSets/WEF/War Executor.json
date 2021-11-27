@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "3",
     "tou": "2",
-    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)"
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)",
+    "tokens": []
 }

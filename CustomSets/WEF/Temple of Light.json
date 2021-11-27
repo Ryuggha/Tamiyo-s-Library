@@ -10,5 +10,6 @@
     "cmc": "1",
     "pow": "0",
     "tou": "0",
-    "text": "Whenever an enchantment enters the battlefield under your control, gain X life where X is that enchantment's converted mana cost."
+    "text": "Whenever an enchantment enters the battlefield under your control, gain X life where X is that enchantment's converted mana cost.",
+    "tokens": []
 }

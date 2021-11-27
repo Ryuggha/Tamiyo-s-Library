@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "1",
     "tou": "3",
-    "text": "When Wickedgrin Schemer is put into a graveyard from anywhere, you may tap or untap target nonland permanent.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)"
+    "text": "When Wickedgrin Schemer is put into a graveyard from anywhere, you may tap or untap target nonland permanent.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
 }

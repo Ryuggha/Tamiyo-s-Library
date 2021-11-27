@@ -7,8 +7,9 @@
     "png": "https://mtg.design/i/ygwd74.jpg",
     "back": "",
     "colors": "G",
-    "cmc": "3",
+    "cmc": "2",
     "pow": "0",
     "tou": "0",
-    "text": "Enchant tapped creature\n\nEnchanted creature doesn’t untap during its controller’s untap step and its activated abilities can’t be activated.\n\n{8}: Sacrifice Entangling Tentacles. Mana produced by flooded lands can't pay this cost. Any player may activate this ability."
+    "text": "Enchant tapped creature\n\nEnchanted creature doesn’t untap during its controller’s untap step and its activated abilities can’t be activated.\n\n{8}: Sacrifice Entangling Tentacles. Mana produced by flooded lands can't pay this cost. Any player may activate this ability.",
+    "tokens": []
 }

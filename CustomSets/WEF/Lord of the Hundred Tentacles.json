@@ -10,5 +10,6 @@
     "cmc": "6",
     "pow": "5",
     "tou": "6",
-    "text": "Whenever Lord of the Hundred Tentacles is dealt damage, earthshake 2. (Put two +1/+1 counters on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)"
+    "text": "Whenever Lord of the Hundred Tentacles is dealt damage, earthshake 2. (Put two +1/+1 counters on target land you control. You may have it become a 0/0 Elemental creature until end of turn. It's still a land.)",
+    "tokens": []
 }

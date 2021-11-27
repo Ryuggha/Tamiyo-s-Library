@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "1",
     "tou": "1",
-    "text": "Whenever a creature card is put into a graveyard from anywhere, you gain 1 life.\n\n{b/u}, {t}: Each player mills a card.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)"
+    "text": "Whenever a creature card is put into a graveyard from anywhere, you gain 1 life.\n\n{b/u}, {t}: Each player mills a card.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
 }

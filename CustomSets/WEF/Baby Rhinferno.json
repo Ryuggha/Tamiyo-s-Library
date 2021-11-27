@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "2",
     "tou": "1",
-    "text": "Whenever one or more +1/+1 counters are put on a land you control, Baby Rhinferno deals 1 damage to target player.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)"
+    "text": "Whenever one or more +1/+1 counters are put on a land you control, Baby Rhinferno deals 1 damage to target player.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)",
+    "tokens": []
 }

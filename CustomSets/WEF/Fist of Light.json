@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "This spell costs {2} less to cast if you’ve meditated this turn.\n\nPut a +1/+1 counter on target creature you control. It gains protection from the color of your choice until end of turn."
+    "text": "This spell costs {2} less to cast if you’ve meditated this turn.\n\nPut a +1/+1 counter on target creature you control. It gains protection from the color of your choice until end of turn.",
+    "tokens": []
 }

@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "3",
     "tou": "2",
-    "text": "Mistwoods Spy can't be blocked as long as you control a Mountain and a Plains.\n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)"
+    "text": "Mistwoods Spy can't be blocked as long as you control a Mountain and a Plains.\n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)",
+    "tokens": []
 }

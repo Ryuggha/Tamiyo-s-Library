@@ -10,5 +10,6 @@
     "cmc": "0",
     "pow": "0",
     "tou": "0",
-    "text": "Jungle Hollow enters the battlefield tapped.\n\nWhen Jungle Hollow enters the battlefield, you gain 1 life.\n\n{T}: Add {B} or {G}."
+    "text": "Jungle Hollow enters the battlefield tapped.\n\nWhen Jungle Hollow enters the battlefield, you gain 1 life.\n\n{T}: Add {B} or {G}.",
+    "tokens": []
 }

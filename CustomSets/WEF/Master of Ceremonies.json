@@ -10,5 +10,6 @@
     "cmc": "4",
     "pow": "3",
     "tou": "4",
-    "text": "Whenever you cast an enchantment spell, Master of Ceremonies deals 2 damage to each opponent.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)"
+    "text": "If a spell you control or an ability of a permanent you control would cause a player to lose life, that player loses that much life plus 1.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)",
+    "tokens": []
 }

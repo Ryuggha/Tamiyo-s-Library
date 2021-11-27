@@ -10,5 +10,6 @@
     "cmc": "1",
     "pow": "1",
     "tou": "2",
-    "text": "When Little Swampdrake enters the battlefield, if you control four or more lands, draw a card. \nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)"
+    "text": "When Little Swampdrake enters the battlefield, if you control four or more lands, draw a card. \nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)",
+    "tokens": []
 }

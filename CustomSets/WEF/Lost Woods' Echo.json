@@ -8,7 +8,8 @@
     "back": "",
     "colors": "G",
     "cmc": "3",
-    "pow": "2",
-    "tou": "2",
-    "text": "At the beginning of your upkeep, earthshake 1. (Put two +1/+1 counters on target land you control. It becomes a 0/0 Elemental creature until the end of turn. It's still a land.)"
+    "pow": "0",
+    "tou": "0",
+    "text": "Lost Woods' Echo enters the battlefield with two +1/+1 counters on it.\n{1}{g}, Remove a +1/+1 counter from Lost Woods' Echo: Destroy target enchantment.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)",
+    "tokens": []
 }

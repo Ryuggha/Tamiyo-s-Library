@@ -10,5 +10,6 @@
     "cmc": "6",
     "pow": "6",
     "tou": "5",
-    "text": "When Tide Infecter enters the battlefield, all other creatures get -1/-1 until end of turn for each flooded land on the battlefield.\nFlood {2}{b}{b} (During your turn, you may pay {2}{b}{b} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\nWhenever you flood Tide Infecter, all creatures get -1/-1 until end of turn."
+    "text": "When Tide Infecter enters the battlefield, all other creatures get -1/-1 until end of turn for each flooded land on the battlefield.\nFlood {2}{b}{b} (During your turn, you may pay {2}{b}{b} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\nWhenever you flood Tide Infecter, all creatures get -1/-1 until end of turn.",
+    "tokens": []
 }

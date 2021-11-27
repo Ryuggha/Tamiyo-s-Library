@@ -10,5 +10,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Enchant creature\nWhenever enchanted creature deals combat damage to a player, Choose one —\n• Tap target permanent.\n• Untap target permanent.\n• Scry 1."
+    "text": "Enchant creature\nWhenever enchanted creature deals combat damage to a player, Choose one —\n• Tap target permanent. It doesn’t untap during its controller’s next untap step.\n• Untap target permanent.\n• Draw a card.",
+    "tokens": []
 }

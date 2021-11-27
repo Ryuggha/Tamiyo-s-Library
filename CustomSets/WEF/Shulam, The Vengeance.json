@@ -3,12 +3,13 @@
     "name": "Shulam, The Vengeance",
     "collector_number": -1,
     "rarity": "r",
-    "type": "Legendary Creature — Ghost Demon",
+    "type": "Legendary Creature — Spirit Demon",
     "png": "https://mtg.design/i/taef46.jpg",
     "back": "",
     "colors": "B",
-    "cmc": "2",
+    "cmc": "1",
     "pow": "2",
     "tou": "1",
-    "text": "Flying, haste, menace\n\nWhen Shulam, The Vengeance enters the battlefield, each other creature gets -X/-X until end of turn. X can’t be 0.\n\nWhenever another creature dies, Shulam, The Vengeance gets +1/+0 until end of turn."
+    "text": "Flying, haste, menace\n\nWhen Shulam, The Vengeance enters the battlefield, each other creature gets -X/-X until end of turn. X can’t be 0.\n\nWhenever another creature dies, Shulam, The Vengeance gets +1/+0 until end of turn.",
+    "tokens": []
 }

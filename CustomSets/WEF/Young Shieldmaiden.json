@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "2",
     "tou": "1",
-    "text": "When Angelheart Protector enters the battlefield, target creature you control gains indestructible until end of turn.\n\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)"
+    "text": "When Angelheart Protector enters the battlefield, target creature you control gains indestructible until end of turn.\n\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)",
+    "tokens": []
 }

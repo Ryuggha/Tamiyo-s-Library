@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "2",
     "tou": "2",
-    "text": "Whenever you sacrifice a Chi, Dawnhill Rearguard deals 2 damage to each opponent. \n\nIf the sacrificed Chi had 4 or more orb counters on it, you may deal 2 damage to any target instead. \n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)"
+    "text": "Whenever you sacrifice a Chi, Dawnhill Rearguard deals 2 damage to each opponent. \n\nIf the sacrificed Chi had three or more orb counters on it, it deals 2 damage to any target instead. \n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)",
+    "tokens": []
 }

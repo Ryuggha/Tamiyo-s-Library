@@ -10,5 +10,6 @@
     "cmc": "6",
     "pow": "4",
     "tou": "6",
-    "text": "When Aetkaenyk, The Mindbreaker is put into a graveyard from anywhere, look at the top four cards of your library and separate them into a face-down pile and a face-up pile. An opponent chooses one of those piles. Put the chosen pile into your hand and the other into your graveyard.\n\n{b}{u}{g}: Put Aetkaenyk, The Mindbreaker into your library fourth from the top from your graveyard."
+    "text": "When Aetkaenyk, The Mindbreaker is put into a graveyard from anywhere, you may pay 4 life. If you do, look at the top four cards of your library and separate them into a face-down pile and a face-up pile. An opponent chooses one of those piles. Put the chosen pile into your hand and the other into your graveyard.\n\n{g}{u}{b}: Put Aetkaenyk, The Mindbreaker into your library fourth from the top from your graveyard.",
+    "tokens": []
 }

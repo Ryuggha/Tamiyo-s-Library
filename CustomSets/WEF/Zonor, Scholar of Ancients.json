@@ -13,5 +13,6 @@
     "cmc": "4",
     "pow": "0",
     "tou": "0",
-    "text": ": At the begining of each end step, Zonor, Scholar of Ancients gains a loyalty counter if neither player has lost life this turn."
+    "text": ": At the begining of each end step, Zonor, Scholar of Ancients gains a loyalty counter if neither player has lost life this turn.",
+    "tokens": []
 }

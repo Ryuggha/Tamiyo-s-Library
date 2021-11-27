@@ -13,5 +13,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": ": At the beginning of each end step, if there is a tapped creature on the battlefield, put a loyalty counter on Alfonso, Errant Noble."
+    "text": ": At the beginning of each player's end step, if that player controls a tapped creature, put a loyalty counter on Alfonso, Errant Noble.",
+    "tokens": []
 }

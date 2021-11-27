@@ -14,5 +14,6 @@
     "cmc": "5",
     "pow": "0",
     "tou": "0",
-    "text": "Create two tapped 0/1 white Human creature tokens. They have “Pay 1 life, Sacrifice this creature: Draw a card.”"
+    "text": "Create two Candle tokens. (They're black artifacts with “{T}, Pay 1 life, Sacrifice this artifact: Draw a card, then discard a card.”)",
+    "tokens": []
 }

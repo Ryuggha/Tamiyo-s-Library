@@ -14,5 +14,6 @@
     "cmc": "4",
     "pow": "3",
     "tou": "3",
-    "text": "Vigilance\nWhenever a creature you control attacks, Tsus, Dragonblood's Heir deals 1 damage to the player or planeswalker it’s attacking.\n{2}{r}{b}{w}: Transform Tsus, Dragonblood's Heir. Activate this ability only if defending player's life total is less than half its starting life total."
+    "text": "Vigilance\nWhenever a creature you control attacks, Tsus, Dragonblood's Heir deals 1 damage to the player or planeswalker it’s attacking.\nWhenever Tsus, Dragonblood's Heir attacks, if defending player's life total is less than half its starting life total, you may transform Tsus, Dragonblood's Heir.",
+    "tokens": []
 }

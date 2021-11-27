@@ -10,8 +10,9 @@
         "W",
         "R"
     ],
-    "cmc": "4",
+    "cmc": "5",
     "pow": "0",
     "tou": "0",
-    "text": ": As long as it’s your turn, Jonrik, Fists of Hamon is a 4/4 Human Fighter creature that’s still a planeswalker. Prevent all combat damage that would be dealt to Jonrik, Fists of Hamon during your turn.\n\nWhenever Jonrik, Fists of Hamon is blocked, put a loyalty counter on it."
+    "text": ": Whenever a creature you control becomes blocked, put a loyalty counter on Jonrik, Fists of Hamon.",
+    "tokens": []
 }

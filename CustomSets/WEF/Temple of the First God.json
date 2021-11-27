@@ -10,5 +10,6 @@
     "cmc": "2",
     "pow": "0",
     "tou": "0",
-    "text": "When Temple of the First God enters the battlefield, gain life equal to your devotion to white, each oponent loses life equal to your devotion to black and create an X/X green beast creature token where X is equal to your devotion to green."
+    "text": "When Temple of the First God enters the battlefield, you gain life equal to your devotion to white, each oponent loses life equal to your devotion to black, and create an X/X green Beast creature token, where X is equal to your devotion to green.",
+    "tokens": []
 }
