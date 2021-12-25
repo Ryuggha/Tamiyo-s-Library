@@ -139,9 +139,9 @@ async def build(ctx):
             await ctx.send(sendA + sendB)
             try:
                 cardDictList = ScryfallImplementation.readDeckList(deckLists[x])
-                activeCustomSets = False
-                if ctx.author.id == ownerId or ctx.author.id == wefDesigner:
-                    activeCustomSets = True
+                activeCustomSets = True
+                # if ctx.author.id == ownerId or ctx.author.id == wefDesigner:
+                #    activeCustomSets = True
                 deck = ScryfallImplementation.makeDeck(deckName + numeral, cardDictList, back, activeCustomSets)
                 await ctx.send(file=discord.File(deck[0], deckName + numeral + ".json"))
                 if deck[1] != "":
@@ -156,7 +156,10 @@ async def build(ctx):
 async def packs(ctx, *args):
     if ctx.author.id == ownerId or ctx.author.id == wefDesigner:
         await ctx.send("Creating packs, this may take a while. \nPlease wait...")
-        bag = ScryfallImplementation.generateDraft(set=args[1].upper(), numberOfPacks=int(args[0]))
+        back = ""
+        if len(args) > 2:
+            back = args[2]
+        bag = ScryfallImplementation.generatePacks(set=args[1].upper(), numberOfPacks=int(args[0]), customBacks=back)
         await ctx.send(file=discord.File(bag, "packs.json"))
 
 
@@ -164,7 +167,7 @@ async def packs(ctx, *args):
 async def wefLeague(ctx, *args):
     wefSleeve = "https://imgur.com/FKHf50G.png"
     if ctx.author.id == ownerId:
-        bag = ScryfallImplementation.generateDraft(set="WEF", numberOfPacks=int(args[0]), customBack=wefSleeve, lastId=[int(args[1]), "WEF"])
+        bag = ScryfallImplementation.generateDraft(set="WEF", numberOfPacks=int(args[0]), back=wefSleeve, lastId=[int(args[1]), "WEF"], isCustom=True)
         await ctx.send(file=discord.File(bag, "packs.json"))
 
 

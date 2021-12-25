@@ -262,6 +262,14 @@ def searchForCardInScryfall(cardName):
         print("Error with Scryfall request with card: " + cardName)
 
 
+def searchForCardIDInScryfall(id):
+    try:
+        return requests.get("https://api.scryfall.com/cards/id").json()
+    except:
+        # print(traceback.format_exc())
+        print("Error with Scryfall request with the card with the id: " + id)
+
+
 def whiteListFromSets(sets=[]):
     whiteList = []
     for set in sets:
@@ -305,22 +313,82 @@ def getNamesFromJson(json):
     return list
 
 
-def generateDraft(set, numberOfPacks, customBack="", lastId=[""]):
+def generatePacks(set, numberOfPacks, customBacks=""):
     back = customBack
     if back == "":
         global officialBack
         back = officialBack
-    pools = {}
-    rates = {"rareSlot": {"rare": 7, "mythic": 1}, "uncommon": 3, "premiumSlot": {"common": 4, "premium": 1}, "common": 9, "basic": 1}
     isCustom = False
     if set in customSets:
         isCustom = True
+    # Draft Using MTGJson
+    try:
+        setJson = requests.get("https://mtgjson.com/api/v5/" + set.upper() + ".json").json()
+        boosters = setJson["data"]["booster"]["default"]
+        containedObjects = []
+        scryFallSetData = getScryfallApiCallData("https://api.scryfall.com/cards/search?q=unique:prints+set:" + set)
+        cardMap = {}
+        for card in setJson["data"]["cards"]:
+            found = False
+            cardToRemove = ""
+            for scryFallCard in scryFallSetData:
+                if card["identifiers"]["scryfallId"] == scryFallCard["id"]:
+                    found = True
+                    cardMap[card["uuid"]] = scryFallCard
+                    break
+            if found:
+                scryFallSetData.remove(scryFallCard)
+            else:
+                cardMap[card["uuid"]] = searchForCardIDInScryfall(card["identifiers"]["scryfallId"])
+                # print(card["name"] + " : " + card["identifiers"]["scryfallId"])
+        for x in range(numberOfPacks):
+            deckAtt = {"name": [], "desc": [], "image": [], "back": []}
+            packTypeRndm = random.randint(0, boosters["boostersTotalWeight"] - 1)
+            actualBoosterWeight = 0
+            contents = []
+            for packType in boosters["boosters"]:
+                actualBoosterWeight += packType["weight"]
+                if packTypeRndm < actualBoosterWeight:
+                    contents = packType["contents"]
+                    break
+            for cardType in contents:
+                for iterations in range(contents[cardType]):
+                    cardRndm = random.randint(0, boosters["sheets"][cardType]["totalWeight"] - 1)
+                    actualCardWeight = 0
+                    card = ""
+                    for cardJsonMapKey in boosters["sheets"][cardType]["cards"]:
+                        actualCardWeight += boosters["sheets"][cardType]["cards"][cardJsonMapKey]
+                        if cardRndm < actualCardWeight:
+                            card = cardMap[cardJsonMapKey]
+                            break
+                    cardProperties = getCardProperties(card)[0]
+                    deckAtt["name"].append(cardProperties["name"])
+                    deckAtt["desc"].append(cardProperties["desc"])
+                    deckAtt["image"].append(cardProperties["image"])
+                    deckAtt["back"].append(cardProperties["back"])
+            containedObjects.append(createTTSDeck("Pack_" + str(x + 1), deckAtt, back))
+        bag = createTTSBag("Packs", containedObjects)
+    except:
+        if not isCustom:
+            print("Error at drafting: " + set)
+        return generateDraft(set=set, numberOfPacks=numberOfPacks, back=back, isCustom=isCustom)
+    return io.StringIO(json.dumps(bag, indent=4, sort_keys=True))
+
+
+def generateDraft(set, numberOfPacks, back="", lastId=[""], isCustom=False):  # Deprecated for nonCustomSets
+    pools = {}
+    rates = {"rareSlot": {"rare": 7, "mythic": 1}, "uncommon": 3, "premiumSlot": {"common": 4, "premium": 1}, "common": 9, "basic": 1}
+    if set in customSets:
         if set == "WEF":
             pools = createWEFPools()
             rates = {"rareSlot": {"rare": 7, "mythic": 1}, "uncommon": 3, "common": 10, "land": 1}
     if not isCustom:
         pools.update(createDefaultPools(set))
-    # set uniqueness
+    if set == "STX":
+        rates = {"sta": 1, "rareSlot": {"rare": 7, "mythic": 1}, "uncommon": 3, "common": 10}
+        pools["sta"] = createPool("set:sta")
+    if set == "CNS":
+        rates = {"rareSlot": {"rare": 7, "mythic": 1}, "uncommon": 3, "common": 11}
     bag = createTTSBag("Packs", createDraftPacks(pools, rates, numberOfPacks, back, isCustom, set, lastId))
     return io.StringIO(json.dumps(bag, indent=4, sort_keys=True))
 
@@ -388,7 +456,7 @@ def createDraftPacks(pools, rates, numberOfPacks, back, isCustom=False, set="", 
         if securityId != "":
             securityId += 1
         for key in rates:
-            if isinstance(rates[key], dict):  # TODO
+            if isinstance(rates[key], dict):
                 finalNumberOfCardsInPacks = 1
                 finalKey = ""
                 rndomTotal = 0
@@ -425,3 +493,4 @@ def createDraftPacks(pools, rates, numberOfPacks, back, isCustom=False, set="", 
                     deckAtt["back"].append("")
         containedObjects.append(createTTSDeck("Pack_" + str(packX + 1), deckAtt, back))
     return containedObjects
+
