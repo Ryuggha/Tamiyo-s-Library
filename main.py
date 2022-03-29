@@ -56,8 +56,14 @@ async def help(ctx):
         \nAs an example: 
         ```|build <name_of_the_deck_without_spaces> <url of the sleeve>
         \n <decklist.txt>```
+        > packs -> Returns a .json in a format that Tabletop Simulator can read, with sealed packs.
+        ```
+        |packs <number_of_packs_to_build> <set_code> <url of the sleeve>
+        ```
+        > billy -> activate the -X of Billy, The Unstable Gambler
+        ```|billy <X>```
         """
-    # > billy X -> activate the -X of Billy, The Unstable Gambler\n
+
     url = "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/b/4/b474378c-5fa8-418f-8d76-23e78003ed18.jpg?1576385483"
     embed = discord.Embed(title="List of Spells of the Tamiyo's Library", url=url, description=help,
                           timestamp=datetime.datetime.utcnow(),
@@ -154,13 +160,12 @@ async def build(ctx):
 
 @client.command()
 async def packs(ctx, *args):
-    if ctx.author.id == ownerId or ctx.author.id == wefDesigner:
-        await ctx.send("Creating packs, this may take a while. \nPlease wait...")
-        back = ""
-        if len(args) > 2:
-            back = args[2]
-        bag = ScryfallImplementation.generatePacks(set=args[1].upper(), numberOfPacks=int(args[0]), customBacks=back)
-        await ctx.send(file=discord.File(bag, "packs.json"))
+    await ctx.send("Creating packs, this may take a while. \nPlease wait...")
+    back = ""
+    if len(args) > 2:
+        back = args[2]
+    bag = ScryfallImplementation.generatePacks(set=args[1].upper(), numberOfPacks=int(args[0]), customBacks=back)
+    await ctx.send(file=discord.File(bag, "packs.json"))
 
 
 @client.command() #wefLeague <numberOfPacks> <lastIdStart INT>
