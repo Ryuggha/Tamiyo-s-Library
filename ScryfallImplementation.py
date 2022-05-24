@@ -1,5 +1,6 @@
 import random
 import traceback
+from warnings import catch_warnings
 
 import requests
 import json
@@ -208,25 +209,48 @@ def getCustomCardProperties(name, set):
     return cards
 
 
-def checkLegality(cardList=[], legalIn="", whiteList=[], banList=[]):
+def checkLegality(cardList=[], legalIn="", whiteList=[], banList=[], sets=""):
     errors = ""
-    for card in cardList:
-        if card in banList:
-            errors += "   ILLEGAL CARD: " + card + " is a banned card."
-        if whiteList != []:
-            if card not in whiteList:
-                errors += "   ILLEGAL CARD: " + card + " is not in the white list."
-        if legalIn != "":
-            legality = searchForCardInScryfall(card)["legalities"][legalIn]
-            if legality != "legal":
-                errors += "   ILLEGAL CARD: " + card + " is " + legality + " in " + legalIn + "."
+    if sets != "":
+        sets = createListOfCardsFromSetList(sets)
+    for cardDict in cardList:
+        if "separator" not in cardDict:
+            card = cardDict['name']
+            errToAdd = ""
+
+            if legalIn != "":
+                try:
+                    legality = searchForCardInScryfall(card)["legalities"][legalIn]
+                    if legality != "legal":
+                        errToAdd = "   ILLEGAL CARD: \"" + card + "\" is " + legality + " in " + legalIn + ".\n"
+                    else:
+                        errToAdd = "legal"
+                except Exception as err:
+                    errToAdd = "   ILLEGAL CARD: \"" + card + "\" has not been found.\n"
+            if sets != "":
+                if card.upper() not in (n.upper() for n in sets):
+                    if errToAdd != "legal":
+                        errToAdd = "   ILLEGAL CARD: \"" + card + "\" is not within the sets.\n"
+                else:
+                    errToAdd = "legal"
+            if errToAdd != "legal" and whiteList != []:
+                if card.upper() in (n.upper() for n in whiteList):
+                    errToAdd = "legal"
+            if card.upper() in (n.upper() for n in banList):
+                errToAdd = "   ILLEGAL CARD: \"" + card + "\" is a banned card.\n"
+            if errToAdd != "legal":
+                errors += errToAdd
     return errors
 
 
 def createListOfCardsFromSetList(sets=[]):
     cardList = []
+    global customSets
     for set in sets:
-        cardList.extend(getNamesFromJson(getScryfallApiCallData("https://api.scryfall.com/cards/search?q=set:" + set)))
+        if set in customSets:
+            cardList.extend(customSetsCardNames[set])
+        else:
+            cardList.extend(getNamesFromJson(getScryfallApiCallData("https://api.scryfall.com/cards/search?q=set:" + set)))
     return cardList
 
 
@@ -270,13 +294,6 @@ def searchForCardIDInScryfall(id):
         print("Error with Scryfall request with the card with the id: " + id)
 
 
-def whiteListFromSets(sets=[]):
-    whiteList = []
-    for set in sets:
-        whiteList.extend(getNamesFromJson(getScryfallApiCallData("https://api.scryfall.com/cards/search?q=set:" + set)))
-    return whiteList
-
-
 def splitLineCardNames(str):
     cardDict = {"name": ""}
     splitted = str.split(" ")
@@ -308,7 +325,7 @@ def splitLineCardNames(str):
 
 def getNamesFromJson(json):
     list = []
-    for card in json['data']:
+    for card in json:
         list.append(card['name'])
     return list
 

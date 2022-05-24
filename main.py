@@ -176,4 +176,47 @@ async def wefLeague(ctx, *args):
         await ctx.send(file=discord.File(bag, "packs.json"))
 
 
+@client.command()
+async def checkCS4(ctx):
+    msg = ctx.message.content
+    firstLine = msg.split('\n', 1)[0]
+
+    attachments = ctx.message.attachments
+    deckLists = []
+    inMessageDeck = "\n".join(msg.split("\n")[1:])
+    if inMessageDeck != "":
+        deckLists.append(inMessageDeck)
+    for x in range(len(attachments)):
+        deckLists.append(requests.get(attachments[x].url).text)
+
+
+    if len(deckLists) == 0:
+        await ctx.send("There is no deck to check. Try attaching a .txt file with the deckList on it with the command")
+    else:
+        hasError = False
+        for x in range(len(deckLists)):
+            sendA = "Testing deck"
+            numeral = ""
+            if len(deckLists) > 1:
+                sendA += " number " + str(x)
+                numeral = "_" + str(x)
+            sendB = ", this may take a while. \nPlease wait..."
+            await ctx.send(sendA + sendB)
+            try:
+                list = ScryfallImplementation.readDeckList(deckLists[x])
+                sets = ["DST", "ARB", "WWK", "AKH", "M19", "SOK"]
+                errors = ScryfallImplementation.checkLegality(cardList=list, sets=sets, banList=["Jace, the Mind Sculptor", "Skullclamp"])
+                if errors != "":
+                    hasError = True
+                    await ctx.send(errors)
+                if hasError:
+                    await ctx.send("Deck is not Legal")
+                else:
+                    await ctx.send("--------------------\nPERFECT!\nDeck is completely Legal")
+            except Exception as err:
+                await ctx.send("There has been an unknown error parsing this deck...\n")
+                print(traceback.format_exc())
+
+
+
 client.run(TOKEN)
