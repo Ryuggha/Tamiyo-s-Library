@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Grimm Troupe",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Spirit",
+    "png": "https://mtg.design/i/ukpt18.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "4",
+    "pow": "3",
+    "tou": "3",
+    "text": "Trample\nWhenever Grimm Troupe becomes tapped, it deals 1 damage to target player.",
+    "tokens": []
+}

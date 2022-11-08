@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Samirasa, Impostus Co.'s Head",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Shapeshifter",
+    "png": "https://mtg.design/i/dkmu34.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "4",
+    "pow": "3",
+    "tou": "3",
+    "text": "Changeling (This card is every creature type.)\n\n{X}: Samirasa becomes a copy of another target creature on the battlefield or in any graveyard with mana value X, except it has this ability.",
+    "tokens": []
+}

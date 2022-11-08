@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Animal Courier",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Donkey",
+    "png": "https://mtg.design/i/xujb39.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "1",
+    "text": "You may look at the top card of your library at any time.\n\n{T}: Shuffle your library.",
+    "tokens": []
+}

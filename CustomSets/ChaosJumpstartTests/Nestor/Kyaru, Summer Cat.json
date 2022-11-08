@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Kyaru, Summer Cat",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Human Cat Princess",
+    "png": "https://mtg.design/i/gtsg07.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "Whenever Kyaru and at least one other Princess creature attacks, it deals 2 damage to target creature you don't control.",
+    "tokens": []
+}

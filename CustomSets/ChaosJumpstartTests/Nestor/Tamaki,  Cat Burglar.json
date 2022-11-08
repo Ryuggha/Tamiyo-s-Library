@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Tamaki,  Cat Burglar",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Cat Princess",
+    "png": "https://mtg.design/i/rtrt12.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "1",
+    "text": "Haste\nTamaki can't be blocked by creatures with power 2 or less.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Nightmare King's Shadows",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/mvhu03.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "0",
+    "tou": "0",
+    "text": "Spectacle {3}{R} (You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)\nCreate three 1/1 red Spirit creature tokens. They have “When this creature dies, it deals 1 damage to any target.”",
+    "tokens": []
+}

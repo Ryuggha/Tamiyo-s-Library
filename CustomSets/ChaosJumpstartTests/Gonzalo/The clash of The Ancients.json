@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "The clash of The Ancients",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/xyea01.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Each player creates three 1/1 minion creature tokens with banding.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Mifuyu,  Efficient Mercenary",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Human Princess",
+    "png": "https://mtg.design/i/rgyk43.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "6",
+    "pow": "4",
+    "tou": "5",
+    "text": "Whenever Mifuyu attacks, target creature can't block this turn.\nWhenever mifuyu deals combat damage to a player, it deals that much damage to each creature that player controls.",
+    "tokens": []
+}

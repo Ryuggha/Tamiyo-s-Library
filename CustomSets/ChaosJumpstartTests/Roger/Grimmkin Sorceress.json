@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Grimmkin Sorceress",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Spirit Shaman",
+    "png": "https://mtg.design/i/auna68.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "Spectacle {1}{r} (You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)\nWhenever you cast an instant or sorcery spell, Grimmkin Sorceress deals 1 damage to target opponent.",
+    "tokens": []
+}

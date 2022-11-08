@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Healing Salve",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Instant",
+    "png": "https://mtg.design/i/ilhr87.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "0",
+    "text": "Regenerate target creature.",
+    "tokens": []
+}

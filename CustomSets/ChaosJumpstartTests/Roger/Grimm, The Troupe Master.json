@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Grimm, The Troupe Master",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Spirit Nightmare",
+    "png": "https://mtg.design/i/tqmp55.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "4",
+    "pow": "4",
+    "tou": "4",
+    "text": "Haste\nWhenever a source you control deals damage to a player, Grimm, The Troupe Master gains +1/+1 and trample until end of turn.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Pshormf's Tidestone",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Artifact",
+    "png": "https://mtg.design/i/faiv72.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "As Pshormf's Tidestone enters the battlefield, choose a creature type.\n\nCreature spells you cast of the chosen type cost {1} less to cast.\n\n{5}{U}, Sacrifice Pshormf's Tidestone: Draw two cards. This ability costs {1} less to activate for each permanent of the chosen type you control.",
+    "tokens": []
+}

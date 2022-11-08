@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Misogi, Childish Prankster",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Human Loli Princess",
+    "png": "https://mtg.design/i/giif29.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "2",
+    "text": "When Misogi enters the battlefield, put a Dokkiri Bakudan counter on target creature  (Whenever a creature with a Dokkiri Bakudan counter receives damage, remove that counter and deal 4 damage to that creature)",
+    "tokens": []
+}

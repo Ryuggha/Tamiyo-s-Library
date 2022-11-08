@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Furion, the Nature's Prophet",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Elemental",
+    "png": "https://mtg.design/i/inud87.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "4",
+    "pow": "3",
+    "tou": "3",
+    "text": "<i>Nature's Call</i> — {2}{G}: Create a 2/2 Treant with Banding.",
+    "tokens": []
+}

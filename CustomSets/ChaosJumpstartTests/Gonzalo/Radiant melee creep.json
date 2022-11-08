@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Radiant melee creep",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Creep",
+    "png": "https://mtg.design/i/dghf88.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "2",
+    "text": "Banding (Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature’s combat damage, not its controller, among any of the creatures it’s being blocked by or is blocking.)",
+    "tokens": []
+}

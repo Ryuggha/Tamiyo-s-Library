@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Fire Bats",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Instant",
+    "png": "https://mtg.design/i/aplk47.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "0",
+    "text": "Fire Bats deals 1 damage to target player and 1 damage to any target.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Divine, the Sybarite Eater",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Insect",
+    "png": "https://mtg.design/i/glhn89.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "3",
+    "text": "{5}: choose up to one —\n• Until end of turn, double target creature's power.\n• Until end of turn, double target creature's toughness.\n• Create a Treasure token.",
+    "tokens": []
+}

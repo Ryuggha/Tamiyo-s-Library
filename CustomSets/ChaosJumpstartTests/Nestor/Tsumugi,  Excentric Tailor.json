@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Tsumugi,  Excentric Tailor",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Human Princess",
+    "png": "https://mtg.design/i/jsmo31.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "Whenever Tsumugi and at least one other Princess creature attacks, you can discard a card. If you do, target creature can't block thir turn.",
+    "tokens": []
+}

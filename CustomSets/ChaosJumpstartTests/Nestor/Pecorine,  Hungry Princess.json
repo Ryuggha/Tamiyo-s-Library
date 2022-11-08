@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Pecorine,  Hungry Princess",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Human Princess",
+    "png": "https://mtg.design/i/jcqg02.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "4",
+    "pow": "4",
+    "tou": "3",
+    "text": "When Pecorine enters the battlefield, create two Riceball Food tokens.\n\n{1},  Sacrifice a Food token: Pecorine gets +2/+2 until end of turn.",
+    "tokens": []
+}

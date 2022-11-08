@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Awaken Kin",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Bard Insect",
+    "png": "https://mtg.design/i/ipgw75.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "4",
+    "tou": "5",
+    "text": "Spectacle {3}{R} (You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)\nTrample\n{t}, Sacrifice another creature or an enchantment: Awaken Kin deals 2 damage to any target.",
+    "tokens": []
+}

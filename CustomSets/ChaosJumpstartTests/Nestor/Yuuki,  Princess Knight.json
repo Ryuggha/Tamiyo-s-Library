@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Yuuki,  Princess Knight",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Knight",
+    "png": "https://mtg.design/i/kzsq07.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "Give all your other Female creatures +1/+1. \n(Any player may check the wiki to confirm whether a creature is female. If the wiki doesn't clearly state it, it counts as having no gender.)",
+    "tokens": []
+}

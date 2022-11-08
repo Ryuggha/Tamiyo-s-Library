@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Wild Umbra",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Tribal Enchantment — Shapeshifter Aura",
+    "png": "https://mtg.design/i/ilul11.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "Changeling (This card is every creature type.)\n\nEnchant creature\n\nEnchanted creature is all creature types.\n\nTotem armor (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)",
+    "tokens": []
+}

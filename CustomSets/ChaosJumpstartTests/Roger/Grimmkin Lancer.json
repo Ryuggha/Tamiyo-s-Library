@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Grimmkin Lancer",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Spirit",
+    "png": "https://mtg.design/i/eabk21.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "1",
+    "text": "Spectacle {R} (You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)\nHaste",
+    "tokens": []
+}

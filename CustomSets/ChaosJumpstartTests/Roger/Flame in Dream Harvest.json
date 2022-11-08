@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Flame in Dream Harvest",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Instant",
+    "png": "https://mtg.design/i/gttz06.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Spectacle {R}{R} (You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)\nFlame in Dream Harvest deals 4 damage to target creature. If that creature would die this turn, Flame in Dream Harvest deals 1 damage to that creature's controller.",
+    "tokens": []
+}

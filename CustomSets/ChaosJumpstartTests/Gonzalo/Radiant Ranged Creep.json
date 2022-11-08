@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Radiant Ranged Creep",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Creep",
+    "png": "https://mtg.design/i/tuhn01.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "2",
+    "text": "Reach; Banding (Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)",
+    "tokens": []
+}

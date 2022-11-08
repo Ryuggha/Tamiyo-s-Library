@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "The Radiant",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Artifact — Ancient",
+    "png": "https://mtg.design/i/cymx02.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "6",
+    "pow": "0",
+    "tou": "0",
+    "text": "At the beginning of your end step, put two +1/+1 counter on all creatures you control and you gain 2 life.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Kyouka,  Novice Magus",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Human Loli Princess",
+    "png": "https://mtg.design/i/ahkx00.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "1",
+    "text": "Whenever Kyouka and at least one other Princess creature attacks, you may discard a card. If you do, draw a card.",
+    "tokens": []
+}

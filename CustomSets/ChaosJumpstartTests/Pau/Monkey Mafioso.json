@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Monkey Mafioso",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Ape Employer",
+    "png": "https://mtg.design/i/jmtl73.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "2",
+    "text": "When Monkey Mafioso enters the battlefield, create a 1/1 black Ape Programmer creature token named Code Monkey into the Auto Zone.",
+    "tokens": []
+}

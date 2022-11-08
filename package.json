@@ -1,0 +1,26 @@
+{
+  "name": "Tamiyo-s-Library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tsc-watch --onSuccess \"npx nodemon ./build/discordBotMain.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryuggha/Tamiyo-s-Library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryuggha/Tamiyo-s-Library/issues"
+  },
+  "homepage": "https://github.com/Ryuggha/Tamiyo-s-Library#readme"
+}

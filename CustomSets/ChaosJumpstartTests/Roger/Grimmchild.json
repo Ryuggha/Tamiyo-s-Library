@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Grimmchild",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Imp Spirit",
+    "png": "https://mtg.design/i/qdhh49.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "2",
+    "tou": "2",
+    "text": "Spectacle {3}{r} (You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)\nFlying\nWhenever another creature dies, put a +1/+1 counter on Grimmchild.",
+    "tokens": []
+}

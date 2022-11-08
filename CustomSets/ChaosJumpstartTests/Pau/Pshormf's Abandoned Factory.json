@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Pshormf's Abandoned Factory",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Artifact",
+    "png": "https://mtg.design/i/jelz35.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "{3}, {T}: Create a 0/1 colorless Shapeshifter artifact creature token with changeling. (It has every creature type.)",
+    "tokens": []
+}

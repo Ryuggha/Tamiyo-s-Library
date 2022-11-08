@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Reef Dweller",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Shapeshifter",
+    "png": "https://mtg.design/i/tqfa71.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "5",
+    "pow": "*",
+    "tou": "*",
+    "text": "Changeling (This card is every creature type.) \nAs Reef Dweller enters the battlefield, it becomes your choice of a 4/2 creature with hexproof or a 0/7 creature with defender.",
+    "tokens": []
+}

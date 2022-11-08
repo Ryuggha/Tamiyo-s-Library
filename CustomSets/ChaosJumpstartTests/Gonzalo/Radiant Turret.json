@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Radiant Turret",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Artifact Creature — Construct",
+    "png": "https://mtg.design/i/hhcm63.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "6",
+    "text": "Defender, reach",
+    "tokens": []
+}

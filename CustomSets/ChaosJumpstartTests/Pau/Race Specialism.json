@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Race Specialism",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/lapp08.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "As Race Specialism enters the battlefield, choose a creature type.\n\nWhenever a permanent of the chosen type enters the battlefield under your control, you may draw a card. If you do, discard a card.",
+    "tokens": []
+}

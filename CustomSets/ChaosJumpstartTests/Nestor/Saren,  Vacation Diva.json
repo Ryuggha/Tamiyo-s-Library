@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Saren,  Vacation Diva",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Human Princess",
+    "png": "https://mtg.design/i/ypkk20.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "Princess creatures you control have haste.",
+    "tokens": []
+}
