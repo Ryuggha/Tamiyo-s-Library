@@ -1,1 +1,1 @@
-console.log("as");
+print("gg");
