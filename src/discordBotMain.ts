@@ -18,7 +18,7 @@ client.on('ready', () => {
 
 client.on('messageCreate', (message: any) => {
     if (message.content == 'ping') {
-        message.reply('pongstor1');
+        message.reply('pongstor2');
     }
 });
 

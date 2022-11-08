@@ -11,7 +11,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "tsc-watch --onSuccess \"npx nodemon ./build/discordBotMain.js\"",
-    "buildRun": "npx nodemon ./build/discordBotMain.js"
+    "buildRun": "npx nodemon ./build/discordBotMain.js",
+    "build": "tsc --build"
   },
   "repository": {
     "type": "git",
