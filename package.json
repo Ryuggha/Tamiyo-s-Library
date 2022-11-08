@@ -10,7 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "tsc-watch --onSuccess \"npx nodemon ./build/discordBotMain.js\""
+    "test": "tsc-watch --onSuccess \"npx nodemon ./build/discordBotMain.js\"",
+    "run": "npx nodemon ./build/discordBotMain.js"
   },
   "repository": {
     "type": "git",
