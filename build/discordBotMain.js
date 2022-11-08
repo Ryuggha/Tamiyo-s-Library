@@ -10,7 +10,7 @@ const client = new Client({
 });
 client.on('ready', () => {
     console.log("Logged in as:");
-    console.log(client.user.name);
+    console.log(client.user.username);
     console.log(client.user.id);
     console.log("---------------");
 });
