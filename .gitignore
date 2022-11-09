@@ -1,4 +1,2 @@
 .env
 Legacy/localVars.json
-src/deploy-commands-build.ts
-build/deploy-commands-build.js
