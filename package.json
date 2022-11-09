@@ -12,7 +12,9 @@
   "scripts": {
     "test": "tsc-watch --onSuccess \"npx nodemon ./build/discordBotMain.js\"",
     "buildRun": "npx nodemon ./build/discordBotMain.js",
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "deploy-commands-build": "npx nodemon ./build/deploy-commands-build.js",
+    "deploy-commands": "npx nodemon ./build/deploy-commands.js"
   },
   "repository": {
     "type": "git",
