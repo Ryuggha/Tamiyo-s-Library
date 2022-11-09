@@ -11,9 +11,10 @@ jobs:
       with:
         host: 129.151.250.191
         username: opc
-        password: ${{ secrets.SSH_PRIVATE_KEY }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
-           cd Tamiyo-s-Library
-           git pull
+          whoami
+          cd Tamiyo-s-Library
+          git pull
 
