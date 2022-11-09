@@ -16,7 +16,7 @@ client.on('ready', () => {
 });
 client.on('messageCreate', (message) => {
     if (message.content == 'ping') {
-        message.reply('pongstor5');
+        message.reply('pongstor6');
     }
 });
 client.login(process.env.TOKEN);
