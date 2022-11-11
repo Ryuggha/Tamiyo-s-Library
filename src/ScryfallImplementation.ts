@@ -18,9 +18,10 @@ async function getScryfallData(request: string): Promise<any[]> {
 
 }
 
-export async function billy (cmc: string): Promise<string> {
+export async function billy (cmc: string, isTryhard: boolean): Promise<string> {
     
-    var cards = await getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-(f:historic+-f:legacy+-f:modern+-f:commander)+-mana:{X}+cmc:" + cmc);
+    if (isTryhard) var cards = await getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-is:digital+f:commander+-mana:{X}+cmc:" + cmc);
+    else var cards = await getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-is:digital+-mana:{X}+cmc:" + cmc);
     var url = "";
     var customSetSorceries: any[] = [];
     console.log("TODO: Custom Set Sorceries");

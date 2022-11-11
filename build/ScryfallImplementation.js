@@ -27,9 +27,12 @@ function getScryfallData(request) {
         return ret;
     });
 }
-function billy(cmc) {
+function billy(cmc, isTryhard) {
     return __awaiter(this, void 0, void 0, function* () {
-        var cards = yield getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-(f:historic+-f:legacy+-f:modern+-f:commander)+-mana:{X}+cmc:" + cmc);
+        if (isTryhard)
+            var cards = yield getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-is:digital+f:commander+-mana:{X}+cmc:" + cmc);
+        else
+            var cards = yield getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-is:digital+-mana:{X}+cmc:" + cmc);
         var url = "";
         var customSetSorceries = [];
         console.log("TODO: Custom Set Sorceries");
