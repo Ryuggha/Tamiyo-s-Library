@@ -31,14 +31,18 @@ var rest = new REST({ version: "10" }).setToken(process.env.VPSTOKEN);
         console.error(error);
     }
 }))();
+/*
 var rest2 = new REST({ version: "10" }).setToken(process.env.TOKEN);
-(() => __awaiter(void 0, void 0, void 0, function* () {
+
+(async () => {
     try {
         console.log(`Started refreshing ${commands.length} application (/) commands for the Test bot.`);
-        const data2 = yield rest2.put(Routes.applicationCommands(process.env.applicationId), { body: commands });
+        
+        const data2 = await rest2.put(Routes.applicationCommands(process.env.applicationId), { body: commands });
+
         console.log(`Successfully reloaded ${data2.length} application (/) commands for the Test bot.`);
     }
     catch (error) {
         console.error(error);
     }
-}))();
+})();*/ 

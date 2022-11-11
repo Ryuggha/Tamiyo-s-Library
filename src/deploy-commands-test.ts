@@ -20,7 +20,7 @@ var rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
         console.log(`Started refreshing ${commands.length} application (/) commands.`);
         
         const data = await rest.put(Routes.applicationGuildCommands(process.env.applicationId, process.env.testGuildId), { body: commands });
-
+        await rest.put(Routes.applicationCommands(process.env.applicationId, process.env.testGuildId), { body: [] });
         console.log(`Successfully reloaded ${data.length} application (/) commands.`);
     } 
     catch (error) {

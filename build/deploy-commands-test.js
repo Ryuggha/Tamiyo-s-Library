@@ -25,6 +25,7 @@ var rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
     try {
         console.log(`Started refreshing ${commands.length} application (/) commands.`);
         const data = yield rest.put(Routes.applicationGuildCommands(process.env.applicationId, process.env.testGuildId), { body: commands });
+        yield rest.put(Routes.applicationCommands(process.env.applicationId, process.env.testGuildId), { body: [] });
         console.log(`Successfully reloaded ${data.length} application (/) commands.`);
     }
     catch (error) {

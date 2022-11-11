@@ -10,13 +10,20 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const discord_js_1 = require("discord.js");
+const ScryfallImplementation_1 = require("../ScryfallImplementation");
 module.exports = {
     data: new discord_js_1.SlashCommandBuilder()
         .setName("billy")
-        .setDescription("Roll for the -x ability of Billy, The Unstable Gambler"),
+        .setDescription("Roll for the second -x ability of Billy, The Unstable Gambler")
+        .addIntegerOption((option) => option.setName("x")
+        .setDescription("X is the ammount of Loyalty Counters spent to use Billy, The Unstable Gabler ability")
+        .setRequired(true)
+        .setMinValue(0)),
     execute(interaction) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield interaction.reply('WIP');
+            var x = interaction.options.getInteger("x");
+            var spellUrl = yield (0, ScryfallImplementation_1.billy)(x);
+            yield interaction.reply("TODO: Billy still doesn't search for custom sorceries.\n" + spellUrl);
         });
     },
 };

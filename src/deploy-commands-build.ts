@@ -28,6 +28,7 @@ var rest = new REST({ version: "10" }).setToken(process.env.VPSTOKEN);
     }
 })();
 
+/*
 var rest2 = new REST({ version: "10" }).setToken(process.env.TOKEN);
 
 (async () => {
@@ -41,4 +42,4 @@ var rest2 = new REST({ version: "10" }).setToken(process.env.TOKEN);
     catch (error) {
         console.error(error);
     }
-})();
+})();*/
