@@ -6,7 +6,7 @@ module.exports = {
         .setDescription("Replies with Pong"),
 
     async execute(interaction: any) {
-        await interaction.reply('Pongstor 3.0');
+        await interaction.reply('Pongstor');
     },
 
 };
