@@ -17,4 +17,4 @@ jobs:
           whoami
           cd Tamiyo-s-Library
           git pull
-
+          pm2 restart tamiyosLibrary
