@@ -22,9 +22,9 @@ module.exports = {
     execute(interaction) {
         return __awaiter(this, void 0, void 0, function* () {
             var x = interaction.options.getInteger("x");
-            interaction.deferReply();
+            yield interaction.deferReply();
             var spellUrl = yield (0, ScryfallImplementation_1.billy)(x, false);
-            yield interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n" + spellUrl);
+            yield interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n\n" + spellUrl);
         });
     },
 };
