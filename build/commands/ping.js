@@ -16,7 +16,7 @@ module.exports = {
         .setDescription("Replies with Pong"),
     execute(interaction) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield interaction.reply('Pongstor 2.0');
+            yield interaction.reply('Pongstor 3.0');
         });
     },
 };
