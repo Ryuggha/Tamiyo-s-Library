@@ -14,7 +14,7 @@ module.exports = {
 
     async execute(interaction: any) {
         var x = interaction.options.getInteger("x");
-        interaction.deferReply();
+        await interaction.deferReply();
 
         var spellUrl = await billy(x, true);
         
