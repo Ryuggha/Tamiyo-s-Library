@@ -7,12 +7,14 @@ async function getScryfallData(request: string): Promise<any[]> {
 
     var response = await fetch(request);
     var json = await response.json();
-
-    ret.push(...json["data"]);
-    if (json["has_more"]) {
-        var nextPage = await getScryfallData(json["next_page"]);
-        ret.push(...nextPage)
+    if (json["data"] != null) {
+        ret.push(...json["data"]);
+        if (json["has_more"]) {
+            var nextPage = await getScryfallData(json["next_page"]);
+            ret.push(...nextPage)
+        }
     }
+    
 
     return ret;
 

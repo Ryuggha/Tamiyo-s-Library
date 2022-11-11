@@ -19,10 +19,12 @@ function getScryfallData(request) {
         var ret = [];
         var response = yield fetch(request);
         var json = yield response.json();
-        ret.push(...json["data"]);
-        if (json["has_more"]) {
-            var nextPage = yield getScryfallData(json["next_page"]);
-            ret.push(...nextPage);
+        if (json["data"] != null) {
+            ret.push(...json["data"]);
+            if (json["has_more"]) {
+                var nextPage = yield getScryfallData(json["next_page"]);
+                ret.push(...nextPage);
+            }
         }
         return ret;
     });
