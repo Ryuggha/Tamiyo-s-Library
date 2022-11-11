@@ -14,10 +14,11 @@ module.exports = {
 
     async execute(interaction: any) {
         var x = interaction.options.getInteger("x");
+        interaction.deferReply();
 
         var spellUrl = await billy(x);
         
-        await interaction.reply("TODO: Billy still doesn't search for custom sorceries.\n"+ spellUrl);
+        await interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n"+ spellUrl);
     },
 
 };
