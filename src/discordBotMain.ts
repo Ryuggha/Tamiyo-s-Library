@@ -126,7 +126,7 @@ client.on(Events.InteractionCreate, async (interaction: any) => {
             .setTimestamp()
             .setFooter({ text: "Tamiyo's Library", iconURL: 'https://i.imgur.com/jquHe9A.png' });
         
-        await interaction.editReply({ embeds: [deckEmbed] });
+        await interaction.editReply({ content: `${interaction.user}`, embeds: [deckEmbed] });
 
         await interaction.followUp( {files: [deckFile]} );
         if (deck[1] != "") await interaction.followUp(deck[1]);

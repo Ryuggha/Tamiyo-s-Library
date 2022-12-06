@@ -114,7 +114,7 @@ client.on(Events.InteractionCreate, (interaction) => __awaiter(void 0, void 0, v
             .addFields({ name: 'Deck Download ↓', value: 'Put this file in \\Tabletop Simulator\\Saves\\Saved Objects', inline: true })
             .setTimestamp()
             .setFooter({ text: "Tamiyo's Library", iconURL: 'https://i.imgur.com/jquHe9A.png' });
-        yield interaction.editReply({ embeds: [deckEmbed] });
+        yield interaction.editReply({ content: `${interaction.user}`, embeds: [deckEmbed] });
         yield interaction.followUp({ files: [deckFile] });
         if (deck[1] != "")
             yield interaction.followUp(deck[1]);
