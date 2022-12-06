@@ -28,7 +28,7 @@ client.on('ready', () => {
     console.log(client.user.username);
     console.log(client.user.id);
     console.log("---------------");
-    client.user.setActivity('my reconstruction', { type: ActivityType.Watching });
+    client.user.setActivity('Use / to see the commands', { type: ActivityType.Watching });
     (0, CustomSetsHandler_1.loadCustomSets)();
 });
 client.commands = new Collection();
@@ -114,7 +114,7 @@ client.on(Events.InteractionCreate, (interaction) => __awaiter(void 0, void 0, v
             .addFields({ name: 'Deck Download ↓', value: 'Put this file in \\Tabletop Simulator\\Saves\\Saved Objects', inline: true })
             .setTimestamp()
             .setFooter({ text: "Tamiyo's Library", iconURL: 'https://i.imgur.com/jquHe9A.png' });
-        yield interaction.followUp({ embeds: [deckEmbed] });
+        yield interaction.editReply({ embeds: [deckEmbed] });
         yield interaction.followUp({ files: [deckFile] });
         if (deck[1] != "")
             yield interaction.followUp(deck[1]);

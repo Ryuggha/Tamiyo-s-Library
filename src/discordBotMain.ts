@@ -21,7 +21,7 @@ client.on('ready', () => {
     console.log(client.user.username);
     console.log(client.user.id);
     console.log("---------------");
-    client.user.setActivity('my reconstruction', { type: ActivityType.Watching });
+    client.user.setActivity('Use / to see the commands', { type: ActivityType.Watching });
     loadCustomSets();
 });
 
@@ -126,7 +126,7 @@ client.on(Events.InteractionCreate, async (interaction: any) => {
             .setTimestamp()
             .setFooter({ text: "Tamiyo's Library", iconURL: 'https://i.imgur.com/jquHe9A.png' });
         
-        await interaction.followUp({ embeds: [deckEmbed] });
+        await interaction.editReply({ embeds: [deckEmbed] });
 
         await interaction.followUp( {files: [deckFile]} );
         if (deck[1] != "") await interaction.followUp(deck[1]);
