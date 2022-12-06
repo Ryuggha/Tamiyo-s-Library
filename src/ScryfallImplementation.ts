@@ -1,4 +1,5 @@
 import { CardLineDict } from "./helpers/CardLineDict";
+import Card from "./helpers/CustomCard";
 import { customSets } from "./helpers/CustomSetsHandler";
 import rndm from "./helpers/rndm";
 
@@ -28,7 +29,8 @@ export async function billy (cmc: string, isTryhard: boolean): Promise<[string, 
     if (isTryhard) var cards = await getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-is:digital+f:commander+-mana:{X}+cmc:" + cmc);
     else var cards = await getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-is:digital+-mana:{X}+cmc:" + cmc);
     var url = "";
-    var customSetSorceries: any[] = [];
+    var customSetSorceries: Card[] = [];
+
     for (const set of customSets) {
         for (const c of set.cards) {
             if (c.type === "Sorcery") customSetSorceries.push(c);
@@ -44,7 +46,7 @@ export async function billy (cmc: string, isTryhard: boolean): Promise<[string, 
         let wefRndm = rnd - cards.length;
 
         if (wefRndm >= 0) {
-            url = customSetSorceries[wefRndm]["png"];
+            url = customSetSorceries[wefRndm].url;
         }
         else {
             var card = cards[rnd];

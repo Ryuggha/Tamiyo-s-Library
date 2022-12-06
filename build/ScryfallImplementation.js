@@ -53,7 +53,7 @@ function billy(cmc, isTryhard) {
             var rnd = rndm_1.default.randomInt(0, cards.length + customSetSorceries.length - 1);
             let wefRndm = rnd - cards.length;
             if (wefRndm >= 0) {
-                url = customSetSorceries[wefRndm]["png"];
+                url = customSetSorceries[wefRndm].url;
             }
             else {
                 var card = cards[rnd];
