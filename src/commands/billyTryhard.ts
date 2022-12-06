@@ -18,7 +18,10 @@ module.exports = {
 
         var spellUrl = await billy(x, true);
         
-        await interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n"+ spellUrl);
+        if (spellUrl[1])
+            await interaction.editReply({ content: `Billy casted a spell of Mana Value of ${x}:`, files: [spellUrl[0]]});
+        else
+            await interaction.editReply(spellUrl[0]);
     },
 
 };
