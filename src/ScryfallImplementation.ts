@@ -22,7 +22,7 @@ async function getScryfallData(request: string): Promise<any[]> {
     return ret;
 }
 
-export async function billy (cmc: string, isTryhard: boolean): Promise<string> {
+export async function billy (cmc: string, isTryhard: boolean): Promise<[string, boolean]> {
     
     if (isTryhard) var cards = await getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-is:digital+f:commander+-mana:{X}+cmc:" + cmc);
     else var cards = await getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-is:digital+-mana:{X}+cmc:" + cmc);
@@ -31,7 +31,7 @@ export async function billy (cmc: string, isTryhard: boolean): Promise<string> {
     console.log("TODO: Custom Set Sorceries");
 
     if (cards.length + customSetSorceries.length <= 0) {
-        return "Billy tried it's best, but can't find any spell...\nYou cast nothing.";
+        return ["Billy tried it's best, but can't find any spell...\nYou cast nothing.", false];
     }
 
     while (url == "") {
@@ -49,7 +49,7 @@ export async function billy (cmc: string, isTryhard: boolean): Promise<string> {
         }
     }
 
-    return url;
+    return [url, true];
 }
 
 export async function getCardFomScryfall(cardName: string): Promise<any> {

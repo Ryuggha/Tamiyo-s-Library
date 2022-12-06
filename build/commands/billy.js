@@ -25,7 +25,10 @@ module.exports = {
             yield interaction.deferReply();
             var spellUrl = yield (0, ScryfallImplementation_1.billy)(x, false);
             yield interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n\n");
-            yield interaction.followUp({ files: [spellUrl] });
+            if (spellUrl[1])
+                yield interaction.followUp({ files: [spellUrl[0]] });
+            else
+                yield interaction.followUp(spellUrl[0]);
         });
     },
 };

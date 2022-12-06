@@ -19,7 +19,10 @@ module.exports = {
         var spellUrl = await billy(x, false);
         
         await interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n\n");
-        await interaction.followUp({ files: [spellUrl]});
+        if (spellUrl[1])
+            await interaction.followUp({ files: [spellUrl[0]]});
+        else
+            await interaction.followUp(spellUrl[0]);
     },
 
 };

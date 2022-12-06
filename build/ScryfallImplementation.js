@@ -41,7 +41,7 @@ function billy(cmc, isTryhard) {
         var customSetSorceries = [];
         console.log("TODO: Custom Set Sorceries");
         if (cards.length + customSetSorceries.length <= 0) {
-            return "Billy tried it's best, but can't find any spell...\nYou cast nothing.";
+            return ["Billy tried it's best, but can't find any spell...\nYou cast nothing.", false];
         }
         while (url == "") {
             var rnd = rndm_1.default.randomInt(0, cards.length + customSetSorceries.length - 1);
@@ -56,7 +56,7 @@ function billy(cmc, isTryhard) {
                 }
             }
         }
-        return url;
+        return [url, true];
     });
 }
 exports.billy = billy;

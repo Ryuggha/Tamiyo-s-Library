@@ -25,7 +25,7 @@ function loadCustomSetsRecursive(actualPath: string, folder: string) {
         if (!file.includes(".")) loadCustomSetsRecursive(actualPath, file);
         else if (file.endsWith(".json")) {
             var cardData = JSON.parse(fs.readFileSync(actualPath+file));
-            customSet.cards.push(new Card(cardData["name"], cardData["png"]));
+            customSet.cards.push(new Card(cardData["name"], cardData["png"], cardData["back"]));
         }
     }
 
