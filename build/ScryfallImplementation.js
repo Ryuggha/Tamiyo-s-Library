@@ -42,7 +42,7 @@ function billy(cmc, isTryhard) {
         var customSetSorceries = [];
         for (const set of CustomSetsHandler_1.customSets) {
             for (const c of set.cards) {
-                if (c.type.toUpperCase().includes("SORCERY"))
+                if (c.type.toUpperCase().includes("SORCERY") && c.manaValue == cmc.toString())
                     customSetSorceries.push(c);
             }
         }

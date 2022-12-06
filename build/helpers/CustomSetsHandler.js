@@ -28,7 +28,7 @@ function loadCustomSetsRecursive(actualPath, folder) {
             loadCustomSetsRecursive(actualPath, file);
         else if (file.endsWith(".json")) {
             var cardData = JSON.parse(fs.readFileSync(actualPath + file));
-            customSet.cards.push(new CustomCard_1.default(cardData["name"], cardData["png"], cardData["back"], cardData["type"]));
+            customSet.cards.push(new CustomCard_1.default(cardData["name"], cardData["png"], cardData["back"], cardData["type"], cardData["cmc"]));
         }
     }
     if (customSet.cards.length != 0)
