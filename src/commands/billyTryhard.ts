@@ -4,7 +4,7 @@ import { billy } from "../ScryfallImplementation";
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("billytryhard")
-        .setDescription("Roll for the second -x ability of Billy, but only ")
+        .setDescription("Roll for the second -x ability of Billy, but only serious cards.")
         .addIntegerOption((option) => 
             option.setName("x")
                 .setDescription("X is the ammount of Loyalty Counters spent to use Billy, The Unstable Gabler ability")
