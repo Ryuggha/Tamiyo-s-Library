@@ -33,7 +33,7 @@ export async function billy (cmc: string, isTryhard: boolean): Promise<[string, 
 
     for (const set of customSets) {
         for (const c of set.cards) {
-            if (c.type === "Sorcery") customSetSorceries.push(c);
+            if (c.type.toUpperCase().includes("SORCERY")) customSetSorceries.push(c);
         }
     }
 
