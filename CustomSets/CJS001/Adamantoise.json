@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Adamantoise",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Beast",
+    "png": "https://mtg.design/i/pwda02.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "1",
+    "tou": "6",
+    "text": "Defender\nWhen Adamantoise is dealt damage, create a Crystal token.",
+    "tokens": []
+}

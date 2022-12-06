@@ -12,11 +12,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const discord_js_1 = require("discord.js");
 module.exports = {
     data: new discord_js_1.SlashCommandBuilder()
-        .setName("build_deck")
-        .setDescription("Creates a deck to use in Tabletop Simulator."),
+        .setName("builddeck")
+        .setDescription("Creates a deck to use in Tabletop Simulator. Don't use arguments, just try it out!"),
     execute(interaction) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield interaction.reply('WIP');
         });
     },
 };

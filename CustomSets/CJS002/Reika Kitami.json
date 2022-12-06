@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Reika Kitami",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Hentaier Demon Human",
+    "png": "https://mtg.design/i/wqkt11.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "You may cast Reika Kitami from the graveyard as long as an opponent controls two or more Tentacle creatures.\nWhen Reika Kitami deals combat damage to a player, gain control of up to two Tentacle token creatures an opponent controls. If you do that, sacrifice Reika Kitami.",
+    "tokens": []
+}

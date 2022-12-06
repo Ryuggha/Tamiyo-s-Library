@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Student's Path",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment — Aura",
+    "png": "https://mtg.design/i/hovk16.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Enchant creature\n\nAs Student's Path enters the battlefield, choose Monk or Wizard. If {u}{r} was spent to cast this spell, choose both instead.\n\n• Monk — Enchanted creature gets +3/+3 and is a Monk in addition to its other types.\n\n• Wizard — Enchanted creature has ward {3}, flying, and is a Wizard in addition to its other types.",
+    "tokens": []
+}

@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Parasitized Champion",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Demon",
+    "png": "https://mtg.design/i/djyq79.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "4",
+    "pow": "3",
+    "tou": "2",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)\n\nWhen Parasitized Champion dies, it deals 1 damage to each opponent, then create a 1/1 black Insect creature token with dragonform.",
+    "tokens": []
+}

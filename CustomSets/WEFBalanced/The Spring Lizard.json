@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "The Spring Lizard",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Spirit Lizard",
+    "png": "https://mtg.design/i/rtmn41.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U",
+        "R"
+    ],
+    "cmc": "5",
+    "pow": "*",
+    "tou": "*",
+    "text": "The Spring Lizard’s power and toughness are each equal to the number of differently named lands you control.\nSacrifice a land: The Spring Lizard gains protection from each color that the sacrificed land could produce.",
+    "tokens": []
+}

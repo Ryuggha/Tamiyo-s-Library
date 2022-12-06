@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Gilgamesh",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Warrior",
+    "png": "https://mtg.design/i/wwyu09.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "4",
+    "pow": "3",
+    "tou": "3",
+    "text": "Haste\nWhen Gilgamesh attacks, roll a d20:\n1-9 | Create a Crystal token and lose 1 life.\n10-19 | Gilgamesh has 1 of the following at random until end of turn: Trample, hexproof, lifelink, indestructible, flying, vigilance.\n20 | Gilgamesh has all of its 10-19 abilities until end of turn. Create a Crystal token.",
+    "tokens": []
+}

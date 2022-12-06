@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Spiritualist Dragoblin",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Goblin Shaman",
+    "png": "https://mtg.design/i/sjwo45.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "2",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)",
+    "tokens": []
+}

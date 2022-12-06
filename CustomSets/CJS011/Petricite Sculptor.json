@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Petricite Sculptor",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Human",
+    "png": "https://mtg.design/i/ylbs71.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "1",
+    "tou": "3",
+    "text": "Creature Knights you control get +1/+1 and have hexproof.",
+    "tokens": []
+}

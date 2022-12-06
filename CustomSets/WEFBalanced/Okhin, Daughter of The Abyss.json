@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Okhin, Daughter of The Abyss",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Human Warlock",
+    "png": "https://mtg.design/i/agyo47.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "6",
+    "pow": "5",
+    "tou": "4",
+    "text": "At the beginning of your end step, create a green Elemental Tide creature token with reach and trample and “This creature’s power and toughness are equal to the number of flooded lands on the battlefield.” \n\nSacrifice a Tide: Okhin, Daughter of The Abyss gains indestructible until end of turn.",
+    "tokens": []
+}

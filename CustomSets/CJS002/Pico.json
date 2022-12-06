@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Pico",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Hentaier Human",
+    "png": "https://mtg.design/i/vzeu64.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "1",
+    "pow": "2",
+    "tou": "1",
+    "text": "Lifelink\n{1}{w}, {t}: Pico deals 1 damage to any target.\nWhen Pico deals damage, create a Tentacle token under an opponent's control.",
+    "tokens": []
+}

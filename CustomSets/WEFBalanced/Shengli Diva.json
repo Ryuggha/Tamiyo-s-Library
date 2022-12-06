@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Shengli Diva",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Bird",
+    "png": "https://mtg.design/i/hvsr89.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "1",
+    "text": "Flying\n{1}{w}: Return Shengli Diva to its owner’s hand.",
+    "tokens": []
+}

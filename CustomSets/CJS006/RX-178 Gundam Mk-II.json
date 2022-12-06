@@ -1,0 +1,15 @@
+{
+    "set": "msg",
+    "name": "RX-178 Gundam Mk-II",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Artifact — Equipment Gundam",
+    "png": "https://mtg.design/i/phps89.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": "Equipped creature gets +3/+3 and has haste.\nIf equipped creature would be destroyed, instead remove all damage from it and destroy this Equipment.\nEquip {3}",
+    "tokens": []
+}

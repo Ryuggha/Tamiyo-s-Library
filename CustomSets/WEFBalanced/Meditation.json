@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Meditation",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/ukku62.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": "Whenever you gain life, put that many +1/+1 counter on target creature you control.",
+    "tokens": []
+}

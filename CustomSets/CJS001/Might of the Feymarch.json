@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Might of the Feymarch",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Enchantment",
+    "png": "https://mtg.design/i/rxtk80.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "At the beginning of each end phase, you may pay {1}{g}. If you do, create a Crystal token. \nEidolon creatures you control cost {1} Crystal token less to summon.",
+    "tokens": []
+}

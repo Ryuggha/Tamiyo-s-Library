@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Kheshig, the Imperial Guard",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Warrior",
+    "png": "https://mtg.design/i/dmjl37.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "Banding\nWhenever Kheshig, the Imperial Guard attacks or blocks, for each other creature banded with it, it gets +0/+2 until end of turn.",
+    "tokens": []
+}

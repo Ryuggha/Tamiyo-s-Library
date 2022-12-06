@@ -1,0 +1,15 @@
+{
+    "set": "cj2",
+    "name": "Sun Tzu",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Human Advisor",
+    "png": "https://mtg.design/i/cvpv80.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "1",
+    "tou": "1",
+    "text": "Flash\nWhen Sun Tzu enters the battlefield, put a -1/-1 counter on each attacking or blocking creature target opponent controls.",
+    "tokens": []
+}

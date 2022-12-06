@@ -25,7 +25,7 @@ else:
     ownerId = int(localVars['ownerId'])
 
 client = commands.Bot(command_prefix='|', description="This is my personal bot", help_command=None,
-                      case_insensitive=True)
+                      case_insensitive=True, intents=discord.Intents.all())
 
 
 @client.event

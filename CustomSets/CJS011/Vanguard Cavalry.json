@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Vanguard Cavalry",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Knight",
+    "png": "https://mtg.design/i/njej48.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "Flash\nFirst Strike",
+    "tokens": []
+}

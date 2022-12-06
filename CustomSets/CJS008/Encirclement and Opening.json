@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Encirclement and Opening",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/gvui22.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "When Encirclement and Opening enters the battlefield, draw a card.\nWhenever a creature you control attacks or blocks in a band, it gets +1/+1 until end of turn.",
+    "tokens": []
+}

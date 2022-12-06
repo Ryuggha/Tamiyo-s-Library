@@ -1,0 +1,15 @@
+{
+    "set": "fbi",
+    "name": "Shiro",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Loli Human Gamer",
+    "png": "https://mtg.design/i/ubkt71.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "1",
+    "tou": "4",
+    "text": "Defender \nWhen Shiro enters the battlefield, you may destroy target enchantment. If you do, you may have target creature become a Groomer in addition to its other types.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Forgotten Knowledge",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/vrkd10.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "Put target instant or sorcery card from your graveyard on top of your library.",
+    "tokens": []
+}

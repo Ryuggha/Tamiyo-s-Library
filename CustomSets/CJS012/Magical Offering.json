@@ -1,0 +1,15 @@
+{
+    "set": "csj",
+    "name": "Magical Offering",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/judy46.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "{T} Sacrifice a creature: Put a -X/-X or X/X counter on target creature where X is equal to the power of sacrificed creature.\n\n{T} Pay X life: Return target creature card with mana value equal to or less than X where X is equal to the amount of life lost.",
+    "tokens": []
+}

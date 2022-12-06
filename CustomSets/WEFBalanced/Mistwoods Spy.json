@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Mistwoods Spy",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Fox Wizard",
+    "png": "https://mtg.design/i/uync49.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "2",
+    "pow": "3",
+    "tou": "1",
+    "text": "Whenever you cast your second spell each turn, Mistwoods Spy can’t be blocked this turn.\n\n\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

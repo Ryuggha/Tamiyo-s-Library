@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "War Executor",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Knight",
+    "png": "https://mtg.design/i/vyjs02.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)",
+    "tokens": []
+}

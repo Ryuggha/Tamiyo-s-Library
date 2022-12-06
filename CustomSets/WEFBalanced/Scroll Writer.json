@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Scroll Writer",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Fox Wizard",
+    "png": "https://mtg.design/i/iclm69.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "2",
+    "text": "{t}: Exile the top card of your library. You may play that card this turn if it's an instant or sorcery spell. \nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

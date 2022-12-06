@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Master of Battles",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Monk",
+    "png": "https://mtg.design/i/ognm96.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "4",
+    "pow": "3",
+    "tou": "3",
+    "text": "Whenever Master of Battles attacks, you may pay {r}. If you do, whenever Master of Battles deals damage to an opponent, target player draws a card.",
+    "tokens": []
+}

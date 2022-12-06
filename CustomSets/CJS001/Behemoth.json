@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Behemoth",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Beast",
+    "png": "https://mtg.design/i/ryyy05.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "2",
+    "text": "Indestructible\nSacrifice a Crystal token: Behemoth gets +1/+1 until end of turn. \nWhen a Crystal token leaves the battlefield, put a Calamity counter on Behemoth. When Behemoth has 10 or more Calamity counters, destroy all lands on the battlefield and remove all Calamity counters.",
+    "tokens": []
+}

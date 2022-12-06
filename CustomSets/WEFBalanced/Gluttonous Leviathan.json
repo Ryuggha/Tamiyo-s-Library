@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Gluttonous Leviathan",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Leviathan",
+    "png": "https://mtg.design/i/bkjb66.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "8",
+    "pow": "5",
+    "tou": "6",
+    "text": "This spell costs {4} less to cast if a player has eight or more cards in their graveyard.\nFlood {1}{u}{b} (During your turn, you may pay {1}{u}{b} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”) \nWhen you flood Gluttonous Leviathan, each player mills two cards.",
+    "tokens": []
+}

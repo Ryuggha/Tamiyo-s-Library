@@ -1,0 +1,15 @@
+{
+    "set": "msg",
+    "name": "RX-0 Unicorn Gundam",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Legendary Artifact — Equipment Gundam",
+    "png": "https://mtg.design/i/rkcc66.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "5",
+    "pow": "0",
+    "tou": "0",
+    "text": "Indestructible\nEquipped creature gets +5/+5 and has trample, indestructible and annihilator 2.\nAt the beginning of your upkeep, unattach RX-0 Unicorn Gundam.\nEquip {6}",
+    "tokens": []
+}

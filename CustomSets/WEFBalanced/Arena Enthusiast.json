@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Arena Enthusiast",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Demon Warrior",
+    "png": "https://mtg.design/i/hydl32.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "4",
+    "tou": "4",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)",
+    "tokens": []
+}

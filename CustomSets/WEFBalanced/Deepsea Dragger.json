@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Deepsea Dragger",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Wolf Fish",
+    "png": "https://mtg.design/i/itbt00.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "2",
+    "text": "{X}{b}, {T}, Sacrifice Deepsea Dragger: Destroy target creature with mana value X or less. This ability costs {1} less to activate for each flooded land on the battlefield. Activate only as a sorcery.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
+}

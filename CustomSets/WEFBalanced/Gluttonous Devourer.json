@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Gluttonous Devourer",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Merfolk",
+    "png": "https://mtg.design/i/omeb12.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "2",
+    "text": "Whenever you flood a card, put a +1/+1 counter on Gluttonous Devourer.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
+}

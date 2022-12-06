@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Tumen, the Horde",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Warrior",
+    "png": "https://mtg.design/i/zxpd60.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "2",
+    "text": "Banding\nHorsemanship\nWhenever Tumen, the Horde attacks or blocks in a band, each creature in that band gains first strike until end of turn.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "cj2",
+    "name": "Yi Sun-Sin",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Human Advisor",
+    "png": "https://mtg.design/i/unzl88.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "Other creatures lose islandwalk.\nWhen Yi Sun-Sin enters the battlefield, you may destroy target blue permanent. If you do, put a +1/+1 counter on Yi Sun-Sin.",
+    "tokens": []
+}

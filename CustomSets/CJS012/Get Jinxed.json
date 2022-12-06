@@ -1,0 +1,15 @@
+{
+    "set": "csj",
+    "name": "Get Jinxed",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Instant",
+    "png": "https://mtg.design/i/kbvj01.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "6",
+    "pow": "0",
+    "tou": "0",
+    "text": "This spell costs {1} less to cast if you control a Cat.\nDestroy target creature. Draw a card.",
+    "tokens": []
+}

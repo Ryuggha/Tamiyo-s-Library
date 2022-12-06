@@ -1,0 +1,15 @@
+{
+    "set": "fbi",
+    "name": "FBI, Open Up!",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Instant",
+    "png": "https://mtg.design/i/njtk99.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "Exile all Groomer creatures. Gain 2 life for each creature exiled this way.\nLoli Recover {1}{w} (When a Loli creature is put into your graveyard from the battlefield, you may pay {1}{w}. If you do, return this card from your graveyard to your hand. Otherwise, exile this card.)",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Mounted Arban",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Warrior",
+    "png": "https://mtg.design/i/mugi44.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "1",
+    "text": "Banding\nHorsemanship",
+    "tokens": []
+}

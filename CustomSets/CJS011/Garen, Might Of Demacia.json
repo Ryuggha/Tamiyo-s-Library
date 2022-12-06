@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Garen, Might Of Demacia",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Human Knight",
+    "png": "https://mtg.design/i/appk51.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "5",
+    "pow": "5",
+    "tou": "5",
+    "text": "First Strike, Vigilance\nWhenever Garen, Might Of Demacia attacks, target enemy creature loses all abilities until your next untap step.\n{W}{W}{W}: Garen, Might Of Demacia gains indestructible until end of turn.",
+    "tokens": []
+}

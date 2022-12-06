@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Breed of Uramasi",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Cat",
+    "png": "https://mtg.design/i/desr63.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "You may pay {r} rather than pay this spell’s mana cost. Spend only mana produced by summon to cast it this way.\nHaste",
+    "tokens": []
+}

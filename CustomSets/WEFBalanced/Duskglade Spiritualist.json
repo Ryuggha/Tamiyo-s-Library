@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Duskglade Spiritualist",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Human Wizard Monk",
+    "png": "https://mtg.design/i/eoby05.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "2",
+    "tou": "3",
+    "text": "{1}{u}: Scry 1.\n{1}{r}: The next sorcery or instant spell you cast this turn can’t be countered.\n{1}{w}: Return Duskglade Spiritualist to its owner’s hand.",
+    "tokens": []
+}

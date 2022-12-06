@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Sophia",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Hentaier Human",
+    "png": "https://mtg.design/i/hxfk33.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "2",
+    "text": "Double Strike \nSophia has flying as long as an opponent controls four or more Tentacle creatures.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Heavy Artillery",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/bhln10.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "{1}{r}, Sacrifice an artifact or creature: Heavy Artillery deals 2 damage to any target. \n\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)",
+    "tokens": []
+}

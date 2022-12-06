@@ -2,7 +2,7 @@ import { SlashCommandBuilder } from "discord.js";
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("draft_packs")
+        .setName("draftpacks")
         .setDescription("Generates draft packs for use in Tabletop Simulator."),
 
     async execute(interaction: any) {

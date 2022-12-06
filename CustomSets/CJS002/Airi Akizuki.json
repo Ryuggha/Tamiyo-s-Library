@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Airi Akizuki",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Hentaier Loli",
+    "png": "https://mtg.design/i/ieno63.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "4",
+    "text": "When Airi Akizuki enters the battlefield, create a Tentacle token under an opponent's control. \nAiri Akizuki has +0/+1 for each Tentacle on the battlefield.",
+    "tokens": []
+}

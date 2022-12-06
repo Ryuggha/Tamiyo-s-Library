@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Ruiner of Shores",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Leviathan",
+    "png": "https://mtg.design/i/vayv44.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "B",
+        "G"
+    ],
+    "cmc": "6",
+    "pow": "3",
+    "tou": "5",
+    "text": "When Ruiner of Shores enters the battlefield, all other creatures get -1/-1 until end of turn for each flooded land on the battlefield.\nFlood {2}{b}{b} (During your turn, you may pay {2}{b}{b} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\nWhenever you flood Ruiner of Shores, all creatures get -1/-1 until end of turn.",
+    "tokens": []
+}

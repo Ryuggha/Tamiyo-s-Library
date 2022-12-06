@@ -1,0 +1,15 @@
+{
+    "set": "csj",
+    "name": "Small Cat Griffin",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Cat Griffin",
+    "png": "https://mtg.design/i/oyqg86.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "2",
+    "text": "Flying.\nLifelink.",
+    "tokens": []
+}

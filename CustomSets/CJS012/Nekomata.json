@@ -1,0 +1,15 @@
+{
+    "set": "csj",
+    "name": "Nekomata",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Cat Spirit",
+    "png": "https://mtg.design/i/kcdn38.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "1",
+    "text": "Whenever a Cat you control dies while Nekomata is in your graveyard, you may pay {B}. If you do, return Nekomata from your graveyard to the battlefield.",
+    "tokens": []
+}

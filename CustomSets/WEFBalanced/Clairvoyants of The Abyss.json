@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Clairvoyants of The Abyss",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Merfolk Warlock",
+    "png": "https://mtg.design/i/vxqm71.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "3",
+    "text": "{T}: Add {c}.\n{T}: Add {c}{c}. Spend this mana only to activate a flood ability.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
+}

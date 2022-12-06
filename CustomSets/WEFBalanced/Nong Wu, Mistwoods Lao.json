@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Nong Wu, Mistwoods Lao",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Human Wizard",
+    "png": "https://mtg.design/i/rnjl03.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "2",
+    "text": "Defender, ward {3}\n\nAt the beginning of each end step, meditate for each card you’ve drawn this turn (To meditate put an orb counter on a Chi you control. If you don’t control one, first create a Chi enchantment token with \"{1}, Sacrifice this: Copy target instant or sorcery spell you control with mana value less than or equal to the number of orb counters on this. You may choose new targets for the copy.\")",
+    "tokens": []
+}

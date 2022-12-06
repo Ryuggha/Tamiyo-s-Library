@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Highpeak Training",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/hmrh11.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Create two 1/1 white Monk creature tokens.",
+    "tokens": []
+}

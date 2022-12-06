@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Path to the Last Seal",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/dyuc71.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Whenever you flood a card, look at the top three cards of your library. You may reveal a land card from among them and put that card into your hand. Put the rest on the bottom of your library in any order.\n{X}{g}, Sacrifice Path to the Last Seal: Destroy target artifact or enchantment with mana value X or less.",
+    "tokens": []
+}

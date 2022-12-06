@@ -1,0 +1,15 @@
+{
+    "set": "cj2",
+    "name": "Unreturning Formation, Stone Sentinel Maze",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Instant",
+    "png": "https://mtg.design/i/wpfa19.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Cast this spell only during combat after blockers are declared.\nTap all blocking creatures, untap all attacking creatures. Remove all creatures from combat. After this combat phase, there is an additional combat phase.",
+    "tokens": []
+}

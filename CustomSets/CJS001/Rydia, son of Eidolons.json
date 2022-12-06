@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Rydia, son of Eidolons",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Planeswalker — Human",
+    "png": "https://mtg.design/i/voso86.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": "1: Create a Crystal token.",
+    "tokens": []
+}

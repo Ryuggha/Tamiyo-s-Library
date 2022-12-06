@@ -1,0 +1,15 @@
+{
+    "set": "msg",
+    "name": "White Base",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Artifact — Vehicle",
+    "png": "https://mtg.design/i/fbpp18.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "3",
+    "pow": "4",
+    "tou": "4",
+    "text": "Flying\nWhenever White Base attacks, you may draw a card. If you do, discard a card.\nCrew 3 (Tap any number of creatures you control with total power 3 or more: This Vehicle becomes an artifact creature until end of turn.)",
+    "tokens": []
+}

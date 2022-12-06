@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Luugal Headhunter",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Demon Knight",
+    "png": "https://mtg.design/i/ayqx28.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "Luugal Headhunter can’t block.\n\nWhenever Luugal Headhunter deals combat damage to a player, create a Head token. (It’s an artifact with “{1}{w}, {T}, Sacrifice this artifact: Gain 3 life.”)",
+    "tokens": []
+}

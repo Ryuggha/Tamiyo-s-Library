@@ -1,0 +1,15 @@
+{
+    "set": "fbi",
+    "name": "Loli Mass Production Factory",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Artifact",
+    "png": "https://mtg.design/i/ygzo66.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "At the beginning of your upkeep, create a 1/1  white Loli creature token.\n2, {t}: Draw a card. Return Loli Mass Production Factory to its owner's hand.",
+    "tokens": []
+}

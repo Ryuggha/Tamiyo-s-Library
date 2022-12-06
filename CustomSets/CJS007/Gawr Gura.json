@@ -1,0 +1,15 @@
+{
+    "set": "fbi",
+    "name": "Gawr Gura",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Loli",
+    "png": "https://mtg.design/i/razs63.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "2",
+    "text": "When Gawr Gura enters the battlefield, you may have target creature become a Groomer in addition to its other types.\n{t}: Add {1} for each Groomer creature on the battlefield.",
+    "tokens": []
+}

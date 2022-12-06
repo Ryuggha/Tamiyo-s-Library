@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Coeurl",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Beast",
+    "png": "https://mtg.design/i/krap14.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "Flash\nWhen Coeurl enters the battlefield, create a Crystal token. \n{2}{g}{g}: Return Coeurl to its owner's hand.",
+    "tokens": []
+}

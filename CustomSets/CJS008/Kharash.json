@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Kharash",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/cwvx07.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste and banding until end of turn.",
+    "tokens": []
+}

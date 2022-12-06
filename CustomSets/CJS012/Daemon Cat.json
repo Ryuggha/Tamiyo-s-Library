@@ -1,0 +1,15 @@
+{
+    "set": "csj",
+    "name": "Daemon Cat",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Cat Demon",
+    "png": "https://mtg.design/i/hknv12.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "3",
+    "text": "Flying.\nDeathtouch.\nWhen this creature deals combat damage to a player,  that player sacrifices a nonland permanent, pays 3 life, or discards a card.",
+    "tokens": []
+}

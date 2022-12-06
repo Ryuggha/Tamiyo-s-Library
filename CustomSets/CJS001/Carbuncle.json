@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Carbuncle",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Beast",
+    "png": "https://mtg.design/i/krtw17.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "3",
+    "text": "Flying\nWhen Carbuncle deals combat damage to an opponent, choose one: \n·You gain 2 life.\n·You may put a land from your hand onto the battlefield tapped.",
+    "tokens": []
+}

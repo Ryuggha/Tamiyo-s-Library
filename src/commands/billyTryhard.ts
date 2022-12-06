@@ -3,7 +3,7 @@ import { billy } from "../ScryfallImplementation";
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("billy_tryhard")
+        .setName("billytryhard")
         .setDescription("Roll for the second -x ability of Billy, but only ")
         .addIntegerOption((option) => 
             option.setName("x")

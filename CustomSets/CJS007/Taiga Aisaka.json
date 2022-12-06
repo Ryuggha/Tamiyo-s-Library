@@ -1,0 +1,15 @@
+{
+    "set": "fbi",
+    "name": "Taiga Aisaka",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Loli Human",
+    "png": "https://mtg.design/i/qzpo46.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "First strike\nWhenever Taiga Aisaka attacks,  put a +1/+1 counter on each other Loli creature you control.",
+    "tokens": []
+}

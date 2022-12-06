@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Petal, His Flame",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Spirit",
+    "png": "https://mtg.design/i/hldt46.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "1",
+    "tou": "3",
+    "text": "Partner with Vent, Her Darling (When this creature enters the battlefield, target player may put Vent, Her Darling into their hand from their library, then shuffle.)\n\nWhenever Petal, His Flame deals combat damage to a player, you may discard a card. If you do, draw two cards.",
+    "tokens": []
+}

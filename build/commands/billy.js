@@ -24,7 +24,8 @@ module.exports = {
             var x = interaction.options.getInteger("x");
             yield interaction.deferReply();
             var spellUrl = yield (0, ScryfallImplementation_1.billy)(x, false);
-            yield interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n\n" + spellUrl);
+            yield interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n\n");
+            yield interaction.followUp({ files: [spellUrl] });
         });
     },
 };

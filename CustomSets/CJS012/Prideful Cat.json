@@ -1,0 +1,15 @@
+{
+    "set": "csj",
+    "name": "Prideful Cat",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Cat",
+    "png": "https://mtg.design/i/tnyl33.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "1",
+    "text": "When Prideful Cat enters the battlefield, draw a card.",
+    "tokens": []
+}

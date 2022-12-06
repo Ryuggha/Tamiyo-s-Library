@@ -1,0 +1,15 @@
+{
+    "set": "msg",
+    "name": "RX-78 Gundam",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Artifact — Equipment Gundam",
+    "png": "https://mtg.design/i/twme17.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "Equipped creature gets +X/+2, where X is the number of Technolearning counters on RX-78 Gundam.\nWhenever equipped creature attacks, put a Technolearning counter on RX-78 Gundam.\nEquip {2}",
+    "tokens": []
+}

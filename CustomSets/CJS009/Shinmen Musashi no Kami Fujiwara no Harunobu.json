@@ -1,0 +1,15 @@
+{
+    "set": "cj2",
+    "name": "Shinmen Musashi no Kami Fujiwara no Harunobu",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Human Samurai",
+    "png": "https://mtg.design/i/tqkl15.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "2",
+    "text": "Flash\nWhen Shinmen Musashi no Kami Fujiwara no Harunobu enters the battlefield, prevent all damage that would be dealt to you and planeswalkers you control this turn by target creature you don’t control. If damage is prevented this way, Shinmen Musashi no Kami Fujiwara no Harunobu deals that much damage to that creature.",
+    "tokens": []
+}

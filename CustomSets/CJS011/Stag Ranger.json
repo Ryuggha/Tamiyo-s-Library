@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Stag Ranger",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Knight",
+    "png": "https://mtg.design/i/kryc70.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "6",
+    "pow": "3",
+    "tou": "7",
+    "text": "Vigilance",
+    "tokens": []
+}

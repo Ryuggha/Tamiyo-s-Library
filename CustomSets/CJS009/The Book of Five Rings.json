@@ -1,0 +1,15 @@
+{
+    "set": "cj2",
+    "name": "The Book of Five Rings",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Artifact",
+    "png": "https://mtg.design/i/bdwt95.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "5",
+    "pow": "0",
+    "tou": "0",
+    "text": "Creatures you control have bushido 2 (Whenever this creature blocks or becomes blocked, it gets +2/+2 until end of turn.)",
+    "tokens": []
+}

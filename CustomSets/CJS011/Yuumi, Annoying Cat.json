@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Yuumi, Annoying Cat",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Enchantment — Aura",
+    "png": "https://mtg.design/i/tgmj73.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "0",
+    "text": "Enchant creature\nEnchanted creature loses all abilities and has defender.",
+    "tokens": []
+}

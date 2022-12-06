@@ -1,0 +1,15 @@
+{
+    "set": "msg",
+    "name": "Char Aznable",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Human Newtype",
+    "png": "https://mtg.design/i/mzct16.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "As long as Char Aznable is equipped, it gets +3/+0 and has haste.\nWhen Char Aznable dies, target creature an opponent controls deals damage equal to its power to another creature that player controls.",
+    "tokens": []
+}

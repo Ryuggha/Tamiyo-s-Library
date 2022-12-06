@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Memory Void",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/ugwx08.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "0",
+    "text": "Search target opponent’s library for a card and exile it face down. Then that player shuffles. You may look at that card for as long as it remains exiled.",
+    "tokens": []
+}

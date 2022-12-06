@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Ayane Shirakawa",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Hentaier Human",
+    "png": "https://mtg.design/i/bdgm76.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "4",
+    "pow": "3",
+    "tou": "4",
+    "text": "Trample\nWhen Ayane Shirakawa enters the battlefield or attacks, create a Tentacle token under an opponent's control. \n{2}{w}, {t}: Put a +1/+1 counter on Ayane Shirakawa. If an opponent controls three or more Tentacle tokens, instead put two +1/+1 counters and gain 2 life.",
+    "tokens": []
+}

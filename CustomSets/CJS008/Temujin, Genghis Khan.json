@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Temujin, Genghis Khan",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Legendary Creature — Human Warrior",
+    "png": "https://mtg.design/i/zeuf04.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "5",
+    "tou": "4",
+    "text": "Banding\nHorsemanship, trample\nWhenever Temujin, Genghis Khan attacks, all creatures banded with it get +2/+2 and gain trample until end of turn.",
+    "tokens": []
+}

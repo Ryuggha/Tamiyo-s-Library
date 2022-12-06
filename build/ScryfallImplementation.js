@@ -12,8 +12,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.billy = void 0;
+exports.getSpecificCardFromScryfall = exports.getCardFomScryfall = exports.billy = void 0;
 const rndm_1 = __importDefault(require("./helpers/rndm"));
+var officialBack = "https://i.imgur.com/hsYf4R9.jpg";
+var customBack = "";
 function getScryfallData(request) {
     return __awaiter(this, void 0, void 0, function* () {
         var ret = [];
@@ -58,3 +60,24 @@ function billy(cmc, isTryhard) {
     });
 }
 exports.billy = billy;
+function getCardFomScryfall(cardName) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return (yield getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardName}\"`))[0];
+    });
+}
+exports.getCardFomScryfall = getCardFomScryfall;
+function getSpecificCardFromScryfall(cardDict) {
+    return __awaiter(this, void 0, void 0, function* () {
+        if (cardDict.set !== "") {
+            if (cardDict.setNum !== "") {
+                return (yield getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardDict.name}\"+set:\"${cardDict.set}\"+number:\"${cardDict.setNum}\"`))[0];
+            }
+            else
+                return (yield getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardDict.name}\"+set:\"${cardDict.set}\"`))[0];
+        }
+        else {
+            return getCardFomScryfall(cardDict.name);
+        }
+    });
+}
+exports.getSpecificCardFromScryfall = getSpecificCardFromScryfall;

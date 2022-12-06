@@ -1,0 +1,15 @@
+{
+    "set": "csj",
+    "name": "Rise from the Grave",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/tzza64.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "Return target creature card from your graveyard to your hand. If it's a Cat card, draw a card.",
+    "tokens": []
+}

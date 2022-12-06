@@ -1,0 +1,15 @@
+{
+    "set": "cj2",
+    "name": "Deceive the Heavens to Cross the Sea",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Enchantment Saga",
+    "png": "https://mtg.design/i/aguu02.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Create two 1/1 white Human Soldier tokens.",
+    "tokens": []
+}

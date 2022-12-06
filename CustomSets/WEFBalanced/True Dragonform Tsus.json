@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "True Dragonform Tsus",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Legendary Creature — Dragon",
+    "png": "https://mtg.design/i/xvgl26.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "5",
+    "tou": "5",
+    "text": "Flying\nYour opponents can’t gain life.\nAt the beginning of your upkeep, you may tranform True Dragonform Tsus.",
+    "tokens": []
+}

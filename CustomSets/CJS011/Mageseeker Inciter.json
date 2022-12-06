@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Mageseeker Inciter",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Knight",
+    "png": "https://mtg.design/i/ifes33.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "2",
+    "text": "{1},{T}: Tap target creature you don't control.",
+    "tokens": []
+}

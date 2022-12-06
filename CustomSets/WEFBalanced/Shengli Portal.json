@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Shengli Portal",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Legendary Enchantment — Gate",
+    "png": "https://mtg.design/i/rsmh58.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U",
+        "R"
+    ],
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": "Whenever you summon, draw a card, then discard a card. You gain 2 life.\n{u}{u}{u}{u}{u}: Reveal the top four cards of your library. You may cast up to two instant and/or sorcery spells among them without paying its mana cost. Put the rest back on top of your library in any order.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Dawnhill Rearguard",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Human Wizard",
+    "png": "https://mtg.design/i/nktu08.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "3",
+    "text": "Whenever you cast your second spell each turn, Dawnhill Rearguard deals 3 damage to each opponent.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

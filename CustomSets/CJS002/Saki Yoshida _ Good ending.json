@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Saki Yoshida // Good ending",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Hentaier Human",
+    "png": "https://mtg.design/i/lbmt18.jpg",
+    "back": "https://mtg.design/i/jyko02.jpg",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "1",
+    "text": "When Saki Yoshida dies, you may return it to the battlefield transformed under your control. If you do, create a Tentacle token under an opponent's control.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Territorial Sharpjaw",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Crocodile",
+    "png": "https://mtg.design/i/xfui49.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "7",
+    "pow": "6",
+    "tou": "6",
+    "text": "Flood {2}{g}{g}(During your turn, you may pay {2}{g}{g} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”) \nWhenever you flood Territorial Sharpjaw or it enters the battlefield, target creature you control fights target creature you don’t control.",
+    "tokens": []
+}

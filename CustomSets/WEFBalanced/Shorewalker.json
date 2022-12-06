@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Shorewalker",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Horror",
+    "png": "https://mtg.design/i/ljsl90.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "2",
+    "pow": "3",
+    "tou": "1",
+    "text": "Shorewalker can’t be blocked by creatures with power X or less, where X is the number of flooded lands defending player controls.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
+}

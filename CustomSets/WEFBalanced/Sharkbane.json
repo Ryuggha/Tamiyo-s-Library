@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Sharkbane",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Leviathan",
+    "png": "https://mtg.design/i/gsay62.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "Flood {2}{g}{u} (During your turn, you may pay {2}{g}{u} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”) \nWhenever you flood Sharkbane, create a 2/2 blue Shark creature token.",
+    "tokens": []
+}

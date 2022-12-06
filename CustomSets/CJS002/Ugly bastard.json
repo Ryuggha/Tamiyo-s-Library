@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Ugly bastard",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Creature — Groomer Human?",
+    "png": "https://mtg.design/i/tcld82.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "5",
+    "pow": "4",
+    "tou": "5",
+    "text": "When Ugly Bastard enters the battlefield, destroy all Lolis and Hentaiers. \nGain control of all Tentacle creatures on the battlefield.\nTentacle creatures you control get +1/+0 and have haste.",
+    "tokens": []
+}

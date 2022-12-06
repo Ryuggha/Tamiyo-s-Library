@@ -1,0 +1,15 @@
+{
+    "set": "cj2",
+    "name": "Zhuge Liang, Sleeping Dragon",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Legendary Creature — Human Advisor",
+    "png": "https://mtg.design/i/wqbo93.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "5",
+    "pow": "2",
+    "tou": "2",
+    "text": "Permanents you control have protection from the color of all tapped creatures your opponents control. \nDuring your turn, your opponents can’t cast spells or activate abilities of artifacts, creatures, or enchantments.",
+    "tokens": []
+}

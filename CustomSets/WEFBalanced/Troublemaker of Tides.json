@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Troublemaker of Tides",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Serpent",
+    "png": "https://mtg.design/i/nihu83.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "5",
+    "pow": "3",
+    "tou": "4",
+    "text": "Flash\nFlood {2}{u}{u} (During your turn, you may pay {2}{u}{u} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\nWhenever you flood Troublemaker of Tides or it enters the battlefield, you may return target creature an opponent controls to its owner’s hand.",
+    "tokens": []
+}

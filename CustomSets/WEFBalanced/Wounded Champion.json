@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Wounded Champion",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Human Soldier",
+    "png": "https://mtg.design/i/dnbi97.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "1",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)\n\nWhenever Wounded Champion attacks, you may pay 1 life. If you do, put a +1/+1 counter on it.",
+    "tokens": []
+}

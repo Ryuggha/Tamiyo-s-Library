@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Vanguard Bannerman",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Knight",
+    "png": "https://mtg.design/i/foui65.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "5",
+    "pow": "2",
+    "tou": "2",
+    "text": "This spell cost {1} less for each Knight creature you control.\nWhen Vanguard Bannerman enters the battlefield, draw a card.",
+    "tokens": []
+}

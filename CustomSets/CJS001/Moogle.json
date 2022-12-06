@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Moogle",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Beast",
+    "png": "https://mtg.design/i/mqkv23.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "2",
+    "text": "Flying\nWhen Moogle enters the battlefield, create a Crystal token.",
+    "tokens": []
+}

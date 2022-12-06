@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Örtöö, the Supply Chain",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Human Warrior",
+    "png": "https://mtg.design/i/jkxj88.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "1",
+    "text": "Banding\nHorsemanship\nWhenever Örtöö, the Supply Chain attacks in a band, all other creatures banding with it gain horsemanship until end of turn.",
+    "tokens": []
+}

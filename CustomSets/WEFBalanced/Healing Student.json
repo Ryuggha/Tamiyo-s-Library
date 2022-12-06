@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Healing Student",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Fox Wizard",
+    "png": "https://mtg.design/i/elvg07.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "3",
+    "text": "Whenever you cast your second instant or sorcery spell each turn, you gain 3 life.\n\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

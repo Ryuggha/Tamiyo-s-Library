@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Subutai, Örlög Baghatur",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Human Warrior",
+    "png": "https://mtg.design/i/tzae23.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "2",
+    "text": "Banding\nHorsemanship\nWhenever Subutai, Örlög Baghatur attacks, for each other creature banded with it, Subutai, Örlög Baghatur deals 2 damage to target opponent.",
+    "tokens": []
+}

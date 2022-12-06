@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Oebfinn, Father of The Abyss",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Cephalid Cleric",
+    "png": "https://mtg.design/i/pqpc39.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "7",
+    "pow": "6",
+    "tou": "6",
+    "text": "At the beginning of your upkeep, put a card you own from outside the game into your hand.\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "tokens": []
+}

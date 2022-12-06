@@ -1,0 +1,15 @@
+{
+    "set": "fbi",
+    "name": "Shinobu Oshino // Kiss-Shot Acerola-Orion Heart-Under-Blade",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Legendary Creature — Vampire Loli",
+    "png": "https://mtg.design/i/rxyg81.jpg",
+    "back": "https://mtg.design/i/wchw37.jpg",
+    "colors": "W",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "3",
+    "text": "At the beginning of your upkeep, you may have target creature become a Groomer in addition to its other types. \n{w}{w}, Pay half your life, rounded up: Transform this card.",
+    "tokens": []
+}

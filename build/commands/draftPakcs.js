@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const discord_js_1 = require("discord.js");
 module.exports = {
     data: new discord_js_1.SlashCommandBuilder()
-        .setName("draft_packs")
+        .setName("draftpacks")
         .setDescription("Generates draft packs for use in Tabletop Simulator."),
     execute(interaction) {
         return __awaiter(this, void 0, void 0, function* () {

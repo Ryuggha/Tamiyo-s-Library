@@ -1,0 +1,15 @@
+{
+    "set": "cj2",
+    "name": "Qin Shi Huang, First Emperor of Qin",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Human Noble",
+    "png": "https://mtg.design/i/ncxi73.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "1",
+    "tou": "1",
+    "text": "{t}: Target unblocked attacking creature becomes blocked. (This ability works on creatures that can’t be blocked.)",
+    "tokens": []
+}

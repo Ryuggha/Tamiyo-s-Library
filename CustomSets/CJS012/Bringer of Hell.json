@@ -1,0 +1,15 @@
+{
+    "set": "csj",
+    "name": "Bringer of Hell",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Cat Devil",
+    "png": "https://mtg.design/i/xsob71.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "5",
+    "pow": "3",
+    "tou": "3",
+    "text": "When Bringer of Hell enters the battlefield, destroy target creature or planeswalker target opponent controls.",
+    "tokens": []
+}

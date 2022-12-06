@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Mari Setagaya",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Hentaier Vampire Succubus",
+    "png": "https://mtg.design/i/ursj69.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "2",
+    "text": "Flying\nWhen Mari Setagaya enters the battlefield, create a Tentacle token under an opponent's control.",
+    "tokens": []
+}

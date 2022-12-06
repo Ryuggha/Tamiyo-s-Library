@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Tonberry",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Beast",
+    "png": "https://mtg.design/i/eoek94.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "1",
+    "tou": "2",
+    "text": "Deathtouch\nIf Tonberry deals combat damage to a player, that player sacrifices a permanent or loses the game. Create a Crystal token.",
+    "tokens": []
+}

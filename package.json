@@ -6,11 +6,12 @@
   "dependencies": {
     "discord.js": "^14.6.0",
     "dotenv": "^16.0.3",
+    "glob": "^8.0.3",
     "typescript": "^4.8.4"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "tsc-watch --onSuccess \"npx nodemon ./build/discordBotMain.js\"",
+    "offline": "tsc-watch --onSuccess \"npx nodemon ./build/offlineMain.js\"",
     "buildRun": "npx nodemon ./build/discordBotMain.js",
     "build": "tsc --build",
     "deploy-commands-build": "npx nodemon ./build/deploy-commands-build.js",

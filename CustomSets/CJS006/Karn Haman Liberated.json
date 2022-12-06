@@ -1,0 +1,15 @@
+{
+    "set": "msg",
+    "name": "Karn Haman Liberated",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Human Newtype",
+    "png": "https://mtg.design/i/bqmz29.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "3",
+    "tou": "3",
+    "text": "Other Humans you control get +2/+2.\nAs long as Karn Haman Liberated is equipped, whenever it deals combat damage to a player, that player exiles a card from their hand. You may play that card this turn, and you may spend mana as though it were mana of any color to cast those spells.",
+    "tokens": []
+}

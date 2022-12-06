@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Invasive Broodfish",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Fish",
+    "png": "https://mtg.design/i/powb32.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "{1}{G}, {t}: Create a 1/1 green Fish creature token.\nFlood {2}{g}{g} (During your turn, you may pay {2}{g}{g} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)\nWhile Invasive Broodfish is flooding a land, that land gains \"Whenever this land becomes tapped, each opponent creates a 1/1 green Fish creature token.\"",
+    "tokens": []
+}

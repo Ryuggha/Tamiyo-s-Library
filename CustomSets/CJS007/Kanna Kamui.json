@@ -1,0 +1,15 @@
+{
+    "set": "fbi",
+    "name": "Kanna Kamui",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Dragon Loli",
+    "png": "https://mtg.design/i/qkjp67.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "2",
+    "text": "Flying\n{1}{w}, {t}: Tap target creature. If that creature is a Groomer, it doesn't untap during its controller's next untap step.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Thriving Pshmorf",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Land",
+    "png": "https://mtg.design/i/tuug49.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "0",
+    "tou": "0",
+    "text": "Thriving Isle enters the battlefield tapped.\n\nAs Thriving Isle enters the battlefield, choose a color other than blue.\n\n{T}: Add {U} or one mana of the chosen color.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Dawnhill Monk",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Monk",
+    "png": "https://mtg.design/i/bzom92.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "2",
+    "text": "Whenever you cast your second instant or sorcery spell each turn, Dawnhill Monk gets +2/+0 until end of turn. \nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

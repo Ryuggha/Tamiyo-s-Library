@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Burn and Pillage",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/yxpp74.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "0",
+    "tou": "0",
+    "text": "Destroy target land, then draw a card.\n<i>Landfall</i> - Whenever a land enters the battlefield under your control, you may return Burn and Pillage from your graveyard to your hand.",
+    "tokens": []
+}

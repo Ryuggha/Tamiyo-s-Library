@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Radiant Guardian",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Knight",
+    "png": "https://mtg.design/i/mqez85.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "2",
+    "text": "Whenever another creature enters the battlefield under your control, Radiant Guardian gains flying and lifelink until end of turn.",
+    "tokens": []
+}

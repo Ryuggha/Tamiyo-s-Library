@@ -1,0 +1,15 @@
+{
+    "set": "msg",
+    "name": "Solar Ray System",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/wufa94.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Choose one -- Destroy target land; or destroy target artifact.\nEntwine -- Sacrifice a land or artifact (Choose both if you pay the entwine cost.)",
+    "tokens": []
+}

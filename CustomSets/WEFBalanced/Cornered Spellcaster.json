@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Cornered Spellcaster",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Fox Wizard",
+    "png": "https://mtg.design/i/epqc67.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "1",
+    "text": "Creatures you control with Blessing counters on them have Chiwalk (They can’t be blocked as long as defending player controls a Chi.)\n\n{t}: Put a Blessing counter on target creature.",
+    "tokens": []
+}

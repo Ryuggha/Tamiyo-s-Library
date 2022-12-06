@@ -1,5 +1,9 @@
-import { JSONValue } from "./helpers/JSONValue";
+import { CardLineDict } from "./helpers/CardLineDict";
 import rndm from "./helpers/rndm";
+
+
+var officialBack = "https://i.imgur.com/hsYf4R9.jpg";
+var customBack = "";
 
 async function getScryfallData(request: string): Promise<any[]> {
     
@@ -15,9 +19,7 @@ async function getScryfallData(request: string): Promise<any[]> {
         }
     }
     
-
     return ret;
-
 }
 
 export async function billy (cmc: string, isTryhard: boolean): Promise<string> {
@@ -48,5 +50,20 @@ export async function billy (cmc: string, isTryhard: boolean): Promise<string> {
     }
 
     return url;
+}
 
+export async function getCardFomScryfall(cardName: string): Promise<any> {
+    return (await getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardName}\"`))[0];
+}
+
+export async function getSpecificCardFromScryfall(cardDict: CardLineDict): Promise<any> {
+    if (cardDict.set !== "") {
+        if (cardDict.setNum !== "") {
+            return (await getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardDict.name}\"+set:\"${cardDict.set}\"+number:\"${cardDict.setNum}\"`))[0];
+        }
+        else return (await getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardDict.name}\"+set:\"${cardDict.set}\"`))[0];
+    }
+    else {
+        return getCardFomScryfall(cardDict.name);
+    }
 }

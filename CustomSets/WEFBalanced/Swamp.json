@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Swamp",
+    "collector_number": -1,
+    "rarity": "b",
+    "type": "Basic Land — Swamp",
+    "png": "https://mtg.design/i/havz39.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "0",
+    "tou": "0",
+    "text": null,
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Blooming Efir",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Artifact",
+    "png": "https://mtg.design/i/ggog72.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "Blooming Efir doesn’t untap during your untap step.\n{t}: Add {w}, {u} or {r}.  \n{1}: Untap Blooming Efir. Activate this ability only once each turn.",
+    "tokens": []
+}

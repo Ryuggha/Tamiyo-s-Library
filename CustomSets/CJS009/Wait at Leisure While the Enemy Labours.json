@@ -1,0 +1,15 @@
+{
+    "set": "cj2",
+    "name": "Wait at Leisure While the Enemy Labours",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/gufz63.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "0",
+    "text": "Whenever you are dealt damage, sacrifice Wait at Leisure While the Enemy Labours.\nWhenever an opponent draws a card, you may pay {2}. If you do, draw a card.",
+    "tokens": []
+}

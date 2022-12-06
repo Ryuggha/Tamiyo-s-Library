@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Titty Monster",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Hentaier Human",
+    "png": "https://mtg.design/i/mxzd61.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "4",
+    "text": "Double Strike\nWhen Titty monster enters the battlefield or deals combat damage to an opponent, create a Tentacle token under an opponent's control.",
+    "tokens": []
+}

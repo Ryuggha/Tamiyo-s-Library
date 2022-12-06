@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* ESTILOS GENERALES */
+.hybrid{
+    max-width: 90vw;
+}
+.m0a{
+    margin: 0 auto;
+}
+/* Header */
+header nav{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 0;
+}
+header nav ul{
+    display: flex;
+    margin: 0 auto;
+}
+header nav ul li{
+    list-style: none;
+    padding: 0.3em 1em;
+    margin: 0.3em;
+    align-self: center;
+}
+header nav ul li:hover{
+    background-color: rgba(240, 255, 255, 0.342);
+    cursor: pointer;
+}
+header nav div{
+    margin: 0 1em;
+
+}
+header nav div h1{
+    font-size: 2em;
+}
+/* Main */
+main{
+    min-height: 80vh;
+    background: #2c1823;
+    background: radial-gradient(ellipse farthest-corner at center center, #2c1823 0%, #82566f 80%);
+    background: -webkit-radial-gradient(ellipse farthest-corner at center center, #2c1823 0%, #82566f 80%);
+    background: -moz-radial-gradient(ellipse farthest-corner at center center, #2c1823 0%, #82566f 80%);
+}
+main section{
+    display: flex;
+}
+main section form{
+    margin: 1rem auto;
+}
+label{
+    color: white;
+}
+label[for="num"]{
+    width: 100%;
+    text-align:justify
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+    padding: 1em 0;
+    text-align: center;
+}
+input[type=submit] { 
+    background-color: rgb(54, 54, 128);
+    color: white;
+    padding: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: rgba(54, 54, 128, 0.637);
+}
+main div.carta{
+    padding: 1em;
+    text-align: center;
+}
+main div.carta img{
+    border: 10px ridge black;
+}
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+}
+footer section{
+    text-align: center;
+}

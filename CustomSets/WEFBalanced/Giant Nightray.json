@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Giant Nightray",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Leviathan",
+    "png": "https://mtg.design/i/dixm77.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "6",
+    "pow": "4",
+    "tou": "4",
+    "text": "Flying \nFlood {1}{b}{g} (During your turn, you may pay {1}{b}{g} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”) \nWhenever you flood Giant Nightray, put two +1/+1 counters on target creature.",
+    "tokens": []
+}

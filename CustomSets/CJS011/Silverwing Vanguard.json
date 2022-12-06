@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Silverwing Vanguard",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/gnie55.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": "Create a 2/2 Human Knight creature token and a 1/1 Bird Knight token with flying. \nFlashback {6}{W}",
+    "tokens": []
+}

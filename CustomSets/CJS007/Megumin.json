@@ -1,0 +1,15 @@
+{
+    "set": "fbi",
+    "name": "Megumin",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Loli Human Wizard",
+    "png": "https://mtg.design/i/aaru07.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "1",
+    "tou": "1",
+    "text": "Suspend 4 -- {w}\nWhen Megumin enters the battlefield, exile Megumin and target permanent.",
+    "tokens": []
+}

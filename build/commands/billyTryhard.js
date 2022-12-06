@@ -13,7 +13,7 @@ const discord_js_1 = require("discord.js");
 const ScryfallImplementation_1 = require("../ScryfallImplementation");
 module.exports = {
     data: new discord_js_1.SlashCommandBuilder()
-        .setName("billy_tryhard")
+        .setName("billytryhard")
         .setDescription("Roll for the second -x ability of Billy, but only ")
         .addIntegerOption((option) => option.setName("x")
         .setDescription("X is the ammount of Loyalty Counters spent to use Billy, The Unstable Gabler ability")
@@ -22,7 +22,7 @@ module.exports = {
     execute(interaction) {
         return __awaiter(this, void 0, void 0, function* () {
             var x = interaction.options.getInteger("x");
-            interaction.deferReply();
+            yield interaction.deferReply();
             var spellUrl = yield (0, ScryfallImplementation_1.billy)(x, true);
             yield interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n" + spellUrl);
         });

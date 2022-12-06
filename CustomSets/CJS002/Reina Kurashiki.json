@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Reina Kurashiki",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Hentaier Human",
+    "png": "https://mtg.design/i/iiju57.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "4",
+    "pow": "4",
+    "tou": "5",
+    "text": "Defender\nReina Kurashiki can attack as though it didn't have defender as long as an opponent controls four or more Tentacle creatures.",
+    "tokens": []
+}

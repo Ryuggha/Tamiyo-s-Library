@@ -15,13 +15,61 @@ customSetsCardNames = {}
 ids = []
 
 def loadCustomSets():
-    info = loadCustomSet("WEF")
+    info = loadCustomSet("WEFOld")
     customSets["WEF"] = info[0]
     customSetsCardNames["WEF"] = info[1]
 
-    info = loadCustomSet("CJS")
-    customSets["CJS"] = info[0]
-    customSetsCardNames["CJS"] = info[1]
+    info = loadCustomSet("WEFBalanced")
+    customSets["WEF"] = info[0]
+    customSetsCardNames["WEF"] = info[1]
+
+    info = loadCustomSet("CJS001")
+    customSets["CJS001"] = info[0]
+    customSetsCardNames["CJS001"] = info[1]
+
+    info = loadCustomSet("CJS002")
+    customSets["CJS002"] = info[0]
+    customSetsCardNames["CJS002"] = info[1]
+
+    info = loadCustomSet("CJS003")
+    customSets["CJS003"] = info[0]
+    customSetsCardNames["CJS003"] = info[1]
+
+    info = loadCustomSet("CJS004")
+    customSets["CJS004"] = info[0]
+    customSetsCardNames["CJS004"] = info[1]
+
+    info = loadCustomSet("CJS005")
+    customSets["CJS005"] = info[0]
+    customSetsCardNames["CJS005"] = info[1]
+
+    info = loadCustomSet("CJS006")
+    customSets["CJS006"] = info[0]
+    customSetsCardNames["CJS006"] = info[1]
+
+    info = loadCustomSet("CJS007")
+    customSets["CJS007"] = info[0]
+    customSetsCardNames["CJS007"] = info[1]
+
+    info = loadCustomSet("CJS008")
+    customSets["CJS008"] = info[0]
+    customSetsCardNames["CJS008"] = info[1]
+
+    info = loadCustomSet("CJS009")
+    customSets["CJS009"] = info[0]
+    customSetsCardNames["CJS009"] = info[1]
+
+    info = loadCustomSet("CJS010")
+    customSets["CJS010"] = info[0]
+    customSetsCardNames["CJS010"] = info[1]
+
+    info = loadCustomSet("CJS011")
+    customSets["CJS011"] = info[0]
+    customSetsCardNames["CJS011"] = info[1]
+
+    info = loadCustomSet("CJS012")
+    customSets["CJS012"] = info[0]
+    customSetsCardNames["CJS012"] = info[1]
 
 
 def getScryfallApiCallData(call):
@@ -59,7 +107,7 @@ def billy(cmc):
 
 
 def loadCustomSet(set):
-    path = 'CustomSets/' + set + '/'
+    path = './../CustomSets/' + set + '/'
     files = [posJson for posJson in os.listdir(path) if posJson.endswith('.json')]
     cards = [[], []]
     for file in files:
@@ -187,7 +235,7 @@ def makeDeck(deckName="exampleName", cardDictList=[], customBack="", activeCusto
             sectionName = sectionNames[x]
         containedObjects.append(createTTSDeck(sectionName, cardImagesListsFinal[x], back))
     bag = createTTSBag(deckName, containedObjects)
-    return [io.StringIO(json.dumps(bag, indent=4, sort_keys=True)), errors, cardNumber]
+    return [io.StringIO(json.dumps(bag, indent=4, sort_keys=False)), errors, cardNumber]
 
 
 def getCardProperties(cardJson):
@@ -321,7 +369,7 @@ def splitLineCardNames(str):
         else:
             cardDict["name"] += splitted[x] + " "
     cardDict["name"] = cardDict["name"].rstrip()
-    cardDict["name"] = cardDict["name"].encode('cp1252').decode('utf-8')
+    cardDict["name"] = cardDict["name"].encode('cp1252').decode('Latin-1')
     if cardDict["name"] == "":
         return None
     return cardDict

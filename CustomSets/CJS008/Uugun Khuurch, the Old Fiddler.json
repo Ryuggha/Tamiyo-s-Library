@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Uugun Khuurch, the Old Fiddler",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Human Bard",
+    "png": "https://mtg.design/i/koxh32.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "2",
+    "text": "If a creature you control attacking or blocking would cause a triggered ability of a permanent you control to trigger, that ability triggers an additional time.",
+    "tokens": []
+}

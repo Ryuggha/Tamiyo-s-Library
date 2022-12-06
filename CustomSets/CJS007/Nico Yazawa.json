@@ -1,0 +1,15 @@
+{
+    "set": "fbi",
+    "name": "Nico Yazawa",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Loli Human",
+    "png": "https://mtg.design/i/vunm12.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "2",
+    "text": "Whenever a Groomer creature becomes tapped, you gain 2 life.",
+    "tokens": []
+}

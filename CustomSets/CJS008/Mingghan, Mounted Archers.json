@@ -1,0 +1,15 @@
+{
+    "set": "cjs",
+    "name": "Mingghan, Mounted Archers",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Warrior",
+    "png": "https://mtg.design/i/wqoz16.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "1",
+    "text": "Banding\nHorsemanship\nWhenever Mingghan, Mounted Archers attacks in a band, it gets +1/+1 until end of turn.",
+    "tokens": []
+}

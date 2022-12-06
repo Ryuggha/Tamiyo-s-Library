@@ -1,0 +1,15 @@
+{
+    "set": "msg",
+    "name": "Bright Noa",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Legendary Creature — Human",
+    "png": "https://mtg.design/i/qhpj70.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "2",
+    "text": "Whenever you attach an Equipment to a creature you control for the first time each turn, draw a card.",
+    "tokens": []
+}

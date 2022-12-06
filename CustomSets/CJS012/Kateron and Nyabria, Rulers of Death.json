@@ -1,0 +1,15 @@
+{
+    "set": "csj",
+    "name": "Kateron and Nyabria, Rulers of Death",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Legendary Creature — Cat Shaman",
+    "png": "https://mtg.design/i/rnqc79.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "6",
+    "pow": "4",
+    "tou": "7",
+    "text": "When Kateron and Nyabria, Rulers of Death enters the battlefield, return two creature cards  with less mana value from your graveyard to the battlefield tapped.\n\nWhen a creature you control leaves the battlefield, target opponent creatures get -X/-X where X equals the number of Cat creatures you control until end of turn.",
+    "tokens": []
+}
