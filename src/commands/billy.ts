@@ -17,12 +17,11 @@ module.exports = {
         await interaction.deferReply();
 
         var spellUrl = await billy(x, false);
-        
-        await interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n\n");
+
         if (spellUrl[1])
-            await interaction.followUp({ files: [spellUrl[0]]});
+            await interaction.editReply({ content: `Billy casted a spell of Mana Value of ${x}:`, files: [spellUrl[0]]});
         else
-            await interaction.followUp(spellUrl[0]);
+            await interaction.editReply(spellUrl[0]);
     },
 
 };

@@ -24,11 +24,10 @@ module.exports = {
             var x = interaction.options.getInteger("x");
             yield interaction.deferReply();
             var spellUrl = yield (0, ScryfallImplementation_1.billy)(x, false);
-            yield interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n\n");
             if (spellUrl[1])
-                yield interaction.followUp({ files: [spellUrl[0]] });
+                yield interaction.editReply({ content: `Billy casted a spell of Mana Value of ${x}:`, files: [spellUrl[0]] });
             else
-                yield interaction.followUp(spellUrl[0]);
+                yield interaction.editReply(spellUrl[0]);
         });
     },
 };

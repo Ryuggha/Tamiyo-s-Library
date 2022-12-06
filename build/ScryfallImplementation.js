@@ -13,6 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getSpecificCardFromScryfall = exports.getCardFomScryfall = exports.billy = void 0;
+const CustomSetsHandler_1 = require("./helpers/CustomSetsHandler");
 const rndm_1 = __importDefault(require("./helpers/rndm"));
 var officialBack = "https://i.imgur.com/hsYf4R9.jpg";
 var customBack = "";
@@ -39,7 +40,12 @@ function billy(cmc, isTryhard) {
             var cards = yield getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-is:digital+-mana:{X}+cmc:" + cmc);
         var url = "";
         var customSetSorceries = [];
-        console.log("TODO: Custom Set Sorceries");
+        for (const set of CustomSetsHandler_1.customSets) {
+            for (const c of set.cards) {
+                if (c.type === "Sorcery")
+                    customSetSorceries.push(c);
+            }
+        }
         if (cards.length + customSetSorceries.length <= 0) {
             return ["Billy tried it's best, but can't find any spell...\nYou cast nothing.", false];
         }

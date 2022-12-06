@@ -1,4 +1,5 @@
 import { CardLineDict } from "./helpers/CardLineDict";
+import { customSets } from "./helpers/CustomSetsHandler";
 import rndm from "./helpers/rndm";
 
 
@@ -28,7 +29,11 @@ export async function billy (cmc: string, isTryhard: boolean): Promise<[string, 
     else var cards = await getScryfallData("https://api.scryfall.com/cards/search?q=t:sorcery+-is:digital+-mana:{X}+cmc:" + cmc);
     var url = "";
     var customSetSorceries: any[] = [];
-    console.log("TODO: Custom Set Sorceries");
+    for (const set of customSets) {
+        for (const c of set.cards) {
+            if (c.type === "Sorcery") customSetSorceries.push(c);
+        }
+    }
 
     if (cards.length + customSetSorceries.length <= 0) {
         return ["Billy tried it's best, but can't find any spell...\nYou cast nothing.", false];
