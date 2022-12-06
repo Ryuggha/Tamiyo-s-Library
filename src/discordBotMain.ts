@@ -1,5 +1,6 @@
 import { buildDeckFromDeckList, readDeckList } from "./helpers/MTGHelper";
 import { loadCustomSets } from "./helpers/CustomSetsHandler";
+import { EmbedBuilder } from "@discordjs/builders";
 
 const { Client, GatewayIntentBits, ActivityType, Collection, Events, ModalBuilder,
     ActionRowBuilder, TextInputBuilder, TextInputStyle, AttachmentBuilder} = require('discord.js');
@@ -112,7 +113,21 @@ client.on(Events.InteractionCreate, async (interaction: any) => {
         var activeCustomSets = true;
         var deck = await buildDeckFromDeckList(name, cardListArray, sleeve, activeCustomSets);
         var deckFile = new AttachmentBuilder(Buffer.from(JSON.stringify(deck[0], null, 4)), {name: `${name}.json`});
-        await interaction.editReply(`A deck with ${deck[2]} total cards have been created.`);
+        
+        //await interaction.editReply(`A deck with ${deck[2]} total cards have been created.`);
+
+        const deckEmbed = new EmbedBuilder()
+            .setAuthor({ name: interaction.user.username, iconURL: interaction.user.avatarURL(), url: 'https://discord.js.org' })
+            .setColor(0x1d1d1d)
+            .setTitle(name)
+            .setDescription(`A deck with ${deck[2]} total cards have been created.`)
+            .setThumbnail(sleeve)
+            .addFields({ name: 'Deck Download ↓', value: 'Put this file in \\Tabletop Simulator\\Saves\\Saved Objects', inline: true })
+            .setTimestamp()
+            .setFooter({ text: "Tamiyo's Library", iconURL: 'https://i.imgur.com/jquHe9A.png' });
+        
+        await interaction.followUp({ embeds: [deckEmbed] });
+
         await interaction.followUp( {files: [deckFile]} );
         if (deck[1] != "") await interaction.followUp(deck[1]);
     }
