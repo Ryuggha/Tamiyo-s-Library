@@ -3,7 +3,7 @@ import { generateDraftPacks } from "../helpers/MTGHelper";
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("draftvoosters")
+        .setName("draftboosters")
         .setDescription("Generates draft booster packs for use in Tabletop Simulator.")
         .addStringOption((option) => 
             option.setName("setcode")

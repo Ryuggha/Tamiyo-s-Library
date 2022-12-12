@@ -13,7 +13,7 @@ const discord_js_1 = require("discord.js");
 const MTGHelper_1 = require("../helpers/MTGHelper");
 module.exports = {
     data: new discord_js_1.SlashCommandBuilder()
-        .setName("draftvoosters")
+        .setName("draftboosters")
         .setDescription("Generates draft booster packs for use in Tabletop Simulator.")
         .addStringOption((option) => option.setName("setcode")
         .setDescription("The code of the set you want your packs from (Usually a three letter code)")

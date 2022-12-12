@@ -146,6 +146,20 @@ function getScryfallCardAttributes(cardJson) {
         card.image = cardJson["card_faces"][0]['image_uris']['png'];
         card.back = cardJson["card_faces"][1]['image_uris']['png'];
     }
+    if (cardJson["rarity"] === "common")
+        card.rarity = "c";
+    else if (cardJson["rarity"] === "uncommon")
+        card.rarity = "u";
+    else if (cardJson["rarity"] === "rare")
+        card.rarity = "r";
+    else if (cardJson["rarity"] === "mythic")
+        card.rarity = "m";
+    else if (cardJson["type_line"].toUpperCase().indexOf("BASIC"))
+        card.rarity = "b";
+    else {
+        console.log(`Strange Rarity found: ${cardJson["rarity"]}`);
+        card.rarity = cardJson["rarity"].substring(0, 1).toLowerCase();
+    }
     return card;
 }
 exports.getScryfallCardAttributes = getScryfallCardAttributes;
@@ -157,7 +171,7 @@ function generateDraftPacks(setCode, numberOfPacks, sleeve) {
         //Try using MTG Json
         try {
             var packList = yield (0, MTGJsonImplementation_1.generateBoosterDraftPack)(setCode, numberOfPacks);
-            return [(0, TTSObjectsHandler_1.createTTSBagWithCards)(packList, "Packs", sleeve), false];
+            return [(0, TTSObjectsHandler_1.createTTSBagWithCards)(packList, "Booster Packs", sleeve), false];
         }
         catch (e) {
             console.log("An error has ocurred during the execution: --\n" + e);
@@ -167,11 +181,12 @@ function generateDraftPacks(setCode, numberOfPacks, sleeve) {
 }
 exports.generateDraftPacks = generateDraftPacks;
 class CardAtt {
-    constructor(name = "", desc = "", image = "", back = "") {
+    constructor(name = "", desc = "", image = "", back = "", rarity = "") {
         this.name = name;
         this.desc = desc;
         this.image = image;
         this.back = back;
+        this.rarity = rarity;
     }
 }
 exports.CardAtt = CardAtt;

@@ -142,6 +142,16 @@ export function getScryfallCardAttributes(cardJson: any): CardAtt {
         card.back = cardJson["card_faces"][1]['image_uris']['png']
     }
 
+    if (cardJson["rarity"] === "common") card.rarity = "c";
+    else if (cardJson["rarity"] === "uncommon") card.rarity = "u";
+    else if (cardJson["rarity"] === "rare") card.rarity = "r";
+    else if (cardJson["rarity"] === "mythic") card.rarity = "m";
+    else if (cardJson["type_line"].toUpperCase().indexOf("BASIC")) card.rarity = "b";
+    else {
+        console.log(`Strange Rarity found: ${cardJson["rarity"]}`);
+        card.rarity = cardJson["rarity"].substring(0, 1).toLowerCase();
+    }
+
     return card;
 }
 
@@ -151,8 +161,9 @@ export async function generateDraftPacks(setCode: string, numberOfPacks: number,
 
     //Try using MTG Json
     try {
-        var packList = await generateBoosterDraftPack(setCode, numberOfPacks); 
-        return [createTTSBagWithCards(packList, "Packs", sleeve), false];
+        var packList = await generateBoosterDraftPack(setCode, numberOfPacks);
+        
+        return [createTTSBagWithCards(packList, "Booster Packs", sleeve), false];
     }
     catch (e) {
         console.log("An error has ocurred during the execution: --\n" + e);
@@ -165,11 +176,13 @@ export class CardAtt {
     desc: string;
     image: string;
     back: string;
+    rarity: string;
 
-    constructor (name: string = "", desc: string = "", image: string = "", back: string = "") {
+    constructor (name: string = "", desc: string = "", image: string = "", back: string = "", rarity: string = "") {
         this.name = name;
         this.desc = desc;
         this.image = image;
         this.back = back;
+        this.rarity = rarity;
     }
 }
