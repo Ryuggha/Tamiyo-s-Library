@@ -10,11 +10,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const discord_js_1 = require("discord.js");
-const ScryfallImplementation_1 = require("../ScryfallImplementation");
+const ScryfallImplementation_1 = require("../helpers/ScryfallImplementation");
 module.exports = {
     data: new discord_js_1.SlashCommandBuilder()
         .setName("billytryhard")
-        .setDescription("Roll for the second -x ability of Billy, but only ")
+        .setDescription("Roll for the second -x ability of Billy, but only serious cards.")
         .addIntegerOption((option) => option.setName("x")
         .setDescription("X is the ammount of Loyalty Counters spent to use Billy, The Unstable Gabler ability")
         .setRequired(true)
@@ -24,7 +24,10 @@ module.exports = {
             var x = interaction.options.getInteger("x");
             yield interaction.deferReply();
             var spellUrl = yield (0, ScryfallImplementation_1.billy)(x, true);
-            yield interaction.editReply("TODO: Billy still doesn't search for custom sorceries.\n" + spellUrl);
+            if (spellUrl[1])
+                yield interaction.editReply({ content: `Billy casted a spell of Mana Value of ${x}:`, files: [spellUrl[0]] });
+            else
+                yield interaction.editReply(spellUrl[0]);
         });
     },
 };

@@ -9,11 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CardAtt = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
-const ScryfallImplementation_1 = require("../ScryfallImplementation");
+exports.CardAtt = exports.generateDraftPacks = exports.getScryfallCardAttributes = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
+const ScryfallImplementation_1 = require("./ScryfallImplementation");
 const CardLineDict_1 = require("./CardLineDict");
 const CustomSetsHandler_1 = require("./CustomSetsHandler");
 const TTSObjectsHandler_1 = require("./TTSObjectsHandler");
+const MTGJsonImplementation_1 = require("./MTGJsonImplementation");
 var defaultSleeve = "https://i.imgur.com/hsYf4R9.jpg";
 function readDeckList(deckList) {
     var cardListArray = [];
@@ -147,6 +148,24 @@ function getScryfallCardAttributes(cardJson) {
     }
     return card;
 }
+exports.getScryfallCardAttributes = getScryfallCardAttributes;
+function generateDraftPacks(setCode, numberOfPacks, sleeve) {
+    return __awaiter(this, void 0, void 0, function* () {
+        if (sleeve == null)
+            sleeve = "https://i.imgur.com/hsYf4R9.jpg";
+        var customSet = CustomSetsHandler_1.customSets.find(x => x.name.toUpperCase() === setCode.toUpperCase());
+        //Try using MTG Json
+        try {
+            var packList = yield (0, MTGJsonImplementation_1.generateBoosterDraftPack)(setCode, numberOfPacks);
+            return [(0, TTSObjectsHandler_1.createTTSBagWithCards)(packList, "Packs", sleeve), false];
+        }
+        catch (e) {
+            console.log("An error has ocurred during the execution: --\n" + e);
+            return [null, true];
+        }
+    });
+}
+exports.generateDraftPacks = generateDraftPacks;
 class CardAtt {
     constructor(name = "", desc = "", image = "", back = "") {
         this.name = name;

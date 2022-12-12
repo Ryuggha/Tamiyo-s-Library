@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const discord_js_1 = require("discord.js");
-const ScryfallImplementation_1 = require("../ScryfallImplementation");
+const ScryfallImplementation_1 = require("../helpers/ScryfallImplementation");
 module.exports = {
     data: new discord_js_1.SlashCommandBuilder()
         .setName("billy")

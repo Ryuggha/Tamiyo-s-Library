@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from "discord.js";
-import { billy } from "../ScryfallImplementation";
+import { billy } from "../helpers/ScryfallImplementation";
 
 module.exports = {
     data: new SlashCommandBuilder()

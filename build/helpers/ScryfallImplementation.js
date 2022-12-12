@@ -12,16 +12,18 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getSpecificCardFromScryfall = exports.getCardFomScryfall = exports.billy = void 0;
-const CustomSetsHandler_1 = require("./helpers/CustomSetsHandler");
-const rndm_1 = __importDefault(require("./helpers/rndm"));
+exports.getCardFromScryfallFromId = exports.getSpecificCardFromScryfall = exports.getCardFomScryfallFromName = exports.billy = exports.getScryfallData = void 0;
+const CustomSetsHandler_1 = require("./CustomSetsHandler");
+const rndm_1 = __importDefault(require("./rndm"));
 var officialBack = "https://i.imgur.com/hsYf4R9.jpg";
 var customBack = "";
-function getScryfallData(request) {
+function getScryfallData(request, rawData = false) {
     return __awaiter(this, void 0, void 0, function* () {
         var ret = [];
         var response = yield fetch(request);
         var json = yield response.json();
+        if (rawData)
+            return json;
         if (json["data"] != null) {
             ret.push(...json["data"]);
             if (json["has_more"]) {
@@ -32,6 +34,7 @@ function getScryfallData(request) {
         return ret;
     });
 }
+exports.getScryfallData = getScryfallData;
 function billy(cmc, isTryhard) {
     return __awaiter(this, void 0, void 0, function* () {
         if (isTryhard)
@@ -42,8 +45,14 @@ function billy(cmc, isTryhard) {
         var customSetSorceries = [];
         for (const set of CustomSetsHandler_1.customSets) {
             for (const c of set.cards) {
-                if (c.type.toUpperCase().includes("SORCERY") && c.manaValue == cmc.toString())
-                    customSetSorceries.push(c);
+                if (isTryhard) {
+                    if (set.name.toUpperCase() === "WEF" && c.type.toUpperCase().includes("SORCERY") && c.manaValue == cmc.toString())
+                        customSetSorceries.push(c);
+                }
+                else {
+                    if (c.type.toUpperCase().includes("SORCERY") && c.manaValue == cmc.toString())
+                        customSetSorceries.push(c);
+                }
             }
         }
         if (cards.length + customSetSorceries.length <= 0) {
@@ -66,12 +75,12 @@ function billy(cmc, isTryhard) {
     });
 }
 exports.billy = billy;
-function getCardFomScryfall(cardName) {
+function getCardFomScryfallFromName(cardName) {
     return __awaiter(this, void 0, void 0, function* () {
         return (yield getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardName}\"`))[0];
     });
 }
-exports.getCardFomScryfall = getCardFomScryfall;
+exports.getCardFomScryfallFromName = getCardFomScryfallFromName;
 function getSpecificCardFromScryfall(cardDict) {
     return __awaiter(this, void 0, void 0, function* () {
         if (cardDict.set !== "") {
@@ -82,8 +91,14 @@ function getSpecificCardFromScryfall(cardDict) {
                 return (yield getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardDict.name}\"+set:\"${cardDict.set}\"`))[0];
         }
         else {
-            return getCardFomScryfall(cardDict.name);
+            return getCardFomScryfallFromName(cardDict.name);
         }
     });
 }
 exports.getSpecificCardFromScryfall = getSpecificCardFromScryfall;
+function getCardFromScryfallFromId(cardId) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return (yield getScryfallData(`https://api.scryfall.com/cards/${cardId}`, true));
+    });
+}
+exports.getCardFromScryfallFromId = getCardFromScryfallFromId;

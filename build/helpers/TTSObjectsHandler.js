@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createTTSBagWithDeck = void 0;
+exports.createTTSBagWithCards = exports.createTTSBagWithDeck = void 0;
 const MTGHelper_1 = require("./MTGHelper");
 const rndm_1 = __importDefault(require("./rndm"));
 const fs = require('node:fs');
@@ -35,6 +35,19 @@ function createTTSBagWithDeck(cardListMap, deckSectionMap, deckName, sleeve) {
     return bag;
 }
 exports.createTTSBagWithDeck = createTTSBagWithDeck;
+function createTTSBagWithCards(cardListList, deckName, sleeve) {
+    if (ttsBagJson === "")
+        initializeTTSJsons();
+    var containedObjects = [];
+    for (const cardList of cardListList) {
+        containedObjects.push(createTTSDeck("Booster", cardList, sleeve));
+    }
+    var bag = JSON.parse(JSON.stringify(ttsBagJson));
+    bag["ObjectStates"][0]["Nickname"] = deckName;
+    bag["ObjectStates"][0]["ContainedObjects"] = containedObjects;
+    return bag;
+}
+exports.createTTSBagWithCards = createTTSBagWithCards;
 function createTTSDeck(deckName, deckList, sleeve) {
     if (deckList.length === 0)
         return null;

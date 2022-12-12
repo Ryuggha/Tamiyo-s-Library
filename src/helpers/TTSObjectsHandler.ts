@@ -33,6 +33,22 @@ export function createTTSBagWithDeck(cardListMap: Map<number, CardAtt[]>, deckSe
     return bag;
 }
 
+export function createTTSBagWithCards(cardListList: CardAtt[][], deckName: string, sleeve: string): any {
+    if (ttsBagJson === "") initializeTTSJsons();
+
+    var containedObjects: any[] = [];
+
+    for (const cardList of cardListList) {
+        containedObjects.push(createTTSDeck("Booster", cardList, sleeve));
+    }
+
+    var bag = JSON.parse(JSON.stringify(ttsBagJson));
+    bag["ObjectStates"][0]["Nickname"] = deckName;
+    bag["ObjectStates"][0]["ContainedObjects"] = containedObjects;
+
+    return bag;
+}
+
 function createTTSDeck(deckName: string, deckList: CardAtt[], sleeve: string): any {
     if (deckList.length === 0) return null;
     else if (deckList.length === 1) {

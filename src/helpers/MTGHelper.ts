@@ -1,8 +1,9 @@
-import { getSpecificCardFromScryfall } from "../ScryfallImplementation";
+import { getSpecificCardFromScryfall } from "./ScryfallImplementation";
 import { CardLineDict } from "./CardLineDict";
 import CustomCard from "./CustomCard";
 import { customSets } from "./CustomSetsHandler";
-import { createTTSBagWithDeck } from "./TTSObjectsHandler";
+import { createTTSBagWithCards, createTTSBagWithDeck } from "./TTSObjectsHandler";
+import { generateBoosterDraftPack } from "./MTGJsonImplementation";
 
 var defaultSleeve = "https://i.imgur.com/hsYf4R9.jpg";
 
@@ -129,7 +130,7 @@ function getCustomCardAttributes(name: string, customSetName: string): CardAtt {
     else throw Error("Can't find card in CustomCards");
 }
 
-function getScryfallCardAttributes(cardJson: any): CardAtt {
+export function getScryfallCardAttributes(cardJson: any): CardAtt {
     var card = new CardAtt(cardJson["name"]);
 
     try { card.desc = cardJson["prices"]["usd"] + "$" }
@@ -142,6 +143,21 @@ function getScryfallCardAttributes(cardJson: any): CardAtt {
     }
 
     return card;
+}
+
+export async function generateDraftPacks(setCode: string, numberOfPacks: number, sleeve: string | null): Promise<[any, boolean]> {
+    if (sleeve == null) sleeve = "https://i.imgur.com/hsYf4R9.jpg";
+    var customSet = customSets.find(x => x.name.toUpperCase() === setCode.toUpperCase());
+
+    //Try using MTG Json
+    try {
+        var packList = await generateBoosterDraftPack(setCode, numberOfPacks); 
+        return [createTTSBagWithCards(packList, "Packs", sleeve), false];
+    }
+    catch (e) {
+        console.log("An error has ocurred during the execution: --\n" + e);
+        return [null, true]
+    }
 }
 
 export class CardAtt {
