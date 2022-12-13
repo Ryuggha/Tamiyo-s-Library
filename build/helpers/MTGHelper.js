@@ -146,7 +146,9 @@ function getScryfallCardAttributes(cardJson) {
         card.image = cardJson["card_faces"][0]['image_uris']['png'];
         card.back = cardJson["card_faces"][1]['image_uris']['png'];
     }
-    if (cardJson["rarity"] === "common")
+    if (cardJson["type_line"].toUpperCase().indexOf("BASIC") >= 0)
+        card.rarity = "b";
+    else if (cardJson["rarity"] === "common")
         card.rarity = "c";
     else if (cardJson["rarity"] === "uncommon")
         card.rarity = "u";
@@ -154,8 +156,6 @@ function getScryfallCardAttributes(cardJson) {
         card.rarity = "r";
     else if (cardJson["rarity"] === "mythic")
         card.rarity = "m";
-    else if (cardJson["type_line"].toUpperCase().indexOf("BASIC"))
-        card.rarity = "b";
     else {
         console.log(`Strange Rarity found: ${cardJson["rarity"]}`);
         card.rarity = cardJson["rarity"].substring(0, 1).toLowerCase();
@@ -171,6 +171,26 @@ function generateDraftPacks(setCode, numberOfPacks, sleeve) {
         //Try using MTG Json
         try {
             var packList = yield (0, MTGJsonImplementation_1.generateBoosterDraftPack)(setCode, numberOfPacks);
+            for (const booster of packList) {
+                booster.sort(function (a, b) {
+                    const rarityValueCalc = (r) => {
+                        if (r === "c")
+                            return 5;
+                        if (r === "u")
+                            return 4;
+                        if (r === "r")
+                            return 3;
+                        if (r === "m")
+                            return 2;
+                        if (r === "b")
+                            return 1;
+                        return -1;
+                    };
+                    var auxA = rarityValueCalc(a.rarity);
+                    var auxB = rarityValueCalc(b.rarity);
+                    return auxB - auxA;
+                });
+            }
             return [(0, TTSObjectsHandler_1.createTTSBagWithCards)(packList, "Booster Packs", sleeve), false];
         }
         catch (e) {

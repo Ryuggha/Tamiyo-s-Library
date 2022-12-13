@@ -32,7 +32,7 @@ module.exports = {
             var num = interaction.options.getInteger("numberofpacks");
             var [packs, error] = yield (0, MTGHelper_1.generateDraftPacks)(setCode, num, sleeve);
             if (error) {
-                yield interaction.editReply("There has been an error parsing your draft booster packs... Maybe the set code was nonexistent?");
+                yield interaction.editReply("There has been an error parsing your draft booster packs... Maybe the set code was nonexistent? Or maybe the APIs are down... Try again");
             }
             else {
                 var packsFile = new discord_js_1.AttachmentBuilder(Buffer.from(JSON.stringify(packs, null, 4)), { name: "boosters.json" });

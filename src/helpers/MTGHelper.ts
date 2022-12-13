@@ -142,11 +142,11 @@ export function getScryfallCardAttributes(cardJson: any): CardAtt {
         card.back = cardJson["card_faces"][1]['image_uris']['png']
     }
 
-    if (cardJson["rarity"] === "common") card.rarity = "c";
+    if (cardJson["type_line"].toUpperCase().indexOf("BASIC") >= 0) card.rarity = "b";
+    else if (cardJson["rarity"] === "common") card.rarity = "c";
     else if (cardJson["rarity"] === "uncommon") card.rarity = "u";
     else if (cardJson["rarity"] === "rare") card.rarity = "r";
     else if (cardJson["rarity"] === "mythic") card.rarity = "m";
-    else if (cardJson["type_line"].toUpperCase().indexOf("BASIC")) card.rarity = "b";
     else {
         console.log(`Strange Rarity found: ${cardJson["rarity"]}`);
         card.rarity = cardJson["rarity"].substring(0, 1).toLowerCase();
@@ -162,7 +162,23 @@ export async function generateDraftPacks(setCode: string, numberOfPacks: number,
     //Try using MTG Json
     try {
         var packList = await generateBoosterDraftPack(setCode, numberOfPacks);
-        
+        for (const booster of packList) {
+            booster.sort(function (a: CardAtt, b:CardAtt) {
+                const rarityValueCalc = (r: string) => {
+                    if (r === "c") return 5;
+                    if (r === "u") return 4;
+                    if (r === "r") return 3;
+                    if (r === "m") return 2;
+                    if (r === "b") return 1;
+                    return -1;
+                }
+
+                var auxA = rarityValueCalc(a.rarity);
+                var auxB = rarityValueCalc(b.rarity);
+
+                return auxB - auxA;
+            });
+        }
         return [createTTSBagWithCards(packList, "Booster Packs", sleeve), false];
     }
     catch (e) {

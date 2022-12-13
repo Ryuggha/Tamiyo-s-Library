@@ -28,7 +28,7 @@ module.exports = {
         var [packs, error] = await generateDraftPacks(setCode, num, sleeve);
 
         if (error) {
-            await interaction.editReply("There has been an error parsing your draft booster packs... Maybe the set code was nonexistent?");
+            await interaction.editReply("There has been an error parsing your draft booster packs... Maybe the set code was nonexistent? Or maybe the APIs are down... Try again");
         }
         else {
             var packsFile = new AttachmentBuilder(Buffer.from(JSON.stringify(packs, null, 4)), {name: "boosters.json"});
