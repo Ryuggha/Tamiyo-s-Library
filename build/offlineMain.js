@@ -15,6 +15,16 @@ console.log("Offline Test\n--------------------");
 (0, CustomSetsHandler_1.loadCustomSets)();
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
+        var rates = {
+            basic: 1,
+            rareSlot: { rare: 7, mythic: 1 },
+            uncommon: 3,
+            common: 10
+        };
+        var s = "common";
+        console.log(Object.entries(rates));
+        console.log("\n");
+        console.log((Object.entries(rates).length));
     });
 }
 main();

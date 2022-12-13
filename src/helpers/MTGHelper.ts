@@ -1,9 +1,11 @@
 import { getSpecificCardFromScryfall } from "./ScryfallImplementation";
 import { CardLineDict } from "./CardLineDict";
 import CustomCard from "./CustomCard";
-import { customSets } from "./CustomSetsHandler";
+import { customSets, generateCustomDraft } from "./CustomSetsHandler";
 import { createTTSBagWithCards, createTTSBagWithDeck } from "./TTSObjectsHandler";
 import { generateBoosterDraftPack } from "./MTGJsonImplementation";
+import CustomSet from "./CustomSet";
+import Card from "./CustomCard";
 
 var defaultSleeve = "https://i.imgur.com/hsYf4R9.jpg";
 
@@ -98,7 +100,7 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
                 }
 
                 var cardAtt;
-                if (customSetFlag !== "") cardAtt = getCustomCardAttributes(cardDict.name, customSetFlag); 
+                if (customSetFlag !== "") cardAtt = getCustomCardAttributes(searchCustomCard(cardDict.name, customSetFlag)); 
                 else {
                     var cardJson = await getSpecificCardFromScryfall(cardDict);
                     cardAtt = getScryfallCardAttributes(cardJson);
@@ -124,10 +126,14 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
     return [createTTSBagWithDeck(cardListMap, deckSectionMap, deckName, customSleeve), errors, cardsParsed];
 }
 
-function getCustomCardAttributes(name: string, customSetName: string): CardAtt {
+function searchCustomCard(name: string, customSetName: string): Card {
     var customCard = customSets.find((e) => e.name.toUpperCase() === customSetName.toUpperCase())?.cards.find(e => e.name.toUpperCase() === name.toUpperCase());
-    if (customCard != null) return new CardAtt(customCard.name, "", customCard.url, customCard.backUrl);
-    else throw Error("Can't find card in CustomCards");
+    if (customCard == null) throw Error("Can't find card in CustomCards");
+    return customCard;
+}
+
+export function getCustomCardAttributes(customCard: Card): CardAtt {
+    return new CardAtt(customCard.name, "", customCard.url, customCard.backUrl, customCard.rarity);
 }
 
 export function getScryfallCardAttributes(cardJson: any): CardAtt {
@@ -182,8 +188,15 @@ export async function generateDraftPacks(setCode: string, numberOfPacks: number,
         return [createTTSBagWithCards(packList, "Booster Packs", sleeve), false];
     }
     catch (e) {
-        console.log("An error has ocurred during the execution: --\n" + e);
-        return [null, true]
+        if (customSet != null) {
+
+            var packList = generateCustomDraft(customSet, numberOfPacks, sleeve);
+            return [createTTSBagWithCards(packList, "Booster Packs", sleeve), false];
+        }
+        else {
+            console.log("An error has ocurred during the execution: --\n" + e);
+            return [null, true]
+        }
     }
 }
 

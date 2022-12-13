@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CardAtt = exports.generateDraftPacks = exports.getScryfallCardAttributes = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
+exports.CardAtt = exports.generateDraftPacks = exports.getScryfallCardAttributes = exports.getCustomCardAttributes = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
 const ScryfallImplementation_1 = require("./ScryfallImplementation");
 const CardLineDict_1 = require("./CardLineDict");
 const CustomSetsHandler_1 = require("./CustomSetsHandler");
@@ -101,7 +101,7 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
                     }
                     var cardAtt;
                     if (customSetFlag !== "")
-                        cardAtt = getCustomCardAttributes(cardDict.name, customSetFlag);
+                        cardAtt = getCustomCardAttributes(searchCustomCard(cardDict.name, customSetFlag));
                     else {
                         var cardJson = yield (0, ScryfallImplementation_1.getSpecificCardFromScryfall)(cardDict);
                         cardAtt = getScryfallCardAttributes(cardJson);
@@ -125,14 +125,17 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
     });
 }
 exports.buildDeckFromDeckList = buildDeckFromDeckList;
-function getCustomCardAttributes(name, customSetName) {
+function searchCustomCard(name, customSetName) {
     var _a;
     var customCard = (_a = CustomSetsHandler_1.customSets.find((e) => e.name.toUpperCase() === customSetName.toUpperCase())) === null || _a === void 0 ? void 0 : _a.cards.find(e => e.name.toUpperCase() === name.toUpperCase());
-    if (customCard != null)
-        return new CardAtt(customCard.name, "", customCard.url, customCard.backUrl);
-    else
+    if (customCard == null)
         throw Error("Can't find card in CustomCards");
+    return customCard;
 }
+function getCustomCardAttributes(customCard) {
+    return new CardAtt(customCard.name, "", customCard.url, customCard.backUrl, customCard.rarity);
+}
+exports.getCustomCardAttributes = getCustomCardAttributes;
 function getScryfallCardAttributes(cardJson) {
     var card = new CardAtt(cardJson["name"]);
     try {
@@ -194,8 +197,14 @@ function generateDraftPacks(setCode, numberOfPacks, sleeve) {
             return [(0, TTSObjectsHandler_1.createTTSBagWithCards)(packList, "Booster Packs", sleeve), false];
         }
         catch (e) {
-            console.log("An error has ocurred during the execution: --\n" + e);
-            return [null, true];
+            if (customSet != null) {
+                var packList = (0, CustomSetsHandler_1.generateCustomDraft)(customSet, numberOfPacks, sleeve);
+                return [(0, TTSObjectsHandler_1.createTTSBagWithCards)(packList, "Booster Packs", sleeve), false];
+            }
+            else {
+                console.log("An error has ocurred during the execution: --\n" + e);
+                return [null, true];
+            }
         }
     });
 }
