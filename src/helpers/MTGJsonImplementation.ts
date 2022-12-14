@@ -94,3 +94,16 @@ export async function generateBoosterDraftPack(setCode: string, numberOfPacks: n
 async function updateMTGJsonAllCards() {
     mtgJsonAllCards = (await getMTGJsonCSV("https://mtgjson.com/api/v5/csv/cards.csv"))["data"];
 }
+
+export async function getAllLegalBoosterSets(): Promise<string[]> {
+    var ret: string[] = [];
+
+    var sets = (await getMTGJsonCSV("https://mtgjson.com/api/v5/csv/sets.csv"))["data"];
+    for (const set of sets) {
+        if (set["booster"] != "") {
+            ret.push(set["code"]);
+        }
+    }
+
+    return ret;
+}

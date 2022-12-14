@@ -2,7 +2,6 @@ import Card from ".././helpers/CustomCard";
 import CustomSet from ".././helpers/CustomSet";
 import { CardAtt, getCustomCardAttributes } from "./MTGHelper";
 import rndm from "./rndm";
-import { createTTSBagWithCards } from "./TTSObjectsHandler";
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -32,6 +31,7 @@ function loadCustomSetsRecursive(actualPath: string, folder: string) {
         }
     }
 
+    if (customSet.cards.length >= 100) customSet.draftable = true;
     if (customSet.cards.length != 0) customSets.push(customSet);
 }
 
@@ -111,6 +111,16 @@ function specialCasesCustomRates(set: CustomSet, rates: any) {
     }
 
     return rates;
+}
+
+export function getAllCustomBoosterSets(): string[] {
+    var r: string[] = [];
+
+    for (const set of customSets) {
+        if (set.draftable) r.push(set.name);
+    }
+
+    return r;
 }
 
 export class SetRarityPools {

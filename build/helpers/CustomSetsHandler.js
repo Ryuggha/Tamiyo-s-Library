@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SetRarityPools = exports.generateCustomDraft = exports.loadCustomSets = exports.customSets = void 0;
+exports.SetRarityPools = exports.getAllCustomBoosterSets = exports.generateCustomDraft = exports.loadCustomSets = exports.customSets = void 0;
 const CustomCard_1 = __importDefault(require(".././helpers/CustomCard"));
 const CustomSet_1 = __importDefault(require(".././helpers/CustomSet"));
 const MTGHelper_1 = require("./MTGHelper");
@@ -33,6 +33,8 @@ function loadCustomSetsRecursive(actualPath, folder) {
             customSet.cards.push(new CustomCard_1.default(cardData["name"], cardData["png"], cardData["back"], cardData["type"], cardData["cmc"], cardData["rarity"]));
         }
     }
+    if (customSet.cards.length >= 100)
+        customSet.draftable = true;
     if (customSet.cards.length != 0)
         exports.customSets.push(customSet);
 }
@@ -108,6 +110,15 @@ function specialCasesCustomRates(set, rates) {
     }
     return rates;
 }
+function getAllCustomBoosterSets() {
+    var r = [];
+    for (const set of exports.customSets) {
+        if (set.draftable)
+            r.push(set.name);
+    }
+    return r;
+}
+exports.getAllCustomBoosterSets = getAllCustomBoosterSets;
 class SetRarityPools {
     constructor() {
         this.common = [];

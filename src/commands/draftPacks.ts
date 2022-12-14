@@ -1,5 +1,5 @@
 import { AttachmentBuilder, EmbedBuilder, SlashCommandBuilder } from "discord.js";
-import { generateDraftPacks } from "../helpers/MTGHelper";
+import { generateDraftPacks, getRandomDraftSet } from "../helpers/MTGHelper";
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -7,12 +7,12 @@ module.exports = {
         .setDescription("Generates draft booster packs for use in Tabletop Simulator.")
         .addStringOption((option) => 
             option.setName("setcode")
-                .setDescription("The code of the set you want your packs from (Usually a three letter code)")
-                .setRequired(true))
+                .setDescription("The code of the set you want your packs from. If left blank, the set will be choosen at random.")
+                .setRequired(false))
         .addIntegerOption((option) => 
             option.setName("numberofpacks")
                 .setDescription("The number of packs you want to generate")
-                .setRequired(true))
+                .setRequired(false))
         .addStringOption((option) =>
             option.setName("sleeveart")
                 .setDescription("The URL of the image you want as sleeves.")
@@ -22,8 +22,10 @@ module.exports = {
         await interaction.reply('Creating Booster Pack, this may take a while. \nPlease wait...');
 
         var setCode = interaction.options.getString("setcode");
-        var sleeve = interaction.options.getString("sleeveart");
+        if (setCode == null || setCode.toUpperCase() === "RANDOM") setCode = await getRandomDraftSet();
+        var sleeve = interaction.options.getString("sleeveart"); 
         var num = interaction.options.getInteger("numberofpacks");
+        if (num == null) num = 1;
 
         var [packs, error] = await generateDraftPacks(setCode, num, sleeve);
 

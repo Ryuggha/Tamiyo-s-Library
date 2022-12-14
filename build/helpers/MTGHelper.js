@@ -8,13 +8,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CardAtt = exports.generateDraftPacks = exports.getScryfallCardAttributes = exports.getCustomCardAttributes = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
+exports.CardAtt = exports.getRandomDraftSet = exports.generateDraftPacks = exports.getScryfallCardAttributes = exports.getCustomCardAttributes = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
 const ScryfallImplementation_1 = require("./ScryfallImplementation");
 const CardLineDict_1 = require("./CardLineDict");
 const CustomSetsHandler_1 = require("./CustomSetsHandler");
 const TTSObjectsHandler_1 = require("./TTSObjectsHandler");
 const MTGJsonImplementation_1 = require("./MTGJsonImplementation");
+const rndm_1 = __importDefault(require("./rndm"));
 var defaultSleeve = "https://i.imgur.com/hsYf4R9.jpg";
 function readDeckList(deckList) {
     var cardListArray = [];
@@ -209,6 +213,16 @@ function generateDraftPacks(setCode, numberOfPacks, sleeve) {
     });
 }
 exports.generateDraftPacks = generateDraftPacks;
+function getRandomDraftSet() {
+    return __awaiter(this, void 0, void 0, function* () {
+        var draftableSets = [];
+        draftableSets = draftableSets.concat(yield (0, MTGJsonImplementation_1.getAllLegalBoosterSets)());
+        draftableSets = draftableSets.concat((0, CustomSetsHandler_1.getAllCustomBoosterSets)());
+        var selectedSet = draftableSets[rndm_1.default.randomInt(0, draftableSets.length - 1)];
+        return selectedSet;
+    });
+}
+exports.getRandomDraftSet = getRandomDraftSet;
 class CardAtt {
     constructor(name = "", desc = "", image = "", back = "", rarity = "") {
         this.name = name;

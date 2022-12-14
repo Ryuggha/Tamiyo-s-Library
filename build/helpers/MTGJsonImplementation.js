@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.generateBoosterDraftPack = void 0;
+exports.getAllLegalBoosterSets = exports.generateBoosterDraftPack = void 0;
 const MTGHelper_1 = require("./MTGHelper");
 const rndm_1 = __importDefault(require("./rndm"));
 const ScryfallImplementation_1 = require("./ScryfallImplementation");
@@ -106,3 +106,16 @@ function updateMTGJsonAllCards() {
         mtgJsonAllCards = (yield getMTGJsonCSV("https://mtgjson.com/api/v5/csv/cards.csv"))["data"];
     });
 }
+function getAllLegalBoosterSets() {
+    return __awaiter(this, void 0, void 0, function* () {
+        var ret = [];
+        var sets = (yield getMTGJsonCSV("https://mtgjson.com/api/v5/csv/sets.csv"))["data"];
+        for (const set of sets) {
+            if (set["booster"] != "") {
+                ret.push(set["code"]);
+            }
+        }
+        return ret;
+    });
+}
+exports.getAllLegalBoosterSets = getAllLegalBoosterSets;

@@ -1,11 +1,12 @@
 import { getSpecificCardFromScryfall } from "./ScryfallImplementation";
 import { CardLineDict } from "./CardLineDict";
 import CustomCard from "./CustomCard";
-import { customSets, generateCustomDraft } from "./CustomSetsHandler";
+import { customSets, generateCustomDraft, getAllCustomBoosterSets } from "./CustomSetsHandler";
 import { createTTSBagWithCards, createTTSBagWithDeck } from "./TTSObjectsHandler";
-import { generateBoosterDraftPack } from "./MTGJsonImplementation";
+import { generateBoosterDraftPack, getAllLegalBoosterSets } from "./MTGJsonImplementation";
 import CustomSet from "./CustomSet";
 import Card from "./CustomCard";
+import rndm from "./rndm";
 
 var defaultSleeve = "https://i.imgur.com/hsYf4R9.jpg";
 
@@ -162,6 +163,7 @@ export function getScryfallCardAttributes(cardJson: any): CardAtt {
 }
 
 export async function generateDraftPacks(setCode: string, numberOfPacks: number, sleeve: string | null): Promise<[any, boolean]> {
+    
     if (sleeve == null) sleeve = "https://i.imgur.com/hsYf4R9.jpg";
     var customSet = customSets.find(x => x.name.toUpperCase() === setCode.toUpperCase());
 
@@ -198,6 +200,17 @@ export async function generateDraftPacks(setCode: string, numberOfPacks: number,
             return [null, true]
         }
     }
+}
+
+export async function getRandomDraftSet(): Promise<string> {
+    var draftableSets: string[] = [];
+
+    draftableSets = draftableSets.concat(await getAllLegalBoosterSets());
+    draftableSets = draftableSets.concat(getAllCustomBoosterSets());
+
+    var selectedSet = draftableSets[rndm.randomInt(0, draftableSets.length - 1)];
+
+    return selectedSet;
 }
 
 export class CardAtt {
