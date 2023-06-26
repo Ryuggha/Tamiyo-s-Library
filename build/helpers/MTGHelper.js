@@ -233,7 +233,7 @@ function randomBrewTournamentIIBossGenerator() {
     return __awaiter(this, void 0, void 0, function* () {
         var cards = [];
         do {
-            for (const card of yield (0, ScryfallImplementation_1.getRandomCards)(5)) {
+            for (const card of yield (0, ScryfallImplementation_1.getRandomCards)(5, "f:modern")) {
                 if (!inBanList(card["name"])) {
                     if (cards.filter(x => x.name === card["name"]).length >= 0) {
                         if (!card["type_line"].toUpperCase().includes("LAND")) {
