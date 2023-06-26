@@ -224,7 +224,7 @@ export async function randomBrewTournamentIIBossGenerator(): Promise<CardLink[]>
     var cards: CardLink[] = [];
 
     do {
-        for (const card of await getRandomCards(5)) {
+        for (const card of await getRandomCards(5, "f:modern")) {
             if (!inBanList(card["name"])) {
                 if (cards.filter(x => x.name === card["name"]).length >= 0) {
                     if (!card["type_line"].toUpperCase().includes("LAND")) {
