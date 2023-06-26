@@ -244,7 +244,6 @@ function randomBrewTournamentIIBossGenerator() {
                     }
                 }
             }
-            console.log("a");
         } while (cards.length < 5);
         return cards.slice(0, 5);
     });

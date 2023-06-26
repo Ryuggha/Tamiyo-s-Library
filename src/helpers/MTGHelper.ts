@@ -235,8 +235,6 @@ export async function randomBrewTournamentIIBossGenerator(): Promise<CardLink[]>
                 } 
             }           
         }
-
-        console.log("a");
     }
     while (cards.length < 5);
 
