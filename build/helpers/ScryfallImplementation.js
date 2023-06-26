@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getCardFromScryfallFromId = exports.getSpecificCardFromScryfall = exports.getCardFomScryfallFromName = exports.billy = exports.getScryfallData = void 0;
+exports.getRandomCards = exports.getCardFromScryfallFromId = exports.getSpecificCardFromScryfall = exports.getCardFomScryfallFromName = exports.billy = exports.getScryfallData = void 0;
 const CustomSetsHandler_1 = require("./CustomSetsHandler");
 const rndm_1 = __importDefault(require("./rndm"));
 var officialBack = "https://i.imgur.com/hsYf4R9.jpg";
@@ -102,3 +102,15 @@ function getCardFromScryfallFromId(cardId) {
     });
 }
 exports.getCardFromScryfallFromId = getCardFromScryfallFromId;
+function getRandomCards(n, query = "") {
+    return __awaiter(this, void 0, void 0, function* () {
+        var cards = [];
+        if (query != "")
+            query = "?q=" + query;
+        for (var i = 0; i < n; i++) {
+            cards.push(yield getScryfallData("https://api.scryfall.com/cards/random" + query, true));
+        }
+        return cards;
+    });
+}
+exports.getRandomCards = getRandomCards;

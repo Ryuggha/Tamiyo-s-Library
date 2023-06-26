@@ -83,3 +83,15 @@ export async function getSpecificCardFromScryfall(cardDict: CardLineDict): Promi
 export async function getCardFromScryfallFromId(cardId: string): Promise<any>  {
     return (await getScryfallData(`https://api.scryfall.com/cards/${cardId}`, true));
 }
+
+
+export async function getRandomCards(n: number, query: string = ""): Promise<any[]> {
+    var cards = [];
+    if (query != "") query = "?q=" + query;
+    for (var i = 0; i < n ; i++) {
+        cards.push(await getScryfallData("https://api.scryfall.com/cards/random" + query, true));
+    }
+
+    return cards;
+}
+

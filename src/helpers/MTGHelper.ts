@@ -1,4 +1,4 @@
-import { getSpecificCardFromScryfall } from "./ScryfallImplementation";
+import { getRandomCards, getSpecificCardFromScryfall } from "./ScryfallImplementation";
 import { CardLineDict } from "./CardLineDict";
 import CustomCard from "./CustomCard";
 import { customSets, generateCustomDraft, getAllCustomBoosterSets } from "./CustomSetsHandler";
@@ -9,6 +9,8 @@ import Card from "./CustomCard";
 import rndm from "./rndm";
 
 var defaultSleeve = "https://i.imgur.com/hsYf4R9.jpg";
+
+var banList: any = null;
 
 export function readDeckList(deckList: string): CardLineDict[] {
     var cardListArray: CardLineDict[] = [];
@@ -145,6 +147,7 @@ export function getScryfallCardAttributes(cardJson: any): CardAtt {
 
     try { card.image = cardJson['image_uris']['png'] }
     catch (e) {
+        console.log(cardJson);
         card.image = cardJson["card_faces"][0]['image_uris']['png']
         card.back = cardJson["card_faces"][1]['image_uris']['png']
     }
@@ -160,6 +163,10 @@ export function getScryfallCardAttributes(cardJson: any): CardAtt {
     }
 
     return card;
+}
+
+export function getScryfallCardLink(cardJson: any): CardLink {
+    return new CardLink(cardJson["name"], cardJson["scryfall_uri"]);
 }
 
 export async function generateDraftPacks(setCode: string, numberOfPacks: number, sleeve: string | null): Promise<[any, boolean]> {
@@ -213,6 +220,47 @@ export async function getRandomDraftSet(): Promise<string> {
     return selectedSet;
 }
 
+export async function randomBrewTournamentIIBossGenerator(): Promise<CardLink[]> {
+    var cards: CardLink[] = [];
+
+    do {
+        for (const card of await getRandomCards(5)) {
+            if (!inBanList(card["name"])) {
+                if (cards.filter(x => x.name === card["name"]).length >= 0) {
+                    if (!card["type_line"].toUpperCase().includes("LAND")) {
+                        if (card["oracle_text"] != "") {
+                            cards.push(getScryfallCardLink(card));
+                        }
+                    }
+                } 
+            }           
+        }
+
+        console.log("a");
+    }
+    while (cards.length < 5);
+
+    return cards.slice(0, 5);
+}
+
+export function inBanList(name: string): boolean { //TODO MODULAR BANLIST
+    if (banList == null) createBanlist();
+    return banList.includes(name);  
+}
+
+function createBanlist() {
+
+    var list = [];
+
+    var fs = require('fs');
+    var array = fs.readFileSync("textFiles/RandomBrewTournamentBanList.txt").toString().split("\n");
+    for(var i = 0; i < array.length; i++) {
+        var v = array[i].trim();
+        if (v != null && v != "") list.push(v);
+    } 
+    banList = list
+}
+
 export class CardAtt {
     name: string;
     desc: string;
@@ -226,5 +274,15 @@ export class CardAtt {
         this.image = image;
         this.back = back;
         this.rarity = rarity;
+    }
+}
+
+export class CardLink {
+    name: string;
+    url: string;
+
+    constructor (name: string = "", url: string = "") {
+        this.name = name;
+        this.url = url;
     }
 }

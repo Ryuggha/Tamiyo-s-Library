@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CardAtt = exports.getRandomDraftSet = exports.generateDraftPacks = exports.getScryfallCardAttributes = exports.getCustomCardAttributes = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
+exports.CardLink = exports.CardAtt = exports.inBanList = exports.randomBrewTournamentIIBossGenerator = exports.getRandomDraftSet = exports.generateDraftPacks = exports.getScryfallCardLink = exports.getScryfallCardAttributes = exports.getCustomCardAttributes = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
 const ScryfallImplementation_1 = require("./ScryfallImplementation");
 const CardLineDict_1 = require("./CardLineDict");
 const CustomSetsHandler_1 = require("./CustomSetsHandler");
@@ -20,6 +20,7 @@ const TTSObjectsHandler_1 = require("./TTSObjectsHandler");
 const MTGJsonImplementation_1 = require("./MTGJsonImplementation");
 const rndm_1 = __importDefault(require("./rndm"));
 var defaultSleeve = "https://i.imgur.com/hsYf4R9.jpg";
+var banList = null;
 function readDeckList(deckList) {
     var cardListArray = [];
     var splitList = deckList.split("\n");
@@ -150,6 +151,7 @@ function getScryfallCardAttributes(cardJson) {
         card.image = cardJson['image_uris']['png'];
     }
     catch (e) {
+        console.log(cardJson);
         card.image = cardJson["card_faces"][0]['image_uris']['png'];
         card.back = cardJson["card_faces"][1]['image_uris']['png'];
     }
@@ -170,6 +172,10 @@ function getScryfallCardAttributes(cardJson) {
     return card;
 }
 exports.getScryfallCardAttributes = getScryfallCardAttributes;
+function getScryfallCardLink(cardJson) {
+    return new CardLink(cardJson["name"], cardJson["scryfall_uri"]);
+}
+exports.getScryfallCardLink = getScryfallCardLink;
 function generateDraftPacks(setCode, numberOfPacks, sleeve) {
     return __awaiter(this, void 0, void 0, function* () {
         if (sleeve == null)
@@ -223,6 +229,44 @@ function getRandomDraftSet() {
     });
 }
 exports.getRandomDraftSet = getRandomDraftSet;
+function randomBrewTournamentIIBossGenerator() {
+    return __awaiter(this, void 0, void 0, function* () {
+        var cards = [];
+        do {
+            for (const card of yield (0, ScryfallImplementation_1.getRandomCards)(5)) {
+                if (!inBanList(card["name"])) {
+                    if (cards.filter(x => x.name === card["name"]).length >= 0) {
+                        if (!card["type_line"].toUpperCase().includes("LAND")) {
+                            if (card["oracle_text"] != "") {
+                                cards.push(getScryfallCardLink(card));
+                            }
+                        }
+                    }
+                }
+            }
+            console.log("a");
+        } while (cards.length < 5);
+        return cards.slice(0, 5);
+    });
+}
+exports.randomBrewTournamentIIBossGenerator = randomBrewTournamentIIBossGenerator;
+function inBanList(name) {
+    if (banList == null)
+        createBanlist();
+    return banList.includes(name);
+}
+exports.inBanList = inBanList;
+function createBanlist() {
+    var list = [];
+    var fs = require('fs');
+    var array = fs.readFileSync("textFiles/RandomBrewTournamentBanList.txt").toString().split("\n");
+    for (var i = 0; i < array.length; i++) {
+        var v = array[i].trim();
+        if (v != null && v != "")
+            list.push(v);
+    }
+    banList = list;
+}
 class CardAtt {
     constructor(name = "", desc = "", image = "", back = "", rarity = "") {
         this.name = name;
@@ -233,3 +277,10 @@ class CardAtt {
     }
 }
 exports.CardAtt = CardAtt;
+class CardLink {
+    constructor(name = "", url = "") {
+        this.name = name;
+        this.url = url;
+    }
+}
+exports.CardLink = CardLink;

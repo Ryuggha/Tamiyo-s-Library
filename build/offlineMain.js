@@ -10,11 +10,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const CustomSetsHandler_1 = require("./helpers/CustomSetsHandler");
+const MTGHelper_1 = require("./helpers/MTGHelper");
 console.log("Offline Test\n--------------------");
 // ----------------------
 (0, CustomSetsHandler_1.loadCustomSets)();
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
+        for (const card of yield (0, MTGHelper_1.randomBrewTournamentIIBossGenerator)()) {
+            console.log(" : " + card.name);
+        }
     });
 }
 main();
