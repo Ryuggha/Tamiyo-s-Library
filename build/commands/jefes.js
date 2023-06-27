@@ -18,8 +18,8 @@ module.exports = {
     execute(interaction) {
         return __awaiter(this, void 0, void 0, function* () {
             yield interaction.deferReply();
-            var cards = yield (0, MTGHelper_1.randomBrewTournamentIIBossGenerator)();
-            var response = `Entre estas cinco cartas debes escoger tus tres jefes: \n`;
+            var cards = yield (0, MTGHelper_1.randomBrewTournamentIIBossGenerator)(interaction.user.tag);
+            var response = `ATENCIÓN: Usa este comando solo una vez, pues quedará registrado cada uso\nEntre estas cinco cartas debes escoger tus tres jefes: \n\n`;
             for (var i = 0; i < cards.length; i++) {
                 response += `** ${cards[i].name} ** \n ${cards[i].url} \n \n`;
             }

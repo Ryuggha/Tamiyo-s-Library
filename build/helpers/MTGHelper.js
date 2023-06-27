@@ -19,6 +19,7 @@ const CustomSetsHandler_1 = require("./CustomSetsHandler");
 const TTSObjectsHandler_1 = require("./TTSObjectsHandler");
 const MTGJsonImplementation_1 = require("./MTGJsonImplementation");
 const rndm_1 = __importDefault(require("./rndm"));
+const fs = require('node:fs');
 var defaultSleeve = "https://i.imgur.com/hsYf4R9.jpg";
 var banList = null;
 function readDeckList(deckList) {
@@ -229,7 +230,7 @@ function getRandomDraftSet() {
     });
 }
 exports.getRandomDraftSet = getRandomDraftSet;
-function randomBrewTournamentIIBossGenerator() {
+function randomBrewTournamentIIBossGenerator(userName) {
     return __awaiter(this, void 0, void 0, function* () {
         var cards = [];
         do {
@@ -245,7 +246,23 @@ function randomBrewTournamentIIBossGenerator() {
                 }
             }
         } while (cards.length < 5);
-        return cards.slice(0, 5);
+        cards = cards.slice(0, 5);
+        var fileName = userName + " - " + Date.now().toString();
+        const date = new Date();
+        var content = `Date: ${date.toLocaleDateString('en-us', { weekday: "long", year: "numeric", month: "short", day: "numeric" })} - ${date.getHours()}:${date.getMinutes()}`;
+        for (var i = 0; i < cards.length; i++) {
+            content += `\n ${cards[i].name}`;
+        }
+        if (!fs.existsSync("./mtgLogs")) {
+            fs.mkdirSync("./mtgLogs");
+        }
+        fs.writeFile(`./mtgLogs/${fileName}.txt`, content, (err) => {
+            if (err) {
+                console.error(err);
+            }
+            // file written successfully
+        });
+        return cards;
     });
 }
 exports.randomBrewTournamentIIBossGenerator = randomBrewTournamentIIBossGenerator;

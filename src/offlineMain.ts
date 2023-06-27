@@ -10,9 +10,6 @@ console.log("Offline Test\n--------------------");
 loadCustomSets();
 
 async function main () {
-    for (const card of await randomBrewTournamentIIBossGenerator()) {
-        console.log(" : " + card.name);
-    }
 }
 
 main();

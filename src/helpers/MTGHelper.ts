@@ -7,6 +7,7 @@ import { generateBoosterDraftPack, getAllLegalBoosterSets } from "./MTGJsonImple
 import CustomSet from "./CustomSet";
 import Card from "./CustomCard";
 import rndm from "./rndm";
+const fs = require('node:fs');
 
 var defaultSleeve = "https://i.imgur.com/hsYf4R9.jpg";
 
@@ -220,7 +221,7 @@ export async function getRandomDraftSet(): Promise<string> {
     return selectedSet;
 }
 
-export async function randomBrewTournamentIIBossGenerator(): Promise<CardLink[]> {
+export async function randomBrewTournamentIIBossGenerator(userName: string): Promise<CardLink[]> {
     var cards: CardLink[] = [];
 
     do {
@@ -237,8 +238,28 @@ export async function randomBrewTournamentIIBossGenerator(): Promise<CardLink[]>
         }
     }
     while (cards.length < 5);
+    cards = cards.slice(0, 5);
 
-    return cards.slice(0, 5);
+    var fileName = userName + " - " + Date.now().toString();
+
+    const date = new Date();
+    var content = `Date: ${date.toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) } - ${date.getHours()}:${date.getMinutes()}`;
+
+    for (var i = 0; i < cards.length; i++) {
+        content += `\n ${cards[i].name}`;
+    }
+
+    if (!fs.existsSync("./mtgLogs")){
+        fs.mkdirSync("./mtgLogs");
+    }
+    fs.writeFile(`./mtgLogs/${fileName}.txt`, content, (err: any) => {
+        if (err) {
+            console.error(err);
+        }
+        // file written successfully
+    });
+
+    return cards;
 }
 
 export function inBanList(name: string): boolean { //TODO MODULAR BANLIST
@@ -247,7 +268,6 @@ export function inBanList(name: string): boolean { //TODO MODULAR BANLIST
 }
 
 function createBanlist() {
-
     var list = [];
 
     var fs = require('fs');
