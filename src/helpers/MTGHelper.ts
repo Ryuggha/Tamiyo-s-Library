@@ -1,4 +1,4 @@
-import { getRandomCards, getSpecificCardFromScryfall } from "./ScryfallImplementation";
+import { getRandomCards, getScryfallData, getSpecificCardFromScryfall } from "./ScryfallImplementation";
 import { CardLineDict } from "./CardLineDict";
 import CustomCard from "./CustomCard";
 import { customSets, generateCustomDraft, getAllCustomBoosterSets } from "./CustomSetsHandler";
@@ -106,7 +106,7 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
                 }
 
                 var cardAtt;
-                var cardJson;
+                var cardJson: any;
                 if (customSetFlag !== "") cardAtt = getCustomCardAttributes(searchCustomCard(cardDict.name, customSetFlag)); 
                 else {
                     cardJson = await getSpecificCardFromScryfall(cardDict);
@@ -117,7 +117,8 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
                     var banListFormats = [1];
                     if (banListFormats.includes(legalities[1]) && inBanList(cardAtt.name)) errors += "ILLEGAL CARD: " + cardAtt.name + " is banned \n";
                     if (legalities[0] != "") {
-                        if (cardJson["legalities"][legalities[0]] != null) {
+                        if (customSetFlag !== "") errors += "ILLEGAL CARD: " + cardAtt.name + " is not legal \n"
+                        else if (cardJson["legalities"][legalities[0]] != null) {
                             if (cardJson["legalities"][legalities[0]] != "legal") errors += "ILLEGAL CARD: " + cardAtt.name + " is not legal \n"
                         }
                         else {
@@ -128,7 +129,13 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
                 }
 
                 for (var i = 0; i < cardDict.num; i++) {
-                    //Tokens flag validation would go here
+                    if (customSetFlag == "" && !(cardListMap.get(-1) != null && cardListMap.get(-1)!.find(x => x.desc == `Created by: ${cardJson!["name"]}`))) {  
+                        var cardTokens = await getTokenCards(cardJson, cardListMap.get(-1));
+                        if (cardTokens.length != 0) {
+                            if (cardListMap.get(-1) == null) cardListMap.set(-1, []);
+                            cardListMap.set(-1, cardListMap.get(-1)!.concat(cardTokens));
+                        }
+                    }
 
                     if (cardListMap.get(cardListCount) == null) cardListMap.set(cardListCount, []); 
                     cardListMap.get(cardListCount)!.push(cardAtt);
@@ -148,6 +155,19 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
     return [createTTSBagWithDeck(cardListMap, deckSectionMap, deckName, customSleeve), errors, cardsParsed];
 }
 
+export async function getTokenCards(cardJson: any, tokenList: CardAtt[] | undefined): Promise<CardAtt[]> {
+    var tokens: CardAtt[] = [];
+    if (cardJson["all_parts"] == null) return tokens;
+    for (const e of cardJson["all_parts"]) {
+        if (!(tokenList != null && tokenList.find(x => x.uri == e.uri)) && (e["type_line"].includes("Token") || e["type_line"].includes("Emblem"))) {
+            var tokenJson: any = await getScryfallData(e["uri"], true);
+            var token = new CardAtt(tokenJson["name"], `Created by: ${cardJson["name"]}`, tokenJson["image_uris"]["png"], "", "t", e["uri"]);
+            tokens.push(token);
+        }
+    }
+    return tokens;
+} 
+
 function checkCustomLegality(l: string): [string, number] {
     l = l.toLowerCase();
     switch (l) {
@@ -164,11 +184,12 @@ function searchCustomCard(name: string, customSetName: string): Card {
 }
 
 export function getCustomCardAttributes(customCard: Card): CardAtt {
-    return new CardAtt(customCard.name, "", customCard.url, customCard.backUrl, customCard.rarity);
+    return new CardAtt(customCard.name, "", customCard.url, customCard.backUrl, customCard.rarity, customCard.url);
 }
 
 export function getScryfallCardAttributes(cardJson: any): CardAtt {
     var card = new CardAtt(cardJson["name"]);
+    card.uri = cardJson["uri"];
 
     try { card.desc = cardJson["prices"]["usd"] + "$" }
     catch (e) {}
@@ -311,13 +332,15 @@ export class CardAtt {
     image: string;
     back: string;
     rarity: string;
+    uri: string;
 
-    constructor (name: string = "", desc: string = "", image: string = "", back: string = "", rarity: string = "") {
+    constructor (name: string = "", desc: string = "", image: string = "", back: string = "", rarity: string = "", uri: string = "") {
         this.name = name;
         this.desc = desc;
         this.image = image;
         this.back = back;
         this.rarity = rarity;
+        this.uri = uri;
     }
 }
 

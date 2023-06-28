@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CardLink = exports.CardAtt = exports.inBanList = exports.randomBrewTournamentIIBossGenerator = exports.getRandomDraftSet = exports.generateDraftPacks = exports.getScryfallCardLink = exports.getScryfallCardAttributes = exports.getCustomCardAttributes = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
+exports.CardLink = exports.CardAtt = exports.inBanList = exports.randomBrewTournamentIIBossGenerator = exports.getRandomDraftSet = exports.generateDraftPacks = exports.getScryfallCardLink = exports.getScryfallCardAttributes = exports.getCustomCardAttributes = exports.getTokenCards = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
 const ScryfallImplementation_1 = require("./ScryfallImplementation");
 const CardLineDict_1 = require("./CardLineDict");
 const CustomSetsHandler_1 = require("./CustomSetsHandler");
@@ -120,7 +120,9 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
                         if (banListFormats.includes(legalities[1]) && inBanList(cardAtt.name))
                             errors += "ILLEGAL CARD: " + cardAtt.name + " is banned \n";
                         if (legalities[0] != "") {
-                            if (cardJson["legalities"][legalities[0]] != null) {
+                            if (customSetFlag !== "")
+                                errors += "ILLEGAL CARD: " + cardAtt.name + " is not legal \n";
+                            else if (cardJson["legalities"][legalities[0]] != null) {
                                 if (cardJson["legalities"][legalities[0]] != "legal")
                                     errors += "ILLEGAL CARD: " + cardAtt.name + " is not legal \n";
                             }
@@ -131,7 +133,14 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
                         }
                     }
                     for (var i = 0; i < cardDict.num; i++) {
-                        //Tokens flag validation would go here
+                        if (customSetFlag == "" && !(cardListMap.get(-1) != null && cardListMap.get(-1).find(x => x.desc == `Created by: ${cardJson["name"]}`))) {
+                            var cardTokens = yield getTokenCards(cardJson, cardListMap.get(-1));
+                            if (cardTokens.length != 0) {
+                                if (cardListMap.get(-1) == null)
+                                    cardListMap.set(-1, []);
+                                cardListMap.set(-1, cardListMap.get(-1).concat(cardTokens));
+                            }
+                        }
                         if (cardListMap.get(cardListCount) == null)
                             cardListMap.set(cardListCount, []);
                         cardListMap.get(cardListCount).push(cardAtt);
@@ -150,6 +159,22 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
     });
 }
 exports.buildDeckFromDeckList = buildDeckFromDeckList;
+function getTokenCards(cardJson, tokenList) {
+    return __awaiter(this, void 0, void 0, function* () {
+        var tokens = [];
+        if (cardJson["all_parts"] == null)
+            return tokens;
+        for (const e of cardJson["all_parts"]) {
+            if (!(tokenList != null && tokenList.find(x => x.uri == e.uri)) && (e["type_line"].includes("Token") || e["type_line"].includes("Emblem"))) {
+                var tokenJson = yield (0, ScryfallImplementation_1.getScryfallData)(e["uri"], true);
+                var token = new CardAtt(tokenJson["name"], `Created by: ${cardJson["name"]}`, tokenJson["image_uris"]["png"], "", "t", e["uri"]);
+                tokens.push(token);
+            }
+        }
+        return tokens;
+    });
+}
+exports.getTokenCards = getTokenCards;
 function checkCustomLegality(l) {
     l = l.toLowerCase();
     switch (l) {
@@ -166,11 +191,12 @@ function searchCustomCard(name, customSetName) {
     return customCard;
 }
 function getCustomCardAttributes(customCard) {
-    return new CardAtt(customCard.name, "", customCard.url, customCard.backUrl, customCard.rarity);
+    return new CardAtt(customCard.name, "", customCard.url, customCard.backUrl, customCard.rarity, customCard.url);
 }
 exports.getCustomCardAttributes = getCustomCardAttributes;
 function getScryfallCardAttributes(cardJson) {
     var card = new CardAtt(cardJson["name"]);
+    card.uri = cardJson["uri"];
     try {
         card.desc = cardJson["prices"]["usd"] + "$";
     }
@@ -310,12 +336,13 @@ function createBanlist() {
     banList = list;
 }
 class CardAtt {
-    constructor(name = "", desc = "", image = "", back = "", rarity = "") {
+    constructor(name = "", desc = "", image = "", back = "", rarity = "", uri = "") {
         this.name = name;
         this.desc = desc;
         this.image = image;
         this.back = back;
         this.rarity = rarity;
+        this.uri = uri;
     }
 }
 exports.CardAtt = CardAtt;
