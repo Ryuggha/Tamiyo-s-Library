@@ -98,3 +98,4 @@ Orcish Bowmasters
 Monastery Swiftspear
 Sigarda's Aid
 Puresteel Paladin
+Prismatic Vista

@@ -70,7 +70,7 @@ function getCardDictFromLine(line) {
         return null;
     return card;
 }
-function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customSleeve = defaultSleeve, activeCustomSets = true) {
+function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customSleeve = defaultSleeve, activeCustomSets = true, format = "") {
     return __awaiter(this, void 0, void 0, function* () {
         var errors = "";
         var cardsParsed = 0;
@@ -78,6 +78,8 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
         var deckSectionMap = new Map();
         deckSectionMap.set(-1, "Tokens");
         var cardListCount = 0;
+        var extraErrors = [];
+        var legalities = checkCustomLegality(format);
         for (const cardDict of cardDictList) {
             if (cardDict.separator) {
                 deckSectionMap.set(cardListCount, cardDict.name);
@@ -106,11 +108,27 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
                         }
                     }
                     var cardAtt;
+                    var cardJson;
                     if (customSetFlag !== "")
                         cardAtt = getCustomCardAttributes(searchCustomCard(cardDict.name, customSetFlag));
                     else {
-                        var cardJson = yield (0, ScryfallImplementation_1.getSpecificCardFromScryfall)(cardDict);
+                        cardJson = yield (0, ScryfallImplementation_1.getSpecificCardFromScryfall)(cardDict);
                         cardAtt = getScryfallCardAttributes(cardJson);
+                    }
+                    if (legalities[1] != -1) {
+                        var banListFormats = [1];
+                        if (banListFormats.includes(legalities[1]) && inBanList(cardAtt.name))
+                            errors += "ILLEGAL CARD: " + cardAtt.name + " is banned \n";
+                        if (legalities[0] != "") {
+                            if (cardJson["legalities"][legalities[0]] != null) {
+                                if (cardJson["legalities"][legalities[0]] != "legal")
+                                    errors += "ILLEGAL CARD: " + cardAtt.name + " is not legal \n";
+                            }
+                            else {
+                                if (!extraErrors.includes("ERROR: " + legalities[0] + " is an unknown format\n"))
+                                    extraErrors.push("ERROR: " + legalities[0] + " is an unknown format\n");
+                            }
+                        }
                     }
                     for (var i = 0; i < cardDict.num; i++) {
                         //Tokens flag validation would go here
@@ -127,10 +145,19 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
         }
         if (cardListMap.get(-1) == null)
             deckSectionMap.delete(-1);
+        errors += extraErrors;
         return [(0, TTSObjectsHandler_1.createTTSBagWithDeck)(cardListMap, deckSectionMap, deckName, customSleeve), errors, cardsParsed];
     });
 }
 exports.buildDeckFromDeckList = buildDeckFromDeckList;
+function checkCustomLegality(l) {
+    l = l.toLowerCase();
+    switch (l) {
+        case "": return ["", -1];
+        case "rbt2": return ["modern", 1];
+        default: return [l, 0];
+    }
+}
 function searchCustomCard(name, customSetName) {
     var _a;
     var customCard = (_a = CustomSetsHandler_1.customSets.find((e) => e.name.toUpperCase() === customSetName.toUpperCase())) === null || _a === void 0 ? void 0 : _a.cards.find(e => e.name.toUpperCase() === name.toUpperCase());
@@ -152,7 +179,6 @@ function getScryfallCardAttributes(cardJson) {
         card.image = cardJson['image_uris']['png'];
     }
     catch (e) {
-        console.log(cardJson);
         card.image = cardJson["card_faces"][0]['image_uris']['png'];
         card.back = cardJson["card_faces"][1]['image_uris']['png'];
     }

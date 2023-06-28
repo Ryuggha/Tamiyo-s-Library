@@ -4,7 +4,7 @@ import { randomBrewTournamentIIBossGenerator } from "../helpers/MTGHelper";
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("jefes")
-        .setDescription("Genera 5 jefes aleatorios para el torneo de Random Brew Tournament II"),
+        .setDescription("SOLO USAR UNA VEZ :: Random Brew Tournament II"),
 
     async execute(interaction: any) {
         await interaction.deferReply();

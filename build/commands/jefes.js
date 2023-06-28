@@ -14,7 +14,7 @@ const MTGHelper_1 = require("../helpers/MTGHelper");
 module.exports = {
     data: new discord_js_1.SlashCommandBuilder()
         .setName("jefes")
-        .setDescription("Genera 5 jefes aleatorios para el torneo de Random Brew Tournament II"),
+        .setDescription("SOLO USAR UNA VEZ :: Random Brew Tournament II"),
     execute(interaction) {
         return __awaiter(this, void 0, void 0, function* () {
             yield interaction.deferReply();

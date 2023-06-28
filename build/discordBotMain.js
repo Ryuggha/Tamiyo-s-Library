@@ -74,17 +74,23 @@ client.on(Events.InteractionCreate, (interaction) => __awaiter(void 0, void 0, v
             .setRequired(false);
         const deckSleeveInput = new TextInputBuilder()
             .setCustomId("deckSleeveInput")
-            .setLabel("The URL to the sleeves of your Deck")
+            .setLabel("The URL to the sleeves of the Deck (optional)")
             .setStyle(TextInputStyle.Short)
             .setRequired(false);
         const deckListInput = new TextInputBuilder()
             .setCustomId("deckListInput")
             .setLabel("The decklist to build your Deck")
             .setStyle(TextInputStyle.Paragraph);
+        const deckFormatInput = new TextInputBuilder()
+            .setCustomId("deckFromatInput")
+            .setLabel("Check legality of deck. (modern, brawl, rbt2)")
+            .setStyle(TextInputStyle.Short)
+            .setRequired(false);
         const firstActionRow = new ActionRowBuilder().addComponents(deckNameInput);
         const secondActionRow = new ActionRowBuilder().addComponents(deckSleeveInput);
         const thirdActionRow = new ActionRowBuilder().addComponents(deckListInput);
-        modal.addComponents(firstActionRow, secondActionRow, thirdActionRow);
+        const fourthActionRow = new ActionRowBuilder().addComponents(deckFormatInput);
+        modal.addComponents(firstActionRow, secondActionRow, thirdActionRow, fourthActionRow);
         yield interaction.showModal(modal);
     }
 }));
@@ -98,13 +104,15 @@ client.on(Events.InteractionCreate, (interaction) => __awaiter(void 0, void 0, v
     var name = interaction.fields.getTextInputValue("deckNameInput");
     if (name == null || name === "")
         name = "Unnamed Deck";
+    var format = interaction.fields.getTextInputValue("deckFromatInput");
+    if (format == null)
+        format = "";
     yield interaction.reply('Creating Deck, this may take a while. \nPlease wait...');
     try {
         var cardListArray = (0, MTGHelper_1.readDeckList)(decklist);
         var activeCustomSets = true;
-        var deck = yield (0, MTGHelper_1.buildDeckFromDeckList)(name, cardListArray, sleeve, activeCustomSets);
+        var deck = yield (0, MTGHelper_1.buildDeckFromDeckList)(name, cardListArray, sleeve, activeCustomSets, format);
         var deckFile = new AttachmentBuilder(Buffer.from(JSON.stringify(deck[0], null, 4)), { name: `${name}.json` });
-        //await interaction.editReply(`A deck with ${deck[2]} total cards have been created.`);
         const deckEmbed = new builders_1.EmbedBuilder()
             .setAuthor({ name: interaction.user.username, iconURL: interaction.user.avatarURL(), url: 'https://discord.js.org' })
             .setColor(0x1d1d1d)
