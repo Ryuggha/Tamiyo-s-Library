@@ -161,7 +161,14 @@ export async function getTokenCards(cardJson: any, tokenList: CardAtt[] | undefi
     for (const e of cardJson["all_parts"]) {
         if (!(tokenList != null && tokenList.find(x => x.uri == e.uri)) && (e["type_line"].includes("Token") || e["type_line"].includes("Emblem"))) {
             var tokenJson: any = await getScryfallData(e["uri"], true);
-            var token = new CardAtt(tokenJson["name"], `Created by: ${cardJson["name"]}`, tokenJson["image_uris"]["png"], "", "t", e["uri"]);
+            var cardImage: string;
+            var token = new CardAtt(tokenJson["name"], `Created by: ${cardJson["name"]}`, "", "", "t", e["uri"]);
+            try { token.image = tokenJson['image_uris']['png'] }
+            catch (e) {
+                token.image = tokenJson["card_faces"][0]['image_uris']['png']
+                token.back = tokenJson["card_faces"][1]['image_uris']['png']
+            }
+            
             tokens.push(token);
         }
     }
