@@ -76,7 +76,7 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
         var cardsParsed = 0;
         var cardListMap = new Map();
         var deckSectionMap = new Map();
-        deckSectionMap.set(-1, "Tokens");
+        deckSectionMap.set(999, "Tokens");
         var cardListCount = 0;
         var extraErrors = [];
         var legalities = checkCustomLegality(format);
@@ -133,12 +133,12 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
                         }
                     }
                     for (var i = 0; i < cardDict.num; i++) {
-                        if (customSetFlag == "" && !(cardListMap.get(-1) != null && cardListMap.get(-1).find(x => x.desc == `Created by: ${cardJson["name"]}`))) {
-                            var cardTokens = yield getTokenCards(cardJson, cardListMap.get(-1));
+                        if (customSetFlag == "" && !(cardListMap.get(999)) != null && cardListMap.get(999).find(x => x.desc == `Created by: ${cardJson["name"]}`)) {
+                            var cardTokens = yield getTokenCards(cardJson, cardListMap.get(999));
                             if (cardTokens.length != 0) {
-                                if (cardListMap.get(-1) == null)
-                                    cardListMap.set(-1, []);
-                                cardListMap.set(-1, cardListMap.get(-1).concat(cardTokens));
+                                if (cardListMap.get(999) == null)
+                                    cardListMap.set(999, []);
+                                cardListMap.set(999, cardListMap.get(999).concat(cardTokens));
                             }
                         }
                         if (cardListMap.get(cardListCount) == null)
@@ -152,8 +152,8 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
                 }
             }
         }
-        if (cardListMap.get(-1) == null)
-            deckSectionMap.delete(-1);
+        if (cardListMap.get(999) == null)
+            deckSectionMap.delete(999);
         errors += extraErrors;
         return [(0, TTSObjectsHandler_1.createTTSBagWithDeck)(cardListMap, deckSectionMap, deckName, customSleeve), errors, cardsParsed];
     });
@@ -167,7 +167,6 @@ function getTokenCards(cardJson, tokenList) {
         for (const e of cardJson["all_parts"]) {
             if (!(tokenList != null && tokenList.find(x => x.uri == e.uri)) && (e["type_line"].includes("Token") || e["type_line"].includes("Emblem"))) {
                 var tokenJson = yield (0, ScryfallImplementation_1.getScryfallData)(e["uri"], true);
-                var cardImage;
                 var token = new CardAtt(tokenJson["name"], `Created by: ${cardJson["name"]}`, "", "", "t", e["uri"]);
                 try {
                     token.image = tokenJson['image_uris']['png'];

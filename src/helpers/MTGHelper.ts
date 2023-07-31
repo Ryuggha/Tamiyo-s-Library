@@ -71,7 +71,7 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
     var cardsParsed = 0;
     var cardListMap: Map<number, CardAtt[]> = new Map();
     var deckSectionMap: Map<number, string> = new Map();
-    deckSectionMap.set(-1, "Tokens");
+    deckSectionMap.set(999, "Tokens");
     var cardListCount = 0;
     var extraErrors: any[] = [];
 
@@ -129,11 +129,11 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
                 }
 
                 for (var i = 0; i < cardDict.num; i++) {
-                    if (customSetFlag == "" && !(cardListMap.get(-1) != null && cardListMap.get(-1)!.find(x => x.desc == `Created by: ${cardJson!["name"]}`))) {  
-                        var cardTokens = await getTokenCards(cardJson, cardListMap.get(-1));
+                    if (customSetFlag == "" && !(cardListMap.get(999)) != null && cardListMap.get(999)!.find(x => x.desc == `Created by: ${cardJson!["name"]}`)) {  
+                        var cardTokens = await getTokenCards(cardJson, cardListMap.get(999));
                         if (cardTokens.length != 0) {
-                            if (cardListMap.get(-1) == null) cardListMap.set(-1, []);
-                            cardListMap.set(-1, cardListMap.get(-1)!.concat(cardTokens));
+                            if (cardListMap.get(999) == null) cardListMap.set(999, []);
+                            cardListMap.set(999, cardListMap.get(999)!.concat(cardTokens));
                         }
                     }
 
@@ -149,7 +149,7 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
         }
     }
 
-    if (cardListMap.get(-1) == null) deckSectionMap.delete(-1);
+    if (cardListMap.get(999) == null) deckSectionMap.delete(999);
 
     errors += extraErrors;
     return [createTTSBagWithDeck(cardListMap, deckSectionMap, deckName, customSleeve), errors, cardsParsed];
@@ -161,7 +161,6 @@ export async function getTokenCards(cardJson: any, tokenList: CardAtt[] | undefi
     for (const e of cardJson["all_parts"]) {
         if (!(tokenList != null && tokenList.find(x => x.uri == e.uri)) && (e["type_line"].includes("Token") || e["type_line"].includes("Emblem"))) {
             var tokenJson: any = await getScryfallData(e["uri"], true);
-            var cardImage: string;
             var token = new CardAtt(tokenJson["name"], `Created by: ${cardJson["name"]}`, "", "", "t", e["uri"]);
             try { token.image = tokenJson['image_uris']['png'] }
             catch (e) {

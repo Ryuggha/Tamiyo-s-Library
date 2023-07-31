@@ -20,7 +20,11 @@ export function createTTSBagWithDeck(cardListMap: Map<number, CardAtt[]>, deckSe
     
     var containedObjects: any[] = [];
 
-    for (const key of cardListMap.keys()) {
+    var descMapKeys = new Map([...cardListMap.entries()].sort());
+
+    console.log(descMapKeys.keys());
+
+    for (const key of descMapKeys.keys()) {
         var sectionName = "deck";
         if (deckSectionMap.get(key) != null) sectionName = deckSectionMap.get(key)!;
         containedObjects.push(createTTSDeck(sectionName, cardListMap.get(key)!, sleeve));
