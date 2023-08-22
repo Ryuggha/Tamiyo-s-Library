@@ -24,7 +24,6 @@ function createTTSBagWithDeck(cardListMap, deckSectionMap, deckName, sleeve) {
         initializeTTSJsons();
     var containedObjects = [];
     var descMapKeys = new Map([...cardListMap.entries()].sort());
-    console.log(descMapKeys.keys());
     for (const key of descMapKeys.keys()) {
         var sectionName = "deck";
         if (deckSectionMap.get(key) != null)

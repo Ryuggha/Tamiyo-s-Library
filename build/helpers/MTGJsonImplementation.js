@@ -52,7 +52,7 @@ function generateBoosterDraftPack(setCode, numberOfPacks) {
             if (scryfallCard != null)
                 cardMap.set(mtgJsonCard["uuid"], scryfallCard);
             else {
-                console.log("Card not found in mtgJson-scryfall parse: " + mtgJsonCard["name"] + " : " + mtgJsonCard["identifiers"]["scryfallId"]);
+                console.log("I think this won't be a problem, but the id: " + mtgJsonCard["identifiers"]["scryfallId"] + " was not mapped.");
             }
         }
         for (var i = 0; i < numberOfPacks; i++) {
@@ -89,6 +89,8 @@ function generateBoosterDraftPack(setCode, numberOfPacks) {
                         }
                     }
                     cardList.push((0, MTGHelper_1.getScryfallCardAttributes)(card));
+                    if (card["name"] == "Void Beckoner")
+                        console.log("Successful Test");
                 }
             }
             packList.push(cardList);

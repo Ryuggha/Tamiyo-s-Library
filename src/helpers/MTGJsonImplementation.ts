@@ -38,7 +38,7 @@ export async function generateBoosterDraftPack(setCode: string, numberOfPacks: n
         var scryfallCard = scryfallData.find((x: { [x: string]: any; }) => mtgJsonCard["identifiers"]["scryfallId"] === x["id"]);
         if (scryfallCard != null) cardMap.set(mtgJsonCard["uuid"], scryfallCard);
         else {
-            console.log("Card not found in mtgJson-scryfall parse: " + mtgJsonCard["name"] + " : " + mtgJsonCard["identifiers"]["scryfallId"]);
+            console.log("I think this won't be a problem, but the id: " + mtgJsonCard["identifiers"]["scryfallId"] + " was not mapped.");
         }
     }
 
@@ -60,7 +60,7 @@ export async function generateBoosterDraftPack(setCode: string, numberOfPacks: n
             for (var j = 0; j < contents[cardType]; j++) {
                 var cardRndm = rndm.randomInt(0, boosters["sheets"][cardType]["totalWeight"] - 1);
                 var actualCardWeight = 0;
-                var card = "";
+                var card = "" as any;
 
                 for (const cardJsonMapKeyEntries of Object.entries(boosters["sheets"][cardType]["cards"])) {
                     var cardJsonMapKey = cardJsonMapKeyEntries[0];
@@ -79,6 +79,7 @@ export async function generateBoosterDraftPack(setCode: string, numberOfPacks: n
                     }
                 }
                 cardList.push(getScryfallCardAttributes(card));
+                if (card["name"] == "Void Beckoner") console.log("Successful Test");
             }
         }
         packList.push(cardList);

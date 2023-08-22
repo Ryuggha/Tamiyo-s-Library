@@ -78,6 +78,7 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
     var legalities = checkCustomLegality(format);
 
     for (const cardDict of cardDictList) {
+
         if (cardDict.separator) {
             deckSectionMap.set(cardListCount, cardDict.name);
             cardListCount++;
@@ -127,9 +128,9 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
                         }
                     }
                 }
-
+                
                 for (var i = 0; i < cardDict.num; i++) {
-                    if (customSetFlag == "" && !(cardListMap.get(999)) != null && cardListMap.get(999)!.find(x => x.desc == `Created by: ${cardJson!["name"]}`)) {  
+                    if (customSetFlag == "" && !(cardListMap.get(999) != null && cardListMap.get(999)!.find(x => x.desc == `Created by: ${cardJson!["name"]}`))) {  
                         var cardTokens = await getTokenCards(cardJson, cardListMap.get(999));
                         if (cardTokens.length != 0) {
                             if (cardListMap.get(999) == null) cardListMap.set(999, []);
@@ -150,7 +151,6 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
     }
 
     if (cardListMap.get(999) == null) deckSectionMap.delete(999);
-
     errors += extraErrors;
     return [createTTSBagWithDeck(cardListMap, deckSectionMap, deckName, customSleeve), errors, cardsParsed];
 }
@@ -318,6 +318,10 @@ export async function randomBrewTournamentIIBossGenerator(userName: string): Pro
 export function inBanList(name: string): boolean { //TODO MODULAR BANLIST
     if (banList == null) createBanlist();
     return banList.includes(name);  
+}
+
+export async function getLandsFromSet(setCode: string): Promise<[any, boolean]> {
+    return [null, false];
 }
 
 function createBanlist() {

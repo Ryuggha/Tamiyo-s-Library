@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CardLink = exports.CardAtt = exports.inBanList = exports.randomBrewTournamentIIBossGenerator = exports.getRandomDraftSet = exports.generateDraftPacks = exports.getScryfallCardLink = exports.getScryfallCardAttributes = exports.getCustomCardAttributes = exports.getTokenCards = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
+exports.CardLink = exports.CardAtt = exports.getLandsFromSet = exports.inBanList = exports.randomBrewTournamentIIBossGenerator = exports.getRandomDraftSet = exports.generateDraftPacks = exports.getScryfallCardLink = exports.getScryfallCardAttributes = exports.getCustomCardAttributes = exports.getTokenCards = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
 const ScryfallImplementation_1 = require("./ScryfallImplementation");
 const CardLineDict_1 = require("./CardLineDict");
 const CustomSetsHandler_1 = require("./CustomSetsHandler");
@@ -133,7 +133,7 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
                         }
                     }
                     for (var i = 0; i < cardDict.num; i++) {
-                        if (customSetFlag == "" && !(cardListMap.get(999)) != null && cardListMap.get(999).find(x => x.desc == `Created by: ${cardJson["name"]}`)) {
+                        if (customSetFlag == "" && !(cardListMap.get(999) != null && cardListMap.get(999).find(x => x.desc == `Created by: ${cardJson["name"]}`))) {
                             var cardTokens = yield getTokenCards(cardJson, cardListMap.get(999));
                             if (cardTokens.length != 0) {
                                 if (cardListMap.get(999) == null)
@@ -331,6 +331,12 @@ function inBanList(name) {
     return banList.includes(name);
 }
 exports.inBanList = inBanList;
+function getLandsFromSet(setCode) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return [null, false];
+    });
+}
+exports.getLandsFromSet = getLandsFromSet;
 function createBanlist() {
     var list = [];
     var fs = require('fs');
