@@ -15,6 +15,9 @@ console.log("Offline Test\n--------------------");
 (0, CustomSetsHandler_1.loadCustomSets)();
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
+        var response = yield fetch("https://mtgjson.com/api/v5/AllIdentifiers.json");
+        var json = yield response.json();
+        console.log(json["data"]['aba109b4-61b3-518a-84e6-dcc73d892e88']["identifiers"]["scryfallId"]);
     });
 }
 main();

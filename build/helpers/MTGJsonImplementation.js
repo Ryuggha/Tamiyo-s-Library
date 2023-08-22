@@ -17,6 +17,7 @@ const MTGHelper_1 = require("./MTGHelper");
 const rndm_1 = __importDefault(require("./rndm"));
 const ScryfallImplementation_1 = require("./ScryfallImplementation");
 const Papa = require('papaparse');
+var mtgJsonAllIdentifiers;
 var mtgJsonAllCards;
 function getMTGJsonData(request) {
     return __awaiter(this, void 0, void 0, function* () {
@@ -78,16 +79,11 @@ function generateBoosterDraftPack(setCode, numberOfPacks) {
                         if (cardRndm < actualCardWeight) {
                             card = cardMap.get(cardJsonMapKey);
                             if (card == null) {
-                                if (mtgJsonAllCards == null) {
-                                    yield updateMTGJsonAllCards();
+                                if (mtgJsonAllIdentifiers == null) {
+                                    yield updateMTGJsonAllIdentifiers();
                                 }
-                                var auxCard = mtgJsonAllCards.find((x) => x["uuid"] === cardJsonMapKey);
-                                if (auxCard == null) {
-                                    yield updateMTGJsonAllCards();
-                                    auxCard = mtgJsonAllCards.find((x) => x["uuid"] === cardJsonMapKey);
-                                }
-                                var scryfallId = auxCard["scryfallId"];
-                                card = yield (0, ScryfallImplementation_1.getCardFromScryfallFromId)(scryfallId);
+                                var scryFallId = mtgJsonAllIdentifiers[cardJsonMapKey]["identifiers"]["scryfallId"];
+                                card = yield (0, ScryfallImplementation_1.getCardFromScryfallFromId)(scryFallId);
                             }
                             break;
                         }
@@ -103,7 +99,13 @@ function generateBoosterDraftPack(setCode, numberOfPacks) {
 exports.generateBoosterDraftPack = generateBoosterDraftPack;
 function updateMTGJsonAllCards() {
     return __awaiter(this, void 0, void 0, function* () {
+        console.log("DEPRECATED");
         mtgJsonAllCards = (yield getMTGJsonCSV("https://mtgjson.com/api/v5/csv/cards.csv"))["data"];
+    });
+}
+function updateMTGJsonAllIdentifiers() {
+    return __awaiter(this, void 0, void 0, function* () {
+        mtgJsonAllIdentifiers = (yield getMTGJsonData("https://mtgjson.com/api/v5/AllIdentifiers.json"))["data"];
     });
 }
 function getAllLegalBoosterSets() {

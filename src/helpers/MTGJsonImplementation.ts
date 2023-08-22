@@ -1,8 +1,9 @@
 import { CardAtt, getScryfallCardAttributes } from "./MTGHelper";
 import rndm from "./rndm";
-import { getCardFromScryfallFromId, getScryfallData } from "./ScryfallImplementation";
+import { getCardFomScryfallFromName, getCardFromScryfallFromId, getScryfallData } from "./ScryfallImplementation";
 const Papa = require('papaparse'); 
 
+var mtgJsonAllIdentifiers: any;
 var mtgJsonAllCards: any;
 
 async function getMTGJsonData(request: string): Promise<any> {
@@ -67,18 +68,12 @@ export async function generateBoosterDraftPack(setCode: string, numberOfPacks: n
                     if (cardRndm < actualCardWeight) {
                         card = cardMap.get(cardJsonMapKey);
                         if (card == null) {
-                            if (mtgJsonAllCards == null) {
-                                await updateMTGJsonAllCards();
+                            if (mtgJsonAllIdentifiers == null) {
+                                await updateMTGJsonAllIdentifiers();
                             }                            
-                            var auxCard = mtgJsonAllCards.find((x: any) => x["uuid"] === cardJsonMapKey)
-                            if (auxCard == null) {
-                                await updateMTGJsonAllCards();
-                                auxCard = mtgJsonAllCards.find((x: any) => x["uuid"] === cardJsonMapKey)
-                            }
+                            var scryFallId = mtgJsonAllIdentifiers[cardJsonMapKey]["identifiers"]["scryfallId"];
 
-                            var scryfallId = auxCard["scryfallId"]
-
-                            card = await getCardFromScryfallFromId(scryfallId);
+                            card = await getCardFromScryfallFromId(scryFallId);
                         }
                         break;
                     }
@@ -92,7 +87,12 @@ export async function generateBoosterDraftPack(setCode: string, numberOfPacks: n
 }
 
 async function updateMTGJsonAllCards() {
+    console.log("DEPRECATED");
     mtgJsonAllCards = (await getMTGJsonCSV("https://mtgjson.com/api/v5/csv/cards.csv"))["data"];
+}
+
+async function updateMTGJsonAllIdentifiers() {
+    mtgJsonAllIdentifiers = (await getMTGJsonData("https://mtgjson.com/api/v5/AllIdentifiers.json"))["data"]
 }
 
 export async function getAllLegalBoosterSets(): Promise<string[]> {
