@@ -17,15 +17,14 @@ module.exports = {
         ),
 
     async execute(interaction: any) {
-        await interaction.reply("THIS COMMAND IS IN WORK IN PROGRESS");
-        /*var x = interaction.options.getString("x");
+        var x = interaction.options.getString("x");
         await interaction.deferReply();
 
         var setCode = interaction.options.getString("setcode");
         if (setCode == null || setCode.toUpperCase() === "RANDOM") setCode = "";
         var sleeve = interaction.options.getString("sleeveart");
 
-        var [packs, error] = await getLandsFromSet(setCode);
+        var [packs, error] = await getLandsFromSet(setCode, sleeve);
 
         if (error) {
             await interaction.editReply("There has been an error parsing your draft booster packs... Maybe the set code was nonexistent? Or maybe the APIs are down... Try again");
@@ -45,7 +44,7 @@ module.exports = {
     
             await interaction.editReply({ content: `${interaction.user}`, embeds: [packsEmbed] });
             await interaction.followUp( {files: [packsFile]} );
-        }*/
+        }
     },
 
 };

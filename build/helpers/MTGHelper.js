@@ -331,9 +331,28 @@ function inBanList(name) {
     return banList.includes(name);
 }
 exports.inBanList = inBanList;
-function getLandsFromSet(setCode) {
+function getLandsFromSet(setCode, sleeve) {
     return __awaiter(this, void 0, void 0, function* () {
-        return [null, false];
+        if (sleeve == null || sleeve == "")
+            sleeve = "https://i.imgur.com/hsYf4R9.jpg";
+        var customSet = CustomSetsHandler_1.customSets.find(x => x.name.toUpperCase() === setCode.toUpperCase());
+        var basicTypes = ["Plains", "Island", "Swamp", "Mountain", "Forest"];
+        var cardListMap = new Map();
+        var deckSectionMap = new Map();
+        for (var i = 0; i < 5; i++) {
+            var cards = [];
+            cardListMap.set(i, []);
+            deckSectionMap.set(i, basicTypes[i]);
+            cards = yield (0, ScryfallImplementation_1.getScryfallData)(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}+unique:prints+set:${setCode}`);
+            if (cards.length == 0) {
+                cards = yield (0, ScryfallImplementation_1.getScryfallData)(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}`);
+            }
+            for (var j = 0; j < 100; j++) {
+                var cardAtt = getScryfallCardAttributes(cards[rndm_1.default.randomInt(0, cards.length - 1)]);
+                cardListMap.get(i).push(cardAtt);
+            }
+        }
+        return [(0, TTSObjectsHandler_1.createTTSBagWithDeck)(cardListMap, deckSectionMap, "Lands", sleeve), false];
     });
 }
 exports.getLandsFromSet = getLandsFromSet;

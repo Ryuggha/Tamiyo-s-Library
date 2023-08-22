@@ -2,7 +2,7 @@
 
 export default class rndm {
 
-    static randomInt(min: number, max: number): number {
+    static randomInt(min: number, max: number): number { //Max inclusive
         return Math.floor(Math.random() * (max + 1 - min) + min);
     }
     

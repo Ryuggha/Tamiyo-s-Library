@@ -320,8 +320,31 @@ export function inBanList(name: string): boolean { //TODO MODULAR BANLIST
     return banList.includes(name);  
 }
 
-export async function getLandsFromSet(setCode: string): Promise<[any, boolean]> {
-    return [null, false];
+export async function getLandsFromSet(setCode: string, sleeve: string): Promise<[any, boolean]> {
+
+    if (sleeve == null || sleeve == "") sleeve = "https://i.imgur.com/hsYf4R9.jpg";
+    var customSet = customSets.find(x => x.name.toUpperCase() === setCode.toUpperCase());
+    var basicTypes = ["Plains", "Island", "Swamp", "Mountain", "Forest"];
+    var cardListMap: Map<number, CardAtt[]> = new Map();
+    var deckSectionMap: Map<number, string> = new Map();
+
+    for (var i = 0; i < 5; i++) {
+        var cards: any = [];
+        cardListMap.set(i, []);
+        deckSectionMap.set(i, basicTypes[i]);
+
+        cards = await getScryfallData(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}+unique:prints+set:${setCode}`);
+        if (cards.length == 0) {
+            cards = await getScryfallData(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}`);
+        } 
+        
+        for (var j = 0; j < 100; j++) {
+            var cardAtt = getScryfallCardAttributes(cards[rndm.randomInt(0, cards.length - 1)]);
+            cardListMap.get(i)!.push(cardAtt);
+        }
+    }
+
+    return [createTTSBagWithDeck(cardListMap, deckSectionMap, "Lands", sleeve), false];
 }
 
 function createBanlist() {
