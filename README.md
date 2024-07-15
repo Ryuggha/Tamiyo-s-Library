@@ -9,7 +9,7 @@ Tamiyo's Library uses slash commands
 This command opens a Discord form, and asks you to input a decklist. The decklist format is optimized for usage with deckstats.net, but it supports most deckbuilding sites. 
 Once sent, the bot will return a .json file with your deck. Just place it on the Save Objects folder of Tabletop simulator and you're good to go.
 
-![builddeck form](https://imgur.com/Kh6C2NU)
+![builddeck form](https://i.imgur.com/Kh6C2NU.png)
 
 ### /draftboosters
 This command returns a .json file with a number of booster packs of the set given by parameter. If none was given, a random drafting set will be selected.
