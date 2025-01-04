@@ -45,7 +45,16 @@ function generateBoosterDraftPack(setCode, numberOfPacks) {
         if (setJson == null)
             throw new Error("MTGJson Json is null");
         var packList = [];
-        var boosters = setJson["data"]["booster"]["default"];
+        var draftIdentifier;
+        if ("draft" in setJson["data"]["booster"])
+            draftIdentifier = "draft";
+        else if ("play" in setJson["data"]["booster"])
+            draftIdentifier = "play";
+        else {
+            console.log("Neither 'draft' nor 'play' are valid keys in MTGJson:data:booster:key");
+            throw new Error("Neither 'draft' nor 'play' are valid keys in MTGJson:data:booster:key");
+        }
+        var boosters = setJson["data"]["booster"][draftIdentifier];
         var cardMap = new Map();
         for (const mtgJsonCard of setJson["data"]["cards"]) {
             var scryfallCard = scryfallData.find((x) => mtgJsonCard["identifiers"]["scryfallId"] === x["id"]);
