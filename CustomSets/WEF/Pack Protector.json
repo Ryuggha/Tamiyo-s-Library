@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Pack Protector",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Beast",
+    "png": "https://mtg.design/i/zclr80.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "2",
+    "pow": "3",
+    "tou": "2",
+    "text": "When Pack Protector enters the battlefield, return target creature you control to its owner hand. \nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {r}.)",
+    "tokens": []
+}

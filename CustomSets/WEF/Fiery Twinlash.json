@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Fiery Twinlash",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Instant",
+    "png": "https://mtg.design/i/epqc67.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "0",
+    "tou": "0",
+    "text": "Combo (If it was the second instant or sorcery spell you cast this turn, you may copy it.)\n\nFiery Twinlash deals 3 damage to any target.",
+    "tokens": []
+}

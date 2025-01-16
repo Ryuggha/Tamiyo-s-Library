@@ -1,6 +1,6 @@
 {
     "set": "wef",
-    "name": "Kira, Shadow of Chaos",
+    "name": "Kira, Shadow of Chaos // Kira, Nightmare of This World",
     "collector_number": -1,
     "rarity": "r",
     "type": "Legendary Planeswalker — Kira",
@@ -10,9 +10,9 @@
         "B",
         "R"
     ],
-    "cmc": "3",
+    "cmc": "2",
     "pow": "0",
     "tou": "0",
-    "text": ": At the beginning of each end step, if a player lost life this turn, put a loyalty counter on Kira, Shadow of Chaos.",
+    "text": ": Whenever an opponent loses life for the first time in your turn, put a loyalty counter on Kira, Shadow of Chaos.",
     "tokens": []
 }

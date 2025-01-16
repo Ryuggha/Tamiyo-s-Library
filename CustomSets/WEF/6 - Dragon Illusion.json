@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Dragon Illusion",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Dragon Illusion",
+    "png": "https://mtg.design/i/ewta71.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "1",
+    "tou": "1",
+    "text": "Flying, haste",
+    "tokens": []
+}

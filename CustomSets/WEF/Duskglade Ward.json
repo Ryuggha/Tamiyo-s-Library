@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Duskglade Ward",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Instant",
+    "png": "https://mtg.design/i/elhv65.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U",
+        "R"
+    ],
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": "Create two 1/1 Spirit creature tokens with flying and lifelink that are all colors. They have \"Whenever this creature attacks or blocks, sacrifice it at end of combat.\" \n\nIf you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.",
+    "tokens": []
+}

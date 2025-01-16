@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Threads of Fire",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Instant",
+    "png": "https://mtg.design/i/utjk09.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "0",
+    "text": "Combo (If it was the second instant or sorcery spell you cast this turn, you may copy it.)\n\nThreads of Fire deals 2 damage to any target.  If this spell is a copy, it deals 1 damage instead.",
+    "tokens": []
+}

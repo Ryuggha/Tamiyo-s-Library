@@ -9,7 +9,7 @@
     "colors": "G",
     "cmc": "4",
     "pow": "3",
-    "tou": "4",
-    "text": "When Warden Gorilla enters the battlefield, you may search your library for a basic Forest card, put it onto the battlefield tapped, then shuffle.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)",
+    "tou": "3",
+    "text": "When Warden Gorilla enters the battlefield, you may search your library for a basic Forest card, put it onto the battlefield tapped, then shuffle.\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {r}.)",
     "tokens": []
 }

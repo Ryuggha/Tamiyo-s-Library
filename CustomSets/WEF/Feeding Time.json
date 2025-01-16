@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Feeding Time",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/zeaw89.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "As an additional cost to cast this spell, sacrifice a creature.\nCreate three 1/1 white Dragonling creature tokens with flying.",
+    "tokens": []
+}

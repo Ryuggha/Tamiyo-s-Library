@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Twin-Headed Hellhound",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Demon Dog",
+    "png": "https://mtg.design/i/kcju54.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "1",
+    "text": "Double strike\nDragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Geree, The Headhuntaur",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Centaur Demon Berserker",
+    "png": "https://mtg.design/i/bxok90.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "2",
+    "pow": "3",
+    "tou": "2",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)\nWhenever another creature dies, create a Head token. (It’s an artifact with “{1}, {T}, Sacrifice this artifact: Target creature gets +1/+0 until end of turn.”)",
+    "tokens": []
+}

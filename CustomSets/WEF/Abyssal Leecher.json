@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Abyssal Leecher",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Octopus",
+    "png": "https://mtg.design/i/itbt00.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "2",
+    "text": "Whenever you flood a card, target player loses 1 life and you gain 1 life.\n\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {u}.)",
+    "tokens": []
+}

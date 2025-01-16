@@ -10,6 +10,6 @@
     "cmc": "3",
     "pow": "3",
     "tou": "3",
-    "text": "Head Collector can’t block.\nWhenever a creature dealt damage by Head Collector this turn dies, create a Head token. (It’s an artifact with “{1}{w}, {T}, Sacrifice this artifact: Gain 3 life.”)",
+    "text": "Whenever Head Collector enters the battlefield, create three Head tokens. (They're artifacts with “{1}, {T}, Sacrifice this artifact: Target creature gets +1/+0 until end of turn.”) \nSummon ({X}, Discard this card: Add X mana of {r}, {w} or {b}.)",
     "tokens": []
 }

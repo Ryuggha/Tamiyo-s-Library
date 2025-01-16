@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Zhingshyenhuo's Command",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Instant",
+    "png": "https://mtg.design/i/ihty81.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Choose two —\n•  Scry 1, then draw a card.\n•  Exile the top three cards of your library. Choose one of them. Until the end of your next turn, you may play that card.\n•  You gain 4 life.\n• Add two mana in any combination of colors.",
+    "tokens": []
+}

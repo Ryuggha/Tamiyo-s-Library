@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Primordial Efield",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Artifact",
+    "png": "https://mtg.design/i/hbug21.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "5",
+    "pow": "0",
+    "tou": "0",
+    "text": "{t}: Add one mana of any color.\nLand creatures you control get +1/+1 and have ward {2}.\nLands you control are 0/0 Elemental creatures that are still lands.\nSacrifice Primordial Efield: Untap all lands you control.",
+    "tokens": []
+}

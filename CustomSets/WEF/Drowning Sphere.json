@@ -3,13 +3,13 @@
     "name": "Drowning Sphere",
     "collector_number": -1,
     "rarity": "c",
-    "type": "Instant",
-    "png": "https://mtg.design/i/vrkd10.jpg",
+    "type": "Enchantment — Aura",
+    "png": "https://mtg.design/i/mqsq23.jpg",
     "back": "",
     "colors": "U",
-    "cmc": "3",
+    "cmc": "1",
     "pow": "0",
     "tou": "0",
-    "text": "Target creature gets -6/-0 until end of turn. \nIf {b} was spent to cast this spell, that creature gets -6/-3 until end of turn instead. \nIf {g} was spent to cast this spell, unequip all Equipment attached to that creature and remove each Aura attached to that creature.",
+    "text": "Enchant creature\nEnchanted creature gets -2/-0.\n{1}{b}: Put a -1/-1 counter on enchanted creature.",
     "tokens": []
 }

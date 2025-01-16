@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Bloodfire Hellguard",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Dog",
+    "png": "https://mtg.design/i/jsto19.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "2",
+    "tou": "1",
+    "text": "Other Dogs you control get +2/+1.\nSummon ({X}, Discard this card: Add X mana of {r}, {w} or {b}.)",
+    "tokens": []
+}

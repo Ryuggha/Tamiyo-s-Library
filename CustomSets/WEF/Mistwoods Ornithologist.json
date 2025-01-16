@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Mistwoods Ornithologist",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Fox Wizard",
+    "png": "https://mtg.design/i/uync49.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "1",
+    "text": "Flash\nWhen Mistwoods Ornithologist enters the battlefield, if you control a creature with flying, draw a card.\n\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

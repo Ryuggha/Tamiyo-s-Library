@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Oebfinn's Chosen",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Human Horror",
+    "png": "https://mtg.design/i/fbjg88.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "B",
+        "G"
+    ],
+    "cmc": "4",
+    "pow": "2",
+    "tou": "2",
+    "text": "Menace, trample\nWhenever you draw a card, put a +1/+1 counter on Oebfinn's Chosen.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {u}.)",
+    "tokens": []
+}

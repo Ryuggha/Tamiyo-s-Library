@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Treasure",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Artifact — Treasure",
+    "png": "https://mtg.design/i/yjzn95.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "0",
+    "tou": "0",
+    "text": "{T}, Sacrifice this token: Add one mana of any color.",
+    "tokens": []
+}

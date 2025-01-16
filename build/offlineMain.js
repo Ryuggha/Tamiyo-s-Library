@@ -53,7 +53,6 @@ function main() {
 }
 function die(dieMax) {
     var die = rndm_1.default.randomInt(1, dieMax);
-    //die = gwf(die, dieMax);
     return die;
 }
 function gwf(die, dieMax) {

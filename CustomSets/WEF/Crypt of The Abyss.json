@@ -10,6 +10,6 @@
     "cmc": "0",
     "pow": "0",
     "tou": "0",
-    "text": "Crypt of The Abyss enters the battlefield tapped unless there is a flooded land on the battlefield.\n\n{T}: Add {G}, {U}, or {B}.",
+    "text": "Crypt of The Abyss enters the battlefield tapped unless there is a flooded land on the battlefield.\n\n{T}: Add {b}, {g}, or {u}.",
     "tokens": []
 }

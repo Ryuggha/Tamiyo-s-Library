@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Disk of Fortitude",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Instant",
+    "png": "https://mtg.design/i/cdkw84.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "0",
+    "text": "Combo (If it was the second instant or sorcery spell you cast this turn, you may copy it.)\nPrevent the next 3 damage that would be dealt to any target this turn.",
+    "tokens": []
+}

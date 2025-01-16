@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Goblin",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Goblin",
+    "png": "https://mtg.design/i/inat28.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "1",
+    "tou": "1",
+    "text": null,
+    "tokens": []
+}

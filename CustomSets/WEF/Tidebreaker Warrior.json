@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Tidebreaker Warrior",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Human Warrior",
+    "png": "https://mtg.design/i/czvb92.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "7",
+    "pow": "4",
+    "tou": "4",
+    "text": "This spell costs {1} less to cast for each flooded land you control.\nFirst Strike\nSummon ({X}, Discard this card: Add X mana of {r}, {w} or {b}.)",
+    "tokens": []
+}

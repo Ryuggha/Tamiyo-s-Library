@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Mad Houndrider",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Demon Berserker",
+    "png": "https://mtg.design/i/emkk36.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "Mad Houndrider attacks each combat if able.\nWhen Mad Houndrider dies, create three 1/1 black and red Demon Dog creature tokens.\nSummon ({X}, Discard this card: Add X mana of {r}, {w} or {b}.)",
+    "tokens": []
+}

@@ -10,6 +10,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "{B}, Sacrifice an enchantment: Target player sacrifice a nonland permanent or discard a card.",
+    "text": "{1}, Sacrifice a creature or an enchantment: Each opponent loses 3 life unless they sacrifice a nonland permanent of their choice.",
     "tokens": []
 }

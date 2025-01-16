@@ -9,7 +9,7 @@
     "colors": "W",
     "cmc": "3",
     "pow": "2",
-    "tou": "3",
-    "text": "When Enlightened Priest enters the battlefield return target enchantment card from your graveyard to your hand. \nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})",
+    "tou": "2",
+    "text": "When Enlightened Priest enters the battlefield return target enchantment card from your graveyard to your hand. \nSummon ({X}, Discard this card: Add X mana of {w}, {b} or {g})",
     "tokens": []
 }

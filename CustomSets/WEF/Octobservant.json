@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Octobservant",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Octopus",
+    "png": "https://mtg.design/i/flxe13.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "3",
+    "text": "Whenever Octobservant deals combat damage to a player, draw a card.\nFlood {2}{g}{u} ({2}{g}{u}, Exile this card from your hand: Target land loses all land types and abilities and has \"{T}: Add {c}.\" Flood only as a sorcery.) \nWhenever you flood Octobservant, that land gains \"Whenever this land becomes tapped, each opponent draws a card.\"",
+    "tokens": []
+}

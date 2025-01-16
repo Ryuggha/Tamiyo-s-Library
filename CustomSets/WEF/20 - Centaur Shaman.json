@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Centaur Shaman",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Centaur Shaman",
+    "png": "https://mtg.design/i/qder45.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "2",
+    "tou": "2",
+    "text": null,
+    "tokens": []
+}

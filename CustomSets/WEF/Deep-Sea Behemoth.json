@@ -3,13 +3,13 @@
     "name": "Deep-Sea Behemoth",
     "collector_number": -1,
     "rarity": "c",
-    "type": "Creature — Leviathan",
+    "type": "Creature — Kraken Horror",
     "png": "https://mtg.design/i/dwkg03.jpg",
     "back": "",
     "colors": "B",
     "cmc": "5",
-    "pow": "2",
-    "tou": "6",
-    "text": "Deathtouch\nFlood {2}{b} (During your turn, you may pay {2}{b} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)",
+    "pow": "5",
+    "tou": "2",
+    "text": "Flash\nFlood {1}{u}{b} ({1}{u}{b}, Exile this card from your hand: Target land loses all land types and abilities and has \"{T}: Add {c}.\" Flood only as a sorcery.)",
     "tokens": []
 }

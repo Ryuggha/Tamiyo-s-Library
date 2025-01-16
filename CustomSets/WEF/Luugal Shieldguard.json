@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Luugal Shieldguard",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Human Warrior",
+    "png": "https://mtg.design/i/ehir05.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.) \nWhenever a triggered ability  of a permanent an opponent controls is triggered, counter that ability unless its controller pays {1}.",
+    "tokens": []
+}

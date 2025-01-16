@@ -12,8 +12,8 @@
         "G"
     ],
     "cmc": "5",
-    "pow": "3",
-    "tou": "4",
-    "text": "<i>False Faith</i> - When Deus Ex Anima enters the battlefield, if you control a black enchantment, return target creature card from your graveyard to the battlefield.\nWhenever a creature you control dies, gain life equal to its toughness.",
+    "pow": "5",
+    "tou": "3",
+    "text": "<i>False Faith: Black</i> - When Deus Ex Anima enters the battlefield, if you control a black enchantment, return target creature card from your graveyard to the battlefield.\nWhenever a creature you control dies, gain life equal to its power.",
     "tokens": []
 }

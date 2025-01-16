@@ -13,7 +13,7 @@
     ],
     "cmc": "4",
     "pow": "3",
-    "tou": "5",
-    "text": "Instant and sorcery spells you control can’t be countered.\n\nWhenever you cast an instant or sorcery spell, meditate (Put an orb counter on a Chi you control. If you don’t control one, first create a Chi enchantment token with \"{1}, Sacrifice this: Copy target instant or sorcery spell you control with mana value less than or equal to the number of orb counters on this. You may choose new targets for the copy.\")",
+    "tou": "3",
+    "text": "Spirits you control get +1/+0.\nWhenever you cast your second instant or sorcery spell each turn, create two 1/1 Spirit creature tokens with flying and lifelink that are all colors. They have \"Whenever this creature attacks or blocks, sacrifice it at end of combat.\"",
     "tokens": []
 }

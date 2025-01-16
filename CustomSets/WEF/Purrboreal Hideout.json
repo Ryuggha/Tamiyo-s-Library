@@ -10,6 +10,6 @@
     "cmc": "0",
     "pow": "0",
     "tou": "0",
-    "text": "Purrboreal Hideout enters the battlefield tapped.\n{t}: Add {g}.\n3{g}: Until end of turn, Purrboreal Hideout becomes a 0/1 green Cat creature with reach and \"Whenever this creature is dealt damage, add {g}. Until end of turn, you don’t lose this mana as steps and phases end.\" It's still a land.",
+    "text": "Reach\nPurrboreal Hideout enters the battlefield tapped.\n{t}: Add {g}.\nWhenever Purrboreal Hideout is dealt damage, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle.\n1{g}: Until end of turn, Purrboreal Hideout becomes a 0/1 green Cat. It's still a land.",
     "tokens": []
 }

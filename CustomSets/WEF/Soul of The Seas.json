@@ -3,13 +3,13 @@
     "name": "Soul of The Seas",
     "collector_number": -1,
     "rarity": "r",
-    "type": "Creature — Bird",
+    "type": "Creature — Bird Spirit",
     "png": "https://mtg.design/i/bysa70.jpg",
     "back": "",
     "colors": "U",
-    "cmc": "5",
+    "cmc": "6",
     "pow": "5",
     "tou": "5",
-    "text": "Flash\nFlying\nWhen Soul of The Seas enters the battlefield, return target spell or permanent to its owner’s hand.",
+    "text": "Flash\nFlying\nSoul of The Seas enters the battlefield tapped unless it’s your turn.\nWhen Soul of The Seas enters the battlefield, return target spell or permanent to its owner’s hand.",
     "tokens": []
 }

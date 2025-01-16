@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Invasive Dragonling",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Dragonling",
+    "png": "https://mtg.design/i/tzdo12.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "1",
+    "text": "Flying\nWhen Invasive Dragonling dies, create a 1/1 white Dragonling creature token with flying.",
+    "tokens": []
+}

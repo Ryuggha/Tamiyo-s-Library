@@ -1,6 +1,6 @@
 {
     "set": "wef",
-    "name": "C'iel, Creator of Shadows",
+    "name": "C'iel, Creator of Shadows // Gaira, Catalyst of Light",
     "collector_number": -1,
     "rarity": "m",
     "type": "Legendary Enchantment Creature — God",
@@ -13,6 +13,6 @@
     "cmc": "5",
     "pow": "6",
     "tou": "6",
-    "text": "Indestructible\nAs long as your devotion to white and green is less than seven, C'iel, Creator of Shadows isn't a creature.\nWhenever another enchantment enters the battlefield under your control, gain life equal to its mana value.\nWhenever an enchantment leaves your graveyard draw a card.",
+    "text": "Indestructible\nAs long as your devotion to white and green is less than seven, C'iel, Creator of Shadows isn't a creature.\nEnchantments you control are creatures in addition to their other types, and have power and toughness equal to their mana value.\nWhenever another enchantment enters the battlefield under your control, gain life equal to its mana value.",
     "tokens": []
 }

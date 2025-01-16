@@ -10,6 +10,6 @@
     "cmc": "5",
     "pow": "4",
     "tou": "4",
-    "text": "Whenever an enchantment enters the battlefield under your control, put a +1/+1 counter on Guardian of the Oath.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})",
+    "text": "Whenever an enchantment enters the battlefield under your control, put a +1/+1 counter on Guardian of the Oath.\nSummon ({X}, Discard this card: Add X mana of {w}, {b} or {g})",
     "tokens": []
 }

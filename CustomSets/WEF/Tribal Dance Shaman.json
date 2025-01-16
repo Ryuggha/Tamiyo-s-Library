@@ -4,12 +4,12 @@
     "collector_number": -1,
     "rarity": "u",
     "type": "Creature — Elf Priest",
-    "png": "https://mtg.design/i/bchq36.jpg",
+    "png": "https://mtg.design/i/zybc24.jpg",
     "back": "",
     "colors": "G",
     "cmc": "4",
     "pow": "3",
     "tou": "3",
-    "text": "Whenever an enchantment enters the battlefield under your control, create a 2/2 green Centaur Shaman creature token.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})",
+    "text": "Whenever an enchantment enters the battlefield under your control, create a 2/2 green Centaur Shaman creature token.\nSummon ({X}, Discard this card: Add X mana of {w}, {b} or {g})",
     "tokens": []
 }

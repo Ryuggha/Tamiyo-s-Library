@@ -2,14 +2,14 @@
     "set": "wef",
     "name": "Omen of Massacre",
     "collector_number": -1,
-    "rarity": "c",
+    "rarity": "u",
     "type": "Creature — Human Warrior",
-    "png": "https://mtg.design/i/xbhm49.jpg",
+    "png": "https://mtg.design/i/abwv10.jpg",
     "back": "",
     "colors": "B",
     "cmc": "5",
     "pow": "5",
     "tou": "3",
-    "text": "Creatures your opponents control get -1/-0.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)",
+    "text": "Creatures your opponents control get -1/-0.\nSummon ({X}, Discard this card: Add X mana of {w}, {b} or {g}.)",
     "tokens": []
 }

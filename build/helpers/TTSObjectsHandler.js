@@ -75,6 +75,8 @@ function createTTSCardObject(card, cardId = 12345, sleeve = "") {
     var ttsCard = JSON.parse(JSON.stringify(ttsCardJson));
     ttsCard["FaceURL"] = card.image;
     ttsCard["BackURL"] = sleeve;
+    if (card.rarity === "t")
+        ttsCard["BackURL"] = card.image;
     var ttsObject = JSON.parse(JSON.stringify(ttsObjectJson));
     ttsObject["Nickname"] = card.name;
     ttsObject["CardID"] = cardId * 100;

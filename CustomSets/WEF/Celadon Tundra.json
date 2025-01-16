@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Celadon Tundra",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Land",
+    "png": "https://mtg.design/i/cqco83.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "0",
+    "tou": "0",
+    "text": "Celadon Tundra enters the battlefield tapped.\n{t}: Add {g} or {w}. \n{4}, {T}: Create a Treasure token. (It’s an artifact with “{T}, Sacrifice this artifact: Add one mana of any color.”)",
+    "tokens": []
+}

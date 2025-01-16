@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "War Commander",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Demon Knight",
+    "png": "https://mtg.design/i/lnce69.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "1",
+    "tou": "2",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)\nWhenever War Commander or another creature dies during your turn, put a +1/+1 counter on each creature you control.",
+    "tokens": []
+}

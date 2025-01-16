@@ -10,6 +10,6 @@
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Search your library for up to X land cards, reveal them, put them onto the battlefield tapped, then shuffle.\nEarthshake X. (Put X +1/+1 counter on target land you control. You may have it become a 0/0 Elemental creature until end o turn. It's still a land.)",
+    "text": "Look at the top X cards of your library. You may put a creature card with mana value X or less from among them onto the battlefield. Put the rest on the bottom of your library in a random order.\nEarthshake X. (Distribute X +1/+1 counters among up to X target lands you control. You may have them become 0/0 Elemental creatures until end of turn. They're still lands.)",
     "tokens": []
 }

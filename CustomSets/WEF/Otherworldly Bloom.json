@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Otherworldly Bloom",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Plant",
+    "png": "https://mtg.design/i/omeb12.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "3",
+    "text": "Defender, reach\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {u}.)",
+    "tokens": []
+}

@@ -7,9 +7,9 @@
     "png": "https://mtg.design/i/bzom92.jpg",
     "back": "",
     "colors": "R",
-    "cmc": "5",
-    "pow": "3",
-    "tou": "3",
-    "text": "At the beginning of your end step, meditate (Put an orb counter on a Chi you control. If you don’t control one, first create a Chi enchantment token with \"{1}, Sacrifice this: Copy target instant or sorcery spell you control with mana value less than or equal to the number of orb counters on this. You may choose new targets for the copy.\").",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "2",
+    "text": "Whenever you cast your second instant or sorcery spell each turn, Dawnhill Monk gets +2/+0 until end of turn. \nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
     "tokens": []
 }

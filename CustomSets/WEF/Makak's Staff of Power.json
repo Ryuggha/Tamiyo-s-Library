@@ -11,9 +11,9 @@
         "R",
         "G"
     ],
-    "cmc": "4",
+    "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Whenever you summon, earthshake 2. (Put two +1/+1 counter on target land you control. You may have it become a 0/0 Elemental creature until end of turn. It's still a land.)\n{g}{g}{g}{g}{g}, {T}: Reveal the top four cards of your library. You may cast a creature spell among them without paying its mana cost. Put the rest on the bottom of your library in a random order.",
+    "text": "Whenever one or more +1/+1 counters are put on a permanent you control, scry 1.\n{r}{r}{r}{r}{r}, {T}: Reveal cards from the top of your library until you reveal a creature card. Put that card onto the battlefield, then shuffle the rest into your library.",
     "tokens": []
 }

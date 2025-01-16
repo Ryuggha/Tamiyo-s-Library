@@ -10,6 +10,6 @@
     "cmc": "8",
     "pow": "6",
     "tou": "8",
-    "text": "When Woodsoul Monster enters the battlefield or dies, Earthshake 4. (Put four +1/+1 counters on target land you control. You may have it become a 0/0 Elemental creature until end of turn. It's still a land.)",
+    "text": "When Woodsoul Monster enters the battlefield or dies, earthshake 4. (Distribute 4 +1/+1 counters among up to 4 target lands you control. You may have them become 0/0 Elemental creatures until end of turn. They're still lands.)",
     "tokens": []
 }

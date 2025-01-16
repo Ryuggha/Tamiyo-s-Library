@@ -8,8 +8,8 @@
     "back": "",
     "colors": "R",
     "cmc": "2",
-    "pow": "1",
-    "tou": "2",
-    "text": "At the beginning of combat on your turn,  earthshake 1. (Put a +1/+1 counter on target land. You may have it become a 0/0 Elemental creature until the end of turn. It's still a land.)",
+    "pow": "2",
+    "tou": "1",
+    "text": "Whenever one or more +1/+1 counters are put on another permanent you control, Magma Dweller gains double strike until end of turn.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)",
     "tokens": []
 }

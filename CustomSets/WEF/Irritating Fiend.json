@@ -2,7 +2,7 @@
     "set": "wef",
     "name": "Irritating Fiend",
     "collector_number": -1,
-    "rarity": "u",
+    "rarity": "c",
     "type": "Creature — Demon",
     "png": "https://mtg.design/i/avaq92.jpg",
     "back": "",
@@ -10,6 +10,6 @@
     "cmc": "1",
     "pow": "2",
     "tou": "1",
-    "text": "{1}{b}: Return Irritating Fiend from your graveyard to the battlefield. Activate this ability only any time you could cast a sorcery and only if an opponent's life total is less than half its starting life total.\n\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)",
+    "text": "{1}{b}: Return Irritating Fiend from your graveyard to the battlefield. Activate this ability only any time you could cast a sorcery and only if an opponent's life total is less than half its starting life total.\n\nSummon ({X}, Discard this card: Add X mana of {r}, {w} or {b}.)",
     "tokens": []
 }

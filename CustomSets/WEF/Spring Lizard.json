@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Spring Lizard",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment Creature — Spirit Lizard",
+    "png": "https://mtg.design/i/rtmn41.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "Ward {1}\nInstant and sorcery spells you control have lifelink.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

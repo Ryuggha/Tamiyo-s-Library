@@ -2,14 +2,14 @@
     "set": "wef",
     "name": "Land Rage",
     "collector_number": -1,
-    "rarity": "c",
+    "rarity": "u",
     "type": "Sorcery",
-    "png": "https://mtg.design/i/bgpo92.jpg",
+    "png": "https://mtg.design/i/uhfs30.jpg",
     "back": "",
     "colors": "R",
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Earthshake 1. (Put a +1/+1 counter on target land you control. It becomes a 0/0 Elemental creature until end of turn. It's still a land.)\nLands you control gain double strike until the end of turn.",
+    "text": "Earthshake 2. (Distribute 2 +1/+1 counters among up to 2 target lands you control. You may have them become 0/0 Elemental creatures until end of turn. They're still lands.)\nLands you control gain double strike until the end of turn.",
     "tokens": []
 }

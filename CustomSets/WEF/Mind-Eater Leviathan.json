@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Mind-Eater Leviathan",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Leviathan Horror",
+    "png": "https://mtg.design/i/bkjb66.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "5",
+    "pow": "3",
+    "tou": "6",
+    "text": "Flood {2}{u}{b} ({2}{u}{b}, Exile this card from your hand: Target land loses all land types and abilities and has \"{T}: Add {c}.\" Flood only as a sorcery.)\nWhenever you flood Mind-Eater Leviathan or it enters the battlefield, target opponent exiles the top four cards of their library face down. You may look at those cards for as long as they remain exiled.",
+    "tokens": []
+}

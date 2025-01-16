@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Land Guardian",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Elk",
+    "png": "https://mtg.design/i/tkty20.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "R",
+        "G"
+    ],
+    "cmc": "3",
+    "pow": "2",
+    "tou": "3",
+    "text": "{4}: Earthshake 1. (Distribute a +1/+1 counter among up to 1 target land you control. You may have it become a 0/0 Elemental creature until end of turn. It's still a land.)\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)",
+    "tokens": []
+}

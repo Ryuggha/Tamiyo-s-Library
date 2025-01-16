@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Courier Monkey",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Monkey Bird",
+    "png": "https://mtg.design/i/kflb06.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "2",
+    "pow": "1",
+    "tou": "2",
+    "text": "Defender, flying\nWhen Courier Monkey enters the battlefield, you gain 3 life.",
+    "tokens": []
+}

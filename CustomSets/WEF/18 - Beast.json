@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Beast",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Beast",
+    "png": "https://mtg.design/i/aakj18.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "*",
+    "tou": "*",
+    "text": null,
+    "tokens": []
+}

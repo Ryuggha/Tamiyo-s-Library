@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Unstoppable Force",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/jtqq88.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "0",
+    "tou": "0",
+    "text": "Combo (If it was the second instant or sorcery spell you cast this turn, you may copy it.)\nThis spell has flash during your declare blockers step.\nDouble the power of target creature until end of turn.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Victorious Slash",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/dary99.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "1",
+    "pow": "0",
+    "tou": "0",
+    "text": "Victorious Slash deals 2 damage to target creature or planeswalker. If that creature or planeswalker would die this turn, create a Head token. (It’s an artifact with “{1}, {T}, Sacrifice this artifact: Target creature gets +1/+0 until end of turn.”)",
+    "tokens": []
+}

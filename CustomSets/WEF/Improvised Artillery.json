@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Improvised Artillery",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Artifact",
+    "png": "https://mtg.design/i/bhln10.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "{t}, Sacrifice another artifact or creature: Improvised Artillery deals 2 damage to any target.",
+    "tokens": []
+}

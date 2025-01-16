@@ -2,14 +2,14 @@
     "set": "wef",
     "name": "Pyroclastic Awakening",
     "collector_number": -1,
-    "rarity": "u",
+    "rarity": "c",
     "type": "Instant",
-    "png": "https://mtg.design/i/uhfs30.jpg",
+    "png": "https://mtg.design/i/bgpo92.jpg",
     "back": "",
     "colors": "R",
     "cmc": "1",
     "pow": "0",
     "tou": "0",
-    "text": "Earthshake 1. (Put a +1/+1 counter on target land you control. You may have it become a 0/0 Elemental creature until end of turn. It's still a land.)\nDraw a card.",
+    "text": "Earthshake 1. (Distribute a +1/+1 counter among up to 1 target land you control. You may have it become a 0/0 Elemental creature until end of turn. It's still a land.)\nDraw a card.",
     "tokens": []
 }

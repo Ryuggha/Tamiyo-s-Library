@@ -10,6 +10,6 @@
     "cmc": "5",
     "pow": "2",
     "tou": "5",
-    "text": "Reach, ward {3}\n<i>False Faith</i> - When Sariel, God of Creation enters the battlefield, if you control a green enchantment, you may return up to two permanent cards from your graveyard to your hand.\nAt the beginning of your upkeep, create a 1/1 green Saproling creature token.",
+    "text": "Reach, ward {2}\n<i>False Faith: Green</i> - When Sariel, God of Creation enters the battlefield, if you control a green enchantment, you may return up to two permanent cards from your graveyard to your hand.\nAt the beginning of your upkeep, create a 1/1 green Spirit creature token.",
     "tokens": []
 }

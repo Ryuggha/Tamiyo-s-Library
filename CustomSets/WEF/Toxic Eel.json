@@ -10,6 +10,6 @@
     "cmc": "3",
     "pow": "1",
     "tou": "1",
-    "text": "Deathtouch\nWhenever Toxic Eel deals combat damage to a player, that player discards a card. \n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "text": "Deathtouch\nWhenever Toxic Eel deals combat damage to a player, that player discards a card. \n\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {u}.)",
     "tokens": []
 }

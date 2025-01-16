@@ -10,6 +10,6 @@
     "cmc": "1",
     "pow": "1",
     "tou": "2",
-    "text": "Nature Preserver enters the battlefield with an essence counter on it.\nWhenever an enchantment enters the battlefield under your control, put an essence counter on Nature Preserver.\n{t}, Remove an essence counter from Nature Preserver: Add one mana of any color.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})",
+    "text": "Vigilance\n{t}: Add {w}, {b} or {g}. Spend this mana only to cast an enchantment spell.\nSummon ({X}, Discard this card: Add X mana of {w}, {b} or {g})",
     "tokens": []
 }

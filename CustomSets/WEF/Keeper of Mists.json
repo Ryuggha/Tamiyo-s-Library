@@ -10,6 +10,6 @@
     "cmc": "2",
     "pow": "1",
     "tou": "1",
-    "text": "Creature spells you cast cost {1} less to cast for each land you control with one or more +1/+1 counters on it.\nSummon ({X}, Discard this card: Add X mana of {u}, {R} or {g}.)",
+    "text": "The first creature spell you cast on each turn costs {1} less to cast for each land you control with one or more +1/+1 counters on it.\nSummon ({X}, Discard this card: Add X mana of {u}, {R} or {g}.)",
     "tokens": []
 }

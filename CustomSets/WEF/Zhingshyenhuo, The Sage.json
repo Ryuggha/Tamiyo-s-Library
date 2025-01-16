@@ -11,9 +11,9 @@
         "U",
         "R"
     ],
-    "cmc": "6",
-    "pow": "3",
-    "tou": "6",
-    "text": "Zhingshyenhuo, The Sage can’t be countered.\n\nWhen Zhingshyenhuo, The Sage enters the battlefield, proliferate, then double the number of orb counters on each Chi you control.\n\n{1}, Remove X orb counters from a Chi you control: Copy target instant or sorcery spell you control with mana value less than or equal to the number of orb counters on this. You may choose new targets for the copy.",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "4",
+    "text": "Zhingshyenhuo, The Sage can’t be countered. \nWhen Zhingshyenhuo enters the battlefield and at the beginning of your upkeep, put two Chi counters on Zhingshyenhuo.\n{1}, Remove all Chi counters from Zhingshyenhuo: Copy target instant or sorcery spell you control with mana value equal or less than the number of counters removed this way. You may choose new targets for the copy.",
     "tokens": []
 }

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Triplanar Calling",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/mlqi60.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "5",
+    "pow": "0",
+    "tou": "0",
+    "text": "Combo (If it was the second instant or sorcery spell you cast this turn, you may copy it.) \n\nLook at the top five cards of your library. Put any number of nonland permanent cards with total mana value 4 or less from among them onto the battlefield. Put the rest on the bottom of your library in a random order.",
+    "tokens": []
+}

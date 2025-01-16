@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Monk",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Monk",
+    "png": "https://mtg.design/i/yace07.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "1",
+    "tou": "1",
+    "text": null,
+    "tokens": []
+}

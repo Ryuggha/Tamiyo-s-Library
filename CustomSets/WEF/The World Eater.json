@@ -14,6 +14,6 @@
     "cmc": "9",
     "pow": "9",
     "tou": "9",
-    "text": "Trample, Reach, ward {3}\nWhenever another permanent leaves the battlefield, put a +1/+1 counter on The World Eater.\n{2}{u}: Return target creature to its owner hand.\n{2}{r}: The World Eater deals 3 damage to target creature.\n{2}{g}: Destroy target artifact or enchantment.",
+    "text": "Reach, trample\nAt the beginning of your end step, sacrifice a land. When you do, you may destroy target permanent.\nSacrifice a land: Until end of turn, The World Eater loses all abilities, and gains indestructible. Tap it.",
     "tokens": []
 }

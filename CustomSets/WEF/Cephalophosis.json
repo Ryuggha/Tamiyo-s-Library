@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Cephalophosis",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/goqc06.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "When Cephalophosis enters the battlefield, target player draws two cards and loses 2 life.\n{1}{g}: You gain 1 life. Activate only once each turn.",
+    "tokens": []
+}

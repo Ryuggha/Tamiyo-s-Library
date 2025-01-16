@@ -3,7 +3,7 @@
     "name": "Duskglade Spiritualist",
     "collector_number": -1,
     "rarity": "u",
-    "type": "Creature — Human Wizard Monk",
+    "type": "Creature — Human Monk",
     "png": "https://mtg.design/i/eoby05.jpg",
     "back": "",
     "colors": [
@@ -14,6 +14,6 @@
     "cmc": "3",
     "pow": "2",
     "tou": "3",
-    "text": "{1}{u}: Scry 1.\n{1}{r}: The next sorcery or instant spell you cast this turn can’t be countered.\n{1}{w}: Return Duskglade Spiritualist to its owner’s hand.",
+    "text": "Whenever you cast your second instant or sorcery spell each turn, you may put a blessing counter on target creature.\nCreatures you control with blessing counters on them have flying and lifelink.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
     "tokens": []
 }

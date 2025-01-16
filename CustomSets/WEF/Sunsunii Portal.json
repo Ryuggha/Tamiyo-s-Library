@@ -11,9 +11,9 @@
         "B",
         "G"
     ],
-    "cmc": "4",
+    "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Whenever you summon, create two 0/1 white Priest creature tokens.\n{w}{w}{w}{w}{w}: Reveal the top four cards of your library. You may cast any number of enchantment spells among them without paying their mana cost. Shuffle the rest of the revealed cards into your library.",
+    "text": "Whenever you cast an enchantment spell, create one 1/1 black and white Priest creature token with \"This creature has +1/+1 for each enchantment you control\".\n{g}{g}{g}{g}{g}: Reveal the top four cards of your library. You may cast one enchantment spells among them without paying its mana cost. Shuffle the rest of the revealed cards into your library.",
     "tokens": []
 }

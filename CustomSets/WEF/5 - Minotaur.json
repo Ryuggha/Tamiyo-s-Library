@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Minotaur",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Minotaur",
+    "png": "https://mtg.design/i/httj65.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "4",
+    "tou": "4",
+    "text": null,
+    "tokens": []
+}

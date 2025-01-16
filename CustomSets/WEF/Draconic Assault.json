@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Draconic Assault",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/aozr25.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "5",
+    "pow": "0",
+    "tou": "0",
+    "text": "This spell costs {3} less to cast if an opponent's life total has become less than half its starting life total during this turn.\n\nUntap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.",
+    "tokens": []
+}

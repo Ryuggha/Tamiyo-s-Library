@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Spirit",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Spirit",
+    "png": "https://mtg.design/i/hsme47.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "1",
+    "tou": "1",
+    "text": null,
+    "tokens": []
+}

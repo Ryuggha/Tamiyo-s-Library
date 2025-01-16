@@ -7,9 +7,9 @@
     "png": "https://mtg.design/i/twoa66.jpg",
     "back": "",
     "colors": "W",
-    "cmc": "5",
-    "pow": "4",
-    "tou": "3",
-    "text": "First Strike\nNonenchantment spells cost {1} more to cast.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "First Strike\nNonenchantment spells cost {1} more to cast.\nSummon ({X}, Discard this card: Add X mana of {w}, {b} or {g}.)",
     "tokens": []
 }

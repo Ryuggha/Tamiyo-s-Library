@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Venomskull Serpent",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Serpent",
+    "png": "https://mtg.design/i/ziac82.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "5",
+    "pow": "2",
+    "tou": "2",
+    "text": "Deathtouch\nFlood {1}{b}{b}{b} ({1}{b}{b}{b}, Exile this card from your hand: Target land loses all land types and abilities and has \"{T}: Add {c}.\" Flood only as a sorcery.) \nWhenever you flood Venomskull Serpent or it enters the battlefield, target player discards two cards.",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Ovgain, Family Outcast",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Human Cleric",
+    "png": "https://mtg.design/i/decl15.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "3",
+    "text": "Flash\nWhen Ovgain, Family Outcast enters the battlefield and at the beginning of your upkeep, up to one target nonland permanent loses all abilities until your next turn.",
+    "tokens": []
+}

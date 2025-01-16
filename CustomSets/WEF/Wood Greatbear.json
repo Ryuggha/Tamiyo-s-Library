@@ -10,6 +10,6 @@
     "cmc": "2",
     "pow": "2",
     "tou": "2",
-    "text": "When Wood Greatbear enters the battlefield, earthshake 1. (Put a +1/+1 counter on target land you control. You may have it become a 0/0 Elemental creature until end of turn. It's still a land.)",
+    "text": "When Wood Greatbear enters the battlefield, earthshake 1. (Distribute a +1/+1 counter among up to 1 target land you control. You may have it become a 0/0 Elemental creature until end of turn. It's still a land.)",
     "tokens": []
 }

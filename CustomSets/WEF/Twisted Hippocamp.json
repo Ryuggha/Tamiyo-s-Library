@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Twisted Hippocamp",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Horse Fish Horror",
+    "png": "https://mtg.design/i/lazj94.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "5",
+    "pow": "3",
+    "tou": "4",
+    "text": "When Twisted Hippocamp enters the battlefield or dies, draw a card.\n\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {u}.)",
+    "tokens": []
+}

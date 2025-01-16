@@ -8,8 +8,8 @@
     "back": "",
     "colors": "U",
     "cmc": "2",
-    "pow": "3",
+    "pow": "2",
     "tou": "1",
-    "text": "Shorewalker can’t be blocked by creatures with power X or less, where X is the number of flooded lands defending player controls.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "text": "Floodwalk (This creature can’t be blocked as long as defending player controls a flooded land.)\n\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {u}.)",
     "tokens": []
 }

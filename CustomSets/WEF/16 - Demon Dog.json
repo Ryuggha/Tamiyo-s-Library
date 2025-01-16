@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Demon Dog",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Demon Dog",
+    "png": "https://mtg.design/i/qqnz43.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "1",
+    "tou": "1",
+    "text": null,
+    "tokens": []
+}

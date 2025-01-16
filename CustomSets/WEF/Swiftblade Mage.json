@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Swiftblade Mage",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Human Wizard",
+    "png": "https://mtg.design/i/wnvz09.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "1",
+    "tou": "3",
+    "text": "First Strike\n{U}: Switch Swiftblade Mage’s power and toughness until end of turn. Activate only once each turn.\n\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

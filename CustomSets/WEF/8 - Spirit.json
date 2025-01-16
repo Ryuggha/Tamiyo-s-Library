@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Spirit",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Spirit",
+    "png": "https://mtg.design/i/tenz33.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "1",
+    "tou": "1",
+    "text": "This creature is all colors.\nFlying, lifelink\nWhenever this creature attacks or blocks, sacrifice it at end of combat.",
+    "tokens": []
+}

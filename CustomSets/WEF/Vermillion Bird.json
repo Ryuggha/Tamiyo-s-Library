@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Vermillion Bird",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment Creature — Spirit Bird",
+    "png": "https://mtg.design/i/lzsp49.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "3",
+    "pow": "2",
+    "tou": "2",
+    "text": "Flying\nYour opponents can’t gain life.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

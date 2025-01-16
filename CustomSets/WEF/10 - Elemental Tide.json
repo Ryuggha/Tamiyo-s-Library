@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Elemental Tide",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Elemental Tide",
+    "png": "https://mtg.design/i/lkod17.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "3",
+    "tou": "3",
+    "text": null,
+    "tokens": []
+}

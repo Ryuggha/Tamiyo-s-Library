@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Soul Projection",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/bily33.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": "Combo (If it was the second instant or sorcery spell you cast this turn, you may copy it.)\n\nCreate a token that’s a copy of target creature or planeswalker you control, except it isn’t legendary if the permanent is legendary and is an Illusion in addition to its other types.",
+    "tokens": []
+}

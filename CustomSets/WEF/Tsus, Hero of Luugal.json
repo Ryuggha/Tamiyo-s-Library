@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Tsus, Hero of Luugal // Ukhaan, Deceiver of Luugal",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Legendary Creature — Human Knight",
+    "png": "https://mtg.design/i/pllm91.jpg",
+    "back": "https://mtg.design/i/xvgl26.jpg",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "Vigilance\nWhen Tsus, Hero of Luugal enters the battlefield, gain control of target creature with power 3 or less until end of turn. Untap that creature. It gains haste until end of turn.\n{1}, Sacrifice X creatures: Put X loyalty counters on Tsus, Hero of Luugal, then transform it. Activate only as a sorcery.",
+    "tokens": []
+}

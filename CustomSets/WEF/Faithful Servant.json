@@ -10,6 +10,6 @@
     "cmc": "3",
     "pow": "2",
     "tou": "3",
-    "text": "When Faithful Servant enters the battlefield, reveal the top card of your library. If it's a land or an enchantment, you may put it in your hand. \nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)",
+    "text": "When Faithful Servant enters the battlefield, reveal the top card of your library. If it's a land or an enchantment, you may put it in your hand. \nSummon ({X}, Discard this card: Add X mana of {w}, {b} or {g}.)",
     "tokens": []
 }

@@ -2,14 +2,14 @@
     "set": "wef",
     "name": "Angel of Death",
     "collector_number": -1,
-    "rarity": "c",
+    "rarity": "u",
     "type": "Creature — Angel Demon",
-    "png": "https://mtg.design/i/dzlw30.jpg",
+    "png": "https://mtg.design/i/bchq36.jpg",
     "back": "",
     "colors": "G",
     "cmc": "6",
     "pow": "4",
     "tou": "5",
-    "text": "Reach\n<i>False Faith</i> - When Angel of Death enters the battlefield, if you control a black enchantment, exile target nonland permanent.",
+    "text": "Reach\n<i>False Faith: Black</i> - When Angel of Death enters the battlefield, if you control a black enchantment, destroy target nonland permanent.",
     "tokens": []
 }

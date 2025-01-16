@@ -7,9 +7,9 @@
     "png": "https://mtg.design/i/qcqy08.jpg",
     "back": "",
     "colors": "G",
-    "cmc": "3",
+    "cmc": "2",
     "pow": "0",
     "tou": "0",
-    "text": "Creatures you control have reach.\nWhenever a creature you control blocks, you gain 1 life.",
+    "text": "Creatures you control have reach.\n{4}{g}: Creatures you control get +1/+1 until end of turn.",
     "tokens": []
 }

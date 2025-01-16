@@ -12,8 +12,8 @@
         "G"
     ],
     "cmc": "4",
-    "pow": "3",
+    "pow": "4",
     "tou": "4",
-    "text": "Whenever another nontoken creature enters the battlefield under your control, create a 1/1 green Ape creature token. If that creature was casted using mana produced by summon, create three 1/1 green Ape creature tokens instead.",
+    "text": "Whenever an opponent casts a spell, put a +1/+1 counter on Guntr, Defender of Homeland unless they pay {1}.",
     "tokens": []
 }

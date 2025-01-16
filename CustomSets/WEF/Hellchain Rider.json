@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Hellchain Rider",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Minotaur Knight",
+    "png": "https://mtg.design/i/taef46.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "4",
+    "pow": "2",
+    "tou": "3",
+    "text": "Trample\nWhen Hellchain Rider enters the battlefield, exile target creature an opponent controls until Hellchain Rider leaves the battlefield.\nWhenever Hellchain Rider attacks, Hellchain Rider gets +X/+0 until end of turn, where X is the power of the exiled card.",
+    "tokens": []
+}

@@ -8,8 +8,8 @@
     "back": "",
     "colors": "W",
     "cmc": "2",
-    "pow": "2",
+    "pow": "1",
     "tou": "1",
-    "text": "Whenever you cast an enchantment spell, target creature gains first strike until the end of turn.\nSummon ({X}, Discard this card: Add X mana of {b}, {g}, {w})",
+    "text": "As long as you control two or more enchantments, Decided Initiate gets +2/+2 and has first strike.\nSummon ({X}, Discard this card: Add X mana of {w}, {b} or {g})",
     "tokens": []
 }

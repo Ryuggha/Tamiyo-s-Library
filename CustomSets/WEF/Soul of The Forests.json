@@ -3,13 +3,13 @@
     "name": "Soul of The Forests",
     "collector_number": -1,
     "rarity": "r",
-    "type": "Creature — Wolf",
+    "type": "Creature — Wolf Spirit",
     "png": "https://mtg.design/i/jflz32.jpg",
     "back": "",
     "colors": "G",
-    "cmc": "5",
+    "cmc": "6",
     "pow": "5",
     "tou": "5",
-    "text": "Vigilance\nWhen Soul of The Forests enters the battlefield, you may search your library for up to two basic land cards. Reveal those cards, put one onte the battlefield tapped  and the other into your hand, then shuffle.",
+    "text": "Vigilance, trample\nWhen Soul of The Forests enters the battlefield, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle. You gain 3 life.",
     "tokens": []
 }

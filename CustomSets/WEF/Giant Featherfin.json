@@ -9,7 +9,7 @@
     "colors": "U",
     "cmc": "7",
     "pow": "5",
-    "tou": "7",
-    "text": "Flying\nFlood {2}{u} (During your turn, you may pay {2}{u} and exile this card from your hand flooding target land. It loses all land types and abilities, and it gains “{T}: Add {1}.”)",
+    "tou": "5",
+    "text": "Flying\nFlood {1}{g}{u} ({1}{g}{u}, Exile this card from your hand: Target land loses all land types and abilities and has \"{T}: Add {c}.\" Flood only as a sorcery.)",
     "tokens": []
 }

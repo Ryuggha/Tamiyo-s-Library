@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Littlemen Trainer",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Giant Warrior",
+    "png": "https://mtg.design/i/qfzo89.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "5",
+    "pow": "3",
+    "tou": "4",
+    "text": "When Littlemen Trainer enters the battlefield, create two 1/1 white Warrior creature tokens.\n\nSummon ({X}, Discard this card: Add X mana of {r}, {w} or {b}.)",
+    "tokens": []
+}

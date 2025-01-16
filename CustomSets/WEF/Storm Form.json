@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Storm Form",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment — Aura",
+    "png": "https://mtg.design/i/vayv44.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "B",
+        "G"
+    ],
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Flash\nEnchant creature\nEnchanted creature gets -2/-2, has shroud, and can’t be blocked. (A creature with shroud can’t be the target of spells or abilities.)",
+    "tokens": []
+}

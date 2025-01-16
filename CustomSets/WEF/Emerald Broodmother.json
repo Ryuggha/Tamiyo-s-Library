@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Emerald Broodmother",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Spider",
+    "png": "https://mtg.design/i/zmmp63.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "6",
+    "pow": "5",
+    "tou": "6",
+    "text": "Whenever Emerald Broodmother is dealt damage, earthshake 2. (Distribute 2 +1/+1 counters among up to 2 target lands you control. You may have them become 0/0 Elemental creatures until end of turn. They're still lands.)",
+    "tokens": []
+}

@@ -10,6 +10,6 @@
     "cmc": "1",
     "pow": "0",
     "tou": "1",
-    "text": "When Skimpy Dragonbait dies, it deals 3 damage to target player or planeswalker.",
+    "text": "When Skimpy Dragonbait dies, it deals 3 damage to target player or planeswalker. \nSummon ({X}, Discard this card: Add X mana of {r}, {w} or {b}.)",
     "tokens": []
 }

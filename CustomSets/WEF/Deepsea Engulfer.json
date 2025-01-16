@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Deepsea Engulfer",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Kraken",
+    "png": "https://mtg.design/i/xfui49.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "7",
+    "pow": "7",
+    "tou": "7",
+    "text": "Flood {1}{g}{g}{g}({1}{g}{g}{g}, Exile this card from your hand: Target land loses all land types and abilities and has \"{T}: Add {c}.\" Flood only as a sorcery.) \nWhenever you flood Deepsea Engulfer or it enters the battlefield, destroy target artifact or echantment an opponent controls.",
+    "tokens": []
+}

@@ -2,14 +2,18 @@
     "set": "wef",
     "name": "Curse of The Abyss",
     "collector_number": -1,
-    "rarity": "c",
-    "type": "Enchantment — Aura",
-    "png": "https://mtg.design/i/yvqo12.jpg",
+    "rarity": "r",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/awiu72.jpg",
     "back": "",
-    "colors": "B",
-    "cmc": "3",
+    "colors": [
+        "U",
+        "B",
+        "G"
+    ],
+    "cmc": "4",
     "pow": "0",
     "tou": "0",
-    "text": "Enchant creature\n\nIf {u}{u} was spent to cast this spell, enchanted creature has -2/-0 and loses all abilities until your next turn.\n\nAt the beginning of your upkeep, enchanted creature’s controller sacrifices it.",
+    "text": "Whenever a nontoken creature an opponent controls dies, exile it. If you do, create a token that’s a copy of that creature, except it’s a 1/1 Horror creature in addition to its other types.",
     "tokens": []
 }

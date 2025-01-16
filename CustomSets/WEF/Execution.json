@@ -3,13 +3,13 @@
     "name": "Execution",
     "collector_number": -1,
     "rarity": "c",
-    "type": "Instant",
+    "type": "Sorcery",
     "png": "https://mtg.design/i/yfqo94.jpg",
     "back": "",
     "colors": "W",
     "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Destroy target blocking creature. If {r}{b} was spent to cast this spell, destroy target creature instead.",
+    "text": "Destroy target creature with power 3 or less. If {b} was spent to cast this spell, destroy target creature instead. \n\nIf target creature dies this way, create a Head token. (It’s an artifact with “{1}, {T}, Sacrifice this artifact: Target creature gets +1/+0 until end of turn.”)",
     "tokens": []
 }

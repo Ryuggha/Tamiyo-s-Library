@@ -3,13 +3,13 @@
     "name": "Obsidiarmor Soldier",
     "collector_number": -1,
     "rarity": "c",
-    "type": "Creature — Elf Knight",
+    "type": "Creature — Human Warrior",
     "png": "https://mtg.design/i/rdvj34.jpg",
     "back": "",
     "colors": "B",
     "cmc": "3",
-    "pow": "2",
-    "tou": "3",
-    "text": "When Obsidiarmor Soldier dies, put a +1/+1 counter on target creature you control.\nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)",
+    "pow": "3",
+    "tou": "2",
+    "text": "When Obsidiarmor Soldier dies, put a +1/+1 counter on target creature you control.\nSummon ({X}, Discard this card: Add X mana of {r}, {w} or {b}.)",
     "tokens": []
 }

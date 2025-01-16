@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "White Tiger",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Enchantment Creature — Spirit Cat",
+    "png": "https://mtg.design/i/dtfp66.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "Lifelink\nYou have hexproof. (You can’t be the target of spells or abilities your opponents control.)\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

@@ -10,6 +10,6 @@
     "cmc": "2",
     "pow": "0",
     "tou": "0",
-    "text": "You may pay {0} rather than pay this spell’s mana cost as long as there are two or more flooded lands on the battlefield.\n\nDrowning Ambush deals 3 damage to target creature with flying. You gain 1 life.",
+    "text": "You may pay {0} rather than pay this spell’s mana cost as long as there are two or more flooded lands on the battlefield.\n\nDrowning Ambush deals 5 damage to target creature with flying.",
     "tokens": []
 }

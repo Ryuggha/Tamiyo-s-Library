@@ -2,14 +2,18 @@
     "set": "wef",
     "name": "Smell of Blood",
     "collector_number": -1,
-    "rarity": "c",
+    "rarity": "u",
     "type": "Sorcery",
-    "png": "https://mtg.design/i/tzdo12.jpg",
+    "png": "https://mtg.design/i/djyq79.jpg",
     "back": "",
-    "colors": "B",
-    "cmc": "5",
+    "colors": [
+        "W",
+        "B",
+        "R"
+    ],
+    "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Create two 2/2 black Dog creature token.\n\nIf an opponent's life total is less than half its starting life total, create an additional 2/2 black Dog creature token.",
+    "text": "Create two 1/1 black and red Dog creature tokens. They gain haste and menace until end of turn.\n\nUntil end of turn, creatures you control gain “Whenever this creature deals combat damage to a player or planeswalker, create a Head token.\" (It’s an artifact with “{1}, Sacrifice this artifact: Target creature gets +1/+0 until end of turn.”)",
     "tokens": []
 }

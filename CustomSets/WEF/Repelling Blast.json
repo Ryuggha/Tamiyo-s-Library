@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Repelling Blast",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Instant",
+    "png": "https://mtg.design/i/qejc15.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "Combo (If it was the second instant or sorcery spell you cast this turn, you may copy it.)\n\nReturn the creature with the lowest mana value an opponent controls to its owner's hand.",
+    "tokens": []
+}

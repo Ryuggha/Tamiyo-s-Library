@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Ritual of Resurrection",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/izyz97.jpg",
+    "back": "",
+    "colors": "B",
+    "cmc": "2",
+    "pow": "0",
+    "tou": "0",
+    "text": "As an additional cost to cast this spell, sacrifice any number of creatures.\nPut target creature card with mana value X or less from a graveyard onto the battlefield under your control, where X is three times the creatures sacrificed.\nIf mana from a Summon ability was used to cast Ritual of Resurrection, put a Hexproof counter on that creature and draw a card.",
+    "tokens": []
+}

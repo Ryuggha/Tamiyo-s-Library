@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Mistshaper Investigator",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Creature — Fox Wizard",
+    "png": "https://mtg.design/i/bnux16.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "Whenever you cast your second instant or sorcery spell each turn, target creature can’t be blocked this turn.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

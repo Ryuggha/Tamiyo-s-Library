@@ -3,13 +3,13 @@
     "name": "Soul of The Fires",
     "collector_number": -1,
     "rarity": "r",
-    "type": "Creature — Ox",
+    "type": "Creature — Ox Spirit",
     "png": "https://mtg.design/i/avlf10.jpg",
     "back": "",
     "colors": "R",
-    "cmc": "5",
+    "cmc": "6",
     "pow": "5",
     "tou": "5",
-    "text": "Haste\nWhen Soul of The Fires enters the battlefield, it deals 3 damage to each nonland creature.",
+    "text": "Haste, first strike\nWhen Soul of The Fires enters the battlefield, it deals 3 damage to each nonland creature.",
     "tokens": []
 }

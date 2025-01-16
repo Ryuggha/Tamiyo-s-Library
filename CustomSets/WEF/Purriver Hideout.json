@@ -10,6 +10,6 @@
     "cmc": "0",
     "pow": "0",
     "tou": "0",
-    "text": "Purriver Hideout enters the battlefield tapped.\n{t}: Add {u}.\n{3}{u}: Until end of turn, Purriver Hideout becomes a 0/1 blue Cat creature with ward {3} and “Whenever this creature deals combat damage to a player, you may draw a card.” It’s still a land.",
+    "text": "Ward {3}\nPurriver Hideout enters the battlefield tapped.\n{t}: Add {u}.\nWhenever Purriver Hideout deals combat damage to a player, you may draw a card.\n{1}{u}: Until end of turn, Purriver Hideout becomes a 0/1 blue Cat. It’s still a land.",
     "tokens": []
 }

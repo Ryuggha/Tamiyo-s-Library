@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "The Embodiment of Protection",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Legendary Creature — Elemental",
+    "png": "https://mtg.design/i/ackj22.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "R",
+        "G"
+    ],
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "Whenever a land you control with a +1/+1 counter on it attacks, draw a card.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {g}.)",
+    "tokens": []
+}

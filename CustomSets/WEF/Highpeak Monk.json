@@ -10,6 +10,6 @@
     "cmc": "2",
     "pow": "2",
     "tou": "2",
-    "text": "At the beginning of your upkeep, Highpeak Monk gets +X/+X until end of turn, where X is the number of orb counters on each Chi you control.\n\nSummon ({X}, Discard this card: Add X mana of {w}, {u} or {r}.)",
+    "text": "Whenever you cast your second instant or sorcery spell each turn, put a +1/+1 counter on Highpeak Monk.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
     "tokens": []
 }

@@ -4,12 +4,12 @@
     "collector_number": -1,
     "rarity": "c",
     "type": "Instant",
-    "png": "https://mtg.design/i/sxbp99.jpg",
+    "png": "https://mtg.design/i/qiee67.jpg",
     "back": "",
     "colors": "W",
-    "cmc": "3",
+    "cmc": "1",
     "pow": "0",
     "tou": "0",
-    "text": "This spell costs {2} less to cast if you’ve meditated this turn.\n\nPut a +1/+1 counter on target creature you control. It gains protection from the color of your choice until end of turn.",
+    "text": "Target creature gains lifelink until end of turn.\n\nDraw a card.",
     "tokens": []
 }

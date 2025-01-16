@@ -3,13 +3,13 @@
     "name": "Altar Beaconers",
     "collector_number": -1,
     "rarity": "c",
-    "type": "Creature — Human Priest",
+    "type": "Creature — Human Cleric",
     "png": "https://mtg.design/i/zvxo24.jpg",
     "back": "",
     "colors": "U",
-    "cmc": "3",
+    "cmc": "2",
     "pow": "0",
     "tou": "3",
-    "text": "Defender\nWhen Altar Beaconers the battlefield, create a Candle token. (It’s a black artifact with “{T}, Pay 1 life, Sacrifice this artifact: Draw a card, then discard a card.”) \n{1}{u}, {T}: Create a Candle token.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "text": "Defender\n{U}, {T}: Draw a card, then discard a card. \nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {u}.)",
     "tokens": []
 }

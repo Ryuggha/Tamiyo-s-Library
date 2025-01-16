@@ -3,13 +3,13 @@
     "name": "Warfront Fighter",
     "collector_number": -1,
     "rarity": "c",
-    "type": "Creature — Human Soldier",
+    "type": "Creature — Human Warrior",
     "png": "https://mtg.design/i/jlvd41.jpg",
     "back": "",
     "colors": "W",
     "cmc": "1",
     "pow": "1",
     "tou": "1",
-    "text": "Whenever Warfront Fighter attacks, another target attacking creature gets +1/+1 until end of turn.",
+    "text": "Whenever Warfront Fighter attacks, another target attacking creature gets +2/+0 until end of turn.",
     "tokens": []
 }

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Shark",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Shark",
+    "png": "https://mtg.design/i/ghgs14.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "2",
+    "tou": "2",
+    "text": null,
+    "tokens": []
+}

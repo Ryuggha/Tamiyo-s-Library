@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Vesperion",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Legendary Creature — Cat",
+    "png": "https://mtg.design/i/gkjc73.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "2",
+    "tou": "1",
+    "text": "Flying, lifelink",
+    "tokens": []
+}

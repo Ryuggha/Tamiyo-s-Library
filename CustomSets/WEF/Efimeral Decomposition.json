@@ -7,9 +7,9 @@
     "png": "https://mtg.design/i/tjvn87.jpg",
     "back": "",
     "colors": "G",
-    "cmc": "2",
+    "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "As an additional cost to cast this spell, sacrifice a land.\n\nSearch your library for a land card, put that card onto the battlefield, then shuffle. If the sacrificed land had one or more +1/+1 counters on it, instead search your library for two land cards, put them onto the battlefield, then shuffle.",
+    "text": "As an additional cost to cast this spell, sacrifice a land.\nSearch your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle. \nIf the sacrified land had one or more +1/+1 counters on it, put that many +1/+1 counters on each of the lands searched this way.",
     "tokens": []
 }

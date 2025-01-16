@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Search Horizons",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/hovk16.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Combo (If it was the second instant or sorcery spell you cast this turn, you may copy it.)\n\nIf an opponent controls more lands than you, search your library for a basic Plains card, put it onto the battlefield tapped, then shuffle.",
+    "tokens": []
+}

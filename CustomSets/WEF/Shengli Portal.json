@@ -11,9 +11,9 @@
         "U",
         "R"
     ],
-    "cmc": "4",
+    "cmc": "3",
     "pow": "0",
     "tou": "0",
-    "text": "Whenever you summon, draw a card, then discard a card. You gain 2 life.\n{u}{u}{u}{u}{u}: Reveal the top four cards of your library. You may cast up to two instant and/or sorcery spells among them without paying its mana cost. Put the rest back on top of your library in any order.",
+    "text": "Instant and sorcery spells you cast cost {1} less to cast.\n{u}{u}{u}{u}{u}: Reveal the top six cards of your library. Put up to two instant and/or sorcery cards from among them into your hand and the rest on the bottom of your library in any order.  Instant and sorcery spells you cast this turn cost {1} less to cast.",
     "tokens": []
 }

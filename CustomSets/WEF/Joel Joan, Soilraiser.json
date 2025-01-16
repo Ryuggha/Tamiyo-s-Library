@@ -1,0 +1,18 @@
+{
+    "set": "wef",
+    "name": "Joel Joan, Soilraiser",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Planeswalker — Joan",
+    "png": "https://mtg.design/i/dkvd10.jpg",
+    "back": "",
+    "colors": [
+        "B",
+        "G"
+    ],
+    "cmc": "4",
+    "pow": "0",
+    "tou": "0",
+    "text": ": At the beginning of your end step, mill two cards. For each creature, enchantment or land card milled this way, put a loyalty counter on Joel Joan.",
+    "tokens": []
+}

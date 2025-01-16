@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Priest",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Priest",
+    "png": "https://mtg.design/i/etqt64.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "1",
+    "tou": "1",
+    "text": "This creature has +1/+1 for each enchantment you control",
+    "tokens": []
+}

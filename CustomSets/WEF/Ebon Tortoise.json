@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Ebon Tortoise",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment Creature — Spirit Turtle",
+    "png": "https://mtg.design/i/dupr13.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "3",
+    "pow": "1",
+    "tou": "4",
+    "text": "Flash\nInstant and sorcery spells you control can’t be countered.\nSummon ({X}, Discard this card: Add X mana of {u}, {r} or {w}.)",
+    "tokens": []
+}

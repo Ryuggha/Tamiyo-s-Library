@@ -10,6 +10,6 @@
     "cmc": "2",
     "pow": "0",
     "tou": "0",
-    "text": "Wildshaped Efir doesn't untap during your untap step.\n{T}: Add {u}, {r} or {g}.\n{1}: Untap Wildshaped Efir. Activate this ability only once each turn.",
+    "text": "Wildshaped Efir doesn't untap during your untap step.\n{T}: Add {g}, {u} or {r}.\n{1}: Untap Wildshaped Efir. Activate this ability only once each turn.",
     "tokens": []
 }

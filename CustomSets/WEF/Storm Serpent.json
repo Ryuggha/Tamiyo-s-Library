@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Storm Serpent",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Serpent",
+    "png": "https://mtg.design/i/snow34.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "B",
+        "G"
+    ],
+    "cmc": "3",
+    "pow": "3",
+    "tou": "2",
+    "text": "Flood {1}{b}{g}{u} ({1}{b}{g}{u}, Exile this card from your hand: Target land loses all land types and abilities and has \"{T}: Add {c}.\" Flood only as a sorcery.) \nWhenever you flood Storm Serpent or it enters the battlefield, you may search your library for any number of cards named Storm Serpent, reveal them, put them into your hand, then shuffle.",
+    "tokens": []
+}

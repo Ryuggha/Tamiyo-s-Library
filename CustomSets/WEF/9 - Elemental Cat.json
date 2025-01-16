@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Elemental Cat",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Elemental Cat",
+    "png": "https://mtg.design/i/rglj15.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "7",
+    "tou": "1",
+    "text": "Trample, haste",
+    "tokens": []
+}

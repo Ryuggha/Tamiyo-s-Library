@@ -10,6 +10,6 @@
     "cmc": "5",
     "pow": "2",
     "tou": "5",
-    "text": "Deathtouch, ward {3}\n<i>False Faith</i> - When Cassiel, God of Destruction enters the battlefield, if you control a black enchantment, destroy target permanent.\nOther creatures get -1/-1.",
+    "text": "Deathtouch, ward {2}\n<i>False Faith: Black</i> - When Cassiel, God of Destruction enters the battlefield, if you control a black enchantment, destroy target permanent.\nOther creatures get -1/-1.",
     "tokens": []
 }

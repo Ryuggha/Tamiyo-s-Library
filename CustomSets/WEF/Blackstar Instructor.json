@@ -10,6 +10,6 @@
     "cmc": "3",
     "pow": "1",
     "tou": "3",
-    "text": "Whenever an enchantment enters the battlefield under your control, target opponent may discard a card. If that player doesn't, deal 3 damage to that player.\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {w}.)",
+    "text": "Whenever an enchantment enters the battlefield under your control, target opponent may discard a card. If they don't, deal 3 damage to that player.\nSummon ({X}, Discard this card: Add X mana of {w}, {b} or {g}.)",
     "tokens": []
 }

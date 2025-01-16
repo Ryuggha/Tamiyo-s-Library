@@ -1,15 +1,15 @@
 {
     "set": "wef",
-    "name": "Shan Ding, Highpeak Lao",
+    "name": "Shan Ding, Highpeak Lao // Zhidao",
     "collector_number": -1,
     "rarity": "r",
     "type": "Legendary Creature — Human Monk",
     "png": "https://mtg.design/i/ukcw95.jpg",
     "back": "https://mtg.design/i/hmrh11.jpg",
     "colors": "W",
-    "cmc": "5",
-    "pow": "4",
-    "tou": "4",
-    "text": "Other Monk creatures you control get +1/+1.\n\nWhenever a Monk you control attacks, meditate (Put an orb counter on a Chi you control. If you don’t control one, first create a Chi enchantment token with \"{1}, Sacrifice this: Copy target instant or sorcery spell you control with mana value less than or equal to the number of orb counters on this. You may choose new targets for the copy.\")",
+    "cmc": "4",
+    "pow": "2",
+    "tou": "5",
+    "text": "Vigilance, lifelink\nWhenever Shan Ding, Highpeak Lao attacks or blocks, you may have another attacking or blocking creature get +X/+X until end of turn, where X is Shan Ding’s power.",
     "tokens": []
 }

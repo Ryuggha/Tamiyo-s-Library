@@ -9,7 +9,7 @@ export var customSets: CustomSet[] = [];
 
 export function loadCustomSets() {
     var actualPath = "./../../CustomSets/";
-    var customSetsPath = path.join(__dirname, "./../../CustomSets/");
+    var customSetsPath = path.join(__dirname, actualPath);
     var folders = fs.readdirSync(customSetsPath);
 
     for (const folder of folders) {
@@ -39,21 +39,27 @@ export function generateCustomDraft(set: CustomSet, numberOfPacks: number, sleev
     var rates: any = {
         common: 10,
         uncommon: 3,
-        rareSlot: {rare: 7, mythic: 1},
+        rareSlot: {rare: 6, mythic: 1},
         basic: 1
     }
     rates = specialCasesCustomRates(set, rates);
 
     var pools: any = new SetRarityPools();
     for (const card of set.cards) {
-        if (card.rarity === "c") {
-            pools.common.push(card);
-            if (card.type.toUpperCase().indexOf("LAND") >= 0) pools.commonNonBasicLands.push(card);
-        }
-        else if (card.rarity === "u") pools.uncommon.push(card);
-        else if (card.rarity === "r") pools.rare.push(card);
-        else if (card.rarity === "m") pools.mythic.push(card);
+        if (card.rarity === "t") pools.token.push(card);
         else if (card.rarity === "b") pools.basic.push(card);
+        else {
+            pools.wildcard.push(card);
+
+            if (card.rarity === "c") {
+                pools.common.push(card);
+                if (card.type.toUpperCase().indexOf("LAND") >= 0) pools.commonNonBasicLands.push(card);
+            }
+            else if (card.rarity === "u") pools.uncommon.push(card);
+            else if (card.rarity === "r") pools.rare.push(card);
+            else if (card.rarity === "m") pools.mythic.push(card);
+            
+        }
     }
 
     var packList: CardAtt[][] = [];
@@ -90,9 +96,10 @@ export function generateCustomDraft(set: CustomSet, numberOfPacks: number, sleev
                 var card = pools[cardType][cardIndex];
                 cardList.push(getCustomCardAttributes(card));
             }
-
+            
+            cardList = sortCardList(cardList);
         }
-        
+
         packList.push(cardList);
     }
     
@@ -102,11 +109,12 @@ export function generateCustomDraft(set: CustomSet, numberOfPacks: number, sleev
 function specialCasesCustomRates(set: CustomSet, rates: any) {
     if (set.name.toUpperCase() === "WEF") {
         rates = {
-            commonNonBasicLands: 1,
-            common: 9,
+            landSlot: {basic: 1, commonNonBasicLands: 7},
+            common: 7,
             uncommon: 3,
-            rareSlot: {rare: 7, mythic: 1},
-            basic: 1
+            wildcard: 2,
+            rareSlot: {rare: 6, mythic: 1},
+            token: 1
         }
     }
 
@@ -131,6 +139,8 @@ export class SetRarityPools {
     basic: Card[];
 
     commonNonBasicLands: Card[];
+    wildcard: Card[];
+    token: Card[];
 
     constructor () {
         this.common = [];
@@ -140,5 +150,24 @@ export class SetRarityPools {
         this.basic = [];
 
         this.commonNonBasicLands = [];
+        this.wildcard = [];
+        this.token = [];
     }
+}
+
+function sortCardList(oldList : CardAtt[]): CardAtt[] {
+    var list = [] as CardAtt[];
+
+    for (var i = 0; i < 6; i++) {
+        for (const c of oldList) {
+            if (i == 0 && c.rarity == "c") list.push(c);
+            else if (i == 1 && c.rarity == "u") list.push(c);
+            else if (i == 2 && c.rarity == "r") list.push(c);
+            else if (i == 3 && c.rarity == "m") list.push(c);
+            else if (i == 4 && c.rarity == "b") list.push(c);
+            else if (i == 5 && c.rarity == "t") list.push(c);
+        }
+    }
+
+    return list;
 }

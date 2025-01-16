@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Meditation",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Enchantment",
+    "png": "https://mtg.design/i/ukku62.jpg",
+    "back": "",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "At the beginning of your upkeep, you gain 1 life.\n\n{2}, Sacrifice Meditation: Put a number of +1/+1 counters on target creature equal to the amount of life you gained this turn.",
+    "tokens": []
+}

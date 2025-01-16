@@ -4,16 +4,12 @@
     "collector_number": -1,
     "rarity": "u",
     "type": "Creature — Centaur Knight",
-    "png": "https://mtg.design/i/emkk36.jpg",
+    "png": "https://mtg.design/i/kqkv11.jpg",
     "back": "",
-    "colors": [
-        "W",
-        "B",
-        "R"
-    ],
-    "cmc": "5",
-    "pow": "4",
-    "tou": "4",
-    "text": "First strike, haste\nLuugal Vanguard can’t block. \nSummon ({X}, Discard this card: Add X mana of {r}, {b} or {w}.)",
+    "colors": "W",
+    "cmc": "3",
+    "pow": "3",
+    "tou": "3",
+    "text": "Dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.)\n\nWhenever Luugal Vanguard becomes blocked by a creature, you may sacrifice Luugal Vanguard. If you do, destroy that creature.",
     "tokens": []
 }

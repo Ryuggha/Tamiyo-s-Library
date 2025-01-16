@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Okhin's Command",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Sorcery",
+    "png": "https://mtg.design/i/puty06.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "B",
+        "G"
+    ],
+    "cmc": "6",
+    "pow": "0",
+    "tou": "0",
+    "text": "Choose X, where X is the number of flooded lands in the battlefield. You may choose the same mode more than once.\n\n• All creatures get -1/-1 until end of turn.\n\n• Create a  3/3 green Elemental Tide creature token.\n\n• Draw a card.",
+    "tokens": []
+}

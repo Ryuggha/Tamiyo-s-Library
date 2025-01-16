@@ -2,14 +2,14 @@
     "set": "wef",
     "name": "Focus Sight",
     "collector_number": -1,
-    "rarity": "c",
-    "type": "Instant",
+    "rarity": "u",
+    "type": "Sorcery",
     "png": "https://mtg.design/i/tuyu62.jpg",
     "back": "",
     "colors": "U",
-    "cmc": "3",
+    "cmc": "4",
     "pow": "0",
     "tou": "0",
-    "text": "Meditate. (Put an orb counter on a Chi you control. If you don’t control one, first create a Chi enchantment token with \"{1}, Sacrifice this: Copy target instant or sorcery spell you control with mana value less than or equal to the number of orb counters on this. You may choose new targets for the copy.\")\nScry 2, then draw a card.",
+    "text": "Combo (If it was the second instant or sorcery spell you cast this turn, you may copy it.)\n\nTarget player draws two cards.",
     "tokens": []
 }

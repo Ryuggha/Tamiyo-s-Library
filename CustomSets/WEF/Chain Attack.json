@@ -2,14 +2,14 @@
     "set": "wef",
     "name": "Chain Attack",
     "collector_number": -1,
-    "rarity": "u",
+    "rarity": "c",
     "type": "Sorcery",
     "png": "https://mtg.design/i/imql24.jpg",
     "back": "",
     "colors": "W",
-    "cmc": "3",
+    "cmc": "2",
     "pow": "0",
     "tou": "0",
-    "text": "Destroy target tapped creature, then tap target creature an opponent controls.",
+    "text": "Destroy target tapped creature. \nThe next instant or sorcery spell you cast this turn costs {1} or {w} less to cast.",
     "tokens": []
 }

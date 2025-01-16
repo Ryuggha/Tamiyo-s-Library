@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Volcanotaur",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Minotaur Berserker",
+    "png": "https://mtg.design/i/desr63.jpg",
+    "back": "",
+    "colors": "R",
+    "cmc": "1",
+    "pow": "1",
+    "tou": "1",
+    "text": "Haste; dragonform (Whenever this creature attacks, if defending player's life total is less than half its starting life total, this creature gets +1/+1 and flying until end of turn.) \nVolcanotaur must attack each combat if able.\nAt the beginning of combat on your turn, Volcanotaur deals 1 damage to target opponent.",
+    "tokens": []
+}

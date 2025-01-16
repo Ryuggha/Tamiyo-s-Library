@@ -14,6 +14,6 @@
     "cmc": "4",
     "pow": "0",
     "tou": "0",
-    "text": "Put two +1/+1 counters on each land you control. Until end of turn, all lands you control become 0/0 Elemental creatures with hexproof, haste, and reach. They’re still lands.",
+    "text": "Put two +1/+1 counters on each land you control. Until end of turn, all lands you control become 0/0 Elemental creatures with haste, and reach. They’re still lands. \n\nAt the beginning of the next end step, return all land cards from your graveyard to the battlefield tapped. Distribute X +1/+1 counters among them, where X is the number of lands returned this way.",
     "tokens": []
 }

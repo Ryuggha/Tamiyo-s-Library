@@ -7,9 +7,9 @@
     "png": "https://mtg.design/i/fuva84.jpg",
     "back": "",
     "colors": "G",
-    "cmc": "4",
-    "pow": "4",
-    "tou": "2",
-    "text": "Whenever you flood a card, you may return Undying Wanderer from your graveyard to your hand.\n\nSummon ({X}, Discard this card: Add X mana of {g}, {u} or {b}.)",
+    "cmc": "1",
+    "pow": "2",
+    "tou": "1",
+    "text": "Whenever you flood a card, you may pay {1}. If you do, return Undying Wanderer from your graveyard to your hand.\n\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {u}.)",
     "tokens": []
 }

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Warrior",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Warrior",
+    "png": "https://mtg.design/i/vdkv10.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "1",
+    "tou": "1",
+    "text": null,
+    "tokens": []
+}

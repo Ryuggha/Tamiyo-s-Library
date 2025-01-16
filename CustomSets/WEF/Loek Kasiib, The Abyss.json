@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Loek Kasiib, The Abyss",
+    "collector_number": -1,
+    "rarity": "m",
+    "type": "Legendary Creature — Eldrazi Kraken",
+    "png": "https://mtg.design/i/ojvl53.jpg",
+    "back": "",
+    "colors": [
+        "U",
+        "B",
+        "G"
+    ],
+    "cmc": "9",
+    "pow": "9",
+    "tou": "9",
+    "text": "Reach, annihilator 3\n\nWhen Loek Kasiib, The Abyss enters the battlefield, gain control of all flooded lands until Loek Kasiib leaves the battlefield. \n\nWhen Loek Kasiib, The Abyss is put into a graveyard from anywhere, its owner shuffles their graveyard into their library.",
+    "tokens": []
+}

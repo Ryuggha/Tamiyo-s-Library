@@ -1,0 +1,19 @@
+{
+    "set": "wef",
+    "name": "Brann, The Sparkless",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Legendary Creature — Human Wizard",
+    "png": "https://mtg.design/i/itgt55.jpg",
+    "back": "",
+    "colors": [
+        "W",
+        "U",
+        "R"
+    ],
+    "cmc": "3",
+    "pow": "3",
+    "tou": "4",
+    "text": "If you casting an instant or sorcery spell causes a triggered ability of a permanent you control, or a combo ability, to trigger, that ability triggers an additional time.",
+    "tokens": []
+}

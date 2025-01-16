@@ -12,8 +12,8 @@
         "G"
     ],
     "cmc": "4",
-    "pow": "0",
+    "pow": "1",
     "tou": "5",
-    "text": "Defender\n<i>False Faith</i> - When Deus Ex Mens enter the battlefield, if you control a green enchantment, search your library for a land card, put that card onto the battlefield tapped, then shuffle.\nWhenever an enchantment enters the battlefield under your control, draw a card.",
+    "text": "Defender, reach, deathtouch\n<i>False Faith: Green</i> - When Deus Ex Mens enter the battlefield, if you control a green enchantment, look at the top eight cards of your library. You may reveal two enchantment cards and/or land cards from among them and put them into your hand. Then shuffle. \nWhenever an enchantment enters the battlefield under your control, you gain 1 life and draw a card.",
     "tokens": []
 }

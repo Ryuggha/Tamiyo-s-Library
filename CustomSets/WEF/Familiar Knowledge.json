@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Familiar Knowledge",
+    "collector_number": -1,
+    "rarity": "u",
+    "type": "Instant",
+    "png": "https://mtg.design/i/dcdr14.jpg",
+    "back": "",
+    "colors": "U",
+    "cmc": "3",
+    "pow": "0",
+    "tou": "0",
+    "text": "Counter target noncreature spell.\n\nDraw a card.",
+    "tokens": []
+}

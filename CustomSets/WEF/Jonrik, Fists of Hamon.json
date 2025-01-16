@@ -13,6 +13,6 @@
     "cmc": "5",
     "pow": "0",
     "tou": "0",
-    "text": ": Whenever a creature you control becomes blocked, put a loyalty counter on Jonrik, Fists of Hamon.",
+    "text": ": Whenever one or more creatures attack Jonrik, Fists of Hamon, put a loyalty counter on him.",
     "tokens": []
 }

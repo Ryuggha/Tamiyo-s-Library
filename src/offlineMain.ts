@@ -59,7 +59,6 @@ function main() {
 
 function die(dieMax: number): number {
     var die = rndm.randomInt(1, dieMax)
-    //die = gwf(die, dieMax);
     return die;
 }
 

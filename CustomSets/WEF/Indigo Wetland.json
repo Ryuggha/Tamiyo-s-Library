@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Indigo Wetland",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Land",
+    "png": "https://mtg.design/i/fnfh51.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "0",
+    "tou": "0",
+    "text": "Indigo Wetland enters the battlefield tapped.\n{T}: Add {U} or {R}. \n{4}, {T}: Create a Treasure token. (It’s an artifact with “{T}, Sacrifice this artifact: Add one mana of any color.”)",
+    "tokens": []
+}

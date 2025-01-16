@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Scion of The Abyss",
+    "collector_number": -1,
+    "rarity": "r",
+    "type": "Creature — Eldrazi Kraken Drone",
+    "png": "https://mtg.design/i/kjxa83.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "6",
+    "pow": "*",
+    "tou": "*",
+    "text": "Scion of The Abyss’s power and toughness are each equal to the number of cards in your hand.\nWhenever Scion of The Abyss becomes the target of a spell or ability an opponent controls, you may draw two cards.",
+    "tokens": []
+}

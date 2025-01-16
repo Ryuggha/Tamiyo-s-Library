@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Cobalt Thicket",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Land",
+    "png": "https://mtg.design/i/nauc24.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "0",
+    "tou": "0",
+    "text": "Cobalt Thicket enters the battlefield tapped.\n{T}: Add {U} or {B}. \n{4}, {T}: Create a Treasure token. (It’s an artifact with “{T}, Sacrifice this artifact: Add one mana of any color.”)",
+    "tokens": []
+}

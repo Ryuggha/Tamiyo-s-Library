@@ -2,14 +2,14 @@
     "set": "wef",
     "name": "Sealed Messenger Gate",
     "collector_number": -1,
-    "rarity": "c",
+    "rarity": "u",
     "type": "Enchantment",
-    "png": "https://mtg.design/i/jtlg25.jpg",
+    "png": "https://mtg.design/i/sydy94.jpg",
     "back": "",
     "colors": "G",
-    "cmc": "5",
+    "cmc": "1",
     "pow": "0",
     "tou": "0",
-    "text": "When Sealed Messenger Gate enters the battlefield, create a 0/0 colorless Avatar creature token, then put X +1/+1 counters on it, where X is your devotion to green. \nWhenever another green permanent enters the battlefield under your control, you may put a +1/+1 counter on target creature.",
+    "text": "{1}: Put an eon counter on Sealed Messenger Gate.\nRemove X eon counters from Sealed Messenger Gate, and sacrifice it: Create a  0/0 colorless Nightmare creature token, then put X +1/+1 counters on it. Activate only as a sorcery.",
     "tokens": []
 }

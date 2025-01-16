@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Curious Tadpole",
+    "collector_number": -1,
+    "rarity": "c",
+    "type": "Creature — Frog Horror",
+    "png": "https://mtg.design/i/fjbk20.jpg",
+    "back": "",
+    "colors": "G",
+    "cmc": "2",
+    "pow": "2",
+    "tou": "2",
+    "text": "{4}{G}, {T}, Sacrifice Curious Tadpole: Draw two cards. This ability costs {1} less to activate for each flooded land on the battlefield. Activate only as a sorcery.\n\nSummon ({X}, Discard this card: Add X mana of {b}, {g} or {u}.)",
+    "tokens": []
+}

@@ -1,0 +1,15 @@
+{
+    "set": "wef",
+    "name": "Dragonling",
+    "collector_number": -1,
+    "rarity": "t",
+    "type": "token Creature — Dragonling",
+    "png": "https://mtg.design/i/wofu34.jpg",
+    "back": "",
+    "colors": [],
+    "cmc": "0",
+    "pow": "1",
+    "tou": "1",
+    "text": "Flying",
+    "tokens": []
+}
