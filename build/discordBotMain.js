@@ -81,6 +81,11 @@ client.on(Events.InteractionCreate, (interaction) => __awaiter(void 0, void 0, v
             .setCustomId("deckListInput")
             .setLabel("The decklist to build your Deck")
             .setStyle(TextInputStyle.Paragraph);
+        const deckLanguage = new TextInputBuilder()
+            .setCustomId("deckLanguage")
+            .setLabel("The language of the cards (optional) (ex: es)")
+            .setStyle(TextInputStyle.Short)
+            .setRequired(false);
         const deckFormatInput = new TextInputBuilder()
             .setCustomId("deckFromatInput")
             .setLabel("Check legality of deck. (modern, brawl, rbt2)")
@@ -89,8 +94,9 @@ client.on(Events.InteractionCreate, (interaction) => __awaiter(void 0, void 0, v
         const firstActionRow = new ActionRowBuilder().addComponents(deckNameInput);
         const secondActionRow = new ActionRowBuilder().addComponents(deckSleeveInput);
         const thirdActionRow = new ActionRowBuilder().addComponents(deckListInput);
-        const fourthActionRow = new ActionRowBuilder().addComponents(deckFormatInput);
-        modal.addComponents(firstActionRow, secondActionRow, thirdActionRow, fourthActionRow);
+        const fourthActionRow = new ActionRowBuilder().addComponents(deckLanguage);
+        const fifthActionRow = new ActionRowBuilder().addComponents(deckFormatInput);
+        modal.addComponents(firstActionRow, secondActionRow, thirdActionRow, fourthActionRow, fifthActionRow);
         yield interaction.showModal(modal);
     }
 }));
@@ -104,6 +110,9 @@ client.on(Events.InteractionCreate, (interaction) => __awaiter(void 0, void 0, v
     var name = interaction.fields.getTextInputValue("deckNameInput");
     if (name == null || name === "")
         name = "Unnamed Deck";
+    var lang = interaction.fields.getTextInputValue("deckLanguage");
+    if (lang == null)
+        lang = "";
     var format = interaction.fields.getTextInputValue("deckFromatInput");
     if (format == null)
         format = "";
@@ -111,7 +120,7 @@ client.on(Events.InteractionCreate, (interaction) => __awaiter(void 0, void 0, v
     try {
         var cardListArray = (0, MTGHelper_1.readDeckList)(decklist);
         var activeCustomSets = true;
-        var deck = yield (0, MTGHelper_1.buildDeckFromDeckList)(name, cardListArray, sleeve, activeCustomSets, format);
+        var deck = yield (0, MTGHelper_1.buildDeckFromDeckList)(name, cardListArray, sleeve, activeCustomSets, lang, format);
         var deckFile = new AttachmentBuilder(Buffer.from(JSON.stringify(deck[0], null, 4)), { name: `${name}.json` });
         const deckEmbed = new builders_1.EmbedBuilder()
             .setAuthor({ name: interaction.user.username, iconURL: interaction.user.avatarURL(), url: 'https://discord.js.org' })

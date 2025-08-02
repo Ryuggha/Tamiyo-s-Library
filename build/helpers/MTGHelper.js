@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CardLink = exports.CardAtt = exports.getLandsFromSet = exports.inBanList = exports.randomBrewTournamentIIBossGenerator = exports.getRandomDraftSet = exports.generateDraftPacks = exports.getScryfallCardLink = exports.getScryfallCardAttributes = exports.getCustomCardAttributes = exports.getTokenCards = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
+exports.CardLink = exports.CardAtt = exports.ExportSet = exports.getLandsFromSet = exports.inBanList = exports.randomBrewTournamentIIBossGenerator = exports.getRandomDraftSet = exports.generateDraftPacks = exports.getScryfallCardLink = exports.getScryfallCardAttributes = exports.getCustomCardAttributes = exports.getTokenCards = exports.buildDeckFromDeckList = exports.readDeckList = void 0;
 const ScryfallImplementation_1 = require("./ScryfallImplementation");
 const CardLineDict_1 = require("./CardLineDict");
 const CustomSetsHandler_1 = require("./CustomSetsHandler");
@@ -70,7 +70,7 @@ function getCardDictFromLine(line) {
         return null;
     return card;
 }
-function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customSleeve = defaultSleeve, activeCustomSets = true, format = "") {
+function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customSleeve = defaultSleeve, activeCustomSets = true, lang = "", format = "") {
     return __awaiter(this, void 0, void 0, function* () {
         var errors = "";
         var cardsParsed = 0;
@@ -112,7 +112,9 @@ function buildDeckFromDeckList(deckName = "Untitled Deck", cardDictList, customS
                     if (customSetFlag !== "")
                         cardAtt = getCustomCardAttributes(searchCustomCard(cardDict.name, customSetFlag));
                     else {
-                        cardJson = yield (0, ScryfallImplementation_1.getSpecificCardFromScryfall)(cardDict);
+                        if (lang == "")
+                            lang = "en";
+                        cardJson = yield (0, ScryfallImplementation_1.getSpecificCardFromScryfall)(cardDict, lang);
                         cardAtt = getScryfallCardAttributes(cardJson);
                     }
                     if (legalities[1] != -1) {
@@ -343,19 +345,58 @@ function getLandsFromSet(setCode, sleeve) {
             var cards = [];
             cardListMap.set(i, []);
             deckSectionMap.set(i, basicTypes[i]);
-            cards = yield (0, ScryfallImplementation_1.getScryfallData)(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}+unique:prints+set:${setCode}`);
-            if (cards.length == 0) {
-                cards = yield (0, ScryfallImplementation_1.getScryfallData)(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}`);
+            if (customSet != null) {
+                if (customSet.cards == null)
+                    break;
+                cards = customSet.cards.filter(x => x.rarity == "b" && x.name == basicTypes[i]);
+                for (var j = 0; j < 100; j++) {
+                    var cardAtt = getCustomCardAttributes(cards[rndm_1.default.randomInt(0, cards.length - 1)]);
+                    cardListMap.get(i).push(cardAtt);
+                }
             }
-            for (var j = 0; j < 100; j++) {
-                var cardAtt = getScryfallCardAttributes(cards[rndm_1.default.randomInt(0, cards.length - 1)]);
-                cardListMap.get(i).push(cardAtt);
+            else {
+                cards = yield (0, ScryfallImplementation_1.getScryfallData)(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}+unique:prints+set:${setCode}`);
+                if (cards.length == 0) {
+                    cards = yield (0, ScryfallImplementation_1.getScryfallData)(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}`);
+                }
+                for (var j = 0; j < 100; j++) {
+                    var cardAtt = getScryfallCardAttributes(cards[rndm_1.default.randomInt(0, cards.length - 1)]);
+                    cardListMap.get(i).push(cardAtt);
+                }
             }
         }
         return [(0, TTSObjectsHandler_1.createTTSBagWithDeck)(cardListMap, deckSectionMap, "Lands", sleeve), false];
     });
 }
 exports.getLandsFromSet = getLandsFromSet;
+function ExportSet(setCode, sleeve) {
+    return __awaiter(this, void 0, void 0, function* () {
+        var cardListMap = new Map();
+        var deckSectionMap = new Map();
+        cardListMap.set(0, []);
+        var deckSectionMap = new Map();
+        deckSectionMap.set(0, setCode);
+        if (sleeve == null || sleeve == "")
+            sleeve = "https://i.imgur.com/hsYf4R9.jpg";
+        var customSet = CustomSetsHandler_1.customSets.find(x => x.name.toUpperCase() === setCode.toUpperCase());
+        if (customSet != null) {
+            for (const card of customSet.cards) {
+                var cardAtt = getCustomCardAttributes(card);
+                cardListMap.get(0).push(cardAtt);
+            }
+        }
+        else {
+            var scryfallData = yield (0, ScryfallImplementation_1.getScryfallData)(`https://api.scryfall.com/cards/search?q=unique:prints+set:${setCode}`);
+            var cards = [];
+            var has_more = true;
+            do {
+                has_more = false;
+            } while (has_more);
+        }
+        return [(0, TTSObjectsHandler_1.createTTSBagWithDeck)(cardListMap, deckSectionMap, "Lands", sleeve), false];
+    });
+}
+exports.ExportSet = ExportSet;
 function createBanlist() {
     var list = [];
     var fs = require('fs');

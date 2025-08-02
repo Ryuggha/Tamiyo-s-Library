@@ -66,4 +66,21 @@ function gwf(die, dieMax) {
 function d20() {
     return rndm_1.default.randomInt(1, 20);
 }
-main();
+function roll3d8() {
+    return rndm_1.default.randomInt(1, 8) + rndm_1.default.randomInt(1, 8) + rndm_1.default.randomInt(1, 8);
+}
+function simulation() {
+    var iterations = 999999;
+    var totalWithSavageAttacker = 0;
+    var totalWithoutSavageAttacker = 0;
+    for (var x = 0; x < iterations; x++) {
+        var a = roll3d8();
+        var b = roll3d8();
+        totalWithoutSavageAttacker += a;
+        totalWithSavageAttacker += Math.max(a, b);
+    }
+    console.log("Average Normal : " + totalWithoutSavageAttacker / iterations);
+    console.log("Average SA : " + totalWithSavageAttacker / iterations);
+}
+//main();
+simulation();

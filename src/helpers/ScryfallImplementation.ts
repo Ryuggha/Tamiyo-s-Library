@@ -64,16 +64,18 @@ export async function billy (cmc: string, isTryhard: boolean): Promise<[string, 
     return [url, true];
 }
 
-export async function getCardFomScryfallFromName(cardName: string): Promise<any> {
-    return (await getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardName}\"`))[0];
+export async function getCardFomScryfallFromName(cardName: string, lang: string = "en"): Promise<any> {
+    return (await getScryfallData(`https://api.scryfall.com/cards/search?q=lang:es+\"${cardName}\"+lang:\"${lang}\"`))[0];
+    //return (await getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardName}\"`))[0];
 }
 
-export async function getSpecificCardFromScryfall(cardDict: CardLineDict): Promise<any> {
+export async function getSpecificCardFromScryfall(cardDict: CardLineDict, lang: string = "en"): Promise<any> {
     if (cardDict.set !== "") {
         if (cardDict.setNum !== "") {
+            if (lang !== "en") return (await getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardDict.name}\"+set:\"${cardDict.set}\"+number:\"${cardDict.setNum}\"+lang:\"${lang}\"`))[0];
             return (await getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardDict.name}\"+set:\"${cardDict.set}\"+number:\"${cardDict.setNum}\"`))[0];
         }
-        else return (await getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardDict.name}\"+set:\"${cardDict.set}\"`))[0];
+        else return (await getScryfallData(`https://api.scryfall.com/cards/search?q=!\"${cardDict.name}\"+set:\"${cardDict.set}\"+lang:\"${lang}\"`))[0];
     }
     else {
         return getCardFomScryfallFromName(cardDict.name);

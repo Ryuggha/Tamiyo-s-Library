@@ -1,5 +1,4 @@
 import { AttachmentBuilder, EmbedBuilder, SlashCommandBuilder } from "discord.js";
-import { billy } from "../helpers/ScryfallImplementation";
 import { getLandsFromSet } from "../helpers/MTGHelper";
 
 module.exports = {

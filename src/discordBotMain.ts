@@ -86,6 +86,12 @@ client.on(Events.InteractionCreate, async (interaction: any) => {
             .setLabel("The decklist to build your Deck")
             .setStyle(TextInputStyle.Paragraph);
 
+        const deckLanguage = new TextInputBuilder()
+            .setCustomId("deckLanguage")
+            .setLabel("The language of the cards (optional) (ex: es)")
+            .setStyle(TextInputStyle.Short)
+            .setRequired(false);    
+
         const deckFormatInput = new TextInputBuilder()
             .setCustomId("deckFromatInput")
             .setLabel("Check legality of deck. (modern, brawl, rbt2)")
@@ -95,9 +101,10 @@ client.on(Events.InteractionCreate, async (interaction: any) => {
         const firstActionRow = new ActionRowBuilder().addComponents(deckNameInput);
         const secondActionRow = new ActionRowBuilder().addComponents(deckSleeveInput);
         const thirdActionRow = new ActionRowBuilder().addComponents(deckListInput);
-        const fourthActionRow = new ActionRowBuilder().addComponents(deckFormatInput);
+        const fourthActionRow = new ActionRowBuilder().addComponents(deckLanguage);
+        const fifthActionRow = new ActionRowBuilder().addComponents(deckFormatInput);
 
-        modal.addComponents(firstActionRow, secondActionRow, thirdActionRow, fourthActionRow);
+        modal.addComponents(firstActionRow, secondActionRow, thirdActionRow, fourthActionRow, fifthActionRow);
 
         await interaction.showModal(modal);
 	}
@@ -112,6 +119,8 @@ client.on(Events.InteractionCreate, async (interaction: any) => {
     if (sleeve == null || sleeve === "") sleeve = "https://i.imgur.com/hsYf4R9.jpg";
     var name = interaction.fields.getTextInputValue("deckNameInput");
     if (name == null || name === "") name = "Unnamed Deck";
+    var lang = interaction.fields.getTextInputValue("deckLanguage");
+    if (lang == null) lang = "";
     var format = interaction.fields.getTextInputValue("deckFromatInput");
     if (format == null) format = "";
 
@@ -120,7 +129,7 @@ client.on(Events.InteractionCreate, async (interaction: any) => {
     try {
         var cardListArray = readDeckList(decklist);
         var activeCustomSets = true;
-        var deck = await buildDeckFromDeckList(name, cardListArray, sleeve, activeCustomSets, format);
+        var deck = await buildDeckFromDeckList(name, cardListArray, sleeve, activeCustomSets, lang, format);
         var deckFile = new AttachmentBuilder(Buffer.from(JSON.stringify(deck[0], null, 4)), {name: `${name}.json`});
 
         const deckEmbed = new EmbedBuilder()

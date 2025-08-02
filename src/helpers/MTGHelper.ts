@@ -66,7 +66,7 @@ function getCardDictFromLine(line: string): CardLineDict | null {
     return card;
 }
 
-export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", cardDictList: CardLineDict[], customSleeve: string = defaultSleeve, activeCustomSets: boolean = true, format: string = ""): Promise<any> {
+export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", cardDictList: CardLineDict[], customSleeve: string = defaultSleeve, activeCustomSets: boolean = true, lang: string = "", format: string = ""): Promise<any> {
     var errors = "";
     var cardsParsed = 0;
     var cardListMap: Map<number, CardAtt[]> = new Map();
@@ -109,8 +109,9 @@ export async function buildDeckFromDeckList(deckName: string = "Untitled Deck", 
                 var cardAtt;
                 var cardJson: any;
                 if (customSetFlag !== "") cardAtt = getCustomCardAttributes(searchCustomCard(cardDict.name, customSetFlag)); 
-                else {
-                    cardJson = await getSpecificCardFromScryfall(cardDict);
+                else { 
+                    if (lang == "") lang = "en";
+                    cardJson = await getSpecificCardFromScryfall(cardDict, lang);
                     cardAtt = getScryfallCardAttributes(cardJson);
                 }
 
@@ -333,15 +334,55 @@ export async function getLandsFromSet(setCode: string, sleeve: string): Promise<
         cardListMap.set(i, []);
         deckSectionMap.set(i, basicTypes[i]);
 
-        cards = await getScryfallData(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}+unique:prints+set:${setCode}`);
-        if (cards.length == 0) {
-            cards = await getScryfallData(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}`);
-        } 
-        
-        for (var j = 0; j < 100; j++) {
-            var cardAtt = getScryfallCardAttributes(cards[rndm.randomInt(0, cards.length - 1)]);
-            cardListMap.get(i)!.push(cardAtt);
+        if (customSet != null) {
+            if (customSet.cards == null) break;
+            cards = customSet.cards.filter(x => x.rarity == "b" && x.name == basicTypes[i]);
+
+            for (var j = 0; j < 100; j++) {
+                var cardAtt = getCustomCardAttributes(cards[rndm.randomInt(0, cards.length - 1)]);
+                cardListMap.get(i)!.push(cardAtt);
+            }
         }
+        else {
+            cards = await getScryfallData(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}+unique:prints+set:${setCode}`);
+            if (cards.length == 0) {
+                cards = await getScryfallData(`https://api.scryfall.com/cards/search?q=!${basicTypes[i]}`);
+            } 
+            
+            for (var j = 0; j < 100; j++) {
+                var cardAtt = getScryfallCardAttributes(cards[rndm.randomInt(0, cards.length - 1)]);
+                cardListMap.get(i)!.push(cardAtt);
+            }
+        }
+    }
+
+    return [createTTSBagWithDeck(cardListMap, deckSectionMap, "Lands", sleeve), false];
+}
+
+export async function ExportSet(setCode: string, sleeve: string): Promise<[any, boolean]> {
+    var cardListMap: Map<number, CardAtt[]> = new Map();
+    var deckSectionMap: Map<number, string> = new Map();
+    cardListMap.set(0, []);
+    var deckSectionMap: Map<number, string> = new Map();
+    deckSectionMap.set(0, setCode);
+
+    if (sleeve == null || sleeve == "") sleeve = "https://i.imgur.com/hsYf4R9.jpg";
+    var customSet = customSets.find(x => x.name.toUpperCase() === setCode.toUpperCase());
+
+    if (customSet != null) {
+        for (const card of customSet.cards) {
+            var cardAtt = getCustomCardAttributes(card);
+            cardListMap.get(0)!.push(cardAtt);
+        }
+    }
+    else {
+        var scryfallData = await getScryfallData(`https://api.scryfall.com/cards/search?q=unique:prints+set:${setCode}`);
+        var cards = [];
+
+        var has_more = true;
+        do {
+            has_more = false;
+        } while (has_more);
     }
 
     return [createTTSBagWithDeck(cardListMap, deckSectionMap, "Lands", sleeve), false];
